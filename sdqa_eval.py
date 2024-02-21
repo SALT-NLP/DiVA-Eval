@@ -13,6 +13,8 @@ from transformers import (
 )
 from transformers.generation import GenerationConfig
 
+from salmonn import SALMONN
+
 torch.manual_seed(1234)
 cfm = CFMatcher()
 
@@ -120,22 +122,31 @@ def get_response_end_to_end(model, audio, dial):
 m_type = "pipeline"
 # model_name = "meta-llama/Llama-2-7b-chat-hf"
 # model_name = "mistralai/Mistral-7B-Instruct-v0.2"
-model_name = "Qwen/Qwen1.5-7B-Chat"
+# model_name = "Qwen/Qwen-Audio-Chat"
+# model_name = "Qwen/Qwen1.5-7B-Chat"
 if m_type == "e2e":
-    tokenizer = AutoTokenizer.from_pretrained(
-        "Qwen/Qwen-Audio-Chat", trust_remote_code=True
-    )
-    model = AutoModelForCausalLM.from_pretrained(
-        "Qwen/Qwen-Audio-Chat", device_map="auto", trust_remote_code=True
-    ).eval()
+    if "Qwen" in model_name:
+        tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+        model = AutoModelForCausalLM.from_pretrained(
+            model_name, device_map="auto", trust_remote_code=True
+        ).eval()
 
-    model.generation_config = GenerationConfig.from_pretrained(
-        "Qwen/Qwen-Audio-Chat",
-        trust_remote_code=True,
-        do_sample=False,
-        top_k=50,
-        top_p=1.0,
-    )
+        model.generation_config = GenerationConfig.from_pretrained(
+            model_name,
+            trust_remote_code=True,
+            do_sample=False,
+            top_k=50,
+            top_p=1.0,
+        )
+    elif "salmonn" in model_name:
+        model = SALMONN(
+            ckpt=args.ckpt_path,
+            whisper_path=args.whisper_path,
+            beats_path=args.beats_path,
+            vicuna_path=args.vicuna_path,
+            low_resource=args.low_resource,
+        )
+
 else:
     asr_model_id = "openai/whisper-large-v3"
 
@@ -186,7 +197,7 @@ for dial in dials:
                 if m_type == "e2e":
                     pred, score = get_response_end_to_end(model, ex, dial)
                 elif m_type != "e2e" and not (
-                    "qwen" in model_name and "1.5" not in model_name
+                    "qwen" in model_name.lower() and "1.5" not in model_name
                 ):
                     pred, score = get_response_pipeline_qwen(asr, model, ex, dial)
                 else:
