@@ -48,20 +48,21 @@ def get_response_pipeline(asr_model, model, audio, dial):
 
     output = model.generate(query, max_new_tokens=128)
     # Mistral & Llama
-    # split_token = "[/INST]"
-    # response = (
-    # tokenizer.decode(output[0], skip_special_tokens=True)
-    # .split(split_token)[-1]
-    # .strip()
-    # )
-    split_token = "<|im_start|>"
-    response = (
-        tokenizer.decode(output[0], skip_special_tokens=False)
-        .split(split_token)[-1]
-        .strip()
-        .replace("<|im_end|>", "")
-    )
-    print(response)
+    if "qwen" not in model.name:
+        split_token = "[/INST]"
+        response = (
+            tokenizer.decode(output[0], skip_special_tokens=True)
+            .split(split_token)[-1]
+            .strip()
+        )
+    else:
+        split_token = "<|im_start|>"
+        response = (
+            tokenizer.decode(output[0], skip_special_tokens=False)
+            .split(split_token)[-1]
+            .strip()
+            .replace("<|im_end|>", "")
+        )
 
     scores = [
         value[response]
@@ -117,6 +118,9 @@ def get_response_end_to_end(model, audio, dial):
 
 
 m_type = "pipeline"
+# model_name = "meta-llama/Llama-2-7b-chat-hf"
+# model_name = "mistralai/Mistral-7B-Instruct-v0.2"
+model_name = "Qwen/Qwen1.5-7B-Chat"
 if m_type == "e2e":
     tokenizer = AutoTokenizer.from_pretrained(
         "Qwen/Qwen-Audio-Chat", trust_remote_code=True
@@ -154,10 +158,6 @@ else:
         return_timestamps=False,
         device_map="auto",
     )
-    # model_name = "Qwen/Qwen-7B-Chat"
-    # model_name = "meta-llama/Llama-2-7b-chat-hf"
-    # model_name = "mistralai/Mistral-7B-Instruct-v0.2"
-    model_name = "Qwen/Qwen1.5-7B-Chat"
     tokenizer = AutoTokenizer.from_pretrained(
         model_name, trust_remote_code=True, padding_side="right"
     )
@@ -185,6 +185,10 @@ for dial in dials:
                 id = ex["id"]
                 if m_type == "e2e":
                     pred, score = get_response_end_to_end(model, ex, dial)
+                elif m_type != "e2e" and not (
+                    "qwen" in model_name and "1.5" not in model_name
+                ):
+                    pred, score = get_response_pipeline_qwen(asr, model, ex, dial)
                 else:
                     pred, score = get_response_pipeline(asr, model, ex, dial)
             except Exception as e:
