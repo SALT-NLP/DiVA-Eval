@@ -1,3 +1,6 @@
+SALMONN_PATHS/*
+!SALMONN_PATHS/README.md
+
 # -*- mode: gitignore; -*-
 *~
 \#*\#
