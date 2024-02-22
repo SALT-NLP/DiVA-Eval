@@ -97,7 +97,29 @@ def get_response_pipeline_qwen(asr_model, model, audio, dial):
 
 
 @torch.no_grad
-def get_response_end_to_end(model, audio, dial):
+def get_response_end_to_end_s(model, audio, dial):
+    value = audio[dial]
+    sf.write("tmp.wav", value["array"], value["sampling_rate"], format="wav")
+    with torch.cuda.amp.autocast(dtype=torch.float16):
+        llm_message = model.generate(
+            wav_path="tmp.wav",
+            prompt="You are a helpful assistant. Give a simple one sentence answer.",
+            do_sample=False,
+            top_p=1.0,
+        )
+    response = llm_message[0]
+
+    scores = [
+        value[response]
+        for value in cfm.get_scores(
+            audio["answers"], response, audio["question"]
+        ).values()
+    ]
+    return response, max(scores)
+
+
+@torch.no_grad
+def get_response_end_to_end_q(model, audio, dial):
     value = audio[dial]
     sf.write("tmp.wav", value["array"], value["sampling_rate"], format="wav")
     query = tokenizer.from_list_format(
@@ -119,11 +141,12 @@ def get_response_end_to_end(model, audio, dial):
     return response, max(scores)
 
 
-m_type = "pipeline"
+m_type = "e2e"
 # model_name = "meta-llama/Llama-2-7b-chat-hf"
 # model_name = "mistralai/Mistral-7B-Instruct-v0.2"
 # model_name = "Qwen/Qwen-Audio-Chat"
 # model_name = "Qwen/Qwen1.5-7B-Chat"
+model_name = "salmonn_7b"
 if m_type == "e2e":
     if "Qwen" in model_name:
         tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
@@ -140,11 +163,11 @@ if m_type == "e2e":
         )
     elif "salmonn" in model_name:
         model = SALMONN(
-            ckpt=args.ckpt_path,
-            whisper_path=args.whisper_path,
-            beats_path=args.beats_path,
-            vicuna_path=args.vicuna_path,
-            low_resource=args.low_resource,
+            ckpt="./SALMONN_PATHS/SALMONN-7B/salmonn_7b_v0.pth",
+            whisper_path="./SALMONN_PATHS/whisper-large-v2",
+            beats_path="./SALMONN_PATHS/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt",
+            vicuna_path="./SALMONN_PATHS/vicuna-7b-v1.5",
+            low_resource=False,
         )
 
 else:
@@ -190,13 +213,15 @@ ds = load_dataset("WillHeld/SD-QA")["dev"].filter(lambda example: example["answe
 dial_scores = {}
 for dial in dials:
     scores = []
-    with open(f"./qwen_1.5/{dial}_outs.txt", "w") as f:
+    with open(f"./sdqa-res/salmonn_7b/{dial}_outs.txt", "w") as f:
         for idx, ex in enumerate(tqdm(ds)):
             try:
                 id = ex["id"]
-                if m_type == "e2e":
-                    pred, score = get_response_end_to_end(model, ex, dial)
-                elif m_type != "e2e" and not (
+                if m_type == "e2e" and "qwen" in model_name.lower():
+                    pred, score = get_response_end_to_end_q(model, ex, dial)
+                elif m_type == "e2e" and "salmonn" in model_name.lower():
+                    pred, score = get_response_end_to_end_s(model, ex, dial)
+                elif m_type != "e2e" and (
                     "qwen" in model_name.lower() and "1.5" not in model_name
                 ):
                     pred, score = get_response_pipeline_qwen(asr, model, ex, dial)
