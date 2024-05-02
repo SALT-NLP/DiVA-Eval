@@ -30,8 +30,8 @@ from transformers import (
     WhisperModel,
 )
 
-from beats.BEATs import BEATs, BEATsConfig
-from qformer.Qformer import BertConfig, BertLMHeadModel
+from models.beats.BEATs import BEATs, BEATsConfig
+from models.qformer.Qformer import BertConfig, BertLMHeadModel
 
 
 class SALMONN(nn.Module):
@@ -58,7 +58,9 @@ class SALMONN(nn.Module):
         self.feature_extractor = WhisperFeatureExtractor.from_pretrained(whisper_path)
 
         # whisper
-        self.speech_encoder = WhisperModel.from_pretrained(whisper_path).encoder.to("cuda:0")
+        self.speech_encoder = WhisperModel.from_pretrained(whisper_path).encoder.to(
+            "cuda:0"
+        )
         self.ln_speech = nn.LayerNorm(self.speech_encoder.config.d_model).to("cuda:0")
 
         # beats
