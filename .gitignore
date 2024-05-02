@@ -1,5 +1,5 @@
-SALMONN_PATHS/*
-!SALMONN_PATHS/README.md
+eval/SALMONN_PATHS/*
+!SALMONN_PATHS/SALMONN_SETUP.sh
 
 # -*- mode: gitignore; -*-
 *~
