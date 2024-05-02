@@ -180,7 +180,7 @@ if m_type == "e2e":
             low_resource=False,
         )
     elif "via" in model_name:
-        model = VIA("./via-7b-3500/model-00001-of-00004.safetensors")
+        model = VIA("./via-7b-cv-only/model-00001-of-00004.safetensors")
 
 else:
     asr_model_id = "openai/whisper-large-v3"
