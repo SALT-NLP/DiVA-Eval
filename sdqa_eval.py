@@ -14,6 +14,7 @@ from transformers import (
 from transformers.generation import GenerationConfig
 
 from salmonn import SALMONN
+from via import VIA
 
 torch.manual_seed(1234)
 cfm = CFMatcher()
@@ -50,7 +51,15 @@ def get_response_pipeline(asr_model, model, audio, dial):
 
     output = model.generate(query, max_new_tokens=128)
     # Mistral & Llama
-    if "qwen" not in model.name:
+    if "Llama-3" in model.name:
+        split_token = "<|start_header_id|>assistant<|end_header_id|>"
+        response = (
+            tokenizer.decode(output[0], skip_special_tokens=False)
+            .split(split_token)[-1]
+            .strip()
+            .replace("<|eot_id|>", "")
+        )
+    elif "qwen" not in model.name:
         split_token = "[/INST]"
         response = (
             tokenizer.decode(output[0], skip_special_tokens=True)
@@ -119,6 +128,26 @@ def get_response_end_to_end_s(model, audio, dial):
 
 
 @torch.no_grad
+def get_response_end_to_end_v(model, audio, dial):
+    value = audio[dial]
+    with torch.cuda.amp.autocast(dtype=torch.float16):
+        llm_message = model.generate(
+            audio=value["array"],
+            prompt="You are a helpful assistant. Give a simple one sentence answer.",
+        )
+    response = llm_message
+    print(response)
+
+    scores = [
+        value[response]
+        for value in cfm.get_scores(
+            audio["answers"], response, audio["question"]
+        ).values()
+    ]
+    return response, max(scores)
+
+
+@torch.no_grad
 def get_response_end_to_end_q(model, audio, dial):
     value = audio[dial]
     sf.write("tmp.wav", value["array"], value["sampling_rate"], format="wav")
@@ -141,12 +170,14 @@ def get_response_end_to_end_q(model, audio, dial):
     return response, max(scores)
 
 
-m_type = "e2e"
+m_type = "pipe"
+# m_type = "e2e"
 # model_name = "meta-llama/Llama-2-7b-chat-hf"
 # model_name = "mistralai/Mistral-7B-Instruct-v0.2"
 # model_name = "Qwen/Qwen-Audio-Chat"
 # model_name = "Qwen/Qwen1.5-7B-Chat"
-model_name = "salmonn_7b"
+# model_name = "salmonn_7b"
+model_name = "meta-llama/Meta-Llama-3-8B-Instruct"
 if m_type == "e2e":
     if "Qwen" in model_name:
         tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
@@ -169,6 +200,8 @@ if m_type == "e2e":
             vicuna_path="./SALMONN_PATHS/vicuna-7b-v1.5",
             low_resource=False,
         )
+    elif "via" in model_name:
+        model = VIA("/data/wheld3/via-7b-3/model-00001-of-00004.safetensors")
 
 else:
     asr_model_id = "openai/whisper-large-v3"
@@ -198,6 +231,7 @@ else:
     model = AutoModelForCausalLM.from_pretrained(
         model_name, device_map="auto", trust_remote_code=True, torch_dtype=torch.float16
     ).eval()
+    model.name = model_name
 
     model.generation_config = GenerationConfig.from_pretrained(
         model_name,
@@ -213,7 +247,7 @@ ds = load_dataset("WillHeld/SD-QA")["dev"].filter(lambda example: example["answe
 dial_scores = {}
 for dial in dials:
     scores = []
-    with open(f"./sdqa-res/salmonn_7b/{dial}_outs.txt", "w") as f:
+    with open(f"./sdqa-res/pipeline_llama_3/{dial}_outs.txt", "w") as f:
         for idx, ex in enumerate(tqdm(ds)):
             try:
                 id = ex["id"]
@@ -221,6 +255,8 @@ for dial in dials:
                     pred, score = get_response_end_to_end_q(model, ex, dial)
                 elif m_type == "e2e" and "salmonn" in model_name.lower():
                     pred, score = get_response_end_to_end_s(model, ex, dial)
+                elif m_type == "e2e" and "via" in model_name.lower():
+                    pred, score = get_response_end_to_end_v(model, ex, dial)
                 elif m_type != "e2e" and (
                     "qwen" in model_name.lower() and "1.5" not in model_name
                 ):
