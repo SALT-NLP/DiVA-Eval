@@ -21,6 +21,7 @@ pre_user_suffix = torch.tensor([271]).to("cuda:0")
 final_header = torch.tensor([128009, 128006, 78191, 128007, 271]).to("cuda:0")
 cache = None
 
+
 class Connector(nn.Module):
     def __init__(
         self,
@@ -112,9 +113,7 @@ def pipeline(stream, new_chunk, prompt, do_sample=False, temperature=0.001):
             tokenizer(prompt, add_special_tokens=False)["input_ids"],
             device=pre_user_suffix.device,
         )
-        suffix = torch.cat(
-            [pre_user_suffix, user_prompt_text, final_header], axis=0
-        )
+        suffix = torch.cat([pre_user_suffix, user_prompt_text, final_header], axis=0)
     else:
         suffix = final_header
     prompt = torch.cat([prefix, user_prompt, suffix], axis=0).unsqueeze(0)
@@ -134,7 +133,15 @@ def pipeline(stream, new_chunk, prompt, do_sample=False, temperature=0.001):
         global cache
         if cache is not None and i == 0:
             print()
-            print(torch.cdist(cache.double(), outputs.hidden_states[-1][-1, -1].unsqueeze(0).to("cuda:0").double()))
+            print(
+                torch.cdist(
+                    cache.double(),
+                    outputs.hidden_states[-1][-1, -1]
+                    .unsqueeze(0)
+                    .to("cuda:0")
+                    .double(),
+                )
+            )
             cache = None
         elif i == 0:
             cache = outputs.hidden_states[-1][-1, -1].unsqueeze(0).to("cuda:0").double()
@@ -168,15 +175,13 @@ def via(stream, new_chunk, prompt, do_sample=False, temperature=0.001, mode="1")
     hidden_states = whisper_encoder(input_features=input_features)["last_hidden_state"]
     prefix_embed = llama_decoder.model.embed_tokens(prefix)
     virt_tokens = connector(hidden_states).squeeze()
-        
+
     if prompt != None and prompt != "":
         user_prompt_text = torch.tensor(
             tokenizer(prompt, add_special_tokens=False)["input_ids"],
             device=pre_user_suffix.device,
         )
-        suffix = torch.cat(
-            [pre_user_suffix, user_prompt_text, final_header], axis=0
-        )
+        suffix = torch.cat([pre_user_suffix, user_prompt_text, final_header], axis=0)
     else:
         suffix = final_header
     suffix_embed = llama_decoder.model.embed_tokens(suffix)
@@ -198,7 +203,15 @@ def via(stream, new_chunk, prompt, do_sample=False, temperature=0.001, mode="1")
         global cache
         if cache is not None and i == 0:
             print()
-            print(torch.cdist(cache.double(), outputs.hidden_states[-1][-1, -1].unsqueeze(0).to("cuda:0").double()))
+            print(
+                torch.cdist(
+                    cache.double(),
+                    outputs.hidden_states[-1][-1, -1]
+                    .unsqueeze(0)
+                    .to("cuda:0")
+                    .double(),
+                )
+            )
             cache = None
         next_token_logits = outputs.logits[-1, -1, :]
         if do_sample:
@@ -235,9 +248,7 @@ demo = gr.Interface(
     [
         "state",
         gr.Audio(sources=["upload", "microphone"], streaming=False),
-        gr.Textbox(
-            value=""
-        ),
+        gr.Textbox(value=""),
         gr.Dropdown(
             choices=[
                 ("Pipelined ASR & LLM", "pipeline"),
