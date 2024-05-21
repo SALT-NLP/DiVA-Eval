@@ -48,6 +48,14 @@ def get_response_pipeline(asr_model, model, audio, dial):
         },
         {"role": "user", "content": text},
     ]
+    if "mistral" in model.name:
+        chat = [
+            {
+                "role": "user",
+                "content": "You are a helpful assistant. Give answers as a simple single sentence.\n\n"
+                + text,
+            },
+        ]
     query = tokenizer.apply_chat_template(chat, return_tensors="pt").to("cuda")
 
     output = model.generate(query, max_new_tokens=128)
@@ -176,11 +184,11 @@ if m_type == "e2e":
             ckpt="./SALMONN_PATHS/salmonn_v1.pth",
             whisper_path="./SALMONN_PATHS/whisper-large-v2",
             beats_path="./SALMONN_PATHS/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt",
-            vicuna_path="./SALMONN_PATHS/vicuna-7b-v1.5",
+            vicuna_path="./SALMONN_PATHS/vicuna-13b-v1.1",
             low_resource=False,
         )
     elif "via" in model_name:
-        model = VIA("./via-7b-cv-only/model-00001-of-00004.safetensors")
+        model = VIA("/data/wheld3/via-7b-3/model-00001-of-00004.safetensors")
 
 else:
     asr_model_id = "openai/whisper-large-v3"
