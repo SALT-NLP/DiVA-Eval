@@ -188,7 +188,7 @@ if m_type == "e2e":
             low_resource=False,
         )
     elif "via" in model_name:
-        model = VIA("/data/wheld3/via-7b-3/model-00001-of-00004.safetensors")
+        model = VIA("../llama3-via-v0/model-00001-of-00004.safetensors")
 
 else:
     asr_model_id = "openai/whisper-large-v3"
@@ -271,4 +271,5 @@ for dial in dials:
             if idx % 10 == 0 and idx != 0:
                 f.flush()
     dial_scores[dial] = np.mean(scores)
+    print(dial_scores)
 print(dial_scores)
