@@ -218,7 +218,7 @@ def qwen_audio(audio_input, prompt, do_sample=False, temperature=0.001):
         system="You are a helpful assistant.",
         history=None,
     )
-    yield from response
+    return response
 
 
 @torch.no_grad
@@ -292,19 +292,20 @@ def via(audio_input, prompt, do_sample=False, temperature=0.001):
 
 def transcribe(audio_input, text_prompt):
     print("test")
-    pipeline_resp = pipeline(audio_input, text_prompt)
+    if audio_input == None:
+        return "", ""
+    # pipeline_resp = pipeline(audio_input, text_prompt)
     via_resp = via(audio_input, text_prompt)
     qwen_resp = qwen_audio(audio_input, text_prompt)
 
     for resp in via_resp:
         v_resp = resp
-        yield v_resp, "", ""
-    for resp in pipeline_resp:
-        p_resp = resp
-        yield v_resp, p_resp, ""
-    for resp in qwen_resp:
-        q_resp = resp
-        yield v_resp, p_resp, q_resp
+        yield v_resp, ""
+    # for resp in pipeline_resp:
+    #     p_resp = resp
+    #     yield v_resp, p_resp, ""
+    # yield v_resp, p_resp, qwen_resp
+    yield v_resp, qwen_resp
 
 
 theme = gr.themes.Soft(
@@ -334,14 +335,31 @@ with gr.Blocks(theme=theme) as demo:
         audio_input = gr.Audio(
             sources=["microphone"], streaming=False, label="Audio Input"
         )
+    with gr.Row():
         prompt = gr.Textbox(value="", label="Text Prompt")
     with gr.Row():
         out1 = gr.Textbox(label="Llama 3 VIA")
-        out2 = gr.Textbox(label="Whisper + Llama 3")
-    with gr.Row():
+        out2 = gr.Textbox(label="SALMONN")
         out3 = gr.Textbox(label="Qwen Audio")
-    btn = gr.Button("Run")
-    btn.click(fn=transcribe, inputs=[audio_input, prompt], outputs=[out1, out2, out3])
+        # out4 = gr.Textbox(label="Whisper + Llama 3")
+    with gr.Row():
+        btn = gr.Button(value="Record Audio to Submit!", interactive=False)
+    audio_input.stop_recording(
+        lambda: gr.Button(
+            value="Click to compare models!", interactive=True, variant="primary"
+        ),
+        None,
+        btn,
+    )
+    btn.click(fn=transcribe, inputs=[audio_input, prompt], outputs=[out1, out3])
+    audio_input.clear(
+        lambda: gr.Button(
+            value="Record Audio to Submit!",
+            interactive=False,
+        ),
+        None,
+        btn,
+    )
 # demo = gr.Interface(
 #     transcribe,
 #     [
