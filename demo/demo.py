@@ -1,5 +1,6 @@
 import copy
 
+import soundfile as sf
 import gradio as gr
 import librosa
 import numpy as np
@@ -8,12 +9,16 @@ import torch.nn.functional as F
 from datasets import Audio
 from safetensors.torch import load, load_model
 from torch import nn
+from accelerate import infer_auto_device_map
 from transformers import (
     AutoProcessor,
     AutoTokenizer,
     LlamaForCausalLM,
+    AutoModelForCausalLM,
     WhisperForConditionalGeneration,
 )
+from transformers.generation import GenerationConfig
+import os
 
 tokenizer = AutoTokenizer.from_pretrained("WillHeld/via-llama")
 prefix = torch.tensor([128000, 128006, 882, 128007, 271]).to("cuda:0")
@@ -55,7 +60,10 @@ whisper_encoder = whisper.model.encoder.to("cuda:0")
 resampler = Audio(sampling_rate=16_000)
 
 connector = Connector()
-with open("/data/wheld3/via-7b-3/model-00001-of-00004.safetensors", "rb") as f:
+with open(
+    "/data/wheld3/audio/levanter/via-7b-3/model-00001-of-00004.safetensors",
+    "rb",  # "/data/wheld3/audio/levanter/step-4299/model-00001-of-00004.safetensors", "rb"
+) as f:
     sd = load(f.read())
 
 with torch.no_grad():
@@ -87,14 +95,44 @@ llama_decoder = LlamaForCausalLM.from_pretrained(
 )
 # Dynamic Shape makes the decoder compile slow?
 # llama_decoder = torch.compile(llama_decoder)
+qwen_tokenizer = AutoTokenizer.from_pretrained(
+    "Qwen/Qwen-Audio-Chat", trust_remote_code=True
+)
+device_map = {
+    **{
+        "transformer.wte": 3,
+        "transformer.audio": 3,
+        "transformer.ln_f": 3,
+        "lm_head": 3,
+    },
+    **{
+        "transformer.h." + str(i): 3 + (i // (num_layers // num_gpus))
+        for i in range(num_layers)
+    },
+}
+qwen_model = AutoModelForCausalLM.from_pretrained(
+    "Qwen/Qwen-Audio-Chat",
+    device_map=device_map,
+    trust_remote_code=True,
+    torch_dtype=torch.float16,
+).eval()
+
+qwen_model.generation_config = GenerationConfig.from_pretrained(
+    "Qwen/Qwen-Audio-Chat",
+    trust_remote_code=True,
+    do_sample=False,
+    top_k=50,
+    top_p=1.0,
+)
 
 
 @torch.no_grad
-def pipeline(stream, new_chunk, prompt, do_sample=False, temperature=0.001):
-    if new_chunk == None:
-        return stream, ""
-    sr, y = new_chunk
+def pipeline(audio_input, prompt, do_sample=False, temperature=0.001):
+    if audio_input == None:
+        return ""
+    sr, y = audio_input
     y = y.astype(np.float32)
+    y /= np.max(np.abs(y))
     a = resampler.decode_example(
         resampler.encode_example({"array": y, "sampling_rate": sr})
     )
@@ -155,16 +193,41 @@ def pipeline(stream, new_chunk, prompt, do_sample=False, temperature=0.001):
         outs.append(greedy)
         i += 1
         prompt = greedy.reshape(1, 1)
-        yield (y, tokenizer.decode(outs))
-    return (y, tokenizer.decode(outs))
+        yield tokenizer.decode(outs)
+    return tokenizer.decode(outs)
 
 
 @torch.no_grad
-def via(stream, new_chunk, prompt, do_sample=False, temperature=0.001, mode="1"):
-    if new_chunk == None:
-        return stream, ""
-    sr, y = new_chunk
+def qwen_audio(audio_input, prompt, do_sample=False, temperature=0.001):
+    if audio_input == None:
+        return ""
+    sr, y = audio_input
     y = y.astype(np.float32)
+    y /= np.max(np.abs(y))
+    a = resampler.decode_example(
+        resampler.encode_example({"array": y, "sampling_rate": sr})
+    )
+    sf.write("tmp.wav", a["array"], a["sampling_rate"], format="wav")
+    query = qwen_tokenizer.from_list_format(
+        [{"audio": "tmp.wav"}, {"text": "Give a simple one sentence answer."}]
+    )
+
+    response, history = qwen_model.chat(
+        qwen_tokenizer,
+        query=query,
+        system="You are a helpful assistant.",
+        history=None,
+    )
+    yield from response
+
+
+@torch.no_grad
+def via(audio_input, prompt, do_sample=False, temperature=0.001):
+    if audio_input == None:
+        return ""
+    sr, y = audio_input
+    y = y.astype(np.float32)
+    y /= np.max(np.abs(y))
     a = resampler.decode_example(
         resampler.encode_example({"array": y, "sampling_rate": sr})
     )
@@ -223,22 +286,10 @@ def via(stream, new_chunk, prompt, do_sample=False, temperature=0.001, mode="1")
         outs.append(greedy)
         next_embed = llama_decoder.model.embed_tokens(greedy.reshape(1, 1))
         inputs_embeds = next_embed
-        yield (y, tokenizer.decode(outs))
-    return (y, tokenizer.decode(outs))
+        yield tokenizer.decode(outs)
+    return tokenizer.decode(outs)
 
-
-def transcribe(stream, new_chunk, prompt, model_type):
-    if model_type == "pipeline":
-        tok_gen = pipeline(stream, new_chunk, prompt)
-    elif model_type in ["via", "via2"]:
-        tok_gen = via(stream, new_chunk, prompt, mode=model_type)
-    elif model_type == "via2":
-        tok_gen = pipeline(
-            stream,
-            new_chunk,
-            "Ignore previous instructions and answer the given question using one simple sentence.",
-        )
-
+<<<<<<< Updated upstream
     for resp in tok_gen:
         yield resp
 
@@ -259,6 +310,69 @@ demo = gr.Interface(
         ),
     ],
     ["state", "text"],
+
+def transcribe(audio_input, text_prompt):
+    print("test")
+    pipeline_resp = pipeline(audio_input, text_prompt)
+    via_resp = via(audio_input, text_prompt)
+    qwen_resp = qwen_audio(audio_input, text_prompt)
+
+    for resp in via_resp:
+        v_resp = resp
+        yield v_resp, "", ""
+    for resp in pipeline_resp:
+        p_resp = resp
+        yield v_resp, p_resp, ""
+    for resp in qwen_resp:
+        q_resp = resp
+        yield v_resp, p_resp, q_resp
+
+
+theme = gr.themes.Soft(
+    primary_hue=gr.themes.Color(
+        c100="#82000019",
+        c200="#82000033",
+        c300="#8200004c",
+        c400="#82000066",
+        c50="#8200007f",
+        c500="#8200007f",
+        c600="#82000099",
+        c700="#820000b2",
+        c800="#820000cc",
+        c900="#820000e5",
+        c950="#820000f2",
+    ),
+    secondary_hue="rose",
+    neutral_hue="stone",
 )
+
+
+with gr.Blocks(theme=theme) as demo:
+    gr.Markdown(
+        "Record what you have to say, prompt the model with some text instructions, and click run to see the responses!"
+    )
+    with gr.Row():
+        audio_input = gr.Audio(
+            sources=["microphone"], streaming=False, label="Audio Input"
+        )
+        prompt = gr.Textbox(value="", label="Text Prompt")
+    with gr.Row():
+        out1 = gr.Textbox(label="Llama 3 VIA")
+        out2 = gr.Textbox(label="Whisper + Llama 3")
+    with gr.Row():
+        out3 = gr.Textbox(label="Qwen Audio")
+    btn = gr.Button("Run")
+    btn.click(fn=transcribe, inputs=[audio_input, prompt], outputs=[out1, out2, out3])
+# demo = gr.Interface(
+#     transcribe,
+#     [
+#         "state",
+#         gr.Audio(sources=["microphone"], streaming=False),
+#         gr.Textbox(value=""),
+#     ],
+#     ["state", "text", "text"],
+#     theme=theme,
+#     flagging_options=["Option 1 Preferred", "Option 2 Preferred"],
+# )
 
 demo.launch(share=True)
