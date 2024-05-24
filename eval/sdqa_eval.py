@@ -18,6 +18,7 @@ from transformers.generation import GenerationConfig
 
 from models.salmonn import SALMONN
 from models.via import VIA
+from load_via_eval import load_via_eval
 
 torch.manual_seed(1234)
 cfm = CFMatcher()
@@ -230,7 +231,7 @@ else:
         temperature=1.0,
     )
 
-ds = load_dataset("WillHeld/SD-QA")["dev"].filter(lambda example: example["answers"])
+ds = load_via_eval("WillHeld/SD-QA")
 dial_scores = {}
 for dial in dials:
     scores = []
