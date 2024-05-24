@@ -289,27 +289,6 @@ def via(audio_input, prompt, do_sample=False, temperature=0.001):
         yield tokenizer.decode(outs)
     return tokenizer.decode(outs)
 
-<<<<<<< Updated upstream
-    for resp in tok_gen:
-        yield resp
-
-
-demo = gr.Interface(
-    transcribe,
-    [
-        "state",
-        gr.Audio(sources=["upload", "microphone"], streaming=False),
-        gr.Textbox(value=""),
-        gr.Dropdown(
-            choices=[
-                ("Pipelined ASR & LLM", "pipeline"),
-                ("Model Fused Using Transcription", "via"),
-                ("Model Fused Using Distillation", "via2"),
-            ],
-            value="via2",
-        ),
-    ],
-    ["state", "text"],
 
 def transcribe(audio_input, text_prompt):
     print("test")
