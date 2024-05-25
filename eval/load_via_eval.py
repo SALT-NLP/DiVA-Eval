@@ -245,6 +245,49 @@ def load_mustard_sarcasm(dataset_name="SALT-NLP/Mustard_sarcasm"):
     return x_label, y_label, ds
 
 
+def load_commonvoice_classification(
+    dataset_name="mozilla-foundation/common_voice_17_0",
+):
+    import numpy as np
+
+    # https://huggingface.co/datasets/mozilla-foundation/common_voice_17_0
+    # features: ['client_id', 'path', 'audio', 'sentence', 'up_votes', 'down_votes', 'age', 'gender', 'accent', 'locale', 'segment', 'variant']
+    # example_data = {
+    #     "client_id": "000abb3006b78ea4c1144e55d9d158f05a9db0110160510fef2b006f2c2c8e35f7bb538b04542511834b61503cdda5b0331566a5cf59dc0d375a44afc4d10777",
+    #     "path": "en_test_0/common_voice_en_27710027.mp3",
+    #     "audio": {
+    #         "path": "en_test_0/common_voice_en_27710027.mp3",
+    #         "array": np.array(
+    #             [
+    #                 -5.68434189e-13,
+    #                 -1.25055521e-12,
+    #                 -6.13908924e-12,
+    #                 -1.00076851e-03,
+    #                 -4.13570320e-04,
+    #                 -2.24993564e-05,
+    #             ]
+    #         ),
+    #         "sampling_rate": 48000,
+    #     },
+    #     "sentence": "Joe Keaton disapproved of films, and Buster also had reservations about the medium.",
+    #     "up_votes": 3,
+    #     "down_votes": 1,
+    #     "age": "",
+    #     "gender": "",
+    #     "accent": "",
+    #     "locale": "en",
+    #     "segment": "",
+    #     "variant": "",
+    # }
+
+    # the name of x and y
+    x_label, y_label = "audio", "sentence"
+    ds = load_dataset(dataset_name, "en", split="test", streaming=True)
+    # filter
+    ds = ds.filter(lambda example: example[y_label])
+    return x_label, y_label, ds
+
+
 ###### this is a template ######
 # def load_xxxname(dataset_name="xxxx"):
 #     # website, e.g., https://huggingface.co/datasets/yijingwu/HeySQuAD_human
