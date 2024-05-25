@@ -231,7 +231,7 @@ else:
         temperature=1.0,
     )
 
-ds = load_via_eval("WillHeld/SD-QA")
+ds = load_via_eval("Spoken_Dialect_QA")
 dial_scores = {}
 for dial in dials:
     scores = []
