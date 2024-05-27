@@ -9,7 +9,7 @@ def load_via_eval(
     language=None,
 ):
     if dataset_name == "Spoken_Dialect_QA":
-        return load_SDQA()
+        return load_SDQA(language=language)
     elif dataset_name == "speech_fairness":
         return load_speech_fairness()
     elif dataset_name == "non_social_HeySquad_QA":
@@ -28,10 +28,10 @@ def load_via_eval(
         return load_google_fleurs_speaker_identify(language=language)
 
 
-def load_SDQA(dataset_name="WillHeld/SD-QA"):
+def load_SDQA(language, dataset_name="WillHeld/SD-QA"):
     # https://huggingface.co/datasets/WillHeld/SD-QA
     # the name of x and y
-    x_label, y_label = "question", "answers"
+    x_label, y_label = language, "answers"
     # load the right partition
     ds = load_dataset(dataset_name)["dev"]
     # filter

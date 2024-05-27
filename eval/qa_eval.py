@@ -233,9 +233,10 @@ else:
 
 # dataset_name = "Spoken_Dialect_QA"
 dataset_name = "non_social_HeySquad_QA"
-ds = load_via_eval(dataset_name)
+dials = ["default"]
 dial_scores = {}
 for dial in dials:
+    x_label, y_label, ds = load_via_eval(dataset_name, language=dial)
     scores = []
     name_short = model_name.lower().split("/")[-1]
     filename = f"./{dataset_name}_Results/{m_type}_{name_short}/{dial}_outs.txt"
@@ -245,21 +246,21 @@ for dial in dials:
             try:
                 id = ex["id"]
                 if m_type == "e2e" and "qwen" in name_short:
-                    pred = get_response_end_to_end_q(model, ex, dial)
+                    pred = get_response_end_to_end_q(model, ex, x_label)
                 elif m_type == "e2e" and "salmonn" in name_short:
-                    pred = get_response_end_to_end_s(model, ex, dial)
+                    pred = get_response_end_to_end_s(model, ex, x_label)
                 elif m_type == "e2e" and "via" in name_short:
-                    pred = get_response_end_to_end_v(model, ex, dial)
+                    pred = get_response_end_to_end_v(model, ex, x_label)
                 elif m_type != "e2e" and (
                     "qwen" in name_short and "1.5" not in name_short
                 ):
-                    pred = get_response_pipeline_qwen(asr, model, ex, dial)
+                    pred = get_response_pipeline_qwen(asr, model, ex, x_label)
                 else:
-                    pred = get_response_pipeline(asr, model, ex, dial)
+                    pred = get_response_pipeline(asr, model, ex, x_label)
                 scores = [
                     value[pred]
                     for value in cfm.get_scores(
-                        ex["answers"], pred, ex["question"]
+                        ex[y_label], pred, ex["question"]
                     ).values()
                 ]
                 score = max(scores)
