@@ -6,7 +6,7 @@ TEST_SIZE = 0.2  # if no val/test already
 
 def load_via_eval(
     dataset_name,
-    language,
+    language=None,
 ):
     if dataset_name == "Spoken_Dialect_QA":
         return load_SDQA()
