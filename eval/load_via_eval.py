@@ -6,7 +6,7 @@ TEST_SIZE = 0.2  # if no val/test already
 
 def load_via_eval(
     dataset_name,
-    langauge,
+    language,
 ):
     if dataset_name == "Spoken_Dialect_QA":
         return load_SDQA()
@@ -23,9 +23,9 @@ def load_via_eval(
     elif dataset_name == "Mustard_sarcasm":
         return load_mustard_sarcasm()
     elif dataset_name == "CommonVoice_speaker_identity":
-        return load_commonvoice_classification(language=langauge)
+        return load_commonvoice_classification(language=language)
     elif dataset_name == "FLEURS_speaker_identity":
-        return load_google_fleurs_speaker_identify(language=langauge)
+        return load_google_fleurs_speaker_identify(language=language)
 
 
 def load_SDQA(dataset_name="WillHeld/SD-QA"):
@@ -555,7 +555,7 @@ def load_google_fleurs_speaker_identify(language, dataset_name="google/fleurs"):
 if __name__ == "__main__":
     x_label, y_label, ds = load_via_eval(
         dataset_name="CommonVoice_speaker_identity",
-        langauge="af_za",
+        language="af_za",
     )
     import pdb
 
