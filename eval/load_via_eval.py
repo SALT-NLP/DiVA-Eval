@@ -55,13 +55,17 @@ def load_speech_fairness(dataset_name="SALT-NLP/speech_fairness"):
 
 
 def load_HeySquad(dataset_name="yijingwu/HeySQuAD_human"):
+    def extract_answer(ex):
+        ex["answers"] = [answer_json["text"] for answer_json in ex["answers"]]
+        return ex
+
     # https://huggingface.co/datasets/yijingwu/HeySQuAD_human
     # the name of x and y
     x_label, y_label = "audio", "answers"
     # load the right partition
     ds = load_dataset(dataset_name)["validation"]  # no test partition
     # filter
-    ds = ds.filter(lambda example: example[y_label])
+    ds = ds.filter(lambda example: example[y_label]).map(extract_answer)
     return x_label, y_label, ds
 
 

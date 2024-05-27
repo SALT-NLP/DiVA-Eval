@@ -231,12 +231,14 @@ else:
         temperature=1.0,
     )
 
-ds = load_via_eval("Spoken_Dialect_QA")
+# dataset_name = "Spoken_Dialect_QA"
+dataset_name = "non_social_HeySquad_QA"
+ds = load_via_eval(dataset_name)
 dial_scores = {}
 for dial in dials:
     scores = []
     name_short = model_name.lower().split("/")[-1]
-    filename = f"./sdqa-res/{m_type}_{name_short}/{dial}_outs.txt"
+    filename = f"./{dataset_name}_Results/{m_type}_{name_short}/{dial}_outs.txt"
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     with open(filename, "w") as f:
         for idx, ex in enumerate(tqdm(ds)):
@@ -265,8 +267,9 @@ for dial in dials:
                 print(e)
                 print(id)
                 pred = "ERROR IN PROCESSING"
-                score = 0.0
-            scores.append(score)
+                score = "NA"
+            if score == "NA":
+                scores.append(score)
             pred_rep = '"""' + pred.replace("\n", "[NEW_LINE]") + '"""'
             f.write(f"{id}[SEP_DIAL]{pred_rep}[SEP_DIAL]{score}\n")
             if idx % 10 == 0 and idx != 0:
