@@ -245,12 +245,12 @@ def load_mustard_sarcasm(dataset_name="SALT-NLP/Mustard_sarcasm"):
     # the name of x and y
     x_label, y_label = "audio", "sarcasm"
     # load the right partition
-    ds = load_dataset(dataset_name).train_test_split(
-        test_size=TEST_SIZE,
-        seed=SEED,
-    )  # no test partition
+    ds = load_dataset(dataset_name)["train"]  # .train_test_split(
+    #     test_size=TEST_SIZE,
+    #     seed=SEED,
+    # )  # no test partition
     # filter
-    ds = ds.filter(lambda example: example[y_label])
+    ds = ds.filter(lambda example: example[y_label] != None)
     return x_label, y_label, ds
 
 
