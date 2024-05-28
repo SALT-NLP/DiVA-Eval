@@ -12,14 +12,14 @@ from transformers import (
     AutoModelForSpeechSeq2Seq,
     AutoProcessor,
     AutoTokenizer,
-    pipeline,
     PrefixConstrainedLogitsProcessor,
+    pipeline,
 )
 from transformers.generation import GenerationConfig
 
+from load_via_eval import load_via_eval
 from models.salmonn import SALMONN
 from models.via import VIA
-from load_via_eval import load_via_eval
 
 torch.manual_seed(1234)
 cfm = CFMatcher()
@@ -46,9 +46,9 @@ def get_response_pipeline(asr_model, model, audio, dial):
     chat = [
         {
             "role": "system",
-            "content": "Is the following statement sarcastic?",
+            "content": "You are a helpful assistant.",
         },
-        {"role": "user", "content": text},
+        {"role": "user", "content": text + "\n" + prompt},
         {"role": "assistant", "content": ""},
     ]
     if "mistral" in model.name:
@@ -109,6 +109,11 @@ def get_response_pipeline_qwen(asr_model, model, audio, dial):
 
 
 def label_forcing(labels):
+    add_spaces = [
+        len(tokenizer(" " + label).input_ids) == len(tokenizer(label).input_ids)
+        for label in labels
+    ]
+    labels = [" " + label if add_spaces[i] else label for i, label in enumerate(labels)]
     if hasattr(tokenizer, "tokenizer"):
         tokens = [tokenizer.tokenize(label) for label in labels]
         label_tokens = [
@@ -140,7 +145,7 @@ def get_response_end_to_end_s(model, audio, dial):
     with torch.cuda.amp.autocast(dtype=torch.float16):
         llm_message = model.generate(
             wav_path="tmp.wav",
-            prompt="\nIs the previous statement sarcastic?",
+            prompt="\n" + prompt,
             do_sample=False,
             top_p=1.0,
             logits_processor=logits_processor,
@@ -157,7 +162,7 @@ def get_response_end_to_end_v(model, audio, dial):
     with torch.cuda.amp.autocast(dtype=torch.float16):
         llm_message = model.generate(
             audio=value["array"],
-            prompt="\nIs the previous statement sarcastic?",
+            prompt="\n" + prompt,
             logits_processor=logits_processor,
             max_new_tokens=1,
         )
@@ -173,7 +178,7 @@ def get_response_end_to_end_q(model, audio, dial):
     query = tokenizer.from_list_format(
         [
             {"audio": "tmp.wav"},
-            {"text": "\nIs the previous statement sarcastic?"},
+            {"text": "\n" + prompt},
         ]
     )
 
@@ -270,14 +275,21 @@ else:
         top_p=1.0,
         temperature=1.0,
     )
-labels = ["Yes", "No"]
-label_map = {"Yes": True, "No": False}
+
+dataset_name = "Mustard_sarcasm"
+dataset_config = {
+    "Mustard_sarcasm": (
+        {"Yes": True, "No": False},
+        "Is the previous statement sarcastic?",
+    )
+}
+
+label_map = dataset_config[dataset_name][0]
+prompt = dataset_config[dataset_name][1]
+labels = list(label_map.keys())
 logits_processor = PrefixConstrainedLogitsProcessor(
     prefix_allowed_tokens_fn=label_forcing(labels), num_beams=1
 )
-
-# dataset_name = "Spoken_Dialect_QA"
-dataset_name = "Mustard_sarcasm"
 dials = ["default"]
 dial_scores = {}
 for dial in dials:
@@ -303,7 +315,7 @@ for dial in dials:
                     pred = get_response_pipeline(asr, model, ex, x_label)
                 print(pred)
                 print(ex[y_label])
-                score = label_map[pred] == ex[y_label]
+                score = 1 if label_map[pred.strip()] == ex[y_label] else 0
             else:  # except Exception as e:
                 print("ERROR")
                 print(e)
