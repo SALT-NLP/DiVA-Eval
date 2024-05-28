@@ -26,6 +26,10 @@ def load_via_eval(
         return load_commonvoice_classification(language=langauge)
     elif dataset_name == "FLEURS_speaker_identity":
         return load_google_fleurs_speaker_identify(language=langauge)
+    elif dataset_name == "Callhome_relationships":
+        return load_callhome_relationships()
+    elif dataset_name == "URFunny_humor":
+        return load_urfunny_humor()
 
 
 def load_SDQA(dataset_name="WillHeld/SD-QA"):
@@ -532,6 +536,29 @@ def load_google_fleurs_speaker_identify(language, dataset_name="google/fleurs"):
     ds = load_dataset(
         dataset_name, language, split="test", streaming=True
     )  # no test partition
+    # filter
+    ds = ds.filter(lambda example: example[y_label])
+    return x_label, y_label, ds
+
+def load_callhome_relationships(dataset_name="SALT-NLP/Callhome_relationships"):
+    # website, e.g., https://huggingface.co/datasets/yijingwu/HeySQuAD_human
+    # the name of x and y
+    x_label, y_label = "audio", "Speaker A - Primary"
+    # load the right partition
+    ds = load_dataset(dataset_name).train_test_split(
+        test_size=TEST_SIZE,
+        seed=SEED,
+    )  # no test partition
+    # filter
+    ds = ds.filter(lambda example: example[y_label])
+    return x_label, y_label, ds
+
+def load_urfunny_humor(dataset_name="SALT-NLP/URFunny_humor"):
+    # website, e.g., https://huggingface.co/datasets/yijingwu/HeySQuAD_human
+    # the name of x and y
+    x_label, y_label = "audio", "label"
+    # load the right partition
+    ds = load_dataset(dataset_name, split="test", streaming=True)
     # filter
     ds = ds.filter(lambda example: example[y_label])
     return x_label, y_label, ds
