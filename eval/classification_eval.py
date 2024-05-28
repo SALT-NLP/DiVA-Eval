@@ -13,6 +13,7 @@ from transformers import (
     AutoProcessor,
     AutoTokenizer,
     pipeline,
+    PrefixConstrainedLogitsProcessor,
 )
 from transformers.generation import GenerationConfig
 
@@ -45,9 +46,10 @@ def get_response_pipeline(asr_model, model, audio, dial):
     chat = [
         {
             "role": "system",
-            "content": "You are a helpful assistant. Give answers as a simple single sentence.",
+            "content": "Is the following statement sarcastic?",
         },
         {"role": "user", "content": text},
+        {"role": "assistant", "content": ""},
     ]
     if "mistral" in model.name:
         chat = [
@@ -59,7 +61,9 @@ def get_response_pipeline(asr_model, model, audio, dial):
         ]
     query = tokenizer.apply_chat_template(chat, return_tensors="pt").to("cuda")
 
-    output = model.generate(query, max_new_tokens=128)
+    output = model.generate(
+        query, max_new_tokens=1, logits_processor=[logits_processor]
+    )
     # Mistral & Llama
     if "Llama-3" in model.name:
         split_token = "<|start_header_id|>assistant<|end_header_id|>"
@@ -104,6 +108,31 @@ def get_response_pipeline_qwen(asr_model, model, audio, dial):
     return response
 
 
+def label_forcing(labels):
+    if hasattr(tokenizer, "tokenizer"):
+        tokens = [tokenizer.tokenize(label) for label in labels]
+        label_tokens = [
+            tokenizer.convert_tokens_to_ids(token_label) for token_label in tokens
+        ]
+    else:
+        label_tokens = tokenizer.batch_encode_plus(
+            labels, add_special_tokens=False
+        ).input_ids
+
+    for label_token in label_tokens:
+        if len(label_token) > 1:
+            print("WARNING: Label Is Multiple Tokens, Only Using the First")
+
+    label_tokens = [label_token[0] for label_token in label_tokens]
+
+    assert len(set(label_tokens)) == len(label_tokens), "Labels are Not Unique"
+
+    def prefix_allowed_tokens_fn(batch_id, input_ids):
+        return label_tokens
+
+    return prefix_allowed_tokens_fn
+
+
 @torch.no_grad
 def get_response_end_to_end_s(model, audio, dial):
     value = audio[dial]
@@ -111,9 +140,11 @@ def get_response_end_to_end_s(model, audio, dial):
     with torch.cuda.amp.autocast(dtype=torch.float16):
         llm_message = model.generate(
             wav_path="tmp.wav",
-            prompt="You are a helpful assistant. Give a simple one sentence answer.",
+            prompt="\nIs the previous statement sarcastic?",
             do_sample=False,
             top_p=1.0,
+            logits_processor=logits_processor,
+            max_new_tokens=1,
         )
     response = llm_message[0]
 
@@ -126,7 +157,9 @@ def get_response_end_to_end_v(model, audio, dial):
     with torch.cuda.amp.autocast(dtype=torch.float16):
         llm_message = model.generate(
             audio=value["array"],
-            prompt="You are a helpful assistant. Give a simple one sentence answer.",
+            prompt="\nIs the previous statement sarcastic?",
+            logits_processor=logits_processor,
+            max_new_tokens=1,
         )
     response = llm_message
 
@@ -138,14 +171,19 @@ def get_response_end_to_end_q(model, audio, dial):
     value = audio[dial]
     sf.write("tmp.wav", value["array"], value["sampling_rate"], format="wav")
     query = tokenizer.from_list_format(
-        [{"audio": "tmp.wav"}, {"text": "Give a simple one sentence answer."}]
+        [
+            {"audio": "tmp.wav"},
+            {"text": "\nIs the previous statement sarcastic?"},
+        ]
     )
 
     response, history = model.chat(
         tokenizer,
         query=query,
-        system="You are a helpful assistant.",
+        system="",
         history=None,
+        logits_processor=[logits_processor],
+        max_new_tokens=2,
     )
     return response
 
@@ -188,8 +226,10 @@ if m_type == "e2e":
             vicuna_path="./SALMONN_PATHS/vicuna-13b-v1.1",
             low_resource=False,
         )
+        tokenizer = model.llama_tokenizer
     elif "via" in model_name:
         model = VIA("../llama3-via-v0/model-00001-of-00004.safetensors")
+        tokenizer = model.tokenizer
 
 else:
     asr_model_id = "openai/whisper-large-v3"
@@ -230,45 +270,50 @@ else:
         top_p=1.0,
         temperature=1.0,
     )
+labels = ["Yes", "No"]
+label_map = {"Yes": True, "No": False}
+logits_processor = PrefixConstrainedLogitsProcessor(
+    prefix_allowed_tokens_fn=label_forcing(labels), num_beams=1
+)
 
-ds = load_via_eval("Spoken_Dialect_QA")
+# dataset_name = "Spoken_Dialect_QA"
+dataset_name = "Mustard_sarcasm"
+dials = ["default"]
 dial_scores = {}
 for dial in dials:
+    x_label, y_label, ds = load_via_eval(dataset_name, language=dial)
     scores = []
     name_short = model_name.lower().split("/")[-1]
-    filename = f"./sdqa-res/{m_type}_{name_short}/{dial}_outs.txt"
+    filename = f"./{dataset_name}_Results/{m_type}_{name_short}/{dial}_outs.txt"
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     with open(filename, "w") as f:
         for idx, ex in enumerate(tqdm(ds)):
-            try:
-                id = ex["id"]
+            if True:
                 if m_type == "e2e" and "qwen" in name_short:
-                    pred = get_response_end_to_end_q(model, ex, dial)
+                    pred = get_response_end_to_end_q(model, ex, x_label)
                 elif m_type == "e2e" and "salmonn" in name_short:
-                    pred = get_response_end_to_end_s(model, ex, dial)
+                    pred = get_response_end_to_end_s(model, ex, x_label)
                 elif m_type == "e2e" and "via" in name_short:
-                    pred = get_response_end_to_end_v(model, ex, dial)
+                    pred = get_response_end_to_end_v(model, ex, x_label)
                 elif m_type != "e2e" and (
                     "qwen" in name_short and "1.5" not in name_short
                 ):
-                    pred = get_response_pipeline_qwen(asr, model, ex, dial)
+                    pred = get_response_pipeline_qwen(asr, model, ex, x_label)
                 else:
-                    pred = get_response_pipeline(asr, model, ex, dial)
-                scores = [
-                    value[pred]
-                    for value in cfm.get_scores(
-                        ex["answers"], pred, ex["question"]
-                    ).values()
-                ]
-                score = max(scores)
-            except Exception as e:
+                    pred = get_response_pipeline(asr, model, ex, x_label)
+                print(pred)
+                print(ex[y_label])
+                score = label_map[pred] == ex[y_label]
+            else:  # except Exception as e:
+                print("ERROR")
                 print(e)
-                print(id)
+                print(idx)
                 pred = "ERROR IN PROCESSING"
-                score = 0.0
-            scores.append(score)
+                score = "NA"
+            if score != "NA":
+                scores.append(score)
             pred_rep = '"""' + pred.replace("\n", "[NEW_LINE]") + '"""'
-            f.write(f"{id}[SEP_DIAL]{pred_rep}[SEP_DIAL]{score}\n")
+            f.write(f"{idx}[SEP_DIAL]{pred_rep}[SEP_DIAL]{score}\n")
             if idx % 10 == 0 and idx != 0:
                 f.flush()
     dial_scores[dial] = np.mean(scores)

@@ -6,10 +6,10 @@ TEST_SIZE = 0.2  # if no val/test already
 
 def load_via_eval(
     dataset_name,
-    langauge,
+    language=None,
 ):
     if dataset_name == "Spoken_Dialect_QA":
-        return load_SDQA()
+        return load_SDQA(language=language)
     elif dataset_name == "speech_fairness":
         return load_speech_fairness()
     elif dataset_name == "non_social_HeySquad_QA":
@@ -23,7 +23,7 @@ def load_via_eval(
     elif dataset_name == "Mustard_sarcasm":
         return load_mustard_sarcasm()
     elif dataset_name == "CommonVoice_speaker_identity":
-        return load_commonvoice_classification(language=langauge)
+        return load_commonvoice_classification(language=language)
     elif dataset_name == "FLEURS_speaker_identity":
         return load_google_fleurs_speaker_identify(language=langauge)
     elif dataset_name == "Callhome_relationships":
@@ -32,10 +32,10 @@ def load_via_eval(
         return load_urfunny_humor()
 
 
-def load_SDQA(dataset_name="WillHeld/SD-QA"):
+def load_SDQA(language, dataset_name="WillHeld/SD-QA"):
     # https://huggingface.co/datasets/WillHeld/SD-QA
     # the name of x and y
-    x_label, y_label = "question", "answers"
+    x_label, y_label = language, "answers"
     # load the right partition
     ds = load_dataset(dataset_name)["dev"]
     # filter
@@ -59,13 +59,17 @@ def load_speech_fairness(dataset_name="SALT-NLP/speech_fairness"):
 
 
 def load_HeySquad(dataset_name="yijingwu/HeySQuAD_human"):
+    def extract_answer(ex):
+        ex["answers"] = [answer_json["text"] for answer_json in ex["answers"]]
+        return ex
+
     # https://huggingface.co/datasets/yijingwu/HeySQuAD_human
     # the name of x and y
     x_label, y_label = "audio", "answers"
     # load the right partition
     ds = load_dataset(dataset_name)["validation"]  # no test partition
     # filter
-    ds = ds.filter(lambda example: example[y_label])
+    ds = ds.filter(lambda example: example[y_label]).map(extract_answer)
     return x_label, y_label, ds
 
 
@@ -578,7 +582,7 @@ def load_urfunny_humor(dataset_name="SALT-NLP/URFunny_humor"):
 if __name__ == "__main__":
     x_label, y_label, ds = load_via_eval(
         dataset_name="CommonVoice_speaker_identity",
-        langauge="af_za",
+        language="af_za",
     )
     import pdb
 
