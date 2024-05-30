@@ -25,7 +25,7 @@ def load_via_eval(
     elif dataset_name == "CommonVoice_speaker_identity":
         return load_commonvoice_classification(language=language)
     elif dataset_name == "FLEURS_speaker_identity":
-        return load_google_fleurs_speaker_identify(language=langauge)
+        return load_google_fleurs_speaker_identify(language=language)
     elif dataset_name == "Callhome_relationships":
         return load_callhome_relationships()
     elif dataset_name == "URFunny_humor":
@@ -544,6 +544,7 @@ def load_google_fleurs_speaker_identify(language, dataset_name="google/fleurs"):
     ds = ds.filter(lambda example: example[y_label])
     return x_label, y_label, ds
 
+
 def load_callhome_relationships(dataset_name="SALT-NLP/Callhome_relationships"):
     # website, e.g., https://huggingface.co/datasets/yijingwu/HeySQuAD_human
     # the name of x and y
@@ -556,6 +557,7 @@ def load_callhome_relationships(dataset_name="SALT-NLP/Callhome_relationships"):
     # filter
     ds = ds.filter(lambda example: example[y_label])
     return x_label, y_label, ds
+
 
 def load_urfunny_humor(dataset_name="SALT-NLP/URFunny_humor"):
     # website, e.g., https://huggingface.co/datasets/yijingwu/HeySQuAD_human
