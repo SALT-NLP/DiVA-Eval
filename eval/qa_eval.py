@@ -236,7 +236,7 @@ dataset_name = "non_social_HeySquad_QA"
 dials = ["default"]
 dial_scores = {}
 for dial in dials:
-    x_label, y_label, ds = load_via_eval(dataset_name, language=dial)
+    x_label, y_label, ds = load_via_eval(dataset_name, language=dial, split="test")
     scores = []
     name_short = model_name.lower().split("/")[-1]
     filename = f"./{dataset_name}_Results/{m_type}_{name_short}/{dial}_outs.txt"

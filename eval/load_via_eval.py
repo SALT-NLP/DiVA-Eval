@@ -7,58 +7,81 @@ TEST_SIZE = 0.2  # if no val/test already
 def load_via_eval(
     dataset_name,
     language=None,
+    split="test",
 ):
     if dataset_name == "Spoken_Dialect_QA":
-        return load_SDQA(language=language)
+        return load_SDQA(language=language, split=split)
     elif dataset_name == "speech_fairness":
-        return load_speech_fairness()
+        return load_speech_fairness(split=split)
     elif dataset_name == "non_social_HeySquad_QA":
-        return load_HeySquad()
+        return load_HeySquad(split=split)
     elif dataset_name == "non_social_SLURP_speaker_intent":
-        return load_SLURP()
+        return load_SLURP(split=split)
     elif dataset_name == "IEMOCAP_emotion_recognition":
-        return load_IEMOCAP_emotion_recognition()
+        return load_IEMOCAP_emotion_recognition(split=split)
     elif dataset_name == "MELD_emotion_recognition":
-        return load_MELD_emotion_recognition()
+        return load_MELD_emotion_recognition(split=split)
     elif dataset_name == "Mustard_sarcasm":
-        return load_mustard_sarcasm()
+        return load_mustard_sarcasm(split=split)
     elif dataset_name == "CommonVoice_speaker_identity":
-        return load_commonvoice_classification(language=language)
+        return load_commonvoice_classification(language=language, split=split)
     elif dataset_name == "FLEURS_speaker_identity":
-        return load_google_fleurs_speaker_identify(language=language)
+        return load_google_fleurs_speaker_identify(language=language, split=split)
     elif dataset_name == "Callhome_relationships":
-        return load_callhome_relationships()
+        return load_callhome_relationships(split=split)
     elif dataset_name == "URFunny_humor":
-        return load_urfunny_humor()
+        return load_urfunny_humor(split=split)
 
 
-def load_SDQA(language, dataset_name="WillHeld/SD-QA"):
+def load_SDQA(
+    language,
+    dataset_name="WillHeld/SD-QA",
+    split="test",
+):
     # https://huggingface.co/datasets/WillHeld/SD-QA
     # the name of x and y
     x_label, y_label = language, "answers"
     # load the right partition
-    ds = load_dataset(dataset_name)["dev"]
+    split_map = {"dev": "dev", "test": "test"}
+    ds = load_dataset(dataset_name)[split_map[split]]
     # filter
     ds = ds.filter(lambda example: example[y_label])
 
     return x_label, y_label, ds
 
 
-def load_speech_fairness(dataset_name="SALT-NLP/speech_fairness"):
+def load_speech_fairness(
+    dataset_name="SALT-NLP/speech_fairness",
+    split="test",
+):
     # https://huggingface.co/datasets/SALT-NLP/speech_fairness
     # the name of x and y
     x_label, y_label = "audio", "transcription"
     # load the right partition
-    ds = load_dataset(dataset_name).train_test_split(
+    ds_train = load_dataset(dataset_name)["train"].train_test_split(
         test_size=TEST_SIZE,
         seed=SEED,
     )
+    ds_test = ds_train["test"].train_test_split(
+        test_size=0.5,
+        seed=SEED,
+    )
+    split_map = {"train": "train", "dev": "dev", "test": "test"}
+    if split == "train":
+        ds = ds_train["train"]
+    elif split == "dev":
+        ds = ds_test["train"]
+    elif split == "test":
+        ds = ds_test["test"]
     # filter
     ds = ds.filter(lambda example: example[y_label])
     return x_label, y_label, ds
 
 
-def load_HeySquad(dataset_name="yijingwu/HeySQuAD_human"):
+def load_HeySquad(
+    dataset_name="yijingwu/HeySQuAD_human",
+    split="test",
+):
     def extract_answer(ex):
         ex["answers"] = [answer_json["text"] for answer_json in ex["answers"]]
         return ex
@@ -67,18 +90,37 @@ def load_HeySquad(dataset_name="yijingwu/HeySQuAD_human"):
     # the name of x and y
     x_label, y_label = "audio", "answers"
     # load the right partition
-    ds = load_dataset(dataset_name)["validation"]  # no test partition
+    # ["validation"]  # no test partition
+    ds_original = load_dataset(dataset_name)
+    ds_train_val = ds_original["train"].train_test_split(
+        test_size=0.06,
+        seed=SEED,
+    )
+    ds_train = ds_train_val["train"]
+    ds_valid = ds_train_val["test"]
+    ds_test = ds["test"]
+    split_map = {"train": "train", "dev": "dev", "test": "test"}
+    if split == "train":
+        ds = ds_train
+    elif split == "dev":
+        ds = ds_valid
+    elif split == "test":
+        ds = ds_test
     # filter
     ds = ds.filter(lambda example: example[y_label]).map(extract_answer)
     return x_label, y_label, ds
 
 
-def load_SLURP(dataset_name="qmeeus/slurp"):
+def load_SLURP(
+    dataset_name="qmeeus/slurp",
+    split="test",
+):
     # https://huggingface.co/datasets/qmeeus/slurp
     # the name of x and y
     x_label, y_label = "audio", "intent"
     # load the right partition
-    ds = load_dataset(dataset_name)["test"]
+    split_map = {"train": "train", "dev": "devel", "test": "test"}
+    ds = load_dataset(dataset_name)[split_map[split]]
     # filter
     ds = ds.filter(lambda example: example[y_label])
 
@@ -196,6 +238,7 @@ def load_SLURP(dataset_name="qmeeus/slurp"):
 
 def load_IEMOCAP_emotion_recognition(
     dataset_name="Zahra99/IEMOCAP_Audio",
+    split="test",
 ):
     # https://huggingface.co/datasets/Zahra99/IEMOCAP_Audio
     # the name of x and y
@@ -217,12 +260,14 @@ def load_IEMOCAP_emotion_recognition(
 
 def load_MELD_emotion_recognition(
     dataset_name="DavidCombei/Wav2Vec_MELD_Audio",
+    split="test",
 ):
     # https://huggingface.co/datasets/DavidCombei/Wav2Vec_MELD_Audio
     # the name of x and y
     x_label, y_label = "audio", "label"
     # load the right partition
-    ds = load_dataset(dataset_name)["test"]  # there are multiple sessions
+    split_map = {"train": "train", "dev": "validation", "test": "test"}
+    ds = load_dataset(dataset_name)[split_map[split]]
     # filter
     ds = ds.filter(lambda example: example[y_label])
 
@@ -244,12 +289,34 @@ def load_MELD_emotion_recognition(
     return x_label, "emotion_label", updated_ds
 
 
-def load_mustard_sarcasm(dataset_name="SALT-NLP/Mustard_sarcasm"):
-    # website, e.g., https://huggingface.co/datasets/yijingwu/HeySQuAD_human
+def load_mustard_sarcasm(
+    dataset_name="SALT-NLP/Mustard_sarcasm",
+    split="test",
+):
+    # website, e.g., https://huggingface.co/datasets/SALT-NLP/Mustard_sarcasm
     # the name of x and y
     x_label, y_label = "audio", "sarcasm"
     # load the right partition
-    ds = load_dataset(dataset_name)["train"]  # .train_test_split(
+    ds_original = load_dataset(dataset_name)
+    ds_train_val = ds_original["train"].train_test_split(
+        test_size=TEST_SIZE,
+        seed=SEED,
+    )
+    ds_train = ds_train_val["train"]
+    ds_valid_to_split = ds_train_val["test"]
+    ds_valid_to_split = ds_valid_to_split.train_test_split(
+        test_size=0.5,
+        seed=SEED,
+    )
+    ds_valid = ds_valid_to_split["train"]
+    ds_test = ds_valid_to_split["test"]
+    split_map = {"train": "train", "dev": "dev", "test": "test"}
+    if split == "train":
+        ds = ds_train
+    elif split == "dev":
+        ds = ds_valid
+    elif split == "test":
+        ds = ds_test
     #     test_size=TEST_SIZE,
     #     seed=SEED,
     # )  # no test partition
@@ -261,6 +328,7 @@ def load_mustard_sarcasm(dataset_name="SALT-NLP/Mustard_sarcasm"):
 def load_commonvoice_classification(
     language,
     dataset_name="mozilla-foundation/common_voice_17_0",
+    split="test",
 ):
     import numpy as np
 
@@ -421,13 +489,18 @@ def load_commonvoice_classification(
     ]
     # the name of x and y
     x_label, y_label = "audio", "sentence"
-    ds = load_dataset(dataset_name, language, split="test", streaming=True)
+    split_map = {"train": "train", "dev": "validation", "test": "test"}
+    ds = load_dataset(dataset_name, language, split=split_map[split], streaming=True)
     # filter
     ds = ds.filter(lambda example: example[y_label])
     return x_label, y_label, ds
 
 
-def load_google_fleurs_speaker_identify(language, dataset_name="google/fleurs"):
+def load_google_fleurs_speaker_identify(
+    language,
+    dataset_name="google/fleurs",
+    split="test",
+):
     # https://huggingface.co/datasets/google/fleurs
     # the name of x and y
     language_list = [
@@ -537,34 +610,57 @@ def load_google_fleurs_speaker_identify(language, dataset_name="google/fleurs"):
     ]
     x_label, y_label = "audio", "gender"
     # load the right partition
-    ds = load_dataset(
-        dataset_name, language, split="test", streaming=True
-    )  # no test partition
+    split_map = {"train": "train", "dev": "validation", "test": "test"}
+    ds = load_dataset(dataset_name, language, split=split_map[split], streaming=True)
     # filter
     ds = ds.filter(lambda example: example[y_label])
     return x_label, y_label, ds
 
 
-def load_callhome_relationships(dataset_name="SALT-NLP/Callhome_relationships"):
-    # website, e.g., https://huggingface.co/datasets/yijingwu/HeySQuAD_human
+def load_callhome_relationships(
+    dataset_name="SALT-NLP/Callhome_relationships",
+    split="test",
+):
+    # https://huggingface.co/datasets/SALT-NLP/Callhome_relationships
     # the name of x and y
     x_label, y_label = "audio", "Speaker A - Primary"
     # load the right partition
-    ds = load_dataset(dataset_name).train_test_split(
+    ds_original = load_dataset(dataset_name)
+    ds_train_val = ds_original["train"].train_test_split(
         test_size=TEST_SIZE,
         seed=SEED,
-    )  # no test partition
+    )
+    ds_train = ds_train_val["train"]
+    ds_valid_and_test = ds_train_val["test"]
+    ds_valid_and_test = ds_valid_and_test.train_test_split(
+        test_size=0.5,
+        seed=SEED,
+    )
+    ds_valid = ds_valid_and_test["train"]
+    ds_test = ds_valid_and_test["test"]
+
+    split_map = {"train": "train", "dev": "dev", "test": "test"}
+    if split == "train":
+        ds = ds_train
+    elif split == "dev":
+        ds = ds_valid
+    elif split == "test":
+        ds = ds_test
     # filter
     ds = ds.filter(lambda example: example[y_label])
     return x_label, y_label, ds
 
 
-def load_urfunny_humor(dataset_name="SALT-NLP/URFunny_humor"):
-    # website, e.g., https://huggingface.co/datasets/yijingwu/HeySQuAD_human
+def load_urfunny_humor(
+    dataset_name="SALT-NLP/URFunny_humor",
+    split="test",
+):
+    # website, e.g., https://huggingface.co/datasets/SALT-NLP/URFunny_humor
     # the name of x and y
     x_label, y_label = "audio", "label"
     # load the right partition
-    ds = load_dataset(dataset_name, split="test", streaming=True)
+    split_map = {"train": "train", "dev": "dev", "test": "test"}
+    ds = load_dataset(dataset_name, split=split_map[split], streaming=True)
     # filter
     ds = ds.filter(lambda example: example[y_label])
     return x_label, y_label, ds
@@ -586,6 +682,3 @@ if __name__ == "__main__":
         dataset_name="CommonVoice_speaker_identity",
         language="af_za",
     )
-    import pdb
-
-    pdb.set_trace()
