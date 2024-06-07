@@ -113,7 +113,9 @@ def label_forcing(labels):
         len(tokenizer(" " + label).input_ids) == len(tokenizer(label).input_ids)
         for label in labels
     ]
-    labels = [" " + label if add_spaces[i] else label for i, label in enumerate(labels)]
+    labels = [
+        " " + label if all(add_spaces) else label for i, label in enumerate(labels)
+    ]
     if hasattr(tokenizer, "tokenizer"):
         tokens = [tokenizer.tokenize(label) for label in labels]
         label_tokens = [
@@ -196,6 +198,12 @@ def get_response_end_to_end_q(model, audio, dial):
 parser = argparse.ArgumentParser("sdqa_args")
 parser.add_argument("m_type", help="path for transcript file", type=str)
 parser.add_argument("model_name", help="path for transcript file", type=str)
+parser.add_argument(
+    "--dataset_name",
+    help="path for transcript file",
+    type=str,
+    default="Mustard_sarcasm",
+)
 args = parser.parse_args()
 m_type = args.m_type
 model_name = args.model_name
@@ -276,12 +284,28 @@ else:
         temperature=1.0,
     )
 
-dataset_name = "Mustard_sarcasm"
+dataset_name = args.dataset_name
 dataset_config = {
     "Mustard_sarcasm": (
         {"Yes": True, "No": False},
         "Is the previous statement sarcastic?",
-    )
+    ),
+    "MELD_emotion_recognition": (
+        {
+            "Anger": "anger",
+            "Disgust": "disgust",
+            "Fear": "fear",
+            "Joy": "joy",
+            "Neutral": "neutral",
+            "Sadness": "sadness",
+            "Surprise": "surprise",
+        },
+        "What emotion does the previous statement communicate?\nIf there is no clear emotion, respond 'Neutral'.",
+    ),
+    "URFunny_humor": (
+        {"Yes": "humor", "No": "not_humor"},
+        "Is the previous statement a joke?",
+    ),
 }
 
 label_map = dataset_config[dataset_name][0]

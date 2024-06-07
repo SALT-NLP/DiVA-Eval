@@ -338,10 +338,12 @@ with gr.Blocks(theme=theme) as demo:
     with gr.Row():
         prompt = gr.Textbox(value="", label="Text Prompt")
     with gr.Row():
-        out1 = gr.Textbox(label="Llama 3 VIA")
-        out2 = gr.Textbox(label="SALMONN")
-        out3 = gr.Textbox(label="Qwen Audio")
-        # out4 = gr.Textbox(label="Whisper + Llama 3")
+        out1 = gr.Textbox(label="Llama 3 VIA", scale=1)
+        out2 = gr.Textbox(label="SALMONN", scale=1)
+        out3 = gr.Textbox(label="Qwen Audio", scale=1)
+    with gr.Row():
+        best1 = gr.Button(value="Record Audio to Submit!", visible=False)
+
     with gr.Row():
         btn = gr.Button(value="Record Audio to Submit!", interactive=False)
     audio_input.stop_recording(
