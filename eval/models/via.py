@@ -80,18 +80,23 @@ class VIA(nn.Module):
         self.processor = AutoProcessor.from_pretrained("openai/whisper-large-v3")
         self.tokenizer = AutoTokenizer.from_pretrained("WillHeld/via-llama")
         self.prefix = torch.tensor([128000, 128006, 882, 128007, 271]).to("cuda:0")
-        self.pre_user_suffix = torch.tensor([271]).to("cuda:0")
+        self.pre_user_suffix = torch.tensor(
+            self.tokenizer.encode(
+                "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n"
+            )
+        ).to("cuda:0")
         self.final_header = torch.tensor([128009, 128006, 78191, 128007, 271]).to(
             "cuda:0"
         )
 
-    def generate(self, audio, prompt, do_sample=False):
+    def generate(
+        self, audio, prompt, do_sample=False, logits_processor=None, max_new_tokens=128
+    ):
         inputs = self.processor(audio, return_tensors="pt", sampling_rate=16_000)
         input_features = inputs.input_features.to("cuda:0")
         hidden_states = self.whisper_encoder(input_features=input_features)[
             "last_hidden_state"
         ]
-        prefix_embed = self.llama_decoder.model.embed_tokens(self.prefix)
         virt_tokens = self.connector(hidden_states).squeeze()
 
         if prompt != None and prompt != "":
@@ -99,11 +104,13 @@ class VIA(nn.Module):
                 self.tokenizer(prompt, add_special_tokens=False)["input_ids"],
                 device=self.pre_user_suffix.device,
             )
-            suffix = torch.cat(
-                [self.pre_user_suffix, user_prompt_text, self.final_header], axis=0
+            prefix = torch.cat(
+                [self.pre_user_suffix, user_prompt_text, self.prefix], axis=0
             )
         else:
-            suffix = self.final_header
+            prefix = self.prefix
+        prefix_embed = self.llama_decoder.model.embed_tokens(prefix)
+        suffix = self.final_header
         suffix_embed = self.llama_decoder.model.embed_tokens(suffix)
         inputs_embeds = torch.cat(
             [prefix_embed, virt_tokens, suffix_embed], axis=0
@@ -112,7 +119,7 @@ class VIA(nn.Module):
         outputs = None
         greedy = 1
         i = 0
-        while greedy != 128009 and len(outs) < 128:
+        while greedy != 128009 and len(outs) < max_new_tokens:
             past_key_values = outputs.past_key_values if outputs else None
             outputs = self.llama_decoder(
                 inputs_embeds=inputs_embeds.to("cuda:1").half(),
@@ -121,6 +128,15 @@ class VIA(nn.Module):
                 past_key_values=past_key_values,
             )
             next_token_logits = outputs.logits[-1, -1, :]
+
+            if logits_processor:
+                local_outs = torch.tensor(outs) if outs != [] else suffix
+                local_outs = local_outs.reshape(1, -1)
+                next_token_logits = logits_processor(
+                    local_outs,
+                    next_token_logits.reshape(1, -1),
+                )
+                next_token_logits = next_token_logits.flatten()
             if do_sample:
                 logits = next_token_logits / temperature
                 probs = F.softmax(logits, dim=-1)
@@ -130,4 +146,6 @@ class VIA(nn.Module):
             outs.append(greedy)
             next_embed = self.llama_decoder.model.embed_tokens(greedy.reshape(1, 1))
             inputs_embeds = next_embed
-        return self.tokenizer.decode(outs)
+        return self.tokenizer.decode(outs, skip_special_tokens=True).replace(
+            "<|eot_id|>", ""
+        )

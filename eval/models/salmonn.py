@@ -139,13 +139,15 @@ class SALMONN(nn.Module):
         prompt_pattern="USER: <Speech><SpeechHere></Speech> {}\nASSISTANT:",
         device="cuda:0",
         max_length=200,
-        num_beams=4,
+        max_new_tokens=128,
+        num_beams=1,
         do_sample=True,
         min_length=1,
         top_p=0.9,
         repetition_penalty=1.0,
         length_penalty=1.0,
         temperature=1.0,
+        logits_processor=None,
     ):
         # read wav
         wav, sr = sf.read(wav_path)
@@ -266,6 +268,7 @@ class SALMONN(nn.Module):
         output = self.llama_model.generate(
             inputs_embeds=embeds,
             max_length=max_length,
+            max_new_tokens=max_new_tokens,
             num_beams=num_beams,
             do_sample=do_sample,
             min_length=min_length,
@@ -277,6 +280,7 @@ class SALMONN(nn.Module):
             bos_token_id=self.llama_tokenizer.bos_token_id,
             eos_token_id=self.llama_tokenizer.eos_token_id,
             pad_token_id=self.llama_tokenizer.pad_token_id,
+            logits_processor=[logits_processor] if logits_processor != None else None,
         )
 
         output_text = self.llama_tokenizer.batch_decode(
