@@ -1,4 +1,4 @@
-git clonehttps://huggingface.co/tsinghua-ee/SALMONN/
+git clone https://huggingface.co/tsinghua-ee/SALMONN/
 mv SALMONN/salmonn_v1.pth .
 rm -r SALMONN
 git clone https://huggingface.co/lmsys/vicuna-13b-v1.1
