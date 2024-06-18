@@ -16,9 +16,9 @@ from transformers import (
 )
 from transformers.generation import GenerationConfig
 
+from load_via_eval import load_via_eval
 from models.salmonn import SALMONN
 from models.via import VIA
-from load_via_eval import load_via_eval
 
 torch.manual_seed(1234)
 cfm = CFMatcher()
@@ -114,6 +114,7 @@ def get_response_end_to_end_s(model, audio, dial):
             prompt="You are a helpful assistant. Give a simple one sentence answer.",
             do_sample=False,
             top_p=1.0,
+            max_new_tokens=64,
         )
     response = llm_message[0]
 
@@ -126,7 +127,8 @@ def get_response_end_to_end_v(model, audio, dial):
     with torch.cuda.amp.autocast(dtype=torch.float16):
         llm_message = model.generate(
             audio=value["array"],
-            prompt="You are a helpful assistant. Give a simple one sentence answer.",
+            prompt="You are a helpful assistant. Give your answers as a simple single sentence.\n",
+            max_new_tokens=64,
         )
     response = llm_message
 
@@ -146,6 +148,7 @@ def get_response_end_to_end_q(model, audio, dial):
         query=query,
         system="You are a helpful assistant.",
         history=None,
+        max_new_tokens=64,
     )
     return response
 
@@ -153,19 +156,15 @@ def get_response_end_to_end_q(model, audio, dial):
 parser = argparse.ArgumentParser("sdqa_args")
 parser.add_argument("m_type", help="path for transcript file", type=str)
 parser.add_argument("model_name", help="path for transcript file", type=str)
+parser.add_argument(
+    "--dataset_name",
+    help="path for transcript file",
+    type=str,
+    default="Spoken_Dialect_QA",
+)
 args = parser.parse_args()
 m_type = args.m_type
 model_name = args.model_name
-# m_type = "pipe"
-# m_type = "e2e"
-# model_name = "meta-llama/Llama-2-7b-chat-hf"
-# model_name = "meta-llama/Meta-Llama-3-8B-Instruct"
-# model_name = "mistralai/Mistral-7B-Instruct-v0.2"
-# model_name = "Qwen/Qwen1.5-7B-Chat"
-# m_type = "e2e"
-# model_name = "Qwen/Qwen-Audio-Chat"
-# model_name = "salmonn_7b"
-# model_name = "via"
 if m_type == "e2e":
     if "Qwen" in model_name:
         tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
@@ -189,7 +188,8 @@ if m_type == "e2e":
             low_resource=False,
         )
     elif "via" in model_name:
-        model = VIA("../llama3-via-v0/model-00001-of-00004.safetensors")
+        # model = VIA("../llama3-via-v0/model-00001-of-00004.safetensors")
+        model = VIA("/data/wheld3/step-4299/model-00001-of-00004.safetensors")
 
 else:
     asr_model_id = "openai/whisper-large-v3"
@@ -231,15 +231,29 @@ else:
         temperature=1.0,
     )
 
-# dataset_name = "Spoken_Dialect_QA"
-dataset_name = "non_social_HeySquad_QA"
-dials = ["default"]
+dataset_name = args.dataset_name
+dials = {
+    "non_social_HeySquad_QA": ["default"],
+    "Spoken_Dialect_QA": [
+        "usa",
+        "aus",
+        "gbr",
+        "ind_n",
+        "ind_s",
+        "irl",
+        "kenya",
+        "nga",
+        "nzl",
+        "phl",
+        "zaf",
+    ],
+}[dataset_name]
 dial_scores = {}
 for dial in dials:
     x_label, y_label, ds = load_via_eval(dataset_name, language=dial)
-    scores = []
+    global_scores = []
     name_short = model_name.lower().split("/")[-1]
-    filename = f"./{dataset_name}_Results/{m_type}_{name_short}/{dial}_outs.txt"
+    filename = f"./{dataset_name}_tmp_Results/{m_type}_{name_short}/{dial}_outs.txt"
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     with open(filename, "w") as f:
         for idx, ex in enumerate(tqdm(ds)):
@@ -257,6 +271,8 @@ for dial in dials:
                     pred = get_response_pipeline_qwen(asr, model, ex, x_label)
                 else:
                     pred = get_response_pipeline(asr, model, ex, x_label)
+                print(pred)
+                print(ex[y_label])
                 scores = [
                     value[pred]
                     for value in cfm.get_scores(
@@ -264,17 +280,18 @@ for dial in dials:
                     ).values()
                 ]
                 score = max(scores)
+                print(score)
             except Exception as e:
                 print(e)
                 print(id)
                 pred = "ERROR IN PROCESSING"
                 score = "NA"
-            if score == "NA":
-                scores.append(score)
+            if score != "NA":
+                global_scores.append(score)
             pred_rep = '"""' + pred.replace("\n", "[NEW_LINE]") + '"""'
             f.write(f"{id}[SEP_DIAL]{pred_rep}[SEP_DIAL]{score}\n")
             if idx % 10 == 0 and idx != 0:
                 f.flush()
-    dial_scores[dial] = np.mean(scores)
+    dial_scores[dial] = np.mean(global_scores)
     print(dial_scores)
 print(dial_scores)

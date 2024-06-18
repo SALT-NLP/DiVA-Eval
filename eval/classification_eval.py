@@ -46,9 +46,9 @@ def get_response_pipeline(asr_model, model, audio, dial):
     chat = [
         {
             "role": "system",
-            "content": "You are a helpful assistant.",
+            "content": "You are a helpful assistant. " + prompt,
         },
-        {"role": "user", "content": text + "\n" + prompt},
+        {"role": "user", "content": text},
         {"role": "assistant", "content": ""},
     ]
     if "mistral" in model.name:
@@ -109,13 +109,6 @@ def get_response_pipeline_qwen(asr_model, model, audio, dial):
 
 
 def label_forcing(labels):
-    add_spaces = [
-        len(tokenizer(" " + label).input_ids) == len(tokenizer(label).input_ids)
-        for label in labels
-    ]
-    labels = [
-        " " + label if all(add_spaces) else label for i, label in enumerate(labels)
-    ]
     if hasattr(tokenizer, "tokenizer"):
         tokens = [tokenizer.tokenize(label) for label in labels]
         label_tokens = [
@@ -137,7 +130,7 @@ def label_forcing(labels):
     def prefix_allowed_tokens_fn(batch_id, input_ids):
         return label_tokens
 
-    return prefix_allowed_tokens_fn
+    return prefix_allowed_tokens_fn, tokenizer.batch_decode(label_tokens)
 
 
 @torch.no_grad
@@ -147,7 +140,8 @@ def get_response_end_to_end_s(model, audio, dial):
     with torch.cuda.amp.autocast(dtype=torch.float16):
         llm_message = model.generate(
             wav_path="tmp.wav",
-            prompt="\n" + prompt,
+            prompt=prompt,
+            num_beams=1,
             do_sample=False,
             top_p=1.0,
             logits_processor=logits_processor,
@@ -190,7 +184,7 @@ def get_response_end_to_end_q(model, audio, dial):
         system="",
         history=None,
         logits_processor=[logits_processor],
-        max_new_tokens=2,
+        max_new_tokens=1 + 1,
     )
     return response
 
@@ -241,7 +235,8 @@ if m_type == "e2e":
         )
         tokenizer = model.llama_tokenizer
     elif "via" in model_name:
-        model = VIA("../llama3-via-v0/model-00001-of-00004.safetensors")
+        # model = VIA("../llama3-via-v0/model-00001-of-00004.safetensors")
+        model = VIA("/data/wheld3/step-4299/model-00001-of-00004.safetensors")
         tokenizer = model.tokenizer
 
 else:
@@ -288,7 +283,7 @@ dataset_name = args.dataset_name
 dataset_config = {
     "Mustard_sarcasm": (
         {"Yes": True, "No": False},
-        "Is the previous statement sarcastic?",
+        "Respond whether the input is sarcastic. Answer with a simple yes or no.",
     ),
     "MELD_emotion_recognition": (
         {
@@ -300,19 +295,38 @@ dataset_config = {
             "Sadness": "sadness",
             "Surprise": "surprise",
         },
-        "What emotion does the previous statement communicate?\nIf there is no clear emotion, respond 'Neutral'.",
+        "Respond in a single word what emotion the input exhibits.\nIf there is no clear emotion, respond 'Neutral'.",
     ),
     "URFunny_humor": (
         {"Yes": "humor", "No": "not_humor"},
-        "Is the previous statement a joke?",
+        "Respond whether the input is intended to be humorous. Answer with a simple yes or no.",
+    ),
+    "Callhome_relationships": (
+        {"Family": "RELATIVE", "Friends": "FRIEND"},
+        "Respond whether the people talking are family or friends. Respond simply 'Family' or 'Friends'.",
+    ),
+    "IEMOCAP_emotion_recognition": (
+        {
+            "Anger": "angry",
+            "Happiness": "happy",
+            "Neutral": "neutral",
+            "Sadness": "sad",
+        },
+        "Respond in a single word what emotion the audio represents.\nIf there is no clear emotion, respond 'Neutral'.",
     ),
 }
 
 label_map = dataset_config[dataset_name][0]
 prompt = dataset_config[dataset_name][1]
 labels = list(label_map.keys())
+forcing_fn, trunc_labels = label_forcing(labels)
+for i, label in enumerate(labels):
+    val = label_map[label]
+    del label_map[label]
+    label_map[trunc_labels[i]] = val
+labels = list(label_map.keys())
 logits_processor = PrefixConstrainedLogitsProcessor(
-    prefix_allowed_tokens_fn=label_forcing(labels), num_beams=1
+    prefix_allowed_tokens_fn=forcing_fn, num_beams=1
 )
 dials = ["default"]
 dial_scores = {}
@@ -320,11 +334,11 @@ for dial in dials:
     x_label, y_label, ds = load_via_eval(dataset_name, language=dial)
     scores = []
     name_short = model_name.lower().split("/")[-1]
-    filename = f"./{dataset_name}_Results/{m_type}_{name_short}/{dial}_outs.txt"
+    filename = f"./{dataset_name}_tmp_Results/{m_type}_{name_short}/{dial}_outs.txt"
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     with open(filename, "w") as f:
         for idx, ex in enumerate(tqdm(ds)):
-            if True:
+            try:
                 if m_type == "e2e" and "qwen" in name_short:
                     pred = get_response_end_to_end_q(model, ex, x_label)
                 elif m_type == "e2e" and "salmonn" in name_short:
@@ -339,13 +353,13 @@ for dial in dials:
                     pred = get_response_pipeline(asr, model, ex, x_label)
                 print(pred)
                 print(ex[y_label])
-                score = 1 if label_map[pred.strip()] == ex[y_label] else 0
-            else:  # except Exception as e:
+                score = 1 if label_map[pred] == ex[y_label] else 0
+            except Exception as e:
                 print("ERROR")
                 print(e)
                 print(idx)
                 pred = "ERROR IN PROCESSING"
-                score = "NA"
+                score = 0
             if score != "NA":
                 scores.append(score)
             pred_rep = '"""' + pred.replace("\n", "[NEW_LINE]") + '"""'
