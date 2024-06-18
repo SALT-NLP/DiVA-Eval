@@ -30,6 +30,19 @@ def load_via_eval(
         return load_callhome_relationships()
     elif dataset_name == "URFunny_humor":
         return load_urfunny_humor()
+    elif dataset_name == "COVOST_translation":
+        return load_covost(language_pair=language)
+
+
+def load_covost(language_pair, dataset_name="WillHeld/covost2"):
+    x_label, y_label = "audio", "translation"
+
+    ds = load_dataset(dataset_name, language_pair, streaming=True)["validation"]
+
+    # filter
+    ds = ds.filter(lambda example: example[y_label])
+
+    return x_label, y_label, ds
 
 
 def load_SDQA(language, dataset_name="WillHeld/SD-QA"):
@@ -201,7 +214,7 @@ def load_IEMOCAP_emotion_recognition(
     # the name of x and y
     x_label, y_label = "audio", "label"
     # load the right partition
-    ds = load_dataset(dataset_name)  # there are multiple sessions
+    ds = load_dataset(dataset_name)["session5"]  # there are multiple sessions
     # filter
     ds = ds.filter(lambda example: example[y_label])
 
@@ -544,27 +557,26 @@ def load_google_fleurs_speaker_identify(language, dataset_name="google/fleurs"):
     ds = ds.filter(lambda example: example[y_label])
     return x_label, y_label, ds
 
+
 def load_callhome_relationships(dataset_name="SALT-NLP/Callhome_relationships"):
     # website, e.g., https://huggingface.co/datasets/yijingwu/HeySQuAD_human
     # the name of x and y
     x_label, y_label = "audio", "Speaker A - Primary"
     # load the right partition
-    ds = load_dataset(dataset_name).train_test_split(
-        test_size=TEST_SIZE,
-        seed=SEED,
-    )  # no test partition
+    ds = load_dataset(dataset_name)["train"]
     # filter
-    ds = ds.filter(lambda example: example[y_label])
+    ds = ds.filter(lambda example: example[y_label] != None)
     return x_label, y_label, ds
 
+
 def load_urfunny_humor(dataset_name="SALT-NLP/URFunny_humor"):
-    # website, e.g., https://huggingface.co/datasets/yijingwu/HeySQuAD_human
     # the name of x and y
     x_label, y_label = "audio", "label"
     # load the right partition
-    ds = load_dataset(dataset_name, split="test", streaming=True)
+    ds = load_dataset(dataset_name, split="train", streaming=True)
+    print(ds)
     # filter
-    ds = ds.filter(lambda example: example[y_label])
+    ds = ds.filter(lambda example: example[y_label] != None)
     return x_label, y_label, ds
 
 
