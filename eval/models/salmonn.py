@@ -44,6 +44,7 @@ class SALMONN(nn.Module):
         speech_qformer_token_num=1,
         speech_qformer_layer=2,
         lora=True,
+        device="cuda:0",
         lora_alpha=32,
         lora_rank=8,
         lora_dropout=0.1,
@@ -59,19 +60,19 @@ class SALMONN(nn.Module):
 
         # whisper
         self.speech_encoder = WhisperModel.from_pretrained(whisper_path).encoder.to(
-            "cuda:0"
+            device
         )
-        self.ln_speech = nn.LayerNorm(self.speech_encoder.config.d_model).to("cuda:0")
+        self.ln_speech = nn.LayerNorm(self.speech_encoder.config.d_model).to(device)
 
         # beats
         self.beats_ckpt = beats_path
-        beats_checkpoint = torch.load(self.beats_ckpt, map_location="cuda:0")
+        beats_checkpoint = torch.load(self.beats_ckpt, map_location=device)
         beats_cfg = BEATsConfig(beats_checkpoint["cfg"])
         beats = BEATs(beats_cfg)
         beats.load_state_dict(beats_checkpoint["model"])
         self.beats = beats
-        self.beats.to("cuda:0")
-        self.ln_audio = nn.LayerNorm(self.beats.cfg.encoder_embed_dim).to("cuda:0")
+        self.beats.to(device)
+        self.ln_audio = nn.LayerNorm(self.beats.cfg.encoder_embed_dim).to(device)
         for name, param in self.beats.named_parameters():
             param.requires_grad = False
         self.beats.eval()
@@ -82,8 +83,8 @@ class SALMONN(nn.Module):
             self.speech_encoder.config.d_model + self.beats.cfg.encoder_embed_dim,
             speech_qformer_layer,
         )
-        self.speech_Qformer.to("cuda:0")
-        self.speech_query_tokens.to("cuda:0")
+        self.speech_Qformer.to(device)
+        self.speech_query_tokens.to(device)
         self.second_per_frame = second_per_frame
         self.second_stride = second_stride
 
@@ -126,7 +127,7 @@ class SALMONN(nn.Module):
         # proj
         self.speech_llama_proj = nn.Linear(
             self.speech_Qformer.config.hidden_size, self.llama_model.config.hidden_size
-        ).to("cuda:0")
+        ).to(device)
 
         # load ckpt
         ckpt_dict = torch.load(ckpt)["model"]
@@ -148,6 +149,7 @@ class SALMONN(nn.Module):
         length_penalty=1.0,
         temperature=1.0,
         logits_processor=None,
+        streamer=None
     ):
         # read wav
         wav, sr = sf.read(wav_path)
@@ -204,7 +206,7 @@ class SALMONN(nn.Module):
         # Qformer
         query_tokens = self.speech_query_tokens.expand(speech_embeds.shape[0], -1, -1)
         query_output = self.speech_Qformer.bert(
-            query_embeds=query_tokens.to("cuda:0"),
+            query_embeds=query_tokens.to(device),
             encoder_hidden_states=speech_embeds,
             encoder_attention_mask=speech_atts,
             return_dict=True,
@@ -259,11 +261,11 @@ class SALMONN(nn.Module):
             )
         )
 
+        embed_list = [bos_embeds, prompt_left_embeds, speech_embeds, prompt_right_embeds]
         embeds = torch.cat(
-            [bos_embeds, prompt_left_embeds, speech_embeds, prompt_right_embeds], dim=1
+            [embed.to(bos_embeds.device) for embed in embed_list], dim=1
         )
         atts = torch.ones(embeds.size()[:-1], dtype=torch.long).to(embeds.device)
-
         # generate
         output = self.llama_model.generate(
             inputs_embeds=embeds,
@@ -281,6 +283,7 @@ class SALMONN(nn.Module):
             eos_token_id=self.llama_tokenizer.eos_token_id,
             pad_token_id=self.llama_tokenizer.pad_token_id,
             logits_processor=[logits_processor] if logits_processor != None else None,
+            streamer=streamer,
         )
 
         output_text = self.llama_tokenizer.batch_decode(
