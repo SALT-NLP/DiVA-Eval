@@ -21,7 +21,6 @@ from models.salmonn import SALMONN
 from models.via import VIA
 
 torch.manual_seed(1234)
-bleu = BLEU()
 
 dials = [
     "aus",
@@ -240,20 +239,20 @@ else:
 dataset_name = args.dataset_name
 dials = {
     "COVOST_translation": [
-        "en_de",
-        "en_tr",
-        "en_fa",
-        "en_sv-SE",
-        "en_mn",
+        # "en_de",
+        # "en_tr",
+        # "en_fa",
+        # "en_sv-SE",
+        # "en_mn",
         "en_zh-CN",
-        "en_cy",
-        "en_ca",
-        "en_sl",
-        "en_et",
+        # "en_cy",
+        # "en_ca",
+        # "en_sl",
+        # "en_et",
         "en_id",
         "en_ar",
         "en_ta",
-        "en_lv",
+        # "en_lv",
         "en_ja",
     ],
 }[dataset_name]
@@ -265,7 +264,7 @@ language_codes_to_full = {
     "fa": "Persian",
     "sv-SE": "Swedish",
     "mn": "Mongolian",
-    "zh-CN": "Mandarin",
+    "zh-CN": "Simplified Chinese",
     "cy": "Welsh",
     "ca": "Catalan",
     "sl": "Slovenian",
@@ -281,6 +280,9 @@ for dial in dials:
     in_code, out_code = dial.split("_")
     input_lang = language_codes_to_full[in_code]
     output_lang = language_codes_to_full[out_code]
+    print(output_lang)
+    bleu = BLEU(trg_lang=out_code.split("-")[0])
+    print(bleu.tokenizer)
     x_label, y_label, ds = load_via_eval(dataset_name, language=dial)
     global_scores = []
     name_short = model_name.lower().split("/")[-1]
