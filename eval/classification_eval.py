@@ -136,10 +136,10 @@ def label_forcing(labels):
 @torch.no_grad
 def get_response_end_to_end_s(model, audio, dial):
     value = audio[dial]
-    sf.write("tmp.wav", value["array"], value["sampling_rate"], format="wav")
+    sf.write("tmp_s.wav", value["array"], value["sampling_rate"], format="wav")
     with torch.cuda.amp.autocast(dtype=torch.float16):
         llm_message = model.generate(
-            wav_path="tmp.wav",
+            wav_path="tmp_s.wav",
             prompt=prompt,
             num_beams=1,
             do_sample=False,
@@ -170,10 +170,10 @@ def get_response_end_to_end_v(model, audio, dial):
 @torch.no_grad
 def get_response_end_to_end_q(model, audio, dial):
     value = audio[dial]
-    sf.write("tmp.wav", value["array"], value["sampling_rate"], format="wav")
+    sf.write("tmp_q.wav", value["array"], value["sampling_rate"], format="wav")
     query = tokenizer.from_list_format(
         [
-            {"audio": "tmp.wav"},
+            {"audio": "tmp_q.wav"},
             {"text": "\n" + prompt},
         ]
     )
