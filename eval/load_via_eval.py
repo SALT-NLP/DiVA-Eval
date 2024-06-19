@@ -40,7 +40,7 @@ def load_covost(language_pair, dataset_name="WillHeld/covost2"):
     ds = load_dataset(dataset_name, language_pair, streaming=True)["validation"]
 
     # filter
-    ds = ds.filter(lambda example: example[y_label])
+    ds = ds.filter(lambda example: example[y_label] != None)
 
     return x_label, y_label, ds
 
@@ -52,7 +52,7 @@ def load_SDQA(language, dataset_name="WillHeld/SD-QA"):
     # load the right partition
     ds = load_dataset(dataset_name)["dev"]
     # filter
-    ds = ds.filter(lambda example: example[y_label])
+    ds = ds.filter(lambda example: example[y_label] != None)
 
     return x_label, y_label, ds
 
@@ -67,7 +67,7 @@ def load_speech_fairness(dataset_name="SALT-NLP/speech_fairness"):
         seed=SEED,
     )
     # filter
-    ds = ds.filter(lambda example: example[y_label])
+    ds = ds.filter(lambda example: example[y_label] != None)
     return x_label, y_label, ds
 
 
@@ -82,7 +82,7 @@ def load_HeySquad(dataset_name="yijingwu/HeySQuAD_human"):
     # load the right partition
     ds = load_dataset(dataset_name)["validation"]  # no test partition
     # filter
-    ds = ds.filter(lambda example: example[y_label]).map(extract_answer)
+    ds = ds.filter(lambda example: example[y_label] != None).map(extract_answer)
     return x_label, y_label, ds
 
 
@@ -93,7 +93,7 @@ def load_SLURP(dataset_name="qmeeus/slurp"):
     # load the right partition
     ds = load_dataset(dataset_name)["test"]
     # filter
-    ds = ds.filter(lambda example: example[y_label])
+    ds = ds.filter(lambda example: example[y_label] != None)
 
     label_dict = {
         "0": "addcontact",
@@ -216,7 +216,7 @@ def load_IEMOCAP_emotion_recognition(
     # load the right partition
     ds = load_dataset(dataset_name)["session5"]  # there are multiple sessions
     # filter
-    ds = ds.filter(lambda example: example[y_label])
+    ds = ds.filter(lambda example: example[y_label] != None)
 
     label_dict = {"0": "angry", "1": "happy", "2": "neutral", "3": "sad"}
 
@@ -237,7 +237,7 @@ def load_MELD_emotion_recognition(
     # load the right partition
     ds = load_dataset(dataset_name)["test"]  # there are multiple sessions
     # filter
-    ds = ds.filter(lambda example: example[y_label])
+    ds = ds.filter(lambda example: example[y_label] != None)
 
     label_dict = {
         "0": "anger",
@@ -436,7 +436,7 @@ def load_commonvoice_classification(
     x_label, y_label = "audio", "sentence"
     ds = load_dataset(dataset_name, language, split="test", streaming=True)
     # filter
-    ds = ds.filter(lambda example: example[y_label])
+    ds = ds.filter(lambda example: example[y_label] != None)
     return x_label, y_label, ds
 
 
@@ -554,7 +554,7 @@ def load_google_fleurs_speaker_identify(language, dataset_name="google/fleurs"):
         dataset_name, language, split="test", streaming=True
     )  # no test partition
     # filter
-    ds = ds.filter(lambda example: example[y_label])
+    ds = ds.filter(lambda example: example[y_label] != None)
     return x_label, y_label, ds
 
 
@@ -588,7 +588,7 @@ def load_urfunny_humor(dataset_name="SALT-NLP/URFunny_humor"):
 #     # load the right partition
 #     ds = load_dataset(dataset_name)[xxx]  # no test partition
 #     # filter
-#     ds = ds.filter(lambda example: example[y_label])
+#     ds = ds.filter(lambda example: example[y_label] != None)
 #     return x_label, y_label, ds
 
 if __name__ == "__main__":
