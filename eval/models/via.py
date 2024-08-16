@@ -28,18 +28,24 @@ class WhisperConnector(nn.Module):
     def forward(self, x):
         bsz = x.shape[0]
         query_tokens = self.query_tokens[None, :, :].expand(bsz, -1, -1)
-        virt_whisper_tokens = self.decoder(inputs_embeds=query_tokens, encoder_hidden_states=x)
+        virt_whisper_tokens = self.decoder(
+            inputs_embeds=query_tokens, encoder_hidden_states=x
+        )
         if self.projection.weight.shape[-1] == 5120:
             virtual_tokens = self.projection(virt_whisper_tokens[0].reshape(112, 5120))
         else:
             virtual_tokens = self.projection(virt_whisper_tokens[0])
-        return virtual_tokens.to("cuda")
+        return virtual_tokens.to("cuda:1")
 
 
 class VIA(nn.Module):
     def __init__(self, via_path):
         super().__init__()
-        whisper = WhisperForConditionalGeneration.from_pretrained("openai/whisper-large-v3").to("cuda").eval()
+        whisper = (
+            WhisperForConditionalGeneration.from_pretrained("openai/whisper-large-v3")
+            .to("cuda:0")
+            .eval()
+        )
         connector = WhisperConnector()
         with open(via_path, "rb") as f:
             sd = load(f.read())
@@ -49,15 +55,22 @@ class VIA(nn.Module):
             connector.projection.weight = nn.Parameter(sd["projection.weight"].T)
             connector.projection.bias = nn.Parameter(sd["projection.bias"])
             connector.decoder = copy.deepcopy(whisper.model.decoder)
-            wsd = {key.replace("connector.", ""): sd[key] for key in sd if key.startswith("connector.")}
+            wsd = {
+                key.replace("connector.", ""): sd[key]
+                for key in sd
+                if key.startswith("connector.")
+            }
             connector.decoder.load_state_dict(wsd)
-        self.connector = connector.to("cuda")
-        self.whisper_encoder = whisper.model.encoder.to("cuda")
+        self.connector = connector.to("cuda:0")
+        self.whisper_encoder = whisper.model.encoder.to("cuda:0")
         num_layers = 32
-        num_gpus = 1
+        num_gpus = 2
         device_map = dict(
             **{"model.embed_tokens": 1, "model.norm": 1, "lm_head": 2},
-            **{"model.layers." + str(i): 1 + (i // (num_layers // num_gpus)) for i in range(num_layers)},
+            **{
+                "model.layers." + str(i): 1 + (i // (num_layers // num_gpus))
+                for i in range(num_layers)
+            },
         )
         self.llama_decoder = LlamaForCausalLM.from_pretrained(
             "meta-llama/Meta-Llama-3-8B-Instruct",
@@ -66,37 +79,44 @@ class VIA(nn.Module):
         )
         self.processor = AutoProcessor.from_pretrained("openai/whisper-large-v3")
         self.tokenizer = AutoTokenizer.from_pretrained("WillHeld/via-llama")
-        self.prefix = torch.tensor([128000, 128006, 882, 128007, 271]).to("cuda")
+        self.prefix = torch.tensor([128000, 128006, 882, 128007, 271]).to("cuda:0")
         self.pre_user_suffix = torch.tensor(
-            self.tokenizer.encode("<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n")
-        ).to("cuda")
-        self.final_header = torch.tensor([128009, 128006, 78191, 128007, 271]).to("cuda")
+            self.tokenizer.encode(
+                "<|begin_of_text|><|start_header_id|>system<|end_header_id|>\n"
+            )
+        ).to("cuda:0")
+        self.final_header = torch.tensor([128009, 128006, 78191, 128007, 271]).to(
+            "cuda:0"
+        )
 
     def pad_or_trim(self, input_features, target_length=3000):
+        input_device = input_features.device
+        print(input_device)
+        input_features = input_features.cpu()  # Move to CPU
         current_length = input_features.shape[-1]
         if current_length < target_length:
             padding = target_length - current_length
-            padded_features = torch.zeros(
-                *input_features.shape[:-1], target_length, device=input_features.device, dtype=input_features.dtype
-            )
+            padded_features = torch.zeros(*input_features.shape[:-1], target_length, dtype=input_features.dtype)
             padded_features[..., :current_length] = input_features
-            return padded_features
+            return padded_features.to(input_device)  # Move back to original device
         elif current_length > target_length:
-            return input_features[..., :target_length]
-        return input_features
+            return input_features[..., :target_length].to(input_device)
+        return input_features.to(input_device)
 
     def prepare_batch_inputs(self, audio, prompts, batch_size, padding=True):
         print(f"Audio shape before processing: {audio.shape if isinstance(audio, torch.Tensor) else 'not a tensor'}")
         inputs = self.processor(audio, return_tensors="pt", sampling_rate=16_000, padding=True)
         input_features = inputs.input_features.to("cuda:0")
         print(f"Input features shape before padding: {input_features.shape}")
-
+        
         input_features = self.pad_or_trim(input_features, target_length=3000)
         print(f"Input features shape after padding: {input_features.shape}")
-
+        print(input_features.device)
+        input_features = input_features.to("cuda:0")
+        print(input_features.device)
         hidden_states = self.whisper_encoder(input_features=input_features)["last_hidden_state"]
         print(f"Hidden states shape: {hidden_states.shape}")
-
+        
         virt_tokens = self.connector(hidden_states).squeeze()
         print(f"Virtual tokens shape: {virt_tokens.shape}")
 
@@ -143,7 +163,7 @@ class VIA(nn.Module):
         while not_finished.any() and max(len(out) for out in outs) < max_new_tokens:
             past_key_values = outputs.past_key_values if outputs else None
             outputs = self.llama_decoder(
-                inputs_embeds=input_embeds.to("cuda:0").half(),
+                inputs_embeds=input_embeds.to("cuda:1").half(),
                 return_dict=True,
                 output_hidden_states=True,
                 past_key_values=past_key_values,
