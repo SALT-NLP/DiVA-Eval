@@ -72,11 +72,33 @@ class VIA(nn.Module):
         ).to("cuda")
         self.final_header = torch.tensor([128009, 128006, 78191, 128007, 271]).to("cuda")
 
+    def pad_or_trim(self, input_features, target_length=3000):
+        current_length = input_features.shape[-1]
+        if current_length < target_length:
+            padding = target_length - current_length
+            padded_features = torch.zeros(
+                *input_features.shape[:-1], target_length, device=input_features.device, dtype=input_features.dtype
+            )
+            padded_features[..., :current_length] = input_features
+            return padded_features
+        elif current_length > target_length:
+            return input_features[..., :target_length]
+        return input_features
+
     def prepare_batch_inputs(self, audio, prompts, batch_size, padding=True):
-        inputs = self.processor(audio, return_tensors="pt", sampling_rate=16_000, padding=padding)
+        print(f"Audio shape before processing: {audio.shape if isinstance(audio, torch.Tensor) else 'not a tensor'}")
+        inputs = self.processor(audio, return_tensors="pt", sampling_rate=16_000, padding=True)
         input_features = inputs.input_features.to("cuda:0")
+        print(f"Input features shape before padding: {input_features.shape}")
+
+        input_features = self.pad_or_trim(input_features, target_length=3000)
+        print(f"Input features shape after padding: {input_features.shape}")
+
         hidden_states = self.whisper_encoder(input_features=input_features)["last_hidden_state"]
+        print(f"Hidden states shape: {hidden_states.shape}")
+
         virt_tokens = self.connector(hidden_states).squeeze()
+        print(f"Virtual tokens shape: {virt_tokens.shape}")
 
         batch_size = virt_tokens.shape[0]
 
