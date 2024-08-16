@@ -125,21 +125,27 @@ class VIA(nn.Module):
         if prompts != None and prompts != "":
             prefix_embeds = []
             for prompt in prompts:
+                print(prompt)
                 if prompt:
                     user_prompt_text = torch.tensor(
                         self.tokenizer(prompt, add_special_tokens=False)["input_ids"],
                         device=self.pre_user_suffix.device,
                     )
+                    print(user_prompt_text.shape, user_prompt_text.device)
                     prefix = torch.cat([self.pre_user_suffix, user_prompt_text, self.prefix], axis=0)
+                    print(prefix.shape, prefix.device)
                 else:
                     prefix = self.prefix
                 prefix_embeds.append(self.llama_decoder.model.embed_tokens(prefix))
             prefix_embeds = torch.stack(prefix_embeds)
+            print(prefix_embeds.shape)
         else:
             prefix_embeds = self.llama_decoder.model.embed_tokens(self.prefix).unsqueeze(0).repeat(batch_size, 1, 1)
         suffix_embeds = self.llama_decoder.model.embed_tokens(self.final_header).unsqueeze(0).repeat(batch_size, 1, 1)
         input_embeds = torch.cat([prefix_embeds, virt_tokens, suffix_embeds], dim=1)
 
+        print(suffix_embeds.shape, suffix_embeds.device)
+        print(input_embeds.shape, input_embeds.device)
         return input_embeds
 
     def generate(
@@ -154,13 +160,16 @@ class VIA(nn.Module):
     ):
         input_embeds = self.prepare_batch_inputs(audio_batch, prompts, padding)
 
+        print("INPUT_EMBEDS", input_embeds.shape)
         batch_size = input_embeds.shape[0]
         outs = [[] for _ in range(batch_size)]
         log_probs = [[] for _ in range(batch_size)]
         outputs = None
         not_finished = torch.ones(batch_size, dtype=torch.bool, device="cuda:0")
 
+        x = 0
         while not_finished.any() and max(len(out) for out in outs) < max_new_tokens:
+            print(x)
             past_key_values = outputs.past_key_values if outputs else None
             outputs = self.llama_decoder(
                 inputs_embeds=input_embeds.to("cuda:1").half(),
@@ -191,10 +200,11 @@ class VIA(nn.Module):
 
             next_embeds = self.llama_decoder.model.embed_tokens(next_tokens.unsqueeze(1))
             input_embeds = next_embeds
-
+            x+=1
         decoded_outputs = []
         for out in outs:
             decoded = self.tokenizer.decode(out, skip_special_tokens=True).replace("<|eot_id|>", "")
+            print(decoded)
             decoded_outputs.append(decoded)
 
         return outs, decoded_outputs, log_probs
