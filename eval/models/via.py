@@ -99,7 +99,6 @@ class VIA(nn.Module):
 
     def pad_or_trim(self, input_features, target_length=3000):
         input_device = input_features.device
-        print(input_device)
         input_features = input_features.cpu()  # Move to CPU
         current_length = input_features.shape[-1]
         if current_length < target_length:
@@ -152,7 +151,6 @@ class VIA(nn.Module):
 
     ):
         input_embeds = self.prepare_batch_inputs(audio_batch, prompts, kwargs.get("padding", True))
-        print(input_embeds[0][:50])
         # Use VLLM for text generation
         sampling_params = SamplingParams(
             temperature=kwargs.get('temperature', 0.7),
@@ -225,7 +223,6 @@ class VIA(nn.Module):
             decoded_outputs = []
             for out in outs:
                 decoded = self.tokenizer.decode(out, skip_special_tokens=True).replace("<|eot_id|>", "")
-                print(decoded)
                 decoded_outputs.append(decoded)
 
         return outs, decoded_outputs, log_probs
