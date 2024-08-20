@@ -8,6 +8,7 @@ import torch.nn.functional as F
 from datasets import Audio
 from safetensors.torch import load, load_model
 from torch import nn
+import torch.nn.functional as F
 from transformers import (
     AutoProcessor,
     AutoTokenizer,
@@ -125,6 +126,7 @@ class VIA(nn.Module):
 
             if prompts != None and prompts != "":
                 prefix_embeds = []
+                max_length = 0
                 for prompt in prompts:
                     if prompt:
                         user_prompt_text = torch.tensor(
@@ -134,8 +136,11 @@ class VIA(nn.Module):
                         prefix = torch.cat([self.pre_user_suffix, user_prompt_text, self.prefix], axis=0)
                     else:
                         prefix = self.prefix
-                    prefix_embeds.append(self.llama_decoder.model.embed_tokens(prefix))
-                prefix_embeds = torch.stack(prefix_embeds)
+                    embedded_prefix = self.llama_decoder.model.embed_tokens(prefix)
+                    prefix_embeds.append(embedded_prefix)
+                    max_length = max(max_length, embedded_prefix.shape[0])
+                padded_embeds = [F.pad(embed, (0, 0, 0, max_length - embed.shape[0])) for embed in prefix_embeds]
+                prefix_embeds = torch.stack(padded_embeds, dim = 0)
             else:
                 prefix_embeds = self.llama_decoder.model.embed_tokens(self.prefix).unsqueeze(0).repeat(batch_size, 1, 1)
             suffix_embeds = self.llama_decoder.model.embed_tokens(self.final_header).unsqueeze(0).repeat(batch_size, 1, 1)
