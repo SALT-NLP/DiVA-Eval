@@ -176,7 +176,8 @@ class VIA(nn.Module):
         self,
         audio_batch: np.ndarray,
         prompts: list[str],
-        return_log_probs: bool = False,
+        return_logprobs: bool = False,
+        top_k_logprobs: int = 40,
         temperature: float = 0.001,
         do_sample: bool = False,
         max_new_tokens: int = 128,
@@ -208,16 +209,20 @@ class VIA(nn.Module):
                 else:
                     next_tokens = next_token_logits.argmax(dim=-1)
 
-        
-                if return_log_probs:
-                    token_log_probs = torch.log(probs)
+                if return_logprobs:
+                    token_logprobs = torch.log(probs)
+                    if top_k_logprobs:
+                        token_logprobs, _ = torch.topk(token_logprobs, k=top_k_logprobs, dim=-1)
 
                 for i in range(batch_size):
                     if not_finished[i]:
                         token = next_tokens[i].item()
                         outs[i].append(token)
-                        if return_log_probs:
-                            log_probs[i].append(token_log_probs[i, token].item())
+                        if return_logprobs:
+                            if top_k_logprobs:
+                                logprobs[i].append(token_logprobs[i].tolist())
+                            else:
+                                logprobs[i].append(token_logprobs[i, token].item())
                         if next_tokens[i] == 128009:  # EOT token
                             not_finished[i] = False
 
@@ -230,7 +235,7 @@ class VIA(nn.Module):
                 decoded = self.tokenizer.decode(out, skip_special_tokens=True).replace("<|eot_id|>", "")
                 decoded_outputs.append(decoded)
 
-        return outs, decoded_outputs, log_probs
+        return outs, decoded_outputs, logprobs if return_logprobs else None
 
 class ParallelVIA(nn.Module):
     def __init__(self, via_path):
