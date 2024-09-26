@@ -1,6 +1,7 @@
 import argparse
 import os
 
+import librosa
 import numpy as np
 import soundfile as sf
 import torch
@@ -13,6 +14,8 @@ from transformers import (
     AutoProcessor,
     AutoTokenizer,
     pipeline,
+    Qwen2AudioForConditionalGeneration,
+    AutoProcessor,
 )
 from transformers.generation import GenerationConfig
 
@@ -158,6 +161,42 @@ def get_response_end_to_end_q(model, audio, dial):
     return response
 
 
+@torch.no_grad
+def get_response_end_to_end_q2(model, audio, dial):
+    value = audio[dial]
+    sf.write("tmp_q.wav", value["array"], value["sampling_rate"], format="wav")
+    conversation = [
+        {"role": "system", "content": "You are a helpful assistant."},
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "audio",
+                    "audio_url": "tmp_q.wav",
+                },
+                {
+                    "type": "text",
+                    "text": f"Translate the input from {input_lang} to {output_lang}.",
+                },
+            ],
+        },
+    ]
+    text = processor.apply_chat_template(
+        conversation, add_generation_prompt=True, tokenize=False
+    )
+    audios = [
+        librosa.load("tmp_q.wav", sr=processor.feature_extractor.sampling_rate)[0]
+    ]
+    inputs = processor(text=text, audios=audios, return_tensors="pt", padding=True)
+    generate_ids = model.generate(**inputs, max_length=256)
+    generate_ids = generate_ids[:, inputs.input_ids.size(1) :]
+    response = processor.batch_decode(
+        generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False
+    )[0]
+
+    return response
+
+
 parser = argparse.ArgumentParser("sdqa_args")
 parser.add_argument("m_type", help="path for transcript file", type=str)
 parser.add_argument("model_name", help="path for transcript file", type=str)
@@ -171,11 +210,25 @@ args = parser.parse_args()
 m_type = args.m_type
 model_name = args.model_name
 if m_type == "e2e":
-    if "Qwen" in model_name:
+    if "Qwen2" in model_name:
+        tokenizer = AutoTokenizer.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct")
+        processor = AutoProcessor.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct")
+        model = Qwen2AudioForConditionalGeneration.from_pretrained(
+            "Qwen/Qwen2-Audio-7B-Instruct", device_map="auto"
+        )
+
+        model.generation_config = GenerationConfig.from_pretrained(
+            model_name,
+            trust_remote_code=True,
+            do_sample=False,
+            top_k=50,
+            top_p=1.0,
+        )
+    elif "Qwen" in model_name:
         tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
         model = AutoModelForCausalLM.from_pretrained(
-            model_name, device_map="auto", trust_remote_code=True
-        ).eval()
+            model_name, device_map="sequential", trust_remote_code=True
+        )
 
         model.generation_config = GenerationConfig.from_pretrained(
             model_name,
@@ -286,13 +339,15 @@ for dial in dials:
     x_label, y_label, ds = load_via_eval(dataset_name, language=dial)
     global_scores = []
     name_short = model_name.lower().split("/")[-1]
-    filename = f"./{dataset_name}_tmp_Results/{m_type}_{name_short}/{dial}_outs.txt"
+    filename = f"./{dataset_name}_DiVA_do_Results/{m_type}_{name_short}/{dial}_outs.txt"
     os.makedirs(os.path.dirname(filename), exist_ok=True)
     with open(filename, "w") as f:
         for idx, ex in enumerate(tqdm(ds)):
             try:
                 id = ex["id"]
-                if m_type == "e2e" and "qwen" in name_short:
+                if m_type == "e2e" and "qwen2" in name_short:
+                    pred = get_response_end_to_end_q2(model, ex, x_label)
+                elif m_type == "e2e" and "qwen" in name_short:
                     pred = get_response_end_to_end_q(model, ex, x_label)
                 elif m_type == "e2e" and "salmonn" in name_short:
                     pred = get_response_end_to_end_s(model, ex, x_label)
