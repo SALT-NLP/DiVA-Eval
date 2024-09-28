@@ -176,7 +176,7 @@ toolz==0.12.1
 torch==2.2.1
 torchaudio==2.2.1
 tqdm==4.66.2
-transformers==4.39.0
+transformers
 transformers-stream-generator==0.0.5
 triton==2.2.0
 typeguard==2.13.3
@@ -195,3 +195,5 @@ xxhash==3.4.1
 yarl==1.9.4
 zstandard==0.22.0
 librosa
+qa-metrics==0.2.16
+peft

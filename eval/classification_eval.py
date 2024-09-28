@@ -158,7 +158,7 @@ def get_response_end_to_end_s(model, audio, dial):
 @torch.no_grad
 def get_response_end_to_end_q2(model, audio, dial):
     value = audio[dial]
-    sf.write("tmp_q.wav", value["array"], value["sampling_rate"], format="wav")
+    sf.write("tmp_q2.wav", value["array"], value["sampling_rate"], format="wav")
     conversation = [
         {"role": "system", "content": "You are a helpful assistant."},
         {

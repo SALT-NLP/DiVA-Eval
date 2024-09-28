@@ -83,7 +83,7 @@ def load_HeySquad(dataset_name="yijingwu/HeySQuAD_human"):
     ds = load_dataset(dataset_name)["validation"]  # no test partition
     # filter
     ds = ds.filter(lambda example: example[y_label] != None).map(extract_answer)
-    return x_label, y_label, ds
+    return x_label, y_label, ds.filter(lambda example: len(example[y_label]) > 0) 
 
 
 def load_SLURP(dataset_name="qmeeus/slurp"):
