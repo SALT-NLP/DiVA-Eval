@@ -3,6 +3,7 @@ import os
 import random
 import sys
 
+import xxhash
 import gradio as gr
 import librosa
 import numpy as np
@@ -15,99 +16,25 @@ from models.salmonn import SALMONN
 from safetensors.torch import load, load_model
 from tinydb import TinyDB
 from torch import nn
-from transformers import (AutoModelForCausalLM, AutoProcessor, AutoTokenizer,
-                          LlamaForCausalLM, TextIteratorStreamer,
-                          WhisperForConditionalGeneration)
+from transformers import (
+    AutoModelForCausalLM,
+    AutoProcessor,
+    AutoTokenizer,
+    LlamaForCausalLM,
+    TextIteratorStreamer,
+    WhisperForConditionalGeneration,
+    Qwen2AudioForConditionalGeneration,
+    AutoProcessor,
+    AutoModel
+)
 from transformers.generation import GenerationConfig
 
-tokenizer = AutoTokenizer.from_pretrained("WillHeld/via-llama")
-prefix = torch.tensor([128000, 128006, 882, 128007, 271]).to("cuda:0")
-pre_user_suffix = torch.tensor([271]).to("cuda:0")
-final_header = torch.tensor([128009, 128006, 78191, 128007, 271]).to("cuda:0")
-cache = None
 anonymous = True
 
 
-class Connector(nn.Module):
-    def __init__(
-        self,
-    ):
-        super().__init__()
-        self.decoder = None
-        self.projection = nn.Linear(1280, 4096)
-        self.query_tokens = nn.Parameter(torch.randn(448, 1280))
-
-    def forward(self, x):
-        bsz = x.shape[0]
-        query_tokens = self.query_tokens[None, :, :].expand(bsz, -1, -1)
-        virt_whisper_tokens = self.decoder(
-            inputs_embeds=query_tokens, encoder_hidden_states=x
-        )
-        if self.projection.weight.shape[-1] == 5120:
-            virtual_tokens = self.projection(virt_whisper_tokens[0].reshape(112, 5120))
-        else:
-            virtual_tokens = self.projection(virt_whisper_tokens[0])
-        return virtual_tokens.to("cuda:0")
-
-
-processor = AutoProcessor.from_pretrained("openai/whisper-large-v3")
-whisper = (
-    WhisperForConditionalGeneration.from_pretrained("openai/whisper-large-v3")
-    .to("cuda:0")
-    .eval()
-)
-whisper_encoder = whisper.model.encoder.to("cuda:0")
-# whisper_encoder = torch.compile(whisper_encoder)
-resampler = Audio(sampling_rate=16_000)
-
-connector = Connector()
-with open(
-    "./llama3-via-v0/model-00001-of-00004.safetensors",
-    "rb",  # "/data/wheld3/audio/levanter/step-4299/model-00001-of-00004.safetensors", "rb"
-) as f:
-    sd = load(f.read())
-
-with torch.no_grad():
-    connector.query_tokens = nn.Parameter(sd["query_tokens"])
-    connector.projection.weight = nn.Parameter(sd["projection.weight"].T)
-    connector.projection.bias = nn.Parameter(sd["projection.bias"])
-    connector.decoder = copy.deepcopy(whisper.model.decoder)
-    wsd = {
-        key.replace("connector.", ""): sd[key]
-        for key in sd
-        if key.startswith("connector.")
-    }
-    connector.decoder.load_state_dict(wsd)
-connector = connector.to("cuda:0")
-
-num_layers = 32
-num_gpus = 2
-# device_map = dict(
-#    **{"model.embed_tokens": 1, "model.norm": 1, "lm_head": 2},
-#    **{
-#        "model.layers." + str(i): 1 + (i // (num_layers // num_gpus))
-#        for i in range(num_layers)
-#    },
-# )
-llama_decoder = LlamaForCausalLM.from_pretrained(
-    "meta-llama/Meta-Llama-3-8B-Instruct",
-    device_map="auto",
-    torch_dtype=torch.float16,
-)
-# Dynamic Shape makes the decoder compile slow?
-# llama_decoder = torch.compile(llama_decoder)
 qwen_tokenizer = AutoTokenizer.from_pretrained(
     "Qwen/Qwen-Audio-Chat", trust_remote_code=True
 )
-device_map = {
-    **{
-        "transformer.wte": 1,
-        "transformer.audio": 1,
-        "transformer.ln_f": 1,
-        "lm_head": 1,
-    },
-    **{"transformer.h." + str(i): 1 for i in range(num_layers)},
-}
 qwen_model = AutoModelForCausalLM.from_pretrained(
     "Qwen/Qwen-Audio-Chat",
     device_map="auto",
@@ -123,130 +50,125 @@ qwen_model.generation_config = GenerationConfig.from_pretrained(
     top_p=1.0,
 )
 
-
-salmonn_model = SALMONN(
-    ckpt="./SALMONN_PATHS/salmonn_v1.pth",
-    whisper_path="./SALMONN_PATHS/whisper-large-v2",
-    beats_path="./SALMONN_PATHS/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt",
-    vicuna_path="./SALMONN_PATHS/vicuna-13b-v1.1",
-    low_resource=False,
-    device="cuda:1",
+qwen2_processor = AutoProcessor.from_pretrained("Qwen/Qwen2-Audio-7B-Instruct")
+qwen2_model = Qwen2AudioForConditionalGeneration.from_pretrained(
+    "Qwen/Qwen2-Audio-7B-Instruct", device_map="auto"
 )
-salmonn_tokenizer = salmonn_model.llama_tokenizer
+
+qwen2_model.generation_config = GenerationConfig.from_pretrained(
+    "Qwen/Qwen2-Audio-7B-Instruct",
+    trust_remote_code=True,
+    do_sample=False,
+    top_k=50,
+    top_p=1.0,
+)
+
+diva_model = AutoModel.from_pretrained("WillHeld/DiVA-llama-3-v0-8b", trust_remote_code=True)
+
+# salmonn_model = SALMONN(
+#     ckpt="./SALMONN_PATHS/salmonn_v1.pth",
+#     whisper_path="./SALMONN_PATHS/whisper-large-v2",
+#     beats_path="./SALMONN_PATHS/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt",
+#     vicuna_path="./SALMONN_PATHS/vicuna-13b-v1.1",
+#     low_resource=False,
+#     device="cuda:1",
+# )
+# salmonn_tokenizer = salmonn_model.llama_tokenizer
+
+resampler = Audio(sampling_rate=16_000)
+
+# @torch.no_grad
+# def salmonn_fwd(audio_input, do_sample=False, temperature=0.001):
+#     if audio_input == None:
+#         return ""
+#     sr, y = audio_input
+#     y = y.astype(np.float32)
+#     y /= np.max(np.abs(y))
+#     a = resampler.decode_example(
+#         resampler.encode_example({"array": y, "sampling_rate": sr})
+#     )
+#     sf.write("tmp.wav", a["array"], a["sampling_rate"], format="wav")
+#     streamer = TextIteratorStreamer(salmonn_tokenizer)
+#     with torch.cuda.amp.autocast(dtype=torch.float16):
+#         llm_message = salmonn_model.generate(
+#             wav_path="tmp.wav",
+#             prompt="You are a helpful assistant.",
+#             do_sample=False,
+#             top_p=1.0,
+#             temperature=0.0,
+#             device="cuda:1",
+#             streamer=streamer,
+#         )
+
+#     response = ""
+#     for new_tokens in streamer:
+#         response += new_tokens
+#         yield response.replace("</s>", "")
 
 
 @torch.no_grad
-def pipeline(audio_input, prompt, do_sample=False, temperature=0.001):
-    if audio_input == None:
-        return ""
+def diva_audio(audio_input, do_sample=False, temperature=0.001):
     sr, y = audio_input
+    x = xxhash.xxh32(bytes(y)).hexdigest()
     y = y.astype(np.float32)
     y /= np.max(np.abs(y))
     a = resampler.decode_example(
         resampler.encode_example({"array": y, "sampling_rate": sr})
     )
-
-    audio = a["array"]
-    inputs = processor(audio, return_tensors="pt", sampling_rate=16_000)
-    input_features = inputs.input_features.to("cuda:0")
-    predictions = whisper.generate(input_features=input_features, language="en")
-    prediction_strs = processor.batch_decode(predictions, skip_special_tokens=True)[0]
-    user_prompt = torch.tensor(
-        tokenizer(prediction_strs, add_special_tokens=False)["input_ids"],
-        device=pre_user_suffix.device,
-    )
-    if prompt != None and prompt != "":
-        user_prompt_text = torch.tensor(
-            tokenizer(prompt, add_special_tokens=False)["input_ids"],
-            device=pre_user_suffix.device,
-        )
-        suffix = torch.cat([pre_user_suffix, user_prompt_text, final_header], axis=0)
-    else:
-        suffix = final_header
-    prompt = torch.cat([prefix, user_prompt, suffix], axis=0).unsqueeze(0)
-    print(tokenizer.batch_decode(prompt))
-    outs = []
-    outputs = None
-    greedy = 1
-    i = 0
-    while greedy != 128009 and len(outs) < 128:
-        past_key_values = outputs.past_key_values if outputs else None
-        outputs = llama_decoder(
-            input_ids=prompt,
-            return_dict=True,
-            output_hidden_states=True,
-            past_key_values=past_key_values,
-        )
-        global cache
-        if cache is not None and i == 0:
-            print()
-            print(
-                torch.cdist(
-                    cache.double(),
-                    outputs.hidden_states[-1][-1, -1]
-                    .unsqueeze(0)
-                    .to("cuda:0")
-                    .double(),
-                )
-            )
-            cache = None
-        elif i == 0:
-            cache = outputs.hidden_states[-1][-1, -1].unsqueeze(0).to("cuda:0").double()
-        next_token_logits = outputs.logits[-1, -1, :]
-        if do_sample:
-            logits = next_token_logits / temperature
-            probs = F.softmax(logits, dim=-1)
-            greedy = torch.multinomial(probs, num_samples=1)[0]
-        else:
-            greedy = next_token_logits.argmax()
-        outs.append(greedy)
-        i += 1
-        prompt = greedy.reshape(1, 1)
-        yield tokenizer.decode(outs, skip_special_tokens=True).replace("<|eot_id|>", "")
-    return tokenizer.decode(outs, skip_special_tokens=True).replace("<|eot_id|>", "")
-
+    yield from diva_model.generate_stream(a["array"], None, do_sample=do_sample, max_new_tokens = 256)
 
 @torch.no_grad
-def salmonn_fwd(audio_input, prompt, do_sample=False, temperature=0.001):
+def qwen2_audio(audio_input, do_sample=False, temperature=0.001):
     if audio_input == None:
         return ""
     sr, y = audio_input
+    x = xxhash.xxh32(bytes(y)).hexdigest()
     y = y.astype(np.float32)
     y /= np.max(np.abs(y))
     a = resampler.decode_example(
         resampler.encode_example({"array": y, "sampling_rate": sr})
     )
-    sf.write("tmp.wav", a["array"], a["sampling_rate"], format="wav")
-    streamer = TextIteratorStreamer(salmonn_tokenizer)
-    with torch.cuda.amp.autocast(dtype=torch.float16):
-        llm_message = salmonn_model.generate(
-            wav_path="tmp.wav",
-            prompt=prompt,
-            do_sample=False,
-            top_p=1.0,
-            temperature=0.0,
-            device="cuda:1",
-            streamer=streamer,
-        )
-
-    response = ""
-    for new_tokens in streamer:
-        response += new_tokens
-        yield response.replace("</s>", "")
+    sf.write(f"{x}.wav", a["array"], a["sampling_rate"], format="wav")
+    conversation = [
+        {"role": "system", "content": "You are a helpful assistant."},
+        {
+            "role": "user",
+            "content": [
+                {
+                    "type": "audio",
+                    "audio_url": f"{x}.wav",
+                },
+            ],
+        },
+    ]
+    text = qwen2_processor.apply_chat_template(
+        conversation, add_generation_prompt=True, tokenize=False
+    )
+    audios = [
+        librosa.load(f"{x}.wav", sr=qwen2_processor.feature_extractor.sampling_rate)[0]
+    ]
+    inputs = qwen2_processor(text=text, audios=audios, return_tensors="pt", padding=True)
+    generate_ids = qwen2_model.generate(**inputs, max_length=256)
+    generate_ids = generate_ids[:, inputs.input_ids.size(1) :]
+    response = qwen2_processor.batch_decode(
+        generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False
+    )[0]
+    return response
 
 
 @torch.no_grad
-def qwen_audio(audio_input, prompt, do_sample=False, temperature=0.001):
+def qwen_audio(audio_input, do_sample=False, temperature=0.001):
     if audio_input == None:
         return ""
     sr, y = audio_input
+    x = xxhash.xxh32(bytes(y)).hexdigest()
     y = y.astype(np.float32)
     y /= np.max(np.abs(y))
     a = resampler.decode_example(
         resampler.encode_example({"array": y, "sampling_rate": sr})
     )
-    sf.write("tmp.wav", a["array"], a["sampling_rate"], format="wav")
-    query = qwen_tokenizer.from_list_format([{"audio": "tmp.wav"}, {"text": prompt}])
+    sf.write(f"{x}.wav", a["array"], a["sampling_rate"], format="wav")
+    query = qwen_tokenizer.from_list_format([{"audio": f"{x}.wav"}])
 
     response, history = qwen_model.chat(
         qwen_tokenizer,
@@ -257,112 +179,79 @@ def qwen_audio(audio_input, prompt, do_sample=False, temperature=0.001):
     return response
 
 
-@torch.no_grad
-def via(audio_input, prompt, do_sample=False, temperature=0.001):
-    if audio_input == None:
-        return ""
-    sr, y = audio_input
-    y = y.astype(np.float32)
-    y /= np.max(np.abs(y))
-    a = resampler.decode_example(
-        resampler.encode_example({"array": y, "sampling_rate": sr})
-    )
-
-    audio = a["array"]
-    inputs = processor(audio, return_tensors="pt", sampling_rate=16_000)
-    input_features = inputs.input_features.to("cuda:0")
-    hidden_states = whisper_encoder(input_features=input_features)["last_hidden_state"]
-    prefix_embed = llama_decoder.model.embed_tokens(prefix)
-    virt_tokens = connector(hidden_states).squeeze()
-
-    if prompt != None and prompt != "":
-        user_prompt_text = torch.tensor(
-            tokenizer(prompt, add_special_tokens=False)["input_ids"],
-            device=pre_user_suffix.device,
-        )
-        suffix = torch.cat([pre_user_suffix, user_prompt_text, final_header], axis=0)
-    else:
-        suffix = final_header
-    suffix_embed = llama_decoder.model.embed_tokens(suffix)
-    inputs_embeds = torch.cat(
-        [prefix_embed, virt_tokens, suffix_embed], axis=0
-    ).unsqueeze(0)
-    outs = []
-    outputs = None
-    greedy = 1
-    i = 0
-    while greedy != 128009 and len(outs) < 128:
-        past_key_values = outputs.past_key_values if outputs else None
-        outputs = llama_decoder(
-            inputs_embeds=inputs_embeds.to("cuda:0").half(),
-            return_dict=True,
-            output_hidden_states=True,
-            past_key_values=past_key_values,
-        )
-        global cache
-        if cache is not None and i == 0:
-            cache = None
-        next_token_logits = outputs.logits[-1, -1, :]
-        if do_sample:
-            logits = next_token_logits / temperature
-            probs = F.softmax(logits, dim=-1)
-            greedy = torch.multinomial(probs, num_samples=1)[0]
-        else:
-            greedy = next_token_logits.argmax()
-        outs.append(greedy)
-        next_embed = llama_decoder.model.embed_tokens(greedy.reshape(1, 1))
-        inputs_embeds = next_embed
-        yield tokenizer.decode(outs).replace("<|eot_id|>", "")
-    return tokenizer.decode(outs).replace("<|eot_id|>", "")
-
-
-def transcribe(audio_input, text_prompt, state, model_order):
-    print("test")
+def transcribe(audio_input, state, model_order):
     if audio_input == None:
         return (
             "",
             "",
-            "",
-            gr.Button(visible=False),
             gr.Button(visible=False),
             gr.Button(visible=False),
             state,
         )
 
     def gen_from_via():
-        via_resp = via(audio_input, text_prompt)
+        via_resp = via(audio_input)
         for resp in via_resp:
-            v_resp = gr.Textbox(value=resp, visible=True, label=model_names[0] if not anonymous else f"Model {order}")
-            yield (v_resp, s_resp, q_resp)
+            v_resp = gr.Textbox(
+                value=resp,
+                visible=True,
+                label=model_names[0] if not anonymous else f"Model {order}",
+            )
+            yield (s_resp, q_resp)
 
     def gen_from_salmonn():
-        salmonn_resp = salmonn_fwd(audio_input, text_prompt)
+        salmonn_resp = salmonn_fwd(audio_input)
         for resp in salmonn_resp:
-            s_resp = gr.Textbox(value=resp, visible=True, label=model_names[1] if not anonymous else f"Model {order}")
-            yield (v_resp, s_resp, q_resp)
+            s_resp = gr.Textbox(
+                value=resp,
+                visible=True,
+                label=model_names[1] if not anonymous else f"Model {order}",
+            )
+            yield (s_resp, q_resp)
+
+    def gen_from_qwen2():
+        qwen_resp = qwen2_audio(audio_input)
+        s_resp = gr.Textbox(
+            value=qwen_resp,
+            visible=True,
+            label=model_names[2] if not anonymous else f"Model {order}",
+        )
+        yield (s_resp, q_resp)
+
+    def gen_from_diva():
+        diva_resp = diva_audio(audio_input)
+        for resp in  diva_resp:
+            d_resp = gr.Textbox(
+                value=resp,
+                visible=True,
+                label=model_names[0] if not anonymous else f"Model {order}",
+            )
+            yield (s_resp, d_resp)
 
     def gen_from_qwen():
-        qwen_resp = qwen_audio(audio_input, text_prompt)
-        q_resp = gr.Textbox(value=qwen_resp, visible=True, label=model_names[2] if not anonymous else f"Model {order}")
-        yield (v_resp, s_resp, q_resp)
+        qwen_resp = qwen_audio(audio_input)
+        q_resp = gr.Textbox(
+            value=qwen_resp,
+            visible=True,
+            label=model_names[2] if not anonymous else f"Model {order}",
+        )
+        yield (s_resp, q_resp)
 
     spinner_id = 0
     spinners = ["◐ ", "◓ ", "◑", "◒"]
-    initial_responses = [("", "", "")]
+    initial_responses = [("", "")]
     resp_generators = [
-        gen_from_via(),
-        gen_from_salmonn(),
-        gen_from_qwen(),
+        gen_from_qwen2(),
+        gen_from_diva(),
     ]
     order = -1
-    resp_generators = [resp_generators[model_order[0]], resp_generators[model_order[1]], resp_generators[model_order[2]]]
+    resp_generators = [resp_generators[model_order[0]], resp_generators[model_order[1]]]
     for generator in [initial_responses, *resp_generators]:
         order += 1
         for resps in generator:
-            v_resp, s_resp, q_resp = resps
+            s_resp, q_resp = resps
             resp_1 = resps[model_order[0]]
             resp_2 = resps[model_order[1]]
-            resp_3 = resps[model_order[2]]
             spinner = spinners[spinner_id]
             spinner_id = (spinner_id + 1) % 4
             yield (
@@ -373,8 +262,6 @@ def transcribe(audio_input, text_prompt, state, model_order):
                 ),
                 resp_1,
                 resp_2,
-                resp_3,
-                gr.Button(visible=False),
                 gr.Button(visible=False),
                 gr.Button(visible=False),
                 state,
@@ -385,8 +272,6 @@ def transcribe(audio_input, text_prompt, state, model_order):
         ),
         resp_1,
         resp_2,
-        resp_3,
-        gr.Button(visible=True),
         gr.Button(visible=True),
         gr.Button(visible=True),
         responses_complete(state),
@@ -396,7 +281,7 @@ def transcribe(audio_input, text_prompt, state, model_order):
 def on_page_load(state, model_order):
     if state == 0:
         gr.Info(
-            "Record what you want to say to your AI Assistant! All Audio recordings are stored only temporarily and will be erased as soon as you exit this page."
+            "Record something you'd say to an AI Assistant! Think about what you usually use Siri, Google Assistant, or ChatGPT for."
         )
         state = 1
         if anonymous:
@@ -407,7 +292,7 @@ def on_page_load(state, model_order):
 def recording_complete(state):
     if state == 1:
         gr.Info(
-            "Submit your recording to get responses from all three models! You can also influence the model responses with an optional prompt."
+            "Once you submit your recording, you'll receive responses from different models. This might take a second."
         )
         state = 2
     return (
@@ -428,16 +313,20 @@ def responses_complete(state):
 
 
 def clear_factory(button_id):
-    def clear(audio_input, text_prompt, model_order):
+    def clear(audio_input, model_order, pref_counter):
         if button_id != None:
             sr, y = audio_input
             db.insert(
                 {
-                    "audio_hash": hash(str(y)),
-                    "text_prompt": text_prompt,
+                    "audio_hash": xxhash.xxh32(bytes(y)).hexdigest(),
                     "best": model_shorthand[model_order[button_id]],
                 }
             )
+            pref_counter += 1
+        counter_text = f"# {pref_counter}/10 Preferences Submitted"
+        if pref_counter >= 10:
+            code = "PLACEHOLDER"
+            counter_text = f"# Completed! Completion Code: {code}"
         if anonymous:
             random.shuffle(model_order)
         return (
@@ -448,11 +337,11 @@ def clear_factory(button_id):
             ),
             gr.Button(visible=False),
             gr.Button(visible=False),
-            gr.Button(visible=False),
             None,
             gr.Textbox(visible=False),
             gr.Textbox(visible=False),
-            gr.Textbox(visible=False),
+            pref_counter,
+            counter_text
         )
 
     return clear
@@ -478,20 +367,17 @@ theme = gr.themes.Soft(
 
 db = TinyDB("user_study.json")
 
-model_names = ["Llama 3 VIA", "SALMONN", "Qwen Audio"]
-model_shorthand = ["via", "salmonn", "qwen"]
+model_names = ["Qwen2 Audio", "DiVA"]
+model_shorthand = ["qwen2", "diva"]
 with gr.Blocks(theme=theme) as demo:
+    submitted_preferences = gr.State(0)
     state = gr.State(0)
-    model_order = gr.State([0, 1, 2])
+    model_order = gr.State([0, 1])
+    with gr.Row():
+        counter_text = gr.Markdown("# 0/10 Preferences Submitted.\n Follow the pop-up tips to submit your first preference.")
     with gr.Row():
         audio_input = gr.Audio(
             sources=["microphone"], streaming=False, label="Audio Input"
-        )
-    with gr.Row():
-        prompt = gr.Textbox(
-            value="",
-            label="Text Prompt",
-            placeholder="Optional: Additional text prompt to influence how the model responds to your speech.",
         )
 
     with gr.Row():
@@ -502,13 +388,10 @@ with gr.Blocks(theme=theme) as demo:
             out1 = gr.Textbox(visible=False)
         with gr.Column(scale=1):
             out2 = gr.Textbox(visible=False)
-        with gr.Column(scale=1):
-            out3 = gr.Textbox(visible=False)
 
     with gr.Row():
         best1 = gr.Button(value="This response is best", visible=False)
         best2 = gr.Button(value="This response is best", visible=False)
-        best3 = gr.Button(value="This response is best", visible=False)
 
     audio_input.stop_recording(
         recording_complete,
@@ -524,29 +407,26 @@ with gr.Blocks(theme=theme) as demo:
     )
     btn.click(
         fn=transcribe,
-        inputs=[audio_input, prompt, state, model_order],
-        outputs=[btn, out1, out2, out3, best1, best2, best3, state],
+        inputs=[audio_input, state, model_order],
+        outputs=[btn, out1, out2, best1, best2, state],
     )
     best1.click(
         fn=clear_factory(0),
-        inputs=[audio_input, prompt, model_order],
-        outputs=[model_order,btn, best1, best2, best3, audio_input, out1, out2, out3],
+        inputs=[audio_input, model_order, submitted_preferences],
+        outputs=[model_order, btn, best1, best2, audio_input, out1, out2, submitted_preferences, counter_text],
     )
     best2.click(
         fn=clear_factory(1),
-        inputs=[audio_input, prompt, model_order],
-        outputs=[model_order,btn, best1, best2, best3, audio_input, out1, out2, out3],
-    )
-    best3.click(
-        fn=clear_factory(2),
-        inputs=[audio_input, prompt, model_order],
-        outputs=[model_order,btn, best1, best2, best3, audio_input, out1, out2, out3],
+        inputs=[audio_input, model_order, submitted_preferences],
+        outputs=[model_order, btn, best1, best2, audio_input, out1, out2, submitted_preferences, counter_text],
     )
     audio_input.clear(
         clear_factory(None),
-        [audio_input, prompt, model_order],
-        [model_order, btn, best1, best2, best3, audio_input, out1, out2, out3],
+        [audio_input, model_order, submitted_preferences],
+        [model_order, btn, best1, best2, audio_input, out1, out2, submitted_preferences, counter_text],
     )
-    demo.load(fn=on_page_load, inputs=[state, model_order], outputs=[state, model_order])
+    demo.load(
+        fn=on_page_load, inputs=[state, model_order], outputs=[state, model_order]
+    )
 
-demo.launch(share=False)
+demo.launch(share=True)

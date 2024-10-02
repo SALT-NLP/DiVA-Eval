@@ -1,4 +1,10 @@
-git clone https://huggingface.co/tsinghua-ee/SALMONN/
+wget https://github.com/git-lfs/git-lfs/releases/download/v3.5.1/git-lfs-linux-amd64-v3.5.1.tar.gz
+tar -xvf git-lfs-linux-amd64-v3.5.1.tar.gz
+sudo bash ./git-lfs-3.5.1/install.sh
+GIT_LFS_SKIP_SMUDGE=1 git clone https://huggingface.co/tsinghua-ee/SALMONN/
+cd SALMONN
+git lfs pull
+cd ..
 mv SALMONN/salmonn_v1.pth .
 rm -r SALMONN
 git clone https://huggingface.co/lmsys/vicuna-13b-v1.1
