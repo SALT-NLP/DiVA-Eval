@@ -1,6 +1,8 @@
 eval/SALMONN_PATHS/*
 !SALMONN_PATHS/SALMONN_SETUP.sh
 
+*.wav
+
 # -*- mode: gitignore; -*-
 *~
 \#*\#
