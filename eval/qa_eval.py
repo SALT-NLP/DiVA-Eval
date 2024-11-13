@@ -13,10 +13,14 @@ from transformers import (
     AutoModelForSpeechSeq2Seq,
     AutoProcessor,
     AutoTokenizer,
+    LlamaTokenizer,
     pipeline,
     Qwen2AudioForConditionalGeneration,
+    WhisperFeatureExtractor,
     AutoProcessor,
 )
+from blsp.blsp.src.modeling_blsp import BlspModel
+from blsp.blsp.src.speech_text_paired_dataset import get_waveform
 from transformers.generation import GenerationConfig
 
 from load_via_eval import load_via_eval
@@ -123,6 +127,7 @@ def get_response_end_to_end_s(model, audio, dial):
 
     return response
 
+
 @torch.no_grad
 def get_response_end_to_end_q2(model, audio, dial):
     value = audio[dial]
@@ -154,15 +159,14 @@ def get_response_end_to_end_q2(model, audio, dial):
     inputs["attention_mask"] = inputs.attention_mask.to("cuda:0")
     inputs["input_features"] = inputs.input_features.to("cuda:0")
 
-    generate_ids = model.generate(
-        **inputs, max_new_tokens=64
-    )
+    generate_ids = model.generate(**inputs, max_new_tokens=64)
     generate_ids = generate_ids[:, inputs.input_ids.size(1) :]
     response = processor.batch_decode(
         generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False
     )[0]
 
     return response
+
 
 @torch.no_grad
 def get_response_end_to_end_v(model, audio, dial):
@@ -175,6 +179,42 @@ def get_response_end_to_end_v(model, audio, dial):
         )
     response = llm_message
 
+    return response
+
+
+@torch.no_grad
+def get_response_blsp(model, audio, dial):
+    value = audio[dial]
+    sf.write("tmp_b.wav", value["array"], value["sampling_rate"], format="wav")
+    with torch.cuda.amp.autocast(dtype=torch.float16):
+        instruction = "You are a helpful assistant. Give your answers as a simple single sentence."
+        input_ids = tokenizer(
+            f"###[Human]:{instruction}", return_tensors="pt"
+        ).input_ids.cuda()
+        audio = "tmp_b.wav"
+        speech_values, speech_attention_mask = None, None
+        speech = get_waveform(audio, output_sample_rate=extractor.sampling_rate)
+        speech_inputs = extractor(
+            speech,
+            sampling_rate=extractor.sampling_rate,
+            return_attention_mask=True,
+            return_tensors="pt",
+        )
+        speech_values = speech_inputs.input_features.cuda()
+        speech_attention_mask = speech_inputs.attention_mask.cuda()
+        suffix_input_ids = (
+            tokenizer("\n\n\n###[Assistant]:", return_tensors="pt")
+            .input_ids[:, 1:]
+            .cuda()
+        )
+        output = model.generate(
+            input_ids=input_ids,
+            suffix_input_ids=suffix_input_ids,
+            speech_values=speech_values,
+            speech_attention_mask=speech_attention_mask,
+            generation_config=generation_config,
+        )
+        response = tokenizer.decode(output[0], skip_special_tokens=True)
     return response
 
 
@@ -204,7 +244,7 @@ parser.add_argument(
     help="path for transcript file",
     type=str,
     default="Spoken_Dialect_QA",
-    )
+)
 args = parser.parse_args()
 m_type = args.m_type
 model_name = args.model_name
@@ -235,6 +275,30 @@ if m_type == "e2e":
             do_sample=False,
             top_k=50,
             top_p=1.0,
+        )
+    elif "blsp" in model_name:
+        tokenizer = LlamaTokenizer.from_pretrained(model_name)
+        extractor = WhisperFeatureExtractor.from_pretrained(model_name)
+        model = BlspModel.from_pretrained(model_name).cuda()
+        generation_config = GenerationConfig(
+            max_new_tokens=128,
+            min_new_tokens=1,
+            do_sample=False,
+            temperature=0.1,
+            top_p=0.75,
+            num_beams=1,
+            num_return_sequences=1,
+        )
+        generation_config.update(
+            **{
+                "max_new_tokens": 1,
+                "min_new_tokens": 64,
+                "do_sample": False,
+                "top_p": 1.0,
+                "pad_token_id": tokenizer.pad_token_id,
+                "bos_token_id": tokenizer.bos_token_id,
+                "eos_token_id": tokenizer.eos_token_id,
+            }
         )
     elif "salmonn" in model_name:
         model = SALMONN(
@@ -322,6 +386,8 @@ for dial in dials:
                     pred = get_response_end_to_end_q(model, ex, x_label)
                 elif m_type == "e2e" and "salmonn" in name_short:
                     pred = get_response_end_to_end_s(model, ex, x_label)
+                elif m_type == "e2e" and "blsp" in name_short:
+                    pred = get_response_blsp(model, ex, x_label)
                 elif m_type == "e2e" and "via" in name_short:
                     pred = get_response_end_to_end_v(model, ex, x_label)
                 elif m_type != "e2e" and (
