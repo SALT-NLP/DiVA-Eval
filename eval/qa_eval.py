@@ -291,8 +291,7 @@ if m_type == "e2e":
         )
         generation_config.update(
             **{
-                "max_new_tokens": 1,
-                "min_new_tokens": 64,
+                "max_new_tokens": 64,
                 "do_sample": False,
                 "top_p": 1.0,
                 "pad_token_id": tokenizer.pad_token_id,
