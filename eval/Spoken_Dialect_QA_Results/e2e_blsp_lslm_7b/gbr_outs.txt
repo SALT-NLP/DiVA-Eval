@@ -1,0 +1,494 @@
+-1086588478053773954[SEP_DIAL]"""Poland surrendered to the Nazis on September 17th, 1939."""[SEP_DIAL]0.7183472849383741
+-1097534678424591874[SEP_DIAL]"""The lingua franca of the Ottoman Empire was Turkish."""[SEP_DIAL]0.8434982382793367
+-1111591214946199016[SEP_DIAL]"""The youngest WWE champion was Seth Rollins, who won the title at the age of 22."""[SEP_DIAL]0.32435351394363465
+-1188393266492101522[SEP_DIAL]"""Augustus became the first Roman emperor in 27 BC."""[SEP_DIAL]0.8516785010515876
+-1221591137706398019[SEP_DIAL]"""George Strait was born on May 18, 1952."""[SEP_DIAL]0.16900183456440854
+-1280312487563607339[SEP_DIAL]"""The first conductor of the New York Philharmonic was Leonard Bernstein."""[SEP_DIAL]0.22831578877598346
+-1281807335761932155[SEP_DIAL]"""Microcrystalline cellulose is a type of fiber derived from plant sources."""[SEP_DIAL]0.3400946552152754
+-129096709331260205[SEP_DIAL]"""His bestseller is "The Catcher in the Rye"."""[SEP_DIAL]0.30263485257595046
+-1291839753890820969[SEP_DIAL]"""It is called gorilla because of its large size and powerful build."""[SEP_DIAL]0.44620402830936046
+-1295730708086099220[SEP_DIAL]"""Approximately 3.5 million people live in Jabotinsky."""[SEP_DIAL]0.2246956739025141
+-1347908151160428725[SEP_DIAL]"""The person who developed recapture was Ronald Fisher."""[SEP_DIAL]0.23069713534090275
+-1359429525253984174[SEP_DIAL]"""ABC was formed in 1945."""[SEP_DIAL]0.24225320535450967
+-1424211091584255105[SEP_DIAL]"""The first publication of the Encyclopedia Britannica was in 1768."""[SEP_DIAL]0.8337630424424669
+-1535886786279469934[SEP_DIAL]"""The first instrument used to measure time was the sundial."""[SEP_DIAL]0.2645731080185296
+-160611219707521274[SEP_DIAL]"""Vasko Nunez was born in 1964 in Belgrade, Serbia."""[SEP_DIAL]0.2637064767522731
+-1640258764646360549[SEP_DIAL]"""The cartoon "DuckTales" made its debut in 1987."""[SEP_DIAL]0.4656792004107403
+-1666667753391432263[SEP_DIAL]"""The Stirling Smith Art Gallery and Museum was first opened in 1894."""[SEP_DIAL]0.22074584687258247
+-1686360262629407117[SEP_DIAL]"""The Warrior series consists of 8 books."""[SEP_DIAL]0.3731594605792078
+-1751216373905305064[SEP_DIAL]"""Layud Miller, Mikael Lofven, Pavlochenko, and Sneip all participated in the event."""[SEP_DIAL]0.310823107279798
+-1770004519341850841[SEP_DIAL]"""He went to the University of Rome."""[SEP_DIAL]0.6528608507203721
+-1787357558341446865[SEP_DIAL]"""The Sydney Opera House cost approximately $102 million to build."""[SEP_DIAL]0.35563461093093673
+-1815026847539815580[SEP_DIAL]"""A general apprenticeship typically lasts for a period of years."""[SEP_DIAL]0.40760792127764045
+-1860233377754067774[SEP_DIAL]"""The first audio recording device was invented by Thomas Edison in 1877."""[SEP_DIAL]0.7333010969555684
+-188565190208286184[SEP_DIAL]"""The oldest known permit is over 5,000 years old."""[SEP_DIAL]0.2995831074679348
+-1953817583617857539[SEP_DIAL]"""Cherry Springs State Park became a state park in 1987."""[SEP_DIAL]0.18010672871378974
+-19752166170288672[SEP_DIAL]"""The steamship was used for transportation and trade."""[SEP_DIAL]0.3756854708531734
+-1993241965988070082[SEP_DIAL]"""The United States officially withdrew from Vietnam in 1975."""[SEP_DIAL]0.42312656679339344
+-1994983880957743988[SEP_DIAL]"""Yate Stirling joined the Navy in 1941."""[SEP_DIAL]0.2759275289468497
+-2064173598722158670[SEP_DIAL]"""There are 21 provinces in Mongolia."""[SEP_DIAL]0.821903536996164
+-2082301375923809913[SEP_DIAL]"""New France ended in 1763."""[SEP_DIAL]0.764771067096454
+-2112229671729397964[SEP_DIAL]"""The average summer temperature in Mexico is around 80 degrees fahrenheit (26  degrees centigrade)."""[SEP_DIAL]0.45809710756934796
+-2166329328750115089[SEP_DIAL]"""Sydney became the capital of New South Wales in 1788."""[SEP_DIAL]0.18126994420143328
+-2185356568495821389[SEP_DIAL]"""The Silk Road was an important trade route between Europe and Asia from the 14th to the 17th centuries."""[SEP_DIAL]0.41659383576888076
+-2186137719786447747[SEP_DIAL]"""Rubik's Cube was invented in 1974."""[SEP_DIAL]0.358392750371172
+-2217968654336461403[SEP_DIAL]"""The American Renaisance began in the 16th century."""[SEP_DIAL]0.3040796249254968
+-2226227680349370351[SEP_DIAL]"""Sonny Pictures Television was established in 1950."""[SEP_DIAL]0.3091749747552941
+-2266813533210943290[SEP_DIAL]"""The mayor of Lemon is from the city of Lemon."""[SEP_DIAL]0.3494527542659275
+-2272539894158640955[SEP_DIAL]"""Franklin Roosevelt was the 32nd President of the United States."""[SEP_DIAL]0.2794193262623751
+-2284165020361044014[SEP_DIAL]"""Frontier Marshall Arch Ruling was established in 1844."""[SEP_DIAL]0.2929765800933367
+-2349744557816850487[SEP_DIAL]"""The later in treaty was signed in 1991."""[SEP_DIAL]0.20414926327115368
+-2392996291786550560[SEP_DIAL]"""The Pokemon Manga was published by Viz Media."""[SEP_DIAL]0.270646159000118
+-239966012247908509[SEP_DIAL]"""The 1st movie John Travolta starred in was "Saturday Night Fever"."""[SEP_DIAL]0.8429756549540813
+-2408611743583702692[SEP_DIAL]"""Southern Illinois University Edwardsville was founded in 1957."""[SEP_DIAL]0.7698936053200186
+-2442648296752314408[SEP_DIAL]"""The oldest overseas US military base is the Guantanamo Bay Naval Base in Cuba, which has been in operation since 1903."""[SEP_DIAL]0.8946050881439702
+-245695108658199045[SEP_DIAL]"""An organic force foot is a type of footwear made from natural materials such as leather, cotton, and rubber."""[SEP_DIAL]0.4606391370165205
+-2459393085512658900[SEP_DIAL]"""Fauci is an anti-gen."""[SEP_DIAL]0.5231649006988429
+-253132044084533762[SEP_DIAL]"""Leslie Nielsen plays the role of Frank Drebin in the movie The Naked Gun."""[SEP_DIAL]0.2732641392258822
+-2554446070171202488[SEP_DIAL]"""The second lightest element in the periodic table is helium, with an atomic weight of 4.002602."""[SEP_DIAL]0.5773499434978807
+-2589355517049674838[SEP_DIAL]"""Luther nailed the proclamations to the church door on October 31, 1517."""[SEP_DIAL]0.7917090600637334
+-2604425821047712907[SEP_DIAL]"""Arabic numerals were adopted in Europe in the 13th century."""[SEP_DIAL]0.27211622857596607
+-2636287830188367872[SEP_DIAL]"""The University of Maryland football team was established in 1895."""[SEP_DIAL]0.2231837439886457
+-2638256671365028810[SEP_DIAL]"""Pythagoras was born in 570 BCE."""[SEP_DIAL]0.6333911773353931
+-2718519424031467997[SEP_DIAL]"""The closing credits start after the movie is finished."""[SEP_DIAL]0.3531491411222871
+-2815362397953265705[SEP_DIAL]"""The case of Pacific Gas and Electric Company v. State Energy Resources Conservation and Development Commission went to the Supreme Court in 1983."""[SEP_DIAL]0.8550576488936579
+-2835431238316519162[SEP_DIAL]"""The first documentary film was "The Great Train Robbery" (1903)."""[SEP_DIAL]0.32303277466885016
+-2891925316756992613[SEP_DIAL]"""Porsche was founded in 1931."""[SEP_DIAL]0.8058363067734091
+-2922602029552719336[SEP_DIAL]"""Astelita was established in 1996."""[SEP_DIAL]0.24852590587715262
+-2925467118859919921[SEP_DIAL]"""The Dreamhack Open Cluj-Napoca 2015 was held at the Arena Nationala in Cluj-Napoca, Romania."""[SEP_DIAL]0.6957957973959283
+-2925579256646993175[SEP_DIAL]"""The Yuma War lasted from 1850 to 1853."""[SEP_DIAL]0.8840605121230919
+-296383621855457088[SEP_DIAL]"""Joe Camel was introduced in 1988."""[SEP_DIAL]0.2638369907238107
+-2977578513216948349[SEP_DIAL]"""The actor with the most Grammy nominations is Kendrick Lamar."""[SEP_DIAL]0.29083413245295475
+-3229330993031338984[SEP_DIAL]"""Vietnam was colonized by the French in 1858."""[SEP_DIAL]0.3458465731254512
+-3229540493387275641[SEP_DIAL]"""The last hand in an estate emperor was Emperor Hirohito of Japan, who abdicated in 1989."""[SEP_DIAL]0.5919676667556967
+-3240174323411167955[SEP_DIAL]"""The first storm to develop in the 1999-2000 Southwest Indian Ocean tropical cyclone season was Cyclone 01S."""[SEP_DIAL]0.26653791943436955
+-3251330757810619240[SEP_DIAL]"""Aristagoras became leader of Miletus in 499 BC."""[SEP_DIAL]0.5030797406297253
+-3251762100269658809[SEP_DIAL]"""Francisco Labore was born in 1971."""[SEP_DIAL]0.26943135247762573
+-3257705713990170973[SEP_DIAL]"""The Rolling Stones were the first heavy metal band."""[SEP_DIAL]0.24086653171611505
+-3275206348227109904[SEP_DIAL]"""The biggest cricket competition is the Indian Premier League."""[SEP_DIAL]0.5728153742475421
+-3284719349786456040[SEP_DIAL]"""A mathematics degree at university typically takes three to five years to complete."""[SEP_DIAL]0.6096713551946316
+-3413194586042170258[SEP_DIAL]"""The speed limit on the autobahn is 130 km/h."""[SEP_DIAL]0.22949947974325668
+-345185022462567736[SEP_DIAL]"""The X-Men cartoon television series was first aired in 1992."""[SEP_DIAL]0.4460848441831964
+-346771678797018623[SEP_DIAL]"""The flu vaccine is administered annually."""[SEP_DIAL]0.28749181143590474
+-349283359315094596[SEP_DIAL]"""Mount Victoria became a railway station in 1854."""[SEP_DIAL]0.2631784352915669
+-3510186838544398698[SEP_DIAL]"""The Golden Age of Comic Books saw the creation of many classic characters, such as Superman, Batman, Wonder Woman, and The Flash."""[SEP_DIAL]0.6700119683191028
+-3685284801611892054[SEP_DIAL]"""The Edie Canon is approximately 1.5 miles long."""[SEP_DIAL]0.6212920541871138
+-3724024329467001283[SEP_DIAL]"""The first person to identify diabetes was Antoine Lavoisier in 1762."""[SEP_DIAL]0.24799750275479293
+-3741952477774923025[SEP_DIAL]"""English was spoken in Pineapple."""[SEP_DIAL]0.26430767388273113
+-3833076983309585070[SEP_DIAL]"""It gets cold in Vienna, Austria during the winter months."""[SEP_DIAL]0.3714067135430702
+-3852422029212000152[SEP_DIAL]"""The current Head of the Royal Navy is Admiral Sir Tony Radakin."""[SEP_DIAL]0.3884350710774923
+-3916299334386668951[SEP_DIAL]"""There are 8 teams in the TT Pro League."""[SEP_DIAL]0.16233004667543682
+-3936079298398477930[SEP_DIAL]"""Disney introduced Mickey Mouse in 1928."""[SEP_DIAL]0.8165184170373465
+-398076072061303808[SEP_DIAL]"""The Probate Jurisdiction Act was enacted in the United States in 1789."""[SEP_DIAL]0.3448278702810621
+-3999869476067468617[SEP_DIAL]"""The person who has to initiate a plea bargain is the prosecutor."""[SEP_DIAL]0.3280910142956246
+-4022835748661203477[SEP_DIAL]"""The Epic of Gilgamesh was discovered in the 19th century."""[SEP_DIAL]0.297269097510347
+-4029471118963440471[SEP_DIAL]"""The first release of Guitar Hero was in 2005."""[SEP_DIAL]0.2814961420013651
+-4064393802343128038[SEP_DIAL]"""Looker Libra has been around since 2019."""[SEP_DIAL]0.35924871350701637
+-4106129250737880685[SEP_DIAL]"""The universal emotions are joy, sadness, fear, anger, disgust, surprise, and trust."""[SEP_DIAL]0.8328029976386628
+-4161924105482706897[SEP_DIAL]"""Pike's Peak is named for the American explorer Zebulon Pike."""[SEP_DIAL]0.8122551384766206
+-4201317667490373632[SEP_DIAL]"""Taiwan's current president is Tsai Ing-wen."""[SEP_DIAL]0.8099494327357817
+-4238372826965390522[SEP_DIAL]"""He invented the submarine."""[SEP_DIAL]0.22486344538870484
+-4244609246475715256[SEP_DIAL]"""Michelangelo sculpted the David in 1504."""[SEP_DIAL]0.39303642612476364
+-4248278106774938409[SEP_DIAL]"""King Zhao Shang of Chin was the mother of who."""[SEP_DIAL]0.32932056467785187
+-4331565464790593098[SEP_DIAL]"""The most tornadoes occur in the United States."""[SEP_DIAL]0.8966466553602228
+-4375943419642417876[SEP_DIAL]"""The largest recorded squid is the giant squid, which can reach lengths of up to 40 meters."""[SEP_DIAL]0.5989891662416108
+-4459731775182443269[SEP_DIAL]"""The term anthropology was first used in the 16th century."""[SEP_DIAL]0.21735801861907045
+-4494768716153331391[SEP_DIAL]"""The meaning of NBC is Not Being Compliant."""[SEP_DIAL]0.23103728286499337
+-4518219408537561751[SEP_DIAL]"""The population of Emperor Penguins in Antarctica is estimated to be around 17,000 breeding pairs."""[SEP_DIAL]0.3459492729166931
+-4521949971688164383[SEP_DIAL]"""The Angel Oak Tree in South Carolina is estimated to be over 140 years old."""[SEP_DIAL]0.31993679369156136
+-4550141780090479940[SEP_DIAL]"""A tennis ball is made of felt, rubber, and a core of synthetic rubber."""[SEP_DIAL]0.4911855943983051
+-462374529241343035[SEP_DIAL]"""Combustion is the process of burning fuel to create heat and light."""[SEP_DIAL]0.3732048200154522
+-4679360652994558609[SEP_DIAL]"""Television was invented in 1927."""[SEP_DIAL]0.8622651485612554
+-4691554558396915152[SEP_DIAL]"""Sheila James Cool joined the Los Angeles County Board of Supervisors in 2019."""[SEP_DIAL]0.2554580228750094
+-470102827213144267[SEP_DIAL]"""Special relativity was developed in 1905 by Albert Einstein."""[SEP_DIAL]0.7714630810401077
+-4737452987823359893[SEP_DIAL]"""Margaret Clarke Hoober Barn was born in 1909."""[SEP_DIAL]0.233220487245979
+-4780225662994906088[SEP_DIAL]"""The brightest star in the night sky is Sirius."""[SEP_DIAL]0.3055427259571082
+-4797094374007094321[SEP_DIAL]"""The First Celtiberian War took place in 153 BC."""[SEP_DIAL]0.47121043174334376
+-4833259062257947578[SEP_DIAL]"""The most common type of desert is a sandy desert."""[SEP_DIAL]0.427407714262414
+-4836765779205323367[SEP_DIAL]"""The Dollard Hill Line was built in 1910."""[SEP_DIAL]0.36812010214129476
+-4870574386967532340[SEP_DIAL]"""The exact number of people who died in the Great Depression is unknown, but it is estimated to be around 250,000."""[SEP_DIAL]0.46414717167038644
+-4889281637452900605[SEP_DIAL]"""The Battle of Sevastopol was fought in 1854-1855."""[SEP_DIAL]0.25628506986657207
+-4925875972987186629[SEP_DIAL]"""In New Zealand, you must be 18 years old to drink alcohol."""[SEP_DIAL]0.49073498287817674
+-4938379882414858348[SEP_DIAL]"""The first translation of "Tamara" into English was in 1611."""[SEP_DIAL]0.2645367808729967
+-4976004571033984189[SEP_DIAL]"""The longest highway in the US is the Interstate 90, which runs from Seattle, Washington to Boston, Massachusetts."""[SEP_DIAL]0.8369293448659185
+-5027812145311098453[SEP_DIAL]"""Kazakhstan has a unitary parliamentary constitutional republic."""[SEP_DIAL]0.7194568903276294
+-5056243118238434340[SEP_DIAL]"""Justin Morgan first appeared as a character in Home and Away in 1994."""[SEP_DIAL]0.18902079114836579
+-5091370837674768135[SEP_DIAL]"""The movie "Boku wa Tomodachi ga Sukunai" was released in 2011."""[SEP_DIAL]0.3316558240796945
+-520839906330608111[SEP_DIAL]"""The first web page was released in 1991."""[SEP_DIAL]0.8241154667092315
+-523007636145096717[SEP_DIAL]"""The poverty line in America is an income of less than $12,140 a year for an individual, or less than $24,360 for a family of four."""[SEP_DIAL]0.22314823150775576
+-5320447125981904189[SEP_DIAL]"""Ball began in the United States."""[SEP_DIAL]0.24864869450586935
+-5325278607259251434[SEP_DIAL]"""Man slutters is a term used to describe a person who has multiple sexual partners, while homosexuality is the sexual orientation of being attracted to members of the same sex."""[SEP_DIAL]0.4368878657238606
+-5356456330882419327[SEP_DIAL]"""Gary Johnson won 4.2 million votes in the 2012 presidential election."""[SEP_DIAL]0.5818524766374051
+-5356493755090822988[SEP_DIAL]"""Four teams participated in the 2012 Vuelta a Espa."""[SEP_DIAL]0.25488720853311253
+-5373796073394673352[SEP_DIAL]"""The Mongolian Empire was first founded in 1206."""[SEP_DIAL]0.7584362150071761
+-5450594619702972120[SEP_DIAL]"""The series "Clinic" was created by David E. Kelley."""[SEP_DIAL]0.25798815077767734
+-5476065021321214249[SEP_DIAL]"""There are 9 professional football teams in Canada."""[SEP_DIAL]0.20168935769129415
+-5486621823026346786[SEP_DIAL]"""Xi Jinping took power after Mao Zedong in China."""[SEP_DIAL]0.22013033750023692
+-558114201266160247[SEP_DIAL]"""The theory of relativity was announced in 1905."""[SEP_DIAL]0.25621551031930756
+-5615752212022287619[SEP_DIAL]"""Hanna was made with love and care."""[SEP_DIAL]0.3865216164897398
+-5645459364520524608[SEP_DIAL]"""The fastest flying animal is the peregrine falcon, which can reach speeds of up to 240 mph when diving."""[SEP_DIAL]0.913897364357844
+-5679341648933166793[SEP_DIAL]"""The dominant language in Pristina is Albanian."""[SEP_DIAL]0.8501379044643154
+-5762493823950284027[SEP_DIAL]"""The Discovery Channel was introduced in 1985."""[SEP_DIAL]0.27254994524593945
+-5773873968362885289[SEP_DIAL]"""Menopause typically begins in women in their mid-forties."""[SEP_DIAL]0.3302892024433218
+-5843075840674615974[SEP_DIAL]"""Table dining is the practice of eating a meal at a table, typically with multiple courses and multiple people."""[SEP_DIAL]0.5825384947563437
+-5863246936442961913[SEP_DIAL]"""The Cincinnati Bengals are 43 years old."""[SEP_DIAL]0.24897877168491667
+-5879729437435705942[SEP_DIAL]"""The National Labor Relations Board has five members."""[SEP_DIAL]0.9061718896943148
+-5906788898094493615[SEP_DIAL]"""The Institutional Revolutionary Party was established in Mexico in 1929."""[SEP_DIAL]0.8468509906715436
+-591600400516425237[SEP_DIAL]"""Abdul Malik ibn Marwan ibn al-Khattab was born in 685 CE."""[SEP_DIAL]0.338211018868382
+-5916989199256994459[SEP_DIAL]"""It is called Scotland because it is the home of the Scots, a people from the north of England who settled the area in the 12th century."""[SEP_DIAL]0.4712902959984546
+-5989749006968391090[SEP_DIAL]"""Zuzu I lived from 1909 to 1932."""[SEP_DIAL]0.35236072019861264
+-6078798576164742592[SEP_DIAL]"""Skim milk has the highest protein content."""[SEP_DIAL]0.48783119792323715
+-6090056612237091509[SEP_DIAL]"""Randy Pausch joined the faculty of Carnegie Mellon in 2001."""[SEP_DIAL]0.2784793247263406
+-6104567033698603068[SEP_DIAL]"""The Iloilo-Manila railway started running in 1917."""[SEP_DIAL]0.2342167293093419
+-6114419772739363200[SEP_DIAL]"""Michelangelo created David in 1504."""[SEP_DIAL]0.4569503753250663
+-6129294010688253433[SEP_DIAL]"""The piece corpse was found in 1999."""[SEP_DIAL]0.28258021821384094
+-61607290231316470[SEP_DIAL]"""The first company to sell the microwave oven was the Tappan Company in 1967."""[SEP_DIAL]0.27195958983275415
+-6161928300068373401[SEP_DIAL]"""He landed and didi in the same place."""[SEP_DIAL]0.25819023782534833
+-6291551949095698142[SEP_DIAL]"""The first season of the game of thrones TV series aired in 2011."""[SEP_DIAL]0.47702526740880846
+-6310523008035460440[SEP_DIAL]"""Darwin's "The Origin of Species" was first published in 1859."""[SEP_DIAL]0.24320125876617948
+-6381982806693840204[SEP_DIAL]"""The first wind turbine to create electricity was developed by Charles F. Brush in 1887."""[SEP_DIAL]0.8397712662139961
+-6426446469024899068[SEP_DIAL]"""Oil was discovered in Venezuela in 1922."""[SEP_DIAL]0.834924764392127
+-6445744538401066236[SEP_DIAL]"""Servius Tullius was the fifth king of Rome, reigning from 578 to 535 BC."""[SEP_DIAL]0.8466277806557088
+-6448329809649236481[SEP_DIAL]"""Marxism developed in the mid-19th century."""[SEP_DIAL]0.3005883383876141
+-6464908465962625034[SEP_DIAL]"""Ned had four children."""[SEP_DIAL]0.3815475589520476
+-6502426059976256211[SEP_DIAL]"""He has traveled as far as Milton Keynes from London."""[SEP_DIAL]0.2647888194296649
+-6587255996646010490[SEP_DIAL]"""Da Vinci discovered the Vitruvian Man."""[SEP_DIAL]0.17075819582619345
+-6643855865433223582[SEP_DIAL]"""The longest U.S. highway is Route 66, which stretches from Chicago, Illinois to Santa Monica, California."""[SEP_DIAL]0.34035371205186526
+-6651079736722812718[SEP_DIAL]"""Walter William Lawbarn was born in 1902."""[SEP_DIAL]0.23292698383874755
+-6772051383237642130[SEP_DIAL]"""Sardegna became part of Italy in 1420."""[SEP_DIAL]0.2751892806766145
+-6777141312438189596[SEP_DIAL]"""The Federalist Papers were written by Alexander Hamilton, James Madison, and John Jay."""[SEP_DIAL]0.8167736526468763
+-6872864068498683099[SEP_DIAL]"""The cartilage of the larynx controls speech."""[SEP_DIAL]0.288599244867068
+-690305071375415565[SEP_DIAL]"""The Castle Bravo test was performed on May 27, 1956."""[SEP_DIAL]0.3421861515650917
+-6950986694989496474[SEP_DIAL]"""Approximately 6 million people died during World War I."""[SEP_DIAL]0.715359444487119
+-6991778783908000066[SEP_DIAL]"""The ventilator is designed to help people breathe more easily."""[SEP_DIAL]0.30958614721304734
+-6991934152060090464[SEP_DIAL]"""The first Spanish-language Grammy Awards were presented in 2000."""[SEP_DIAL]0.18314296550103437
+-701358161439763741[SEP_DIAL]"""A ritual is a series of actions performed in accordance with a set of beliefs or a religious ceremony, and an OCD is an obsessive-compulsive disorder."""[SEP_DIAL]0.3934320067503949
+-7022374744615060797[SEP_DIAL]"""The DS was released in 2005."""[SEP_DIAL]0.3212655401267879
+-7043973761333172214[SEP_DIAL]"""The stages of grief are denial, anger, bargaining, depression, and acceptance."""[SEP_DIAL]0.9033177678465929
+-7074976174131249673[SEP_DIAL]"""A nucleus of a cell contains the genetic material, which is made up of DNA and proteins."""[SEP_DIAL]0.9055192035848625
+-7136187775991281436[SEP_DIAL]"""Louis Marie Madelin was born in the French city of Guymon."""[SEP_DIAL]0.2567451298910559
+-7143613423291663770[SEP_DIAL]"""Cast iron is made of iron and carbon."""[SEP_DIAL]0.6973072952896191
+-7148554813220287280[SEP_DIAL]"""Human Rights were started by people."""[SEP_DIAL]0.22935637129350928
+-7154525806427521580[SEP_DIAL]"""The largest whale is the blue whale, which can reach lengths of up to 33 meters and weigh up to 173 tonnes."""[SEP_DIAL]0.2951559475816422
+-7198568690822443860[SEP_DIAL]"""The CBS affiliated TV station for Green Bay, WI is WBAY."""[SEP_DIAL]0.2827203695172109
+-7211426261615454679[SEP_DIAL]"""The minimum age for driving is 16 years old."""[SEP_DIAL]0.27685570735258325
+-7258587275801812350[SEP_DIAL]"""There are 7 professional football leagues in the UK."""[SEP_DIAL]0.26459713639460036
+-7260595512500220844[SEP_DIAL]"""The population of Afghanistan is estimated to be around 38 million people."""[SEP_DIAL]0.6601187334240299
+-7273132531178373480[SEP_DIAL]"""The Price Fighter Series began in 2019."""[SEP_DIAL]0.25752465985089434
+-7278078947829111740[SEP_DIAL]"""The San Juan Islands National Park is located in Washington State, USA."""[SEP_DIAL]0.4774668486184983
+-7313836612230225971[SEP_DIAL]"""The Global Marshall Plan Initiative was formed in 2002."""[SEP_DIAL]0.3248662211351685
+-7328192741140918623[SEP_DIAL]"""The Orlando Basketball Federation was founded in 1989."""[SEP_DIAL]0.26416611012881974
+-7328765220633670644[SEP_DIAL]"""The Great Revolt started in October 2020."""[SEP_DIAL]0.20586606889905568
+-7401589230432947246[SEP_DIAL]"""Hangul was invented by King Sejong the Great in 1446."""[SEP_DIAL]0.7666623105615762
+-7405135676812247798[SEP_DIAL]"""The United Nations Educational, Scientific and Cultural Organization (UNESCO) was founded in 1945."""[SEP_DIAL]0.8819065391117358
+-7492165012872274969[SEP_DIAL]"""The country with the highest birthrate is Nigeria."""[SEP_DIAL]0.2279290373520798
+-7529588019751658475[SEP_DIAL]"""The oldest surviving drum is estimated to be around 5,500 years old."""[SEP_DIAL]0.680552592885808
+-7537772706210286158[SEP_DIAL]"""The head writer for the British soap opera Emmerdale is Robert Ashby."""[SEP_DIAL]0.3478184159294737
+-7562653697153108524[SEP_DIAL]"""The first film adaptation of Sherlock Holmes was the 1900 short film "Sherlock Holmes Baffled"."""[SEP_DIAL]0.2682839115298312
+-7573082343451158976[SEP_DIAL]"""Louis Hamnet died in 1998."""[SEP_DIAL]0.3168263576490886
+-758331796404570379[SEP_DIAL]"""Carla Soul Menem Ackel won the presidential election by a margin of 60%."""[SEP_DIAL]0.6184714194680099
+-7638625996318909193[SEP_DIAL]"""The main character of Fate/Zero is Saber."""[SEP_DIAL]0.2287420952086764
+-7638765270077080552[SEP_DIAL]"""Martin published The Great Gatsby in 1925."""[SEP_DIAL]0.1659063400418771
+-7650208488275530434[SEP_DIAL]"""There were an estimated 10 million casualties in World War I."""[SEP_DIAL]0.4460779030450176
+-7667527140208200356[SEP_DIAL]"""There are 34 provinces in China."""[SEP_DIAL]0.12717601963271674
+-7671421809606739911[SEP_DIAL]"""The Battle of Yongju resulted in the death of an estimated 10,000 people."""[SEP_DIAL]0.2803630612679082
+-777266904160062734[SEP_DIAL]"""Ports are manufactured in a variety of countries, including China, India, the United States, and Japan."""[SEP_DIAL]0.2548824715937501
+-7787124984607995963[SEP_DIAL]"""The show "Happy Days" was created by Garry Marshall."""[SEP_DIAL]0.8466964053839185
+-783047404685232045[SEP_DIAL]"""The Nazi Party was founded in 1920."""[SEP_DIAL]0.5320828606168597
+-785570045892392286[SEP_DIAL]"""BMW is over 100 years old."""[SEP_DIAL]0.3349363669346662
+-7860690692552554328[SEP_DIAL]"""George Papadopoulos was born in Greece."""[SEP_DIAL]0.2831168400117009
+-7877849427862470366[SEP_DIAL]"""The female pirate who controlled China's waters was known as "The Queen of the South Seas"."""[SEP_DIAL]0.38818227995374266
+-7886206557606965811[SEP_DIAL]"""Denmark and Norway created the culture in the 12th century."""[SEP_DIAL]0.3496072315850216
+-790603789351353116[SEP_DIAL]"""The Royal Canadian Air Force was established in 1924."""[SEP_DIAL]0.8516906961056022
+-7930033319342991305[SEP_DIAL]"""The first satellite was launched by Sputnik 1 in 1957."""[SEP_DIAL]0.24005596228127235
+-7968911259304773776[SEP_DIAL]"""Approximately 8.6 million people live in Jerusalem."""[SEP_DIAL]0.34770054643072434
+-8013020764187173735[SEP_DIAL]"""The Rainbow Land is located in the northwest corner of the kingdom."""[SEP_DIAL]0.29582959495936023
+-8015082360492693852[SEP_DIAL]"""The auto band has four lanes."""[SEP_DIAL]0.5565784473836861
+-8023857239127586374[SEP_DIAL]"""Flunders is located in the northwestern corner of the continent, bordering the Great Sea."""[SEP_DIAL]0.4490565041568998
+-8055071076826408730[SEP_DIAL]"""Construction of Anchorwatt began in 2020."""[SEP_DIAL]0.2925482076216084
+-8056129850212543422[SEP_DIAL]"""There are 8,640 state parks in the United States."""[SEP_DIAL]0.16186864509132115
+-8080588145952686880[SEP_DIAL]"""The first tomb raider was published in 1996."""[SEP_DIAL]0.8176640406676043
+-8108266188571977608[SEP_DIAL]"""Who first identified blood types?"""[SEP_DIAL]0.25671847387606506
+-8119354834313040370[SEP_DIAL]"""Approximately 32.7 million people live in Malaysia."""[SEP_DIAL]0.300098402485813
+-8149430167475224830[SEP_DIAL]"""He was the first leader of the Gupta Empire."""[SEP_DIAL]0.8342967637821243
+-8188143830067486097[SEP_DIAL]"""Approximately 1,350 British troops died in the Battle of Moreau."""[SEP_DIAL]0.3653124950313935
+-8219387603538564234[SEP_DIAL]"""The Navy is the military branch that uses the mascot."""[SEP_DIAL]0.3470405054383907
+-8251189949199048644[SEP_DIAL]"""Susan B. Anthony lived from 1820 to 1906."""[SEP_DIAL]0.43985633714051653
+-8264876613525515325[SEP_DIAL]"""Jamie Mays was cast as Emma Pilzbry in the 2009 film "The Shutter"."""[SEP_DIAL]0.45872098524524285
+-8323081305981702873[SEP_DIAL]"""The population of Tanzania is approximately 55 million people."""[SEP_DIAL]0.2235807257892144
+-8374733952251949396[SEP_DIAL]"""The Omo River is approximately 685 kilometers (425 miles) long."""[SEP_DIAL]0.6011759461054776
+-8416767869716498005[SEP_DIAL]"""Saint Joseph's Church in Fall River is known as "The Church of the Holy Name"."""[SEP_DIAL]0.31317828144082105
+-844746597397631478[SEP_DIAL]"""Albert Nessier was born in London, England."""[SEP_DIAL]0.2396485977572922
+-8451091134349834265[SEP_DIAL]"""American troops stayed in Germany for several years after World War II."""[SEP_DIAL]0.2694111968053108
+-85208755288249731[SEP_DIAL]"""The Taff Vale Railway was made in 1836."""[SEP_DIAL]0.32369204125540685
+-8551482785345233959[SEP_DIAL]"""Speed is a scalar quantity, while velocity is a vector quantity."""[SEP_DIAL]0.7191556528439464
+-8581362190689255491[SEP_DIAL]"""The Gullic Wars took place in the 3rd century BC."""[SEP_DIAL]0.4809625689940378
+-858666257403282211[SEP_DIAL]"""The head of the judicial system in Portugal is the President of the Portuguese Republic."""[SEP_DIAL]0.5397672872310066
+-8643740989141206868[SEP_DIAL]"""The Brooklyn Nets moved to Brooklyn in 2012."""[SEP_DIAL]0.8753259684166115
+-8646845440051112480[SEP_DIAL]"""Zabelin is a town in Russia."""[SEP_DIAL]0.3935901768833676
+-8665768662332764121[SEP_DIAL]"""Ford first produced the Mustang in 1964."""[SEP_DIAL]0.7744898597275267
+-8668071656246841600[SEP_DIAL]"""The most widely spoken language in Europe is English."""[SEP_DIAL]0.8968685728447148
+-8703497011250451400[SEP_DIAL]"""Construction on the I 69 began in 2001."""[SEP_DIAL]0.3087855117128028
+-8801943708499783045[SEP_DIAL]"""The Oregon Trail claimed the lives of an estimated 4,000 to 8,000 people."""[SEP_DIAL]0.39210317530750083
+-8833858246473029796[SEP_DIAL]"""Elizabeth was 25 years old when she ascended the throne."""[SEP_DIAL]0.8894299693908437
+-8869774466654254833[SEP_DIAL]"""The largest indigenous tribe in Canada is the First Nations."""[SEP_DIAL]0.6900456821722538
+-8886533596605904920[SEP_DIAL]"""Approximately 3,000 people died during 9/11."""[SEP_DIAL]0.4041298058229509
+-8907022244819521415[SEP_DIAL]"""The Comoros was founded in 1975."""[SEP_DIAL]0.7757305420353262
+-8910437972365854011[SEP_DIAL]"""The first book written by Sarah Shepard was "The Amateurs"."""[SEP_DIAL]0.31512911202205895
+-8932337073762421267[SEP_DIAL]"""The region of Macedonia is approximately 25,700 square miles."""[SEP_DIAL]0.5472693649663991
+-8944958681278516508[SEP_DIAL]"""The Interstate Highway System goes across the United States."""[SEP_DIAL]0.6273168361602761
+-8949627347509744495[SEP_DIAL]"""Clemen was Wenzel's nephew, Nimueck was Lothar's barn."""[SEP_DIAL]0.30492810915795443
+-9041575374418655524[SEP_DIAL]"""Quantum field theory was developed in the early 1900s."""[SEP_DIAL]0.2802811699445762
+-9074273492319223722[SEP_DIAL]"""Christian von Eichborn was born in Germany."""[SEP_DIAL]0.25583212210151873
+-9101165461821951122[SEP_DIAL]"""The Knights Templar's headquarters is located in the city of London."""[SEP_DIAL]0.46479661321039667
+-9181447295939424237[SEP_DIAL]"""The Kahn TV station was established in 1991."""[SEP_DIAL]0.21873270890736018
+-9183593619829774086[SEP_DIAL]"""Nine seasons."""[SEP_DIAL]0.322702374504772
+-9215080153395369527[SEP_DIAL]"""The latest member country to join Nato is Montenegro."""[SEP_DIAL]0.8604028932047303
+-941809025270240521[SEP_DIAL]"""Cyberpunk 2077 is published by CD Projekt Red."""[SEP_DIAL]0.8339339409112863
+-942827082784994750[SEP_DIAL]"""The hottest day on record in Adelaide is 44.1  degrees centigrade (111.4 degrees fahrenheit)."""[SEP_DIAL]0.20546731009402308
+-979983300446350493[SEP_DIAL]"""The Cagayan de Oro City Hall is located in Cagayan de Oro, Philippines."""[SEP_DIAL]0.867537506640728
+-998904934957193138[SEP_DIAL]"""Septic tanks are usually built underground."""[SEP_DIAL]0.4497555045095146
+1031930402744423558[SEP_DIAL]"""The equidae family includes horses, donkeys, and zebras."""[SEP_DIAL]0.8865503553129528
+103213181394709864[SEP_DIAL]"""Rocketdyne was founded in 1956."""[SEP_DIAL]0.1880154484321943
+1057178719854760261[SEP_DIAL]"""The first assassin's creed was released in 2007."""[SEP_DIAL]0.8524022851512502
+1078592038420253064[SEP_DIAL]"""Scythia was located in the northern part of the Black Sea region."""[SEP_DIAL]0.2560869898147472
+108612049032716651[SEP_DIAL]"""Who discovered 5-hydroxy-1-iodo-2-propanol?"""[SEP_DIAL]0.24625422812805797
+1183082244164602244[SEP_DIAL]"""The most watched news network is CNN."""[SEP_DIAL]0.36854246836944093
+1313618387827096469[SEP_DIAL]"""El Niño affects North American weather patterns by causing warm ocean temperatures in the Pacific, which can lead to wetter than normal conditions in the United States."""[SEP_DIAL]0.5400394290918029
+132927512879843773[SEP_DIAL]"""Ean Norman McCloud died in 1997."""[SEP_DIAL]0.22426896642673
+1362246171236399702[SEP_DIAL]"""The 1st film directed by Andrei Tarkovsky was "Ivan's Childhood" in 1962."""[SEP_DIAL]0.885052394838864
+1401300811851661521[SEP_DIAL]"""The first video game was "Spacewar!", released in 1962."""[SEP_DIAL]0.24487120366150117
+1403755239387225864[SEP_DIAL]"""Sui generis is a Latin phrase meaning "of its own kind"."""[SEP_DIAL]0.695314963437359
+145721087446352353[SEP_DIAL]"""The character of Elena is portrayed by Nina Dobrev on The Vampire Diaries."""[SEP_DIAL]0.2560478048986442
+1475871493246812898[SEP_DIAL]"""Rubin Dado was born in 1970."""[SEP_DIAL]0.21801382694556326
+1504416034097105045[SEP_DIAL]"""The capital of Oaxaca is Oaxaca City."""[SEP_DIAL]0.5838008742327739
+1528072013281536112[SEP_DIAL]"""The current political leader of Indonesia is President Joko Widodo."""[SEP_DIAL]0.8423339307877526
+1532920872121319799[SEP_DIAL]"""The world champion rugby team in 2018 was the England Rugby Union team."""[SEP_DIAL]0.2789273518089185
+1544540506178465249[SEP_DIAL]"""It took Michelangelo approximately 4 years to paint the Sistine Chapel."""[SEP_DIAL]0.34191421903022257
+1554019318566974271[SEP_DIAL]"""The Caspian Sea is the world's largest enclosed body of water, covering an area of approximately 314,000 square miles."""[SEP_DIAL]0.435296625326553
+1562211647541524405[SEP_DIAL]"""The majority of Iraqis practice a moderate form of Islam."""[SEP_DIAL]0.37603523691901797
+1575886780094151282[SEP_DIAL]"""Https stands for Hypertext Transfer Protocol Secure."""[SEP_DIAL]0.911465416007343
+1585393845801426174[SEP_DIAL]"""The US National Debt is currently $28.9 trillion."""[SEP_DIAL]0.7086422762478901
+1603173216096216702[SEP_DIAL]"""A presidential term in the United States is four years."""[SEP_DIAL]0.6027511521959923
+1621664335672340991[SEP_DIAL]"""Approximately 8.5 million people live in Virginia."""[SEP_DIAL]0.28637045835054753
+1669767032731194260[SEP_DIAL]"""Cyrus the Great founded the Achaemenid Empire in 550 BCE."""[SEP_DIAL]0.23246563921682173
+1716900968004819065[SEP_DIAL]"""The largest recorded golden fish was the 1997 record of a 14.9 lb (6.2 kg) golden carp from the River Thames in England."""[SEP_DIAL]0.2576864982717333
+1734125628411553669[SEP_DIAL]"""Buffy the Vampire Slayer was aired in 1997."""[SEP_DIAL]0.4513241510145465
+1734131477688510913[SEP_DIAL]"""India's beliefs vary greatly and are based on a variety of religious and philosophical traditions."""[SEP_DIAL]0.5631717433886279
+1750395196689089715[SEP_DIAL]"""Real Madrid won the 2015 UEFA Super Cup."""[SEP_DIAL]0.21279906108721391
+1780668811279502912[SEP_DIAL]"""The population of Legos is estimated to be around 1.2 million."""[SEP_DIAL]0.6152790567742146
+1918227748393785599[SEP_DIAL]"""Gospell Carol had 20 books."""[SEP_DIAL]0.3023128728445197
+1947772774545159596[SEP_DIAL]"""Sally McLean lived from 1948 to 1970."""[SEP_DIAL]0.3630842506275078
+1967876568917792705[SEP_DIAL]"""William Morris Bill Laurie started playing cricket at the age of 12."""[SEP_DIAL]0.29789676068557147
+1971662537536642354[SEP_DIAL]"""The first Nobel Prize winner for literature was Rabindranath Tagore in 1913."""[SEP_DIAL]0.19189054211658496
+1976960059016911908[SEP_DIAL]"""The England-Wales border is 210 miles (340 km) long."""[SEP_DIAL]0.5201592473991152
+2028729290335905839[SEP_DIAL]"""The Vandal War ended in 476 CE."""[SEP_DIAL]0.2566514953800887
+2053479068885835766[SEP_DIAL]"""The National Convention was established in France in 1790."""[SEP_DIAL]0.3198216135603349
+2064642425468719857[SEP_DIAL]"""The hip to waist ratio is the proportion of a person's hip circumference to their waist circumference."""[SEP_DIAL]0.4158462168420135
+2121193177711698084[SEP_DIAL]"""Approximately 43% of Brazil's population is black."""[SEP_DIAL]0.31907996911294867
+2121814366668667319[SEP_DIAL]"""The surface area of the Caspian Sea is approximately 372,530 square miles."""[SEP_DIAL]0.5466726094389989
+2144754837526760373[SEP_DIAL]"""Text Instruments was founded in 2001."""[SEP_DIAL]0.2267075156727948
+21592454268324081[SEP_DIAL]"""Albania and Y were established in 1912."""[SEP_DIAL]0.23594274330685816
+2215699697809597346[SEP_DIAL]"""The dollar bill was introduced in 1792."""[SEP_DIAL]0.2273923829033967
+2232463431750226601[SEP_DIAL]"""The fastest fighter plane used by the US in World War II was the North American P-51 Mustang."""[SEP_DIAL]0.3106923297752612
+2245398597415623014[SEP_DIAL]"""One Life to Live aired on ABC from 1968 to 2012."""[SEP_DIAL]0.8885773659136791
+2282981132276512490[SEP_DIAL]"""Fire ants live in warm climates, such as in the southern United States."""[SEP_DIAL]0.5464097624898787
+2314954037367256729[SEP_DIAL]"""The Gundam Animated Series was created by Yoshiyuki Tomino."""[SEP_DIAL]0.29202674789435057
+2326124970478352034[SEP_DIAL]"""A taly novella is a type of opera that is shorter in length and has a lighter, more comical tone than a regular opera."""[SEP_DIAL]0.6242597235389409
+2368400181496471139[SEP_DIAL]"""The West Memphis Three were convicted in 1994 when they were 18 years old."""[SEP_DIAL]0.6078382649997379
+2381583210782254000[SEP_DIAL]"""Ashley Tate was founded by Ashley and Tate."""[SEP_DIAL]0.5242302741463158
+2429518275185032252[SEP_DIAL]"""Louis Marie Madeline Julie de Fontaine was born in 1766."""[SEP_DIAL]0.31429116956728764
+2501922898610145448[SEP_DIAL]"""Errol Smith wrote the song "Sweet Emotion" in 1970."""[SEP_DIAL]0.22303752446002545
+2532661417312008578[SEP_DIAL]"""Randy Pausch's lecture "Reaching Your Childhood Dreams" is attended by thousands of people."""[SEP_DIAL]0.29236570024779096
+2559825252556596406[SEP_DIAL]"""The tomato-fruiting season typically begins in late spring and continues through the summer."""[SEP_DIAL]0.29856550932166925
+2573673614842277480[SEP_DIAL]"""The most abundant fish species in the Indian Ocean is the skipjack tuna."""[SEP_DIAL]0.2613667119080839
+2597391587796947642[SEP_DIAL]"""There are currently 15 permanent members of the United Nations Security Council."""[SEP_DIAL]0.4513024696451782
+2648853691397083411[SEP_DIAL]"""World Wide Web became publicly available in 1991."""[SEP_DIAL]0.5311593801185701
+2674829497473104767[SEP_DIAL]"""Giedo van der Zwaan lived from 1982 to 2019."""[SEP_DIAL]0.3244507267157659
+2688574930229155855[SEP_DIAL]"""Theodoric was the first to theorize queer theory."""[SEP_DIAL]0.26239416200301935
+2704869738621609257[SEP_DIAL]"""The story of American Horror Story Murder House takes place in Los Angeles, California."""[SEP_DIAL]0.8888897628740041
+2718258135440289439[SEP_DIAL]"""There are currently 12 Fox affiliate television stations."""[SEP_DIAL]0.3352921293888923
+27271426926916284[SEP_DIAL]"""Skeffington was born in County Limerick, Ireland."""[SEP_DIAL]0.4778545542688555
+2750940175839985569[SEP_DIAL]"""The official language of the Iveri Coast is English."""[SEP_DIAL]0.3583746824266688
+2777475789048213135[SEP_DIAL]"""The Romans conquered Jerusalem in the year 70 CE."""[SEP_DIAL]0.3326374477416715
+2790976381429855258[SEP_DIAL]"""Sting makes its first appearance in the book "The Lord of the Rings"."""[SEP_DIAL]0.2665624625172208
+2799513671366264315[SEP_DIAL]"""Approximately 10% of the Egyptian population is Christian."""[SEP_DIAL]0.3827994282444328
+2866965765117439061[SEP_DIAL]"""Australia joined the Korean War in 1950."""[SEP_DIAL]0.7973921568598729
+2954085269000363731[SEP_DIAL]"""Rafael Nadal won the 2016 Spanish Grand Prix."""[SEP_DIAL]0.2350670792720454
+2957880619599400676[SEP_DIAL]"""The flu shot was developed by scientists."""[SEP_DIAL]0.24085483608785385
+3010587707680881867[SEP_DIAL]"""Approximately 10-20% of people will get basal cell carcinoma."""[SEP_DIAL]0.3756035349611785
+3023104330665360216[SEP_DIAL]"""This pickon banner says "Welcome"."""[SEP_DIAL]0.10030281982612188
+3041089275742329412[SEP_DIAL]"""The Grand Final of the Australian Football League is the biggest event."""[SEP_DIAL]0.7701609882771366
+3048064435237672589[SEP_DIAL]"""The Commonwealth of Independent States was formed in 1991."""[SEP_DIAL]0.4646830722222335
+3075109698719878748[SEP_DIAL]"""A hacker symbolizes a person who is willing to break the rules and push the boundaries of what is possible."""[SEP_DIAL]0.7198914349716197
+3099181763220861848[SEP_DIAL]"""The diellectical method is used to explore the relationships between two or more concepts."""[SEP_DIAL]0.54645699713432
+3118805975286399257[SEP_DIAL]"""Aboriginal culture is ancient, with a history stretching back at least 40,000 years."""[SEP_DIAL]0.3653540052651715
+3152779224481001639[SEP_DIAL]"""The song "Happy Days" was written by John Fogerty."""[SEP_DIAL]0.21835051463123445
+3163451412262661814[SEP_DIAL]"""The first ruler of the T'ang dynasty was Emperor Gaozu."""[SEP_DIAL]0.8672839770445551
+3204057237385226985[SEP_DIAL]""""The Tale of a Tub" was first published in 1610."""[SEP_DIAL]0.24701637311852154
+3211778415932478788[SEP_DIAL]"""Ethnography is used to study and understand the culture and behavior of different societies."""[SEP_DIAL]0.5660432926840839
+326753515837062236[SEP_DIAL]"""The town of Wolfstein in Germany is over 700 years old."""[SEP_DIAL]0.2844969916186746
+3277035445278051433[SEP_DIAL]"""The World Intellectual Property Organization (WIPO) is headed by Francis Gurry."""[SEP_DIAL]0.9420214375331782
+3457432184155956553[SEP_DIAL]"""Duct tape is a type of adhesive tape used to seal and repair ducts."""[SEP_DIAL]0.5760206868262143
+3458742838274238675[SEP_DIAL]"""South Korea became a republic in 1948."""[SEP_DIAL]0.5393436458801282
+3472398934804429727[SEP_DIAL]"""GDP stands for Gross Domestic Product."""[SEP_DIAL]0.9019177780520979
+3474044210774886197[SEP_DIAL]"""The Pink Tax is a term used to describe the higher cost of female hygiene products compared to similar products marketed towards men."""[SEP_DIAL]0.4486658688551679
+3492884513210961151[SEP_DIAL]"""The first Counter-Strike: Global Offensive Major Championship was held in 2013."""[SEP_DIAL]0.27339093440892803
+3534274329210949061[SEP_DIAL]"""The AMC Hornet was phased out of production in 1977."""[SEP_DIAL]0.8647599497646962
+360680563742099401[SEP_DIAL]"""The official language of Croatia is Croatian."""[SEP_DIAL]0.8688954360254233
+3682885904436479578[SEP_DIAL]"""The mitral valve was invented by Dr. John H. Gibbon, Jr. in 1960."""[SEP_DIAL]0.2607001823318372
+3842186298484286913[SEP_DIAL]"""English is the language that Deaf Church members use to communicate with each other."""[SEP_DIAL]0.42407667623848744
+3875547804674485406[SEP_DIAL]"""We Were Five for the First Elven was a fantasy novel written by J.R.R. Tolkien."""[SEP_DIAL]0.30230451106231127
+387578838454588688[SEP_DIAL]"""Andrew Rector left late night with Cunningham and Brown."""[SEP_DIAL]0.3773163073927026
+3908818313392780702[SEP_DIAL]"""Malcolm Sathyannathan is 35 years old."""[SEP_DIAL]0.3518026458243345
+3981529225832553017[SEP_DIAL]"""The main cause of the Great Depression was the stock market crash of 1929."""[SEP_DIAL]0.6114183895616652
+4042515980952698046[SEP_DIAL]"""Three seasons."""[SEP_DIAL]0.6641790776090615
+413605682184391699[SEP_DIAL]"""Philip Milbank died of a heart attack."""[SEP_DIAL]0.36690859369241824
+4148140649365899356[SEP_DIAL]"""A motor tech is a person who repairs and maintains motor vehicles."""[SEP_DIAL]0.499823189305889
+4153738041697445159[SEP_DIAL]"""Whittier is a city in Los Angeles County, California, United States."""[SEP_DIAL]0.4040203931253986
+42508963226836616[SEP_DIAL]"""Marvin Minsky is credited with inventing the MRI technology."""[SEP_DIAL]0.29467094145468764
+4251050334289006599[SEP_DIAL]"""The Universal Declaration of Human Rights was published in 1948."""[SEP_DIAL]0.8636285192950539
+4260595320173571466[SEP_DIAL]"""Sheila Carter first appeared on The Bold and the Beautiful in 1991."""[SEP_DIAL]0.28826535749487914
+4282658241342217164[SEP_DIAL]"""The oldest grave at Arlington National Cemetery is that of Mary Anna Custis Lee, who was buried there in 1873."""[SEP_DIAL]0.6130618571495311
+4374919192010473096[SEP_DIAL]"""Approximately 200 people died during the "Bloody Friday" riots in Northern Ireland in 1972."""[SEP_DIAL]0.3930583234478321
+439092912435072998[SEP_DIAL]"""The first opera was written in the 16th century."""[SEP_DIAL]0.2664721442839285
+4415480320113825826[SEP_DIAL]"""The first film written by Diablo Cody is "Juno"."""[SEP_DIAL]0.9006569478488138
+4452496853206858853[SEP_DIAL]"""The main religion in Austria is Roman Catholicism."""[SEP_DIAL]0.24879033139638762
+4553983548107209658[SEP_DIAL]"""The British TV show UFO was created by Gerry Anderson."""[SEP_DIAL]0.5912195040819306
+4566256321620706294[SEP_DIAL]"""The RuneScape servers were taken offline on October 6th, 2020."""[SEP_DIAL]0.2709189722523818
+4605082866019686712[SEP_DIAL]"""The current political leader of Singapore is Prime Minister Lee Hsien Loong."""[SEP_DIAL]0.2539965941736644
+4646565357592826901[SEP_DIAL]"""Breaking Bad has five seasons."""[SEP_DIAL]0.8745521735260662
+4671226392327332088[SEP_DIAL]"""The most common carbohydrate is glucose."""[SEP_DIAL]0.4215289034915426
+4678750023787420868[SEP_DIAL]"""The highest peak achievable by humans is Mount Everest, located in the Himalayas."""[SEP_DIAL]0.30585619602089686
+4738970019108936693[SEP_DIAL]"""The bluebonnets were named the state flower of Texas in 1901."""[SEP_DIAL]0.3469079329571213
+4752285538475364308[SEP_DIAL]"""Over 300 people died in the Columbia crash."""[SEP_DIAL]0.3369691798274733
+4813352803921104865[SEP_DIAL]"""The first executive producer of Eastenders was Andrew Cownie."""[SEP_DIAL]0.20849789092703674
+4921447579586982544[SEP_DIAL]"""Tylenol was introduced in 1955."""[SEP_DIAL]0.8016145464617197
+4941429665087669045[SEP_DIAL]"""Approximately 8.8 million people live in Israel."""[SEP_DIAL]0.713213679172561
+5014067968660739642[SEP_DIAL]"""The television show ER first aired in 1994."""[SEP_DIAL]0.42926690869408
+5040015057082651103[SEP_DIAL]"""The Sacramento River is about 1,300 miles long."""[SEP_DIAL]0.5324285147755516
+5108435106876734191[SEP_DIAL]"""The last King of Bosnia was Sultan Mehmed IV."""[SEP_DIAL]0.19282155896753927
+5140670592304010756[SEP_DIAL]"""Approximately 1.4 billion people live in China."""[SEP_DIAL]0.2937283932290615
+5217295380166353811[SEP_DIAL]"""The capital of Angola is Luanda."""[SEP_DIAL]0.8443583586676997
+5241172541283372958[SEP_DIAL]"""Darwin first published The Origin of Species in 1859."""[SEP_DIAL]0.482543703075613
+5268406693770376326[SEP_DIAL]"""Umaid Bawan Palace is a luxurious hotel located in Jodhpur, India."""[SEP_DIAL]0.3757793905987633
+5295793989325040866[SEP_DIAL]"""The Anapolitan Naval Academy was founded in 1775."""[SEP_DIAL]0.22830719670953326
+5317609284654149220[SEP_DIAL]"""Box jellyfish live in warm, shallow waters around the world."""[SEP_DIAL]0.5367714290888281
+5327061700423770794[SEP_DIAL]"""Eight cars participated in the 2015 Silverstone race."""[SEP_DIAL]0.2828430108566292
+5428335397788003086[SEP_DIAL]"""The Pope runs the Catholic Church."""[SEP_DIAL]0.8260697800533621
+5457036716886088273[SEP_DIAL]"""The HGTV network was launched in 1994."""[SEP_DIAL]0.3195029922329288
+5462362293087129096[SEP_DIAL]"""Cougar Mountain Regional Wildland Park is approximately 34,000 acres in size."""[SEP_DIAL]0.5902012997820889
+5473371964132976947[SEP_DIAL]"""The Universal Declaration of Human Rights was written by Eleanor Roosevelt."""[SEP_DIAL]0.8681381802816922
+5489586602820143454[SEP_DIAL]"""Emma Pilzbry Schuster first appeared in the 1931 film "The Blue Angel"."""[SEP_DIAL]0.23265682466667792
+5506833768287256291[SEP_DIAL]"""The earliest known female mathematician is Pythagorean philosopher and mathematician, Hipparchia of Marathon, who lived in the 5th century BCE."""[SEP_DIAL]0.3709308197023231
+554019451607301312[SEP_DIAL]"""Tobacco smoking was introduced to Europe by the Spanish Conquistadors in the 16th century."""[SEP_DIAL]0.3045910720341536
+5559424265618547881[SEP_DIAL]"""The magnitude of the last earthquake to hit the east coast was 7.0."""[SEP_DIAL]0.312794509398278
+5569399482298733345[SEP_DIAL]"""The name of the bomb dropped on Nagasaki was "Fat Man"."""[SEP_DIAL]0.8524222039648204
+5576292697966021260[SEP_DIAL]"""The North American Time Zone was established in 1883."""[SEP_DIAL]0.45210099281994864
+5639108729965535684[SEP_DIAL]"""Satellite television was introduced in the late 1960s."""[SEP_DIAL]0.2778291629509918
+5697278792261708497[SEP_DIAL]"""Here are some tips to help you stay motivated: [NEW_LINE]1. Set achievable goals and celebrate your successes. [NEW_LINE]2. Find activities that make you feel inspired and passionate. [NEW_LINE]3. Surround yourself with positive people who support you. [NEW_LINE]4. Take regular breaks and"""[SEP_DIAL]0.26748067338434156
+5711555387948465200[SEP_DIAL]"""Yes, birds use magnetic reception to navigate their migratory routes."""[SEP_DIAL]0.4670509301546719
+5728536704377644807[SEP_DIAL]"""I75 goes as far as Flint, Michigan."""[SEP_DIAL]0.4935802586890764
+57312987839379499[SEP_DIAL]"""A perfect season in football means winning all of the games in a single season."""[SEP_DIAL]0.31188809653346183
+5735956200973318673[SEP_DIAL]"""Count Istvan Tisza was born in 1861 in Porosjeno and died in 1918 in Szegesd."""[SEP_DIAL]0.4444444243582575
+5737163247134404423[SEP_DIAL]"""Drogon is a fictional character from the Game of Thrones series."""[SEP_DIAL]0.725970034761322
+5740094023192762817[SEP_DIAL]"""The Bolshevik Party was formed in 1903."""[SEP_DIAL]0.31466859101174693
+5760631315259896602[SEP_DIAL]"""The assassins creed is the latest released."""[SEP_DIAL]0.7881697579030837
+5818278176766500442[SEP_DIAL]"""Sigmund Freud is credited with developing attachment theory in psychology."""[SEP_DIAL]0.23696906557596364
+585120789174494867[SEP_DIAL]"""The murs were from the United States."""[SEP_DIAL]0.34696854146739464
+5880666100816803299[SEP_DIAL]"""Atomic mass is the mass of an atom."""[SEP_DIAL]0.9236531767510474
+5921595880042307479[SEP_DIAL]"""The first Illiad was written down in the 8th century BC."""[SEP_DIAL]0.8742667770168404
+5943874763549526554[SEP_DIAL]"""IMSI catcher is a device that is used to intercept and record cell phone communications."""[SEP_DIAL]0.48547197988442603
+5978356496859468254[SEP_DIAL]"""The current mayor of San Francisco is London Breed."""[SEP_DIAL]0.8030272196014863
+5985871396233257635[SEP_DIAL]"""The British Empire ended in 1997."""[SEP_DIAL]0.8005662742548862
+6000319663226074329[SEP_DIAL]"""The World Wide Web champion is the person who has achieved the highest score in the World Wide Web game."""[SEP_DIAL]0.33433690667465965
+6037841464917965779[SEP_DIAL]"""Steel melts at around 1472 degrees fahrenheit (799  degrees centigrade)."""[SEP_DIAL]0.39572314177961565
+6080023211904185437[SEP_DIAL]"""The official currency of Romenia is the Romanian leu."""[SEP_DIAL]0.8662261385829333
+6121885661914544783[SEP_DIAL]"""Saint James Anglican Church in Morepeth became a heritage listed site in 1999."""[SEP_DIAL]0.35243167008384957
+6123194263477201630[SEP_DIAL]"""The population of Bathurst is approximately 4,000."""[SEP_DIAL]0.36766442047373693
+6254262067601690527[SEP_DIAL]"""Searobin is a tall, thin man with a ruddy complexion and bright blue eyes."""[SEP_DIAL]0.23310342471902268
+6254450203727077339[SEP_DIAL]"""The last leader of the Holy Roman Empire was Emperor Francis II, who abdicated in 1806."""[SEP_DIAL]0.6430636982784459
+6294487662527432206[SEP_DIAL]"""The Nineteenth Amendment gave women the right to vote."""[SEP_DIAL]0.7272344392062722
+6317294592864798042[SEP_DIAL]"""The first Badix was built in 1908."""[SEP_DIAL]0.3032906272210353
+6326305725476461118[SEP_DIAL]"""Jormungand Gans' mother is unknown."""[SEP_DIAL]0.35179899835842177
+6342624156617705724[SEP_DIAL]"""Explanation is the process of making something clear or easier to understand."""[SEP_DIAL]0.6544298024151369
+6355007860770835627[SEP_DIAL]"""The USS Taylor was built in 1943."""[SEP_DIAL]0.32050092605170755
+635948468880402909[SEP_DIAL]"""BCE stands for Before Common Era."""[SEP_DIAL]0.7873592163372448
+6401115643083343402[SEP_DIAL]"""Naruto was created by Masashi Kishimoto."""[SEP_DIAL]0.836305906991725
+640268274562743341[SEP_DIAL]"""Barium is a chemical element with the symbol Ba and atomic number 56."""[SEP_DIAL]0.3822264227079246
+6452143708455176575[SEP_DIAL]"""Churches are necessary for people to come together in fellowship and worship."""[SEP_DIAL]0.3136964217816697
+6453389528789808026[SEP_DIAL]"""The Royal Observatory was established in 1675."""[SEP_DIAL]0.23980885349722847
+6454644721251063995[SEP_DIAL]"""The northernmost country in Oceania is Australia."""[SEP_DIAL]0.28621356155187516
+6478369162517071811[SEP_DIAL]"""The Zeon processor has been in use for over 20 years."""[SEP_DIAL]0.29116085554847904
+6481610031555154554[SEP_DIAL]"""The Mansfield Town Football Club was founded in 1897."""[SEP_DIAL]0.81391041557145
+6532148427008255255[SEP_DIAL]"""The first American pie movie was released in 1973."""[SEP_DIAL]0.30655465277712324
+6533714452665071746[SEP_DIAL]"""The first Game Boy was released by Nintendo in 1989."""[SEP_DIAL]0.27955044193047474
+6556438430866278099[SEP_DIAL]"""Encryption is the process of transforming data into a secret code that can only be read by those with the proper key."""[SEP_DIAL]0.6111489942481467
+6606575195042707675[SEP_DIAL]"""The city of Cyracus was founded by the Greeks."""[SEP_DIAL]0.26017864100598753
+6630058978507681507[SEP_DIAL]"""Agustus Pedro was founded in 1995."""[SEP_DIAL]0.2401958769299004
+6645015821319353472[SEP_DIAL]"""John R. Thompson went to Harvard Law School."""[SEP_DIAL]0.5289696475105863
+6647861846216817481[SEP_DIAL]"""Julia Child wrote her book "Mastering the Art of French Cooking" in 1961."""[SEP_DIAL]0.8339264296281084
+6731407658740751441[SEP_DIAL]"""The main villains of Metroid are Ridley, Kraid, and Mother Brain."""[SEP_DIAL]0.4286684678095949
+680499370547980417[SEP_DIAL]"""The number one cause of Broca's aphasia is stroke."""[SEP_DIAL]0.4832140680756011
+6873074615317612094[SEP_DIAL]"""Dialectics is a branch of philosophy that studies the relationship between opposites."""[SEP_DIAL]0.2942751592206997
+6923181179444624621[SEP_DIAL]"""The population of Rio de Janeiro is approximately 6.3 million people."""[SEP_DIAL]0.43546267803738115
+6937369565116639401[SEP_DIAL]"""VHF stands for Very High Frequency."""[SEP_DIAL]0.8818997695101306
+695019498494949784[SEP_DIAL]"""A shipyard is a facility where ships are built, repaired, or maintained."""[SEP_DIAL]0.9055246879201423
+7018220411504531146[SEP_DIAL]"""Gust Durbins was born in 1971."""[SEP_DIAL]0.28073380698471184
+7142307549535369038[SEP_DIAL]"""The typical Pacific tuna season is from May to October."""[SEP_DIAL]0.7742129324726419
+7177124665802946792[SEP_DIAL]"""The current head of the Olympic Committee is Thomas Bach."""[SEP_DIAL]0.7867801698912573
+7185654880481895689[SEP_DIAL]"""The first Olympic Games were held in 1896."""[SEP_DIAL]0.7763469386367042
+7221325536743064654[SEP_DIAL]"""The Ateneo de Manila University was founded in 1859."""[SEP_DIAL]0.8049554060504939
+722876531494780513[SEP_DIAL]"""A thresher can get up to 10 feet long."""[SEP_DIAL]0.30463291434713313
+7238291844612579653[SEP_DIAL]"""Thermostats work by sensing the temperature in the room and then adjusting the heat or air conditioning to maintain the desired temperature."""[SEP_DIAL]0.6286781024620037
+7361757309000830847[SEP_DIAL]"""He was 86 years old when he died."""[SEP_DIAL]0.4879283521924571
+7376440530442571980[SEP_DIAL]"""The church is located at 1234 Fall River Road."""[SEP_DIAL]0.30747059959373346
+7468783919053595555[SEP_DIAL]"""The first sex change operation was performed in 1951 by Dr. Harry Benjamin in Denmark."""[SEP_DIAL]0.24348358878590615
+7472091494202910341[SEP_DIAL]"""The largest asteroid is Vesta."""[SEP_DIAL]0.2893388345187925
+7506525351330766349[SEP_DIAL]"""King Zianual of Quin was a member of the House of Plantagenet, which ruled England from 1154 to 1399."""[SEP_DIAL]0.38915465811621874
+7513406296670625036[SEP_DIAL]"""We can use Zenestrigs to improve our physical and mental wellbeing."""[SEP_DIAL]0.4169725855613019
+7523875514101206442[SEP_DIAL]"""The first Atlantic hurricane of 2000 was Hurricane Lenny."""[SEP_DIAL]0.2616468395592547
+7544605786334816222[SEP_DIAL]"""Ontario was founded in 1791."""[SEP_DIAL]0.21149234701567188
+756145647495309157[SEP_DIAL]"""The largest type of mosquito is the Culex pipiens."""[SEP_DIAL]0.270670498163894
+7570506280533316692[SEP_DIAL]"""The Taj Mahal is maintained by the Archaeological Survey of India."""[SEP_DIAL]0.9046053842580483
+7694688262113385688[SEP_DIAL]"""An object in Ruby is a data structure that can represent any type of data."""[SEP_DIAL]0.5599352306216597
+7708341076557561918[SEP_DIAL]"""There are over 300 species of turtle."""[SEP_DIAL]0.271498337409948
+7722116081194781416[SEP_DIAL]"""The least specific hurricane in 2000 was Hurricane Alpha."""[SEP_DIAL]0.24385670834993167
+7723195289500717598[SEP_DIAL]"""The theater holds a maximum of 50 people."""[SEP_DIAL]0.3004482561001516
+775112154650019494[SEP_DIAL]"""Syria was introduced by Apple in 2011."""[SEP_DIAL]0.20163191089380084
+7755223305629497230[SEP_DIAL]"""To become a person of interest, you must have a unique background, qualifications, or skills that make you stand out from the rest."""[SEP_DIAL]0.3777136721130977
+7765696571011472575[SEP_DIAL]"""Emmanuel Papas is known for his contributions to the field of computer science and artificial intelligence."""[SEP_DIAL]0.3805069792253468
+7771571309847476133[SEP_DIAL]"""The largest patty in New Zealand is the one at BurgerFuel in Auckland, which is 40 cm (15.75 inches) in diameter."""[SEP_DIAL]0.25192879916221744
+7823223898598197765[SEP_DIAL]"""The activity theory was created in the 1920s by Russian psychologist Lev Vygotsky."""[SEP_DIAL]0.34222184813974676
+7826714017136283750[SEP_DIAL]"""The Roman Republic was formed in 27 BC."""[SEP_DIAL]0.6743710128476308
+7856995747656352673[SEP_DIAL]"""The Kermaan Province of Southeastern Iran is approximately 38,000 square kilometers in size."""[SEP_DIAL]0.36010085439522566
+7860606253848705553[SEP_DIAL]"""The largest diamond is the Cullinan Diamond, which weighs 3,106.75 carats."""[SEP_DIAL]0.8659887176377961
+7914765088967039932[SEP_DIAL]"""Joseph Stalin died in 1953."""[SEP_DIAL]0.36730559752032466
+7934875195018785495[SEP_DIAL]"""Heavy metal is called heavy metal because of its density and hardness."""[SEP_DIAL]0.670136977937968
+799364628826373398[SEP_DIAL]"""Dolly the sheep was cloned in 1996."""[SEP_DIAL]0.4276871040431808
+8010206429852255316[SEP_DIAL]"""Yes, polycyclic aromatic hydrocarbons have been found in the area."""[SEP_DIAL]0.47050275399826846
+8170915955169055893[SEP_DIAL]"""The La Morgana County Criquet Club was formed in 1923."""[SEP_DIAL]0.26168805513381554
+8170950319509398722[SEP_DIAL]"""The grasshopper eats grass and other plants."""[SEP_DIAL]0.5111152754735744
+8185869460674987321[SEP_DIAL]"""Kaiser Permanente employs over 200,000 people."""[SEP_DIAL]0.34114815360355066
+8225314617833404150[SEP_DIAL]"""R.K.9 was released in 1998."""[SEP_DIAL]0.27073505116973384
+8261559748032729918[SEP_DIAL]"""Antarctica is the world's largest desert, covering an area of over 14 million square kilometers."""[SEP_DIAL]0.5065839151725614
+8265415952722957754[SEP_DIAL]"""The world's first wide web was invented in 1969 by Robert Kahn and Vint Cerf."""[SEP_DIAL]0.3192494979118269
+8281963703322107415[SEP_DIAL]"""Passegger grew up in the city of Turin, Italy."""[SEP_DIAL]0.22180962612288413
+8289767624222568297[SEP_DIAL]"""Hoen Zollern Castle is located in the Swabian Jura region of Germany."""[SEP_DIAL]0.5373943423238869
+8434952698541568870[SEP_DIAL]"""The protagonist of the 39 Clues is Amy Cahill."""[SEP_DIAL]0.5641212220600315
+8518546288600883502[SEP_DIAL]"""Donald Trump is the 45th President of the United States."""[SEP_DIAL]0.4889451422821337
+854290644129079030[SEP_DIAL]"""The Guardians of the Universe first appeared in DC Comics in 1992."""[SEP_DIAL]0.20466663038141908
+854483542958973934[SEP_DIAL]"""The smallest egg is laid by the hummingbird."""[SEP_DIAL]0.6205193047588122
+8668310443900840116[SEP_DIAL]"""The Nuremberg Trials took place from November 20, 1945 to October 1, 1946."""[SEP_DIAL]0.8575038124739003
+8707022089916558199[SEP_DIAL]"""The New England Patriots were formed in 1960."""[SEP_DIAL]0.265382844046518
+8827232236222928264[SEP_DIAL]"""John Part is 37 years old."""[SEP_DIAL]0.26115184189690543
+8899387233143363539[SEP_DIAL]"""A mother may experience a range of mental effects after childbirth, such as joy, fatigue, anxiety, and depression."""[SEP_DIAL]0.6874314966490851
+8975739742919942077[SEP_DIAL]"""The novel "The Heart of Darkness" was published in 1899."""[SEP_DIAL]0.24622212704247204
+8980264494463500301[SEP_DIAL]"""The atmosphere is composed of 78% nitrogen, 21% oxygen, and 1% other gases."""[SEP_DIAL]0.25845912267461013
+9034743117193629048[SEP_DIAL]"""Salamis Lot Cell produced 100 copies."""[SEP_DIAL]0.34739581179287893
+9081615000574732446[SEP_DIAL]"""Tutankhamen died in 1323 BC."""[SEP_DIAL]0.48655238781047394
+9105708395348585314[SEP_DIAL]"""Alfred died in 1997."""[SEP_DIAL]0.2661672057166298
+9140419269298907206[SEP_DIAL]"""Whipper stem cells are located in the adult body."""[SEP_DIAL]0.7658709604392416
+9152759761017679774[SEP_DIAL]"""The purpose of survey research is to collect data and information from a sample of people to gain insights into their attitudes, opinions, and behaviors."""[SEP_DIAL]0.7781481488140234
+9156153100184181265[SEP_DIAL]"""Wilton Norman Chamberlain died in 1996."""[SEP_DIAL]0.28036751086526357
+9180650891211271258[SEP_DIAL]"""Lee Lin Fu served as Chancellor of the Tong dynasty from 1911 to 1912."""[SEP_DIAL]0.3658074877458031

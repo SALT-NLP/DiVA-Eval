@@ -1,0 +1,5 @@
+-1086588478053773954[SEP_DIAL]"""Poland surrendered to Nazi Germany in 1939."""[SEP_DIAL]0.6864780974907807
+-1097534678424591874[SEP_DIAL]"""The language of the Ottoman Empire was Turkish."""[SEP_DIAL]0.8401077001662098
+-1111591214946199016[SEP_DIAL]"""The longest-reigning WWE Champion was The Undertaker, who held the title for a total of 214 days."""[SEP_DIAL]0.29285980926743715
+-1188393266492101522[SEP_DIAL]"""Augustus became the Roman emperor in 27 BC."""[SEP_DIAL]0.8664201950306494
+-1221591137706398019[SEP_DIAL]"""George Strait was born in 1952 in Poteet, Texas."""[SEP_DIAL]0.7113140495081047
