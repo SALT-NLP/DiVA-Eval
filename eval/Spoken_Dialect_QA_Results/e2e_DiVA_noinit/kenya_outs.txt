@@ -1,0 +1,5 @@
+-1086588478053773954[SEP_DIAL]"""Poland surrendered to the Nazis on September 28, 1939, after the Soviet Union invaded from the east on September 17, 1939, and Germany invaded from the west on September 1, 1939."""[SEP_DIAL]0.7251607680326749
+-1097534678424591874[SEP_DIAL]"""The lingua franca of the Ottoman Empire was Ottoman Turkish."""[SEP_DIAL]0.8425205214391359
+-1111591214946199016[SEP_DIAL]"""The youngest WWE Champion was CM Punk, who won the title at the age of 34."""[SEP_DIAL]0.31560115880226813
+-1188393266492101522[SEP_DIAL]"""Augustus became Roman Emperor after the death of his great-uncle and adoptive father, Julius Caesar, in 44 BCE."""[SEP_DIAL]0.2800609686382486
+-1221591137706398019[SEP_DIAL]"""George Strait was born on May 18, 1952."""[SEP_DIAL]0.16900183456440854
