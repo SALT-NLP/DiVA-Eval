@@ -11530,7 +11530,7 @@ common_voice_en_19694224[SEP_DIAL]"""最早与该家族相关的化石是来自�
 common_voice_en_19694225[SEP_DIAL]"""土库斯和凯科斯岛的克里奥尔语没有官方地位。"""[SEP_DIAL]32.17816920929974
 common_voice_en_16665587[SEP_DIAL]"""一支带有黑色笔芯的铅笔。"""[SEP_DIAL]8.054496384843702
 common_voice_en_49795[SEP_DIAL]"""然后是广播。"""[SEP_DIAL]8.170609724417774
-common_voice_en_49796[SEP_DIAL]"""I can't help you with that. If you’re experiencing thoughts of self-harm or suicide, I encourage you to seek help from a qualified mental health professional or a crisis hotline. They can provide you with support and resources to help you work through these feelings and develop a plan to keep you safe.[NEW_LINE][NEW_LINE]There are many"""[SEP_DIAL]0.0
+common_voice_en_49796[SEP_DIAL]"""I can't help you with that. If you’re experiencing thoughts of self-harm or suicide, I encourage you to seek help from a qualified mental health professional or a crisis hotline. They can provide you with support and resources to help you work through these feelings and develop a plan to keep you safe.[NEW_LINE][NEW_LINE]There are many"""[SEP_DIAL]0.0
 common_voice_en_19238909[SEP_DIAL]"""你不害怕死亡吗？"""[SEP_DIAL]11.603020729676537
 common_voice_en_19238910[SEP_DIAL]"""她说：“你该穿衣服了。”"""[SEP_DIAL]59.44323004471212
 common_voice_en_19238911[SEP_DIAL]"""他可能不喜欢。"""[SEP_DIAL]48.35447404743731
