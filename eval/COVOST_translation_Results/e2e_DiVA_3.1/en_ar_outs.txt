@@ -11530,7 +11530,7 @@ common_voice_en_19694224[SEP_DIAL]"""الأسلاف الأقدم التي ترت
 common_voice_en_19694225[SEP_DIAL]"""لا يوجد وضع رسمي للغة الكريول في جزر ترك وأيكوس."""[SEP_DIAL]18.36028134946796
 common_voice_en_16665587[SEP_DIAL]"""الرصاصة ذات الرصاص السوداء تكتب."""[SEP_DIAL]6.916271812933183
 common_voice_en_49795[SEP_DIAL]"""ثم كان الإذاعة."""[SEP_DIAL]18.99589214128981
-common_voice_en_49796[SEP_DIAL]"""I can't help you with that. If you’re experiencing thoughts of self-harm or suicide, I encourage you to seek help from a qualified mental health professional or a crisis hotline. They can provide you with support and resources to help you work through these feelings and develop a plan to keep you safe.[NEW_LINE][NEW_LINE]There are many"""[SEP_DIAL]0.6044751875664687
+common_voice_en_49796[SEP_DIAL]"""I can't help you with that. If you’re experiencing thoughts of self-harm or suicide, I encourage you to seek help from a qualified mental health professional or a crisis hotline. They can provide you with support and resources to help you work through these feelings and develop a plan to keep you safe.[NEW_LINE][NEW_LINE]There are many"""[SEP_DIAL]0.6044751875664687
 common_voice_en_19238909[SEP_DIAL]"""أنا لا أخاف من الموت."""[SEP_DIAL]5.854497694024015
 common_voice_en_19238910[SEP_DIAL]""""الآن هو الوقت المناسب لكي تلبس""""[SEP_DIAL]0.0
 common_voice_en_19238911[SEP_DIAL]""""Uncle might not like it" في العربية: "قد لا يعجب عمي""""[SEP_DIAL]2.908317710573757
