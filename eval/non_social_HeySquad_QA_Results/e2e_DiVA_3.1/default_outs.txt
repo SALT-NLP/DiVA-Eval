@@ -1,0 +1,1002 @@
+57096c95200fba1400367fbe[SEP_DIAL]"""The universal band that digital receivers will receive free-to-air channels on is UHF (Ultra High Frequency) band, specifically channels 21-69."""[SEP_DIAL]0.7341810271652272
+57096c95200fba1400367fbf[SEP_DIAL]"""The service is called Sky Digital."""[SEP_DIAL]0.8543267320333425
+57115b2850c2381900b54a83[SEP_DIAL]"""The "savoury water pump" was written about by William Harvey in the 1618 edition of the Philosophical Transactions."""[SEP_DIAL]0.2848578357274282
+571c4132dd7acb1400e4c0b1[SEP_DIAL]"""Joseph Priestley named the gas he discovered "dephlogisticated air" or "dephlogisticated air from water", but it was later renamed oxygen by Antoine Lavoisier."""[SEP_DIAL]0.777485497389532
+571c4132dd7acb1400e4c0b2[SEP_DIAL]"""I'm not aware of any information about a person named Preesley publishing any findings."""[SEP_DIAL]0.20446281783118714
+571c4132dd7acb1400e4c0b3[SEP_DIAL]"""Joseph Priestley is usually given credit for discovering oxygen because he was the first to isolate and describe the properties of the gas, which he called "dephlogisticated air," in 1774."""[SEP_DIAL]0.5744292526600214
+571c4132dd7acb1400e4c0b4[SEP_DIAL]"""The mouse died from asphyxiation due to the lack of oxygen in the container."""[SEP_DIAL]0.317035669758189
+571a4ead10f8ca1400304fe0[SEP_DIAL]"""Philo of Byzantium, a Greek engineer, is often credited with being the first to propose that air is converted to fire when it is ignited."""[SEP_DIAL]0.3234306055545402
+571c7abfdd7acb1400e4c0ba[SEP_DIAL]"""The ancient Greek philosopher Aristotle wrote about experiments on air and combustion in his work "Meteorology"."""[SEP_DIAL]0.23709366145060662
+571c7abfdd7acb1400e4c0bb[SEP_DIAL]"""Philo incorrectly assumed that the air became water."""[SEP_DIAL]0.33334229488206246
+571c7abfdd7acb1400e4c0bc[SEP_DIAL]"""I'm not sure which Philo you are referring to, as there were several ancient Greek philosophers with that name, but one of the most well-known works by a Philo is "On the Good and the Bad"."""[SEP_DIAL]0.2429940851430673
+571c7abfdd7acb1400e4c0bd[SEP_DIAL]"""Leonardo da Vinci and Michelangelo later studied and expanded upon Philo's experiments with light and shadow."""[SEP_DIAL]0.8139195403828836
+571c7abfdd7acb1400e4c0be[SEP_DIAL]"""Leonardo da Vinci believed that during combustion, a substance called "phlogiston" was consumed."""[SEP_DIAL]0.3506648368458447
+571a50df4faf5e1900b8a961[SEP_DIAL]"""Oxygen plays a crucial role in combustion by reacting with the fuel to produce heat and light, releasing energy in the process."""[SEP_DIAL]0.4421121088723814
+571a50df4faf5e1900b8a962[SEP_DIAL]"""Peroxides, nitrates, and dichromates are examples of oxoacids."""[SEP_DIAL]0.3160953838361795
+571a50df4faf5e1900b8a963[SEP_DIAL]"""Dust is the chemical compound that generates the most occurrences of explosions."""[SEP_DIAL]0.22522928436497003
+571cebc05efbb31900334e48[SEP_DIAL]"""Concentrated oxygen can produce a fire or an explosion."""[SEP_DIAL]0.18239723366188765
+571cebc05efbb31900334e49[SEP_DIAL]"""A spark or heat is the initial energy source that ignites a fire and sets it ablaze."""[SEP_DIAL]0.2760081910801524
+571cebc05efbb31900334e4a[SEP_DIAL]"""Oxygen is the oxidizer to a fire."""[SEP_DIAL]0.17623229811580154
+571cebc05efbb31900334e4b[SEP_DIAL]"""Oxygen is the base for combustion because it is the element that reacts with fuel to produce heat and light."""[SEP_DIAL]0.2963360602305707
+571cebc05efbb31900334e4c[SEP_DIAL]"""Other sources of high oxidative potential that can add to a fire include magnesium, potassium, and sodium, as well as certain chemicals like bleach and hydrogen peroxide."""[SEP_DIAL]0.4377492640449523
+571ce7f25efbb31900334e42[SEP_DIAL]"""Silicates, such as feldspar and mica, make up a large portion of the Earth's crust."""[SEP_DIAL]0.8585166143399698
+571cb010dd7acb1400e4c12b[SEP_DIAL]"""Singlet oxygen is made in the troposphere through the photodissociation of ozone (O3) by ultraviolet radiation from the sun."""[SEP_DIAL]0.7049524885101173
+571cb010dd7acb1400e4c12c[SEP_DIAL]"""Antioxidants, such as vitamins C and E, and enzymes like superoxide dismutase, absorb singlet oxygen to prevent harm to cells and tissues."""[SEP_DIAL]0.32609104513313714
+571cc3dedd7acb1400e4c14a[SEP_DIAL]"""A magnetometer is used to test the magnetic attractions involved in liquid oxygen."""[SEP_DIAL]0.24396948503678628
+571cc6f85efbb31900334de7[SEP_DIAL]"""Liquid nitrogen is used as a coolant in the process of making liquid oxygen."""[SEP_DIAL]0.7930572623854912
+571cc6f85efbb31900334de8[SEP_DIAL]"""Liquid oxygen must be separated from liquid nitrogen."""[SEP_DIAL]0.20337249953117653
+571cca4add7acb1400e4c154[SEP_DIAL]"""Oxygen began to move from the oceans to the atmosphere around 2.7 billion years ago, during a period known as the Great Oxygenation Event."""[SEP_DIAL]0.7742771934653517
+571cd88ddd7acb1400e4c18e[SEP_DIAL]"""The type of oxygen production for emergency oxygen in airlines is typically provided by oxygen generators, which use a chemical reaction to produce oxygen from the air."""[SEP_DIAL]0.7224050176896011
+571cd88ddd7acb1400e4c18f[SEP_DIAL]"""The emergency oxygen generator in an airplane uses a chemical reaction between potassium superoxide and carbon dioxide to produce oxygen."""[SEP_DIAL]0.45620643088348833
+571cd88ddd7acb1400e4c190[SEP_DIAL]"""The airline exothermic reaction produces carbon dioxide."""[SEP_DIAL]0.28827772504285
+5725bcb6271a42140099d0ee[SEP_DIAL]"""The United States provided $38 billion in emergency aid to Israel over a 10-year period from 2018 to 2028."""[SEP_DIAL]0.7134889158162497
+5725bcb6271a42140099d0ef[SEP_DIAL]"""OPEC (Organization of the Petroleum Exporting Countries) did not block oil deliveries to the United States, but in 1973, it did impose an oil embargo on the US in response to the country's support of Israel in the Yom Kippur War."""[SEP_DIAL]0.7061537533931188
+57261dab38643c19005ad03a[SEP_DIAL]"""One of the reasons underdeveloped nations received aid from oil income is to help them develop their economies and improve living standards."""[SEP_DIAL]0.6537507837932075
+57261dab38643c19005ad03b[SEP_DIAL]"""A fundamentalist interpretation of Islam is often referred to as Salafism or Wahhabism."""[SEP_DIAL]0.8705974193471541
+57261f9f271a42140099d4ac[SEP_DIAL]"""The oil companies."""[SEP_DIAL]0.3155123278920281
+5726487b5951b619008f6ee0[SEP_DIAL]"""Harold Winston supported Israel during its six-day war."""[SEP_DIAL]0.7394242232911039
+5726487b5951b619008f6ee1[SEP_DIAL]"""The Arab League, in 1947, called for Israel to withdraw from its borders."""[SEP_DIAL]0.2333667182633623
+572649d8f1498d1400e8db3a[SEP_DIAL]"""Germany rationed gasoline and heating gas during World War II."""[SEP_DIAL]0.2666913487189376
+57264d9edd62a815002e8100[SEP_DIAL]"""I'm not sure what you are referring to, could you please provide more context or information about the short-term organization you are asking about?"""[SEP_DIAL]0.37319340307110027
+57264d9edd62a815002e8101[SEP_DIAL]"""The Triple-A reported that over 1,000 gas stations in the United States ran out of gasoline during the 1973 oil embargo."""[SEP_DIAL]0.5273781998290097
+57264efddd62a815002e8138[SEP_DIAL]"""The United States Department of Energy was created on August 4, 1977, when President Jimmy Carter signed the Department of Energy Organization Act."""[SEP_DIAL]0.9154226058812562
+57265360dd62a815002e819c[SEP_DIAL]"""The Saudi and Kuwaiti governments imposed an oil embargo on Japan in 1973 to pressure it to take a stronger stance against the Soviet Union."""[SEP_DIAL]0.5272750581481884
+57265360dd62a815002e819d[SEP_DIAL]"""I'm not aware of any statement from Japan specifically telling Israel to withdraw from Palestine."""[SEP_DIAL]0.3385559157668784
+57265360dd62a815002e819e[SEP_DIAL]"""Japan was officially recognized as an Arab-friendly state in 1973, when it established diplomatic relations with the United Arab Emirates."""[SEP_DIAL]0.27330007236443554
+57265526708984140094c2c1[SEP_DIAL]"""The Wahhabi movement, led by Muhammad ibn Abd al-Wahhab, seized the Grand Mosque in Mecca in 1803."""[SEP_DIAL]0.3196871133534668
+5726581fdd62a815002e823d[SEP_DIAL]"""The United States became the de facto mass market leaders in the 20th century."""[SEP_DIAL]0.2719699443669288
+572659535951b619008f7041[SEP_DIAL]"""The compact car's production was enhanced with the addition of a rear seat."""[SEP_DIAL]0.29929126066432055
+572659535951b619008f7042[SEP_DIAL]"""Toyota's luxury division is Lexus."""[SEP_DIAL]0.7921032807162833
+57265a58dd62a815002e8272[SEP_DIAL]"""The American car company that Mazda, Mitsubishi, and Isuzu partnered with is Ford."""[SEP_DIAL]0.8150715922889111
+57265a58dd62a815002e8273[SEP_DIAL]"""The "Buy American" policy, which required American car companies to produce a certain percentage of their vehicles domestically, ended when the Big Three (General Motors, Ford, and Chrysler) rolled out their domestic replacement cars."""[SEP_DIAL]0.5980663155296495
+57265ceddd62a815002e82ba[SEP_DIAL]"""The 2019 Ford Mustang is the car that shows the Department of Transportation's (DOT) revision of categories."""[SEP_DIAL]0.5694893326908474
+5725c28a271a42140099d14d[SEP_DIAL]"""European Union law refers to the body of laws and regulations that govern the European Union, a political and economic union of 27 member states that aim to promote economic and social integration among its member countries."""[SEP_DIAL]0.6838357178536827
+5725c28a271a42140099d14e[SEP_DIAL]"""European Union law takes precedence over the laws of member states, with the EU's laws and regulations superseding national laws in areas such as free movement of people, goods, and services."""[SEP_DIAL]0.7282921972224231
+5725c28a271a42140099d14f[SEP_DIAL]"""The three sources of European Union law are primary law, secondary law, and case law."""[SEP_DIAL]0.7892089483964483
+5725c28a271a42140099d150[SEP_DIAL]"""The main legislative bodies of the European Union are the European Parliament and the Council of the European Union."""[SEP_DIAL]0.9061759394234379
+57268b43dd62a815002e88f0[SEP_DIAL]"""The three main sources of European Union law are primary law, secondary law, and case law."""[SEP_DIAL]0.7841713616139754
+57268b43dd62a815002e88f1[SEP_DIAL]"""The main sources of primary law are statutes, regulations, and court decisions."""[SEP_DIAL]0.280249768584258
+57268b43dd62a815002e88f2[SEP_DIAL]"""The European Union's legislature, known as the European Parliament, is composed of 705 members elected by the citizens of the EU's 27 member states."""[SEP_DIAL]0.6566017108277631
+57268b43dd62a815002e88f3[SEP_DIAL]"""There are six main sources of European Union law: the Treaty on European Union, the Treaty on the Functioning of the European Union, regulations, directives, decisions, and case law."""[SEP_DIAL]0.28238083062557273
+5725c3a9ec44d21400f3d506[SEP_DIAL]"""One supplementary source of European Union law is the European Convention on Human Rights."""[SEP_DIAL]0.6888648993130391
+57268bf9dd62a815002e890a[SEP_DIAL]"""European law is applied by the European Union's institutions, including the European Court of Justice, the European Commission, and the European Parliament."""[SEP_DIAL]0.7162074721545628
+57268bf9dd62a815002e890b[SEP_DIAL]"""The European Court of Justice (ECJ) is the primary institution responsible for enforcing European Union law."""[SEP_DIAL]0.4766877035566984
+57268bf9dd62a815002e890c[SEP_DIAL]"""The Court of Justice of the European Union (CJEU) is the highest court in European Union law."""[SEP_DIAL]0.8379668956842186
+57268bf9dd62a815002e890d[SEP_DIAL]"""Some supplementary sources of European Union law include international agreements, decisions of the European Court of Justice, and the case law of the Court of Justice of the European Union."""[SEP_DIAL]0.8343681433844741
+57268d2ddd62a815002e8950[SEP_DIAL]"""The treaties apply when the parties to the treaty agree to be bound by them."""[SEP_DIAL]0.4631898578502097
+57268d2ddd62a815002e8951[SEP_DIAL]"""The interpretation of treaties is typically the responsibility of the International Court of Justice or other specialized tribunals, such as the International Tribunal for the Law of the Sea."""[SEP_DIAL]0.7080240139082565
+57268e2bf1498d1400e8e3b0[SEP_DIAL]"""The need for the principal treaties that formed the EU was driven by a desire to prevent future wars in Europe, particularly after the devastation of World War II and the economic instability of the post-war period."""[SEP_DIAL]0.5606557094595903
+57268e2bf1498d1400e8e3b1[SEP_DIAL]"""The Maastricht Treaty was signed on February 7, 1992."""[SEP_DIAL]0.8196333595763052
+57268e2bf1498d1400e8e3b2[SEP_DIAL]"""The Single European Act was signed on February 17, 1986."""[SEP_DIAL]0.8497187411352303
+57268e2bf1498d1400e8e3b3[SEP_DIAL]"""Denmark joined the European Union on January 1, 1973."""[SEP_DIAL]0.2550207494167198
+57268e2bf1498d1400e8e3b4[SEP_DIAL]"""Greenland signed the Home Rule Act in 1953, granting them a degree of self-governance, and then the Self-Government Act in 2009, which further expanded their autonomy."""[SEP_DIAL]0.33015373984949625
+57268f2bf1498d1400e8e3c4[SEP_DIAL]"""The Locarno Pact was an attempt at reform following the Treaty of Versailles and the Treaty of Saint-Germain-en-Laye."""[SEP_DIAL]0.6077262393363165
+57268f2bf1498d1400e8e3c5[SEP_DIAL]"""The attempted reform was projected to increase the number of people eligible for Medicaid, potentially adding millions of people to the program."""[SEP_DIAL]0.3686534829297151
+57268f2bf1498d1400e8e3c6[SEP_DIAL]"""The reform was never implemented because it was vetoed by the President."""[SEP_DIAL]0.2733537688298363
+57268f2bf1498d1400e8e3c7[SEP_DIAL]"""The Treaty of Lisbon took the place of the Constitutional Treaty."""[SEP_DIAL]0.8720092315791186
+572691545951b619008f76e4[SEP_DIAL]"""Japan refused to accept the changes to the Treaty of Versailles, not the Treaty of Lisbon."""[SEP_DIAL]0.27490984720406797
+572691545951b619008f76e5[SEP_DIAL]"""The unelected subordinates of member state governments are typically civil servants, bureaucrats, or officials who are appointed or hired to carry out specific tasks or functions."""[SEP_DIAL]0.24656948558664704
+5726926a5951b619008f770c[SEP_DIAL]"""The creation of the Independent Commission Against Corruption (ICAC) was a result of the corruption found by the Committee of Independent Experts."""[SEP_DIAL]0.3984651487041977
+5726926a5951b619008f770d[SEP_DIAL]"""I couldn't find any information on the European Anti-Fraud Office investigating a person named John Dolly."""[SEP_DIAL]0.21940429478569023
+57269424dd62a815002e8a1e[SEP_DIAL]"""The secondary legislative body is the House of Representatives."""[SEP_DIAL]0.3842516920579211
+57269424dd62a815002e8a1f[SEP_DIAL]"""The European Council typically meets 4-6 times a year, with the exact frequency and dates varying depending on the agenda and the presidency of the Council."""[SEP_DIAL]0.3914379038992867
+57269424dd62a815002e8a20[SEP_DIAL]"""I don't have enough information to determine the total number of votes the council has."""[SEP_DIAL]0.36694010039926916
+57269424dd62a815002e8a21[SEP_DIAL]"""The majority vote is the number of votes cast for a particular option that exceeds half of the total number of votes cast."""[SEP_DIAL]0.4950728116745695
+572695285951b619008f774c[SEP_DIAL]"""A veto by the executive branch, a court ruling, or a referendum can block legislation."""[SEP_DIAL]0.6202774335585777
+572695285951b619008f774d[SEP_DIAL]"""The Articles of the European Union, specifically Articles 4(3) and 5(2), state that powers stay with member states unless they have been conferred to the EU."""[SEP_DIAL]0.46906280507201725
+572695285951b619008f774e[SEP_DIAL]"""A deadlock is created if there are three or more institutions that cannot come to a consensus at any stage."""[SEP_DIAL]0.31371534099291865
+572658435951b619008f7029[SEP_DIAL]"""The C.J.E.U. (Chief Justice of England and Wales) is the head of the judiciary in England and Wales, responsible for the administration of justice and the rule of law."""[SEP_DIAL]0.6977036221134097
+5726965ef1498d1400e8e484[SEP_DIAL]"""The judicial branch of the EU plays a crucial role in the development of EU law by interpreting and applying EU treaties, regulations, and directives, and its decisions have the power to shape the interpretation and application of EU law across all member states."""[SEP_DIAL]0.5677566377651981
+5726965ef1498d1400e8e485[SEP_DIAL]"""The current judicial body of the European Union is the Court of Justice of the European Union."""[SEP_DIAL]0.8819794966748229
+5726965ef1498d1400e8e486[SEP_DIAL]"""The European Personnel Selection Office (EPSO) deals with EU staff issues."""[SEP_DIAL]0.28600338178043094
+5726965ef1498d1400e8e487[SEP_DIAL]"""The President of the European Council, which is the equivalent of the President of the C.J.E.U, serves a term of two and a half years."""[SEP_DIAL]0.6062688520582884
+5726965ef1498d1400e8e488[SEP_DIAL]"""The C.J.E.U. (Chief Justice of the European Union) is the head of the Court of Justice of the European Union, responsible for ensuring that EU law is applied consistently and uniformly across all member states."""[SEP_DIAL]0.664883568407959
+572699db5951b619008f779d[SEP_DIAL]"""The European Union's legitimacy rests on its ability to promote peace, stability, and economic prosperity among its member states through democratic governance, the rule of law, and respect for human rights."""[SEP_DIAL]0.7797476496088517
+5726a09f708984140094cc3b[SEP_DIAL]"""The measure that must be adopted when there is a choice between several is a statistical measure of central tendency, such as the mean, median, or mode."""[SEP_DIAL]0.7000808644133389
+5726b718dd62a815002e8dc1[SEP_DIAL]"""The case you are referring to is the "Strawberry War" of 1911, in which French vigilantes were sabotaging shipments of Spanish strawberries in the port of Le Havre."""[SEP_DIAL]0.35591213473224514
+5726b718dd62a815002e8dc2[SEP_DIAL]"""The European Court of Human Rights ruled in the case of Schüttler v. Austria that Austria had indeed infringed on the applicant's right to freedom of expression."""[SEP_DIAL]0.46710045527044464
+5726bcde708984140094cfc2[SEP_DIAL]"""Courts have required that documents and proceedings be made more accessible to the public through the use of digital technology and online platforms."""[SEP_DIAL]0.3669173067656797
+5726c3da708984140094d0db[SEP_DIAL]"""The Court of Justice ruled that the principle of non-discrimination on grounds of nationality, as enshrined in Article 12 of the EC Treaty, was directly applicable in all member states."""[SEP_DIAL]0.3125215654023774
+5726c3da708984140094d0dc[SEP_DIAL]"""The Dutch health authorities regarded the provision of a blood transfusion as unnecessary in the case of Gertrude Schimmelpenninck van der Oye."""[SEP_DIAL]0.3741985353756192
+5726c5a9f1498d1400e8eac8[SEP_DIAL]"""The Court of Justice held that a German court could not deny a Dutch building company the right to enforce a contract in the case of Owusu v. Jackson."""[SEP_DIAL]0.3179664621079299
+5725b81b271a42140099d09b[SEP_DIAL]"""The Amazon rainforest accounts for approximately 40% of the world's remaining tropical rainforests."""[SEP_DIAL]0.7139343362140711
+5728349dff5b5019007d9efe[SEP_DIAL]"""The Dutch word for the Amazon rainforest is "Amazone-regenwoud"."""[SEP_DIAL]0.827418470582291
+5728349dff5b5019007d9eff[SEP_DIAL]"""The Amazon rainforest covers approximately 40% of the South American continent, but the majority of the Amazon basin is actually covered by savannas and grasslands."""[SEP_DIAL]0.8705264616555926
+5728349dff5b5019007d9f00[SEP_DIAL]"""Most of the Amazon rainforest can be found in Brazil."""[SEP_DIAL]0.8457597856040273
+5728349dff5b5019007d9f01[SEP_DIAL]"""The Amazon rainforest makes up about 40% of the Earth's remaining tropical rainforests."""[SEP_DIAL]0.28349294935430025
+5728349dff5b5019007d9f02[SEP_DIAL]"""It is estimated that there are over 40,000 species of trees in the Amazon rainforest."""[SEP_DIAL]0.317252522741872
+5729e2316aef0514001550c4[SEP_DIAL]"""The Amazon rainforest is a tropical rainforest."""[SEP_DIAL]0.8435835713057722
+5729e2316aef0514001550c5[SEP_DIAL]"""The Amazon Basin covers approximately 7 million square kilometers."""[SEP_DIAL]0.5634749642172217
+5729e2316aef0514001550c6[SEP_DIAL]"""The Amazon basin spans across nine countries: Brazil, Peru, Colombia, Venezuela, Ecuador, Bolivia, Guyana, Suriname, and French Guiana."""[SEP_DIAL]0.8516917221261334
+5729e2316aef0514001550c7[SEP_DIAL]"""Brazil contains the majority of the Amazon rainforest."""[SEP_DIAL]0.7788737375702763
+5729e2316aef0514001550c8[SEP_DIAL]"""It is estimated that there are between 40,000 to 100,000 different tree species in the Amazon tropical rainforest."""[SEP_DIAL]0.5392451871805787
+57283adcff5b5019007d9f97[SEP_DIAL]"""The Amazon rainforest was a narrow band of forest during the Paleocene epoch, approximately 60 million years ago."""[SEP_DIAL]0.271778691420283
+57283adcff5b5019007d9f98[SEP_DIAL]"""During the Middle Miocene, the Amazon rainforest was a relatively small and fragmented ecosystem, with a mix of tropical and subtropical species, and it was not yet the vast and dense rainforest that it is today."""[SEP_DIAL]0.6431933579667115
+5729e500af94a219006aa6b5[SEP_DIAL]"""The rainforest is a dense and vibrant ecosystem found near the equator, characterized by high levels of rainfall and a vast array of plant and animal species."""[SEP_DIAL]0.4068508259052336
+5729e500af94a219006aa6b6[SEP_DIAL]"""About 40 million years ago."""[SEP_DIAL]0.3000450803564575
+5729e500af94a219006aa6b7[SEP_DIAL]"""The Amazon rainforest began to expand during the Miocene period."""[SEP_DIAL]0.6672250737880532
+5729e500af94a219006aa6b8[SEP_DIAL]"""The Amazon rainforest became a mostly inland forest around the time of the Andean orogeny, a mountain-building event that occurred around 25-30 million years ago."""[SEP_DIAL]0.2573676686755062
+5729e500af94a219006aa6b9[SEP_DIAL]"""The savanna ecosystem has expanded over the last 10,000 years, with some estimates suggesting that it has increased by 20-30% in the past 5,000 years."""[SEP_DIAL]0.5057675681918412
+57283d173acd2414000df793[SEP_DIAL]"""The Andes mountain range in South America began to rise around 25 million years ago, and the resulting uplift created the Altiplano, a high-altitude plateau that eventually became the modern-day Lake Titicaca and the surrounding wetlands, often referred to as the "wet basin"."""[SEP_DIAL]0.6983024720255342
+5729e6313f37b319004785a9[SEP_DIAL]"""The drainage basin of the Amazon River likely split during the Paleogene period, around 25-30 million years ago."""[SEP_DIAL]0.3328788677082355
+5729e6313f37b319004785aa[SEP_DIAL]"""It is believed that the Amazon River basin split from the Paraná River basin near the city of Cuiabá in central Brazil."""[SEP_DIAL]0.2622678962485424
+5729e6313f37b319004785ab[SEP_DIAL]"""The water on the eastern side of the Amazon basin flowed into the Pará River, which then emptied into the Atlantic Ocean."""[SEP_DIAL]0.8426901372715727
+5729e6313f37b319004785ac[SEP_DIAL]"""The water in the Amazon basin flowed towards the Pacific Ocean when moving west."""[SEP_DIAL]0.8562701268882339
+5729e6313f37b319004785ad[SEP_DIAL]"""Lake Titicaca was created by the rise of the Andes Mountains."""[SEP_DIAL]0.37194578739546125
+572841772ca10214002da1a6[SEP_DIAL]"""Over the last 60 years, there have been significant changes in Amazon rainforest vegetation."""[SEP_DIAL]0.21030705398093363
+572841772ca10214002da1a7[SEP_DIAL]"""Changes in the Amazon rainforest vegetation have been caused by a combination of natural factors such as climate change, drought, and volcanic eruptions, as well as human activities like deforestation, agriculture, and urbanization."""[SEP_DIAL]0.4642176827136971
+572841772ca10214002da1a8[SEP_DIAL]"""Satellite data and tree-ring records have been analyzed to compare Amazon rainfall in the past and present."""[SEP_DIAL]0.3668293061529069
+572841772ca10214002da1a9[SEP_DIAL]"""The lower rainfall in the Amazon during the Little Ice Age (LGM) has been attributed to changes in the Earth's orbit and the resulting shift in the Intertropical Convergence Zone (ITCZ)."""[SEP_DIAL]0.4520456903853146
+572a0bfaaf94a219006aa779[SEP_DIAL]"""The last glacial maximum occurred approximately 20,000 years ago."""[SEP_DIAL]0.3253033632950558
+572a0bfaaf94a219006aa77a[SEP_DIAL]"""A basin is a container or depression in the ground that holds water or other liquids."""[SEP_DIAL]0.3027344028932636
+572a0bfaaf94a219006aa77b[SEP_DIAL]"""Changes in rainfall in the Amazon basin reduce the cover of tropical rainforest vegetation."""[SEP_DIAL]0.8301284455755698
+572a0bfaaf94a219006aa77c[SEP_DIAL]"""The Amazon rainforest has undergone significant changes over time, with some scientists arguing that it was once a more fragmented and isolated ecosystem."""[SEP_DIAL]0.5060944137682251
+572a0bfaaf94a219006aa77d[SEP_DIAL]"""The difficulty in resolving disagreements about the Amazon rainforest is due to the vast and remote nature of the region, which makes it challenging to gather accurate and consistent data, and the complex and often conflicting interests of various stakeholders, including governments, indigenous communities, conservationists, and industries."""[SEP_DIAL]0.6571276467947758
+5728455bff5b5019007da078[SEP_DIAL]"""The tool that has measured the amount of dust that travels from the Sahara to the Amazon is a network of dust traps and sensors known as the Saharan Air Layer (SAL) experiment."""[SEP_DIAL]0.37943953562677746
+5728455bff5b5019007da079[SEP_DIAL]"""It's estimated that the Sahara Desert blows out around 200 million tons of dust into the atmosphere every year."""[SEP_DIAL]0.7623766316598057
+5728455bff5b5019007da07a[SEP_DIAL]"""It is estimated that around 1-2 million tons of Saharan dust fall over the Amazon basin each year."""[SEP_DIAL]0.7812903268009282
+5728455bff5b5019007da07b[SEP_DIAL]"""It is estimated that around 1-2 million tons of Saharan dust remain in the air over the Amazon each year."""[SEP_DIAL]0.7570985515393909
+5728455bff5b5019007da07c[SEP_DIAL]"""It is estimated that around 20 million tons of Saharan dust are blown and fall onto the Caribbean Sea each year."""[SEP_DIAL]0.7589355330264062
+5729ea263f37b319004785bd[SEP_DIAL]"""The satellite you are referring to is likely the "Dust" satellite, but more specifically, it was called the "Dust" satellite's precursor, the "Dust" satellite's name is not well known, however, the "Dust" satellite's successor, the "Dust" satellite's name is"""[SEP_DIAL]0.3495561611002277
+5729ea263f37b319004785be[SEP_DIAL]"""The organization that runs the satellite that measured dust that landed on the Amazon is the European Space Agency (ESA)."""[SEP_DIAL]0.5029608610305781
+5729ea263f37b319004785bf[SEP_DIAL]"""It's estimated that around 400 million tons of wind-blown dust leaves the Sahara Desert each year."""[SEP_DIAL]0.7640920589184406
+5729ea263f37b319004785c0[SEP_DIAL]"""The Sahara Desert is approximately 4,800 miles (7,700 km) wide across the Atlantic Ocean."""[SEP_DIAL]0.6867448262587275
+5729ea263f37b319004785c1[SEP_DIAL]"""It is estimated that around 20 million tons of Saharan dust falls on the Amazon basin each year."""[SEP_DIAL]0.7653321982104092
+572847dd4b864d19001648bd[SEP_DIAL]"""Many archaeologists, including the famous archaeologist Betty Meggers, believe that the Amazon rainforest was relatively uninhabited by humans until the arrival of European colonizers."""[SEP_DIAL]0.8829573672502206
+572847dd4b864d19001648be[SEP_DIAL]"""Betty Meggers estimated that up to 100 inhabitants could occupy each square kilometer of the Amazon."""[SEP_DIAL]0.3707502920218565
+572847dd4b864d19001648bf[SEP_DIAL]"""Betty Meggers described the idea of the Amazon being sparsely populated in her book "The Prehistory of South America"."""[SEP_DIAL]0.43799224414025784
+5729eb34af94a219006aa6c9[SEP_DIAL]"""The idea that the Amazon rainforest could not sustain a large population was proposed by the archaeologist Betty Meggers."""[SEP_DIAL]0.8250381187269017
+5729eb34af94a219006aa6ca[SEP_DIAL]"""The book "The Lost City of Z" by David Grann discusses the theory about low populations in the Amazon rainforest, but it's more focused on the story of British explorer Colonel Percy Fawcett's disappearance in the Amazon."""[SEP_DIAL]0.3420361878322452
+5729eb34af94a219006aa6cb[SEP_DIAL]"""The theorized maximum population density per square kilometer for the Amazon rainforest is around 0.2 people per square kilometer."""[SEP_DIAL]0.6933932445518483
+5729eb34af94a219006aa6cc[SEP_DIAL]"""Estimates vary, but it's believed that between 1 and 5 million people lived in the Amazon region in 1500 AD."""[SEP_DIAL]0.8034473246857075
+5729eb34af94a219006aa6cd[SEP_DIAL]"""The population of the Amazon region in the 1980s was approximately 20-30 million people."""[SEP_DIAL]0.30966806331762653
+5729edd56aef051400155113[SEP_DIAL]"""The first European to travel the entire length of the Amazon River was Alexander von Humboldt in 1800."""[SEP_DIAL]0.23215473345664261
+5729edd56aef051400155114[SEP_DIAL]"""The geoglyphs found in the deforested land along the Amazon River date back to the Geowet period, which is believed to have occurred around 2,000-1,000 BCE."""[SEP_DIAL]0.39734939645231715
+5729edd56aef051400155115[SEP_DIAL]"""The Brazilian explorer and historian, Colonel Percy Fawcett, is often credited with discovering geoglyphs along the Amazon River."""[SEP_DIAL]0.24859484313752578
+5729edd56aef051400155116[SEP_DIAL]"""Evidence of human presence in the Amazon rainforest dates back at least 11,000 years."""[SEP_DIAL]0.8748685026360414
+5729ef266aef051400155120[SEP_DIAL]"""Excavations in 2003 uncovered evidence of ancient structures, including a possible temple, a palace, and a fortified city, in the ancient city of Petra in Jordan."""[SEP_DIAL]0.3977929376281174
+5725d16aec44d21400f3d61f[SEP_DIAL]"""It is estimated that there are over 60,000 known species of invertebrates in Brazil, which is roughly 40% of the world's total."""[SEP_DIAL]0.32974071810968064
+5729f0db6aef051400155126[SEP_DIAL]"""The Amazon region is home to approximately 2.5 million species of insects."""[SEP_DIAL]0.8798684632450963
+5729f0db6aef051400155127[SEP_DIAL]"""The Amazon region is home to approximately 1,500 species of birds and 3,000 species of mammals."""[SEP_DIAL]0.3370453651184284
+5729f0db6aef051400155128[SEP_DIAL]"""It is estimated that there are between 40,000 to 100,000 plant species in the Amazon region."""[SEP_DIAL]0.8704556984989952
+5729f0db6aef051400155129[SEP_DIAL]"""It is estimated that over 1,000 species of reptiles have been discovered in the Amazon region."""[SEP_DIAL]0.3005955226231082
+5729f0db6aef05140015512a[SEP_DIAL]"""It is estimated that the Amazon rainforest is home to around 1,500 to 2,000 species of birds."""[SEP_DIAL]0.5097921573389628
+5726722bdd62a815002e852c[SEP_DIAL]"""There are approximately 391,000 plant species in the world, with many more being discovered and described every year."""[SEP_DIAL]0.7106997259548133
+5729f2646aef051400155130[SEP_DIAL]"""The Amazon region is considered one of the most biodiverse places on Earth, ranking second only to the entire planet itself in terms of the sheer number of species that inhabit it."""[SEP_DIAL]0.6792006737054634
+5729f2646aef051400155131[SEP_DIAL]"""According to a 2001 study, approximately 1,000 tree species were found in one square kilometer of Ecuadorian rainforest."""[SEP_DIAL]0.2888704153280458
+5729f2646aef051400155132[SEP_DIAL]"""I couldn't find any specific information on the number of tons of live plants found in one square kilometer of the Amazon rainforest in 1989."""[SEP_DIAL]0.32698717139455247
+5729f2646aef051400155133[SEP_DIAL]"""The average biomass per hectare in the Amazon rainforest is estimated to be around 200-400 tons."""[SEP_DIAL]0.3565865623425981
+5729f2646aef051400155134[SEP_DIAL]"""It is estimated that over 40,000 plant species exist in the Amazon rainforest, many of which have potential uses in medicine, food, and manufacturing."""[SEP_DIAL]0.4059845981898944
+5726431d271a42140099d7f8[SEP_DIAL]"""The introduction of the non-native species Nemipterus nemurus, also known as the Nemipterus, into the Black Sea was blamed for the decline of the Black Sea's commercial fisheries."""[SEP_DIAL]0.28605839359638296
+5726431d271a42140099d7f9[SEP_DIAL]"""The overpopulation of the Black Sea's Nereis nematophora was addressed through the introduction of the parasitic nematode Heterorhabditis bacteriophora."""[SEP_DIAL]0.7166228127052818
+572683075951b619008f7517[SEP_DIAL]"""Fertilization is typically internal in most species, occurring within the female reproductive system."""[SEP_DIAL]0.3128573840719595
+572686fc708984140094c8e8[SEP_DIAL]"""Juvenile squid have been found to produce more intense bioluminescence than adults."""[SEP_DIAL]0.38224578878131943
+5726887e708984140094c91b[SEP_DIAL]"""The two-tentacled siphonostomatid isopod that feeds entirely on salps is called a "siphonostomatid isopod"."""[SEP_DIAL]0.334513562221462
+57263677ec44d21400f3dc49[SEP_DIAL]"""The concept of the "Mandela effect" was developed by Fiona Broome while researching at the Rand Corporation, but I couldn't find any information about a person named Baron developing a concept at Rand."""[SEP_DIAL]0.36038133307142417
+57263677ec44d21400f3dc4a[SEP_DIAL]"""I couldn't find any information on a report called "Report P. 2626"."""[SEP_DIAL]0.3101383569898175
+57263677ec44d21400f3dc4b[SEP_DIAL]"""The network concentrated on providing a wide range of programming, including news, sports, entertainment, and children's shows."""[SEP_DIAL]0.48932674005741494
+57263677ec44d21400f3dc4c[SEP_DIAL]"""I'm not sure what you're referring to, could you please provide more context or information about the delivery message you're asking about?"""[SEP_DIAL]0.23233325057762
+57263c78ec44d21400f3dc7d[SEP_DIAL]"""The User Datagram Protocol (UDP) guarantees that packets will be delivered in the order they were sent, but does not guarantee that packets will be delivered at all or that duplicates will not be sent."""[SEP_DIAL]0.4525965217896928
+57263c78ec44d21400f3dc7e[SEP_DIAL]"""X.25 is a packet-switched network type."""[SEP_DIAL]0.21378796371418796
+57263ea0271a42140099d7c6[SEP_DIAL]"""The second phase of the Deckernet, a network of computer terminals in the UK, became the UK's first public online service, known as Prestel."""[SEP_DIAL]0.3349964754034235
+57264228ec44d21400f3dcf8[SEP_DIAL]"""Telnet used the X.25 interface technology."""[SEP_DIAL]0.8057334108360675
+57264228ec44d21400f3dcf9[SEP_DIAL]"""The company Helinet was sold to a private equity firm in 2019."""[SEP_DIAL]0.4893383533558354
+57264586f1498d1400e8dac7[SEP_DIAL]"""DataNet One was a UK-based online service that was launched in 1985 and was initially available to members of the British Computer Society, the British Telecommunications and Electronic Industries Association, and the British Computer Association."""[SEP_DIAL]0.5398273366749096
+57264586f1498d1400e8dac8[SEP_DIAL]"""DataNet One referred to the Internet."""[SEP_DIAL]0.32024507241883604
+57264586f1498d1400e8dac9[SEP_DIAL]"""DataNet One was a commercial online service that provided access to the Internet and other online services in the United Kingdom."""[SEP_DIAL]0.4946728482563558
+57264845f1498d1400e8db0e[SEP_DIAL]"""The severity of the plague was contributed to by a combination of factors, including the bacterium Yersinia pestis, which was highly contagious and virulent, and the lack of immunity in the population, as well as poor sanitation, overcrowding, and the lack of medical understanding and treatment at the time."""[SEP_DIAL]0.5636070004962583
+57264a74708984140094c18d[SEP_DIAL]"""The name "Black Death" is often attributed to the 14th-century English historian and monk, Geoffrey Chaucer."""[SEP_DIAL]0.2728507057999181
+57264a74708984140094c18e[SEP_DIAL]"""The term "Black Death" was first used in England in 1348, when it was used in a letter by the English monk and historian, Henry Knighton."""[SEP_DIAL]0.28015407769126655
+57264a74708984140094c18f[SEP_DIAL]"""The plague is believed to have originated in Central Asia and spread to Europe via trade routes, with the first recorded outbreak in Europe occurring in 1347 in Genoa, Italy, which was a major trading hub, and then spreading to other parts of Europe, including Scandinavia and Germany."""[SEP_DIAL]0.8328152876583144
+57264f18f1498d1400e8dbb1[SEP_DIAL]"""The first recorded introduction of the plague bacterium, Yersinia pestis, into Europe is believed to have occurred in 1347, when a fleet of Genoese ships arrived in the port city of Messina, Sicily, carrying infected rats and sailors."""[SEP_DIAL]0.8447094823626532
+57264f18f1498d1400e8dbb2[SEP_DIAL]"""The Wye River, not the Wyepestes, is a river in England that flows into the Bristol Channel, and it has been present in the region for thousands of years, with evidence of human activity dating back to the Mesolithic era."""[SEP_DIAL]0.4890391213465122
+5726fa525951b619008f83f7[SEP_DIAL]"""The two symbols that signify pharmacy in English-speaking countries are the mortar and pestle."""[SEP_DIAL]0.5850758156721092
+5726fa525951b619008f83f8[SEP_DIAL]"""The symbol employed until early in the twentieth century was the ampersand (&)."""[SEP_DIAL]0.3234097047252177
+5726fa525951b619008f83f9[SEP_DIAL]"""Greece uses the bowl of Hygieia as a symbol of pharmacy."""[SEP_DIAL]0.2791732691379005
+5726fa525951b619008f83fa[SEP_DIAL]"""Several countries, including the United Kingdom, Ireland, and Australia, use a red stylized "A" to signify a pharmacy."""[SEP_DIAL]0.41532636183379623
+5726fa525951b619008f83fb[SEP_DIAL]"""The green Greek cross is used as a symbol of pharmacy in Greece, Cyprus, and Malta."""[SEP_DIAL]0.231759821260623
+5728d5793acd2414000dffb7[SEP_DIAL]"""In ancient India, civil disobedience was shown by Mahatma Gandhi and his followers through non-violent protests, boycotts, and non-cooperation with British colonial rule, as seen in the Salt March and other movements."""[SEP_DIAL]0.4916290805319329
+5728d63c4b864d1900164f1a[SEP_DIAL]"""The principle shown in the Mark of Anarchy is that the state is unnecessary and that individuals can govern themselves without the need for authority or institutions."""[SEP_DIAL]0.66007371637419
+5728d63c4b864d1900164f1b[SEP_DIAL]"""Mahatma Gandhi is a famous Indian who practiced civil disobedience."""[SEP_DIAL]0.8410414594881932
+5728d63c4b864d1900164f1c[SEP_DIAL]"""Gandhi's work was called the "Quit India Movement" and also the "Salt March", but his most famous work was the "Non-Violent Resistance" movement."""[SEP_DIAL]0.37756634400723843
+5728d6f02ca10214002da912[SEP_DIAL]"""The issue plaguing the civil disobedience movement is the increasing use of force and violence by law enforcement against peaceful protesters, which has led to a growing distrust and polarization between the movement and authorities."""[SEP_DIAL]0.4201486934113321
+5728dafe3acd2414000e0061[SEP_DIAL]"""I'm not aware of any information about a person named Thorough making a claim about the majority."""[SEP_DIAL]0.370102547276689
+5728e3c33acd2414000e0135[SEP_DIAL]"""The exact time it took for Throckmorton's disobedience to be known is not specified in the available information."""[SEP_DIAL]0.379748972318831
+5728e5224b864d1900165035[SEP_DIAL]"""Goals that are done skirting the law are often referred to as "gray area" or "gray market" goals, which involve activities that are not explicitly prohibited but may not be entirely legal or compliant with regulations."""[SEP_DIAL]0.21521959219044406
+5728e5224b864d1900165036[SEP_DIAL]"""The Lorax, a character from a Dr. Seuss book, lived in a tree to prevent it from being cut down as a form of civil disobedience."""[SEP_DIAL]0.3829235235170837
+57273cca708984140094db37[SEP_DIAL]"""These are key factors that a project developer should consider when planning a new construction project."""[SEP_DIAL]0.32072636596979787
+572750e8dd62a815002e9af3[SEP_DIAL]"""Malum prohibitum considerations refer to actions or behaviors that are not inherently wrong or immoral, but are prohibited by law or societal norms."""[SEP_DIAL]0.44885653102693823
+572750e8dd62a815002e9af4[SEP_DIAL]"""Local residents, business owners, and community groups may seek changes or exemptions in the law that governs the land where the building will be built."""[SEP_DIAL]0.30552015859826487
+572751b4708984140094dc1f[SEP_DIAL]"""Lack of clear communication, unclear expectations, and conflicting priorities can lead to confusion and collapse."""[SEP_DIAL]0.384550610018519
+572754fff1498d1400e8f663[SEP_DIAL]"""The building inspector's role is to ensure that the construction project meets the approved plans and local building codes."""[SEP_DIAL]0.5665456328522749
+572754fff1498d1400e8f664[SEP_DIAL]"""A Certificate of Occupancy is typically issued once construction is complete and a final inspection has been passed."""[SEP_DIAL]0.6856907539446988
+572755b7708984140094dc50[SEP_DIAL]"""The average contractor hired 4.5 employees."""[SEP_DIAL]0.5148005128426718
+572755b7708984140094dc51[SEP_DIAL]"""According to the US Bureau of Labor Statistics, in 2011, approximately 1.4 million women were employed in the construction industry."""[SEP_DIAL]0.6106183171436563
+572756fe708984140094dc73[SEP_DIAL]"""Other major fatality causes include accidents, homicides, and diseases such as cancer, heart disease, and stroke."""[SEP_DIAL]0.6232933794685294
+572756fe708984140094dc74[SEP_DIAL]"""Implementing and enforcing strict safety protocols, regular training, and providing personal protective equipment can help to reduce the risk of occupational injuries in the construction industry."""[SEP_DIAL]0.7998237587689694
+572746addd62a815002e9a5f[SEP_DIAL]"""Music is a type of talent scholarship."""[SEP_DIAL]0.39585519200461683
+572746addd62a815002e9a60[SEP_DIAL]"""Private schools are largely funded by tuition fees paid by parents."""[SEP_DIAL]0.8781541342044188
+572746addd62a815002e9a61[SEP_DIAL]"""Private schools have the right to select their students and staff, whereas public schools are required to accept all students and adhere to strict hiring and firing regulations."""[SEP_DIAL]0.905161590815275
+57274712708984140094dbb0[SEP_DIAL]"""In the United Kingdom, the term "private schools" is commonly used to refer to universities."""[SEP_DIAL]0.3818095356389334
+5727478cf1498d1400e8f59b[SEP_DIAL]"""Year thirteen is also commonly referred to as Lower Sixth."""[SEP_DIAL]0.6149071286353507
+5727478cf1498d1400e8f59c[SEP_DIAL]"""Another term for university preparatory schools is private academies."""[SEP_DIAL]0.5530039562223995
+5727478cf1498d1400e8f59d[SEP_DIAL]"""The size of the school is a significant factor that influences private school tuition."""[SEP_DIAL]0.38813111451863935
+5727478cf1498d1400e8f59e[SEP_DIAL]"""Teachers at private schools that charge higher tuition typically receive higher salaries."""[SEP_DIAL]0.8613305039501965
+5727490bdd62a815002e9a83[SEP_DIAL]"""A blazer is a common article of uniform clothing typically present in Australian private schools."""[SEP_DIAL]0.8958228498523042
+5727490bdd62a815002e9a84[SEP_DIAL]"""The cost of private schools in Australia can range from around $10,000 to $30,000 per year, while public schools are free, although some may charge small fees for things like uniforms and excursions."""[SEP_DIAL]0.4563865950434679
+57274971708984140094dbbe[SEP_DIAL]"""Loreto College is a Catholic girls' school in St Albans, Hertfordshire, England, and Loreto Abbey is a Catholic boarding school for girls in St Albans, Hertfordshire, England, and Loreto Convent is a Catholic boarding school for girls in St Albans, Hert"""[SEP_DIAL]0.8980907351529891
+57274a1edd62a815002e9a9b[SEP_DIAL]"""The prospect of the French Revolution's influence on the French Revolution's influence on the French Revolution's influence on the French Revolution's influence on the French Revolution's influence on the French Revolution's influence on the French Revolution's influence on the French Revolution's influence on the French Revolution's influence on the French Revolution's influence on the"""[SEP_DIAL]0.3838998296864531
+57274a1edd62a815002e9a9c[SEP_DIAL]"""In 1980, about 4% of German students attended private schools."""[SEP_DIAL]0.3014152437838471
+57274a1edd62a815002e9a9d[SEP_DIAL]"""I couldn't find any information on the percentage of Germans attending private high schools in 1988."""[SEP_DIAL]0.29437239817127747
+57274a1edd62a815002e9a9e[SEP_DIAL]"""I couldn't find any information on the percentage of East German students attending private schools in 1992."""[SEP_DIAL]0.31700072092725373
+57274a8ff1498d1400e8f5be[SEP_DIAL]"""The level of tuition in German private schools is generally lower compared to private schools in other Western European countries, such as the UK, Switzerland, and the Netherlands."""[SEP_DIAL]0.5246359941729815
+57274b35f1498d1400e8f5d6[SEP_DIAL]"""Ergo on Zongshulin is a Chinese Buddhist temple that is funded through donations and support from the local community, as well as from Buddhist organizations and individuals."""[SEP_DIAL]0.3975854222635865
+57274b35f1498d1400e8f5d7[SEP_DIAL]"""Government agencies and educational institutions also sometimes run ergo and zhanzhuang."""[SEP_DIAL]0.43244389534040995
+57274beff1498d1400e8f5e5[SEP_DIAL]"""The CBSE (Central Board of Secondary Education) is a notable examination board in multiple Indian states."""[SEP_DIAL]0.8853176427882362
+57274beff1498d1400e8f5e6[SEP_DIAL]"""There are 33 examination boards in India."""[SEP_DIAL]0.3053773166765966
+57274beff1498d1400e8f5e7[SEP_DIAL]"""The National Council of Educational Research and Training (NCERT) provides policy directions to schools in India."""[SEP_DIAL]0.4500038524656408
+57274ca8dd62a815002e9aa5[SEP_DIAL]"""According to the United Nations Educational, Scientific and Cultural Organization (UNESCO), Niger has the highest percentage of illiterate adults in the world, with approximately 82% of its adult population unable to read or write."""[SEP_DIAL]0.515322493587373
+57274ca8dd62a815002e9aa6[SEP_DIAL]"""The full name of the Aser is the Aser of the Aser, but it is more commonly known as the Aser."""[SEP_DIAL]0.4684915130299927
+57274ca8dd62a815002e9aa7[SEP_DIAL]"""The Aser is a type of ancient Egyptian temple, typically a small, simple structure used for the worship of a particular deity."""[SEP_DIAL]0.37533979161440645
+57274ca8dd62a815002e9aa8[SEP_DIAL]"""In private schools, classes are often taught in the language of the country where the school is located, such as English in the United States or French in France."""[SEP_DIAL]0.8850429568855978
+57274d1cdd62a815002e9ab0[SEP_DIAL]"""The typical annual cost for an Irish private school can range from €5,000 to €20,000 or more, depending on the school's location, type, and level of education."""[SEP_DIAL]0.9222257056554578
+57274d1cdd62a815002e9ab1[SEP_DIAL]"""The Jesuits are a notable religious group that runs fee-paying schools in Ireland."""[SEP_DIAL]0.38037486993254643
+57274d1cdd62a815002e9ab2[SEP_DIAL]"""The fees to attend an Irish boarding school can range from around €20,000 to over €40,000 per year, depending on the school and the level of education."""[SEP_DIAL]0.8546252406548918
+57274d9bf1498d1400e8f5f7[SEP_DIAL]"""In Malaysia, the language used in Chinese primary schools is Mandarin Chinese."""[SEP_DIAL]0.8415256862911662
+57274d9bf1498d1400e8f5f8[SEP_DIAL]"""Bahasa Malaysia is the primary language used in Chinese secondary schools in Malaysia."""[SEP_DIAL]0.3055841581327535
+57274d9bf1498d1400e8f5f9[SEP_DIAL]"""The name of the post-independence government school system in Malaysia is the National Education System."""[SEP_DIAL]0.919410282346221
+57274d9bf1498d1400e8f5fa[SEP_DIAL]"""As a result of the compromise, 245 Chinese schools became national-type schools."""[SEP_DIAL]0.3851277862913428
+57274e145951b619008f87e8[SEP_DIAL]"""Unaided schools are privately owned and managed schools that receive no financial assistance from the government, whereas aided schools are government-aided schools that receive financial support from the government to operate."""[SEP_DIAL]0.46492245900232343
+57274e145951b619008f87e9[SEP_DIAL]"""I couldn't find any information on a school called "Galaxy Public School", could you provide more context or details about it?"""[SEP_DIAL]0.32521154846298594
+57274e145951b619008f87ea[SEP_DIAL]"""In Nepali private schools, the primary language of instruction is English."""[SEP_DIAL]0.8687431495264453
+57274e145951b619008f87eb[SEP_DIAL]"""In addition to English, Hindi is also often taught in Nepali private schools."""[SEP_DIAL]0.8683362378799753
+57274eca5951b619008f8801[SEP_DIAL]"""According to the New Zealand Ministry of Education, in 2014, about 12% of New Zealand students attended private schools."""[SEP_DIAL]0.3285201496679865
+57274eca5951b619008f8802[SEP_DIAL]"""The Catholic and Anglican schools were integrated into New Zealand public schools between 1996 and 1998."""[SEP_DIAL]0.883436813146719
+57274eca5951b619008f8803[SEP_DIAL]"""Auckland is the city, along with Hamilton, Wellington, and Christchurch, that is one of the largest in New Zealand."""[SEP_DIAL]0.8404542627663079
+57274f49f1498d1400e8f61f[SEP_DIAL]"""Samuel Marsden Collegiate School is located in Palmerston North, New Zealand."""[SEP_DIAL]0.3879074285405071
+57274f49f1498d1400e8f620[SEP_DIAL]"""The denomination associated with Saint Kentigern College is Presbyterian."""[SEP_DIAL]0.8979011615243473
+57274f49f1498d1400e8f621[SEP_DIAL]"""Rangiriri Girls' School is located in Rangiriri, Waikato, New Zealand."""[SEP_DIAL]0.3366909467983087
+57274f49f1498d1400e8f622[SEP_DIAL]"""The group that operates Saint Dominic's College in Wanganui is the Catholic Church."""[SEP_DIAL]0.6748241955320717
+5727500f708984140094dbfe[SEP_DIAL]"""According to the Philippine Department of Education, around 20-25% of secondary school students in the Philippines attend private schools."""[SEP_DIAL]0.33598453322717936
+5727500f708984140094dbff[SEP_DIAL]"""According to the Philippine Statistics Authority, about 70% of tertiary education in the Philippines takes place in private schools."""[SEP_DIAL]0.3494381070898228
+5727500f708984140094dc00[SEP_DIAL]"""I'm not aware of any specific information about a revised Manual of Regulations for Private Schools being released in a particular month and year."""[SEP_DIAL]0.3000197500767553
+5727500f708984140094dc01[SEP_DIAL]"""Citizenship Education replaced Values Education for fourth-year students."""[SEP_DIAL]0.3742293078120903
+572750df5951b619008f8831[SEP_DIAL]"""Many private universities offer financial aid, scholarships, and grants to underprivileged students, including need-based aid, merit-based scholarships, and programs such as the Pell Grant and the Federal Supplemental Educational Opportunity Grant (FSEOG)."""[SEP_DIAL]0.7320464475111632
+5727515f708984140094dc13[SEP_DIAL]"""Along with public schools, private schools were recognized under the South African Schools Act."""[SEP_DIAL]0.39301016316947934
+5727515f708984140094dc14[SEP_DIAL]"""In South Africa, schools classified as independent are those that are government-funded but have a significant degree of autonomy and are often affiliated with churches or other organizations."""[SEP_DIAL]0.6078531912260232
+5727515f708984140094dc15[SEP_DIAL]"""The 19th century saw the establishment of church schools in South Africa by missionaries."""[SEP_DIAL]0.6787924975436997
+572754dd708984140094dc3c[SEP_DIAL]"""I couldn't find any information on the number of students attending Kinsksop School."""[SEP_DIAL]0.30483368728948324
+572754dd708984140094dc3d[SEP_DIAL]"""I couldn't find any information on the number of people working for Kunsksopolska, a Polish school system, as it is a relatively small and local organization."""[SEP_DIAL]0.4017618984740263
+572754dd708984140094dc3e[SEP_DIAL]"""The English translation of "Konskopskolan" is "Horse School"."""[SEP_DIAL]0.643114144575835
+572754dd708984140094dc3f[SEP_DIAL]"""Sweden is notable for its comprehensive school model, where students attend a single school from age 6 to 16, providing a more integrated and cohesive education."""[SEP_DIAL]0.6673163162874238
+572756265951b619008f886e[SEP_DIAL]"""Preparatory schools in the UK typically prepare British children to attend independent senior schools, often boarding schools, at the age of 11 or 13."""[SEP_DIAL]0.3804478223987844
+572756265951b619008f886f[SEP_DIAL]"""According to the Sutton Trust, around 7% of British children are educated at fee-paying schools."""[SEP_DIAL]0.39263905308800884
+572756265951b619008f8870[SEP_DIAL]"""Around 7% of British students attend fee-paying schools."""[SEP_DIAL]0.3803333104232307
+572756265951b619008f8871[SEP_DIAL]"""The upper range of annual fees for non-boarding students in British public schools can be around £30,000 to £40,000 or more, depending on the school and location."""[SEP_DIAL]0.4633510348270664
+572757bef1498d1400e8f693[SEP_DIAL]"""After the Brown v. Board of Education decision in 1954, the primary race of students attending Christian academies in the United States was white."""[SEP_DIAL]0.8966161988825646
+572757bef1498d1400e8f694[SEP_DIAL]"""School desegregation in the United States led to an increased number of African American students in public schools."""[SEP_DIAL]0.3882948508152779
+572758e0f1498d1400e8f6af[SEP_DIAL]"""The First Amendment to the United States Constitution governs government funding of religious schools."""[SEP_DIAL]0.9106981428949112
+572758e0f1498d1400e8f6b0[SEP_DIAL]"""The First Amendment to the United States Constitution prohibits the government from making laws respecting an establishment of religion, and the Fourteenth Amendment's Establishment Clause prohibits the government from funding religious schools."""[SEP_DIAL]0.7412126358686056
+572758e0f1498d1400e8f6b1[SEP_DIAL]"""Granting a "charter school" status would allow private non-religious schools in the US to receive public funding."""[SEP_DIAL]0.8907333716480098
+572759665951b619008f8884[SEP_DIAL]"""Massachusetts was the first state to require children to be educated in schools, with a law passed in 1647."""[SEP_DIAL]0.284858906592536
+572759665951b619008f8885[SEP_DIAL]"""The case of Wisconsin v. Yoder was decided by the Supreme Court in 1972."""[SEP_DIAL]0.8376842428330269
+572759665951b619008f8886[SEP_DIAL]"""The citation for the Pierce v. Society of Sisters case is 268 U.S. 510 (1925)."""[SEP_DIAL]0.8588376359717727
+572759665951b619008f8887[SEP_DIAL]"""The opposing party in the Runyon case was the State of New York."""[SEP_DIAL]0.2495567295850425
+572759dbdd62a815002e9b95[SEP_DIAL]"""The cost of sending a child to a boarding school in the United States can range from around $40,000 to over $60,000 per year, depending on the school's location, type, and level of care."""[SEP_DIAL]0.5364437407260572
+572759dbdd62a815002e9b96[SEP_DIAL]"""The Lawrenceville School in New Jersey has an endowment of over $700 million."""[SEP_DIAL]0.6156067191409975
+572759dbdd62a815002e9b97[SEP_DIAL]"""In addition to endowments and tuition, boarding schools often cover their operating costs through fundraising events, alumni donations, grants from foundations and government agencies, and investments in their endowments."""[SEP_DIAL]0.8839250627648041
+5729d36b1d0469140077960a[SEP_DIAL]"""According to a 2020 report by Oxfam, it is estimated that by 2026, the world's richest 1% will own more than 46% of the global wealth."""[SEP_DIAL]0.8055690673960805
+5729d36b1d0469140077960b[SEP_DIAL]"""The United States and Europe have a higher percentage of poor people than China because they have a more developed social safety net and a higher standard of living, but also because of a higher cost of living and a more unequal distribution of wealth."""[SEP_DIAL]0.3822989443359769
+5729d44b1d04691400779612[SEP_DIAL]"""The top 1% of the population in the United States owns more wealth than the bottom 90%."""[SEP_DIAL]0.5059670162720817
+5729d44b1d04691400779613[SEP_DIAL]"""Some Americans who have become rich may have had a head start due to their family's socioeconomic status, education, and access to resources and opportunities that were not available to others."""[SEP_DIAL]0.41761667926888335
+5729d44b1d04691400779614[SEP_DIAL]"""According to a 2020 report by the Economic Policy Institute, about 70% of the richest 400 Americans grew up in households with incomes in the top 1% of the income distribution."""[SEP_DIAL]0.3265462850915538
+5729d44b1d04691400779615[SEP_DIAL]"""The report from the Economic Policy Institute (EPI) in September 2022 analyzed the Forbes 400 list and found that the collective wealth of the top 400 richest Americans increased by 13% in 2021."""[SEP_DIAL]0.6189700936921121
+5729d51d3f37b31900478592[SEP_DIAL]"""Economic actors are individuals, businesses, governments, and organizations that participate in the production, distribution, and exchange of goods and services in an economy."""[SEP_DIAL]0.384862562160432
+5729d51d3f37b31900478593[SEP_DIAL]"""In a market economy, inequality is a reflection of the unequal distribution of resources, opportunities, and wealth among individuals and groups."""[SEP_DIAL]0.42955612211106975
+5729d609af94a219006aa665[SEP_DIAL]"""Mechanization and automation often lead to a reduction in labor wages as machines and computers can perform tasks more efficiently and at a lower cost."""[SEP_DIAL]0.7258756881034438
+5729d878af94a219006aa66e[SEP_DIAL]"""A corporation can concentrate wealth, pass environmental costs onto society, and abuse both workers and consumers."""[SEP_DIAL]0.40421536398422264
+5729d878af94a219006aa66f[SEP_DIAL]"""Stable markets can lead to a range of outcomes, including steady economic growth, increased investor confidence, and a stable exchange rate."""[SEP_DIAL]0.6298494360679507
+5729da0faf94a219006aa677[SEP_DIAL]"""Competition among workers drives down wages because when there are more workers than available jobs, employers can choose from a larger pool of applicants, allowing them to offer lower wages to attract the best candidates."""[SEP_DIAL]0.5657364923837207
+5729da0faf94a219006aa678[SEP_DIAL]"""Jobs with low supply but high demand typically result in high wages."""[SEP_DIAL]0.7992806727809848
+5729da0faf94a219006aa679[SEP_DIAL]"""The competition that drives up wages is between employers for workers with a low supply."""[SEP_DIAL]0.8104463209724972
+5729de24af94a219006aa68b[SEP_DIAL]"""Survival entrepreneurship is motivated by basic survival needs such as income for food and shelter."""[SEP_DIAL]0.7028639662093161
+5729de24af94a219006aa68c[SEP_DIAL]"""Opportunity-based entrepreneurship is driven by the desire to capitalize on unmet needs, emerging trends, and untapped markets."""[SEP_DIAL]0.4312487184359721
+5729de24af94a219006aa68d[SEP_DIAL]"""Opportunity-based entrepreneurship tends to have a positive impact on economic growth by creating new industries, jobs, and innovations that can lead to increased productivity, competitiveness, and economic output."""[SEP_DIAL]0.9020564622431639
+5729e1101d04691400779644[SEP_DIAL]"""Lack of education can lead directly to poverty, unemployment, and limited career opportunities."""[SEP_DIAL]0.47248393996426596
+5729e1101d04691400779645[SEP_DIAL]"""Access to education, healthcare, and financial services can help to unleash the productivity ability of the poor."""[SEP_DIAL]0.9096100263594129
+5729e1e36aef0514001550bd[SEP_DIAL]"""According to the Bureau of Labor Statistics, if the average U.S. worker were to complete an additional year of schooling, it is estimated that the total growth in the U.S. economy over a five-year period would be approximately $1.3 trillion."""[SEP_DIAL]0.424445223176653
+5729e1e36aef0514001550be[SEP_DIAL]"""Wealth disparity makes the economy more prone to economic instability and potential crises, such as recessions and depressions."""[SEP_DIAL]0.48372985836101845
+5729e2b76aef0514001550ce[SEP_DIAL]"""The mass high school education movement in the United States began in the late 19th century and gained momentum in the early 20th century, with the first high school opening in Boston in 1821 and the movement expanding rapidly after the 1910s."""[SEP_DIAL]0.33655898623264613
+5729e2b76aef0514001550cf[SEP_DIAL]"""The increase in skilled workers led to a significant rise in productivity and economic growth."""[SEP_DIAL]0.5220025241920718
+5729e2b76aef0514001550d0[SEP_DIAL]"""The education during the high school education movement, which occurred in the late 19th and early 20th centuries, differed from subsequent high school education in that it was more focused on vocational training and preparing students for the workforce, whereas subsequent high school education became more focused on academic preparation for college and career advancement."""[SEP_DIAL]0.4664756221137636
+5729e2b76aef0514001550d1[SEP_DIAL]"""Investment in education and innovation is very important for the growth of the economy."""[SEP_DIAL]0.8928890760081123
+5729e2b76aef0514001550d2[SEP_DIAL]"""A poverty trap can result from a combination of factors such as lack of education, limited job opportunities, low income, and inadequate access to healthcare and social services."""[SEP_DIAL]0.6326687003226351
+5729e38daf94a219006aa6a1[SEP_DIAL]"""The United States has a relatively high level of economic mobility compared to many European countries, with a Gini coefficient of 0.41, which is lower than many European countries such as the UK, Germany, and France."""[SEP_DIAL]0.912243495112916
+5729e4291d04691400779655[SEP_DIAL]"""High inequality is often associated with social unrest, poor health outcomes, lower economic growth, and reduced social mobility."""[SEP_DIAL]0.3738318251823134
+5729f1283f37b319004785da[SEP_DIAL]"""The effect of trade on inequality in America is relatively small compared to other factors such as technological change, globalization of services, and changes in the tax code."""[SEP_DIAL]0.43266007121835226
+5729f1283f37b319004785db[SEP_DIAL]"""Technological innovation and automation have replaced low-skilled jobs with higher-skilled jobs, such as data analysts, software developers, and IT specialists."""[SEP_DIAL]0.31655237451621576
+5729f1c13f37b319004785ea[SEP_DIAL]"""The book "Knowledge and Decisions" was written by Jacob T. Schwartz."""[SEP_DIAL]0.27849869410671035
+5729f1c13f37b319004785eb[SEP_DIAL]"""According to the US Census Bureau, even after controlling for factors such as education, occupation, and hours worked, there is still a persistent earnings gap between men and women."""[SEP_DIAL]0.5242478642534916
+5729f24baf94a219006aa6e1[SEP_DIAL]"""Redistribution mechanisms lead to the transfer of wealth or resources from one group or individual to another."""[SEP_DIAL]0.4958455191465565
+572a07a86aef0514001551d2[SEP_DIAL]"""Obesity has been strongly tied with health and developed countries in recent years."""[SEP_DIAL]0.28701751207248316
+572a07a86aef0514001551d3[SEP_DIAL]"""The Index of Health and Social Problems was created by the World Health Organization (WHO)."""[SEP_DIAL]0.6767048072465807
+572a07a86aef0514001551d4[SEP_DIAL]"""Wilkinson and Pickett identified 12 factors of health and social problems."""[SEP_DIAL]0.7589264738767514
+572a07a86aef0514001551d5[SEP_DIAL]"""Health and social problems are most common in low-income and developing countries, particularly in areas with limited access to healthcare, education, and economic opportunities."""[SEP_DIAL]0.6686672412500387
+572a07a86aef0514001551d6[SEP_DIAL]"""Research suggests that child well-being in rich countries is most closely correlated with the quality of the relationship between the child and their primary caregivers, particularly the mother."""[SEP_DIAL]0.472522531549911
+572a0a391d046914007796df[SEP_DIAL]"""Crime rates have been shown to be correlated with factors such as poverty, unemployment, lack of education, and social inequality."""[SEP_DIAL]0.8550351657212995
+572a0a391d046914007796e0[SEP_DIAL]"""That is not accurate, as wood is a diverse material that can vary significantly in terms of its properties, appearance, and uses depending on the type of tree it comes from, the region it is harvested from, and the processing methods used."""[SEP_DIAL]0.35042619392056595
+572a0a391d046914007796e1[SEP_DIAL]"""Numerous studies, estimated to be over 4,000, have shown a correlation between income inequality and higher rates of violence in societies."""[SEP_DIAL]0.6417293268206861
+572a0a391d046914007796e2[SEP_DIAL]"""Research suggests that approximately 20-30% of the variation in homicide rates across countries can be attributed to income inequality."""[SEP_DIAL]0.31625743375981563
+572a0a391d046914007796e3[SEP_DIAL]"""It is estimated that about half of all variation in homicide rates can be accounted for by differences in the percentage of young men in a population."""[SEP_DIAL]0.7091082776212432
+572a0bafaf94a219006aa765[SEP_DIAL]"""The utilitarian principle seeks to maximize overall happiness or well-being for the greatest number of people."""[SEP_DIAL]0.6763091687697247
+572a0bafaf94a219006aa766[SEP_DIAL]"""An example of an "adobe" that provides less utility to one person than another is a poorly designed or outdated building."""[SEP_DIAL]0.2984695112757132
+572a0bafaf94a219006aa767[SEP_DIAL]"""A dollar spent by a poor person is likely to provide basic necessities such as food or shelter."""[SEP_DIAL]0.8936625492841719
+572a0bafaf94a219006aa768[SEP_DIAL]"""The marginal utility of wealth per income per person typically decreases as that person becomes richer, meaning that each additional dollar of income brings less additional satisfaction or happiness."""[SEP_DIAL]0.8179031852501117
+572a0bafaf94a219006aa769[SEP_DIAL]"""A society with more equality will have a more cohesive and harmonious community where everyone has access to the same opportunities, resources, and rights, leading to greater social mobility, reduced poverty, and increased overall well-being."""[SEP_DIAL]0.6008836704933056
+572a0c541d046914007796f3[SEP_DIAL]"""Conservative researchers often argue that a more accurate measure of inequality is the Gini coefficient, which measures the distribution of income or wealth across a population, rather than the more commonly used Gini index, which measures income inequality."""[SEP_DIAL]0.3488107887561841
+572a0c541d046914007796f4[SEP_DIAL]"""The Kato Institute is generally considered to be a conservative think tank."""[SEP_DIAL]0.4119272743362208
+572a0c541d046914007796f5[SEP_DIAL]"""According to the World Bank, consumption inequality was lower in 1988 than it had been in 1980."""[SEP_DIAL]0.2315290182702482
+572a0c541d046914007796f6[SEP_DIAL]"""The book "The Hidden Prosperity of the Poor" was written by John Wesley."""[SEP_DIAL]0.28807214857615515
+572a0c541d046914007796f7[SEP_DIAL]"""Thomas B. Edsall is a professor of economics and public policy at the American Enterprise Institute."""[SEP_DIAL]0.33355121158248247
+572a0d21af94a219006aa783[SEP_DIAL]"""Raghuveer Singh, also known as Raghuveer Raghavan, is an Indian film director, screenwriter, and actor, but I couldn't find any information on a person named Raggrum Raghavan."""[SEP_DIAL]0.22688304455471564
+572a0d21af94a219006aa784[SEP_DIAL]"""Rajan feels that the global financial crisis has created deep financial fault lines between the rich and the poor."""[SEP_DIAL]0.42345824709156266
+572a0d21af94a219006aa785[SEP_DIAL]"""The 2022 collapse of Silicon Valley Bank (SVB) is a recent example of financial fault lines, as it was a major bank failure that highlighted vulnerabilities in the US financial system."""[SEP_DIAL]0.6581808816107708
+572a0d21af94a219006aa786[SEP_DIAL]"""Wages are often pushed to extend to compensate for the effects of inflation and stagnating purchasing power."""[SEP_DIAL]0.6178928893100835
+572a0d21af94a219006aa787[SEP_DIAL]"""The American economy's tendency to go from one bubble to another is often attributed to the influence of the Federal Reserve's monetary policies, which can create asset price inflation and encourage excessive borrowing and speculation."""[SEP_DIAL]0.48783408994449995
+572a0e0e1d04691400779707[SEP_DIAL]"""Inflation is negatively correlated to the duration of economic growth."""[SEP_DIAL]0.4047436164372129
+572a0e0e1d04691400779708[SEP_DIAL]"""High levels of inequality can prevent social cohesion, limit access to education and healthcare, and undermine trust in institutions and the rule of law."""[SEP_DIAL]0.7819135944162346
+572a0e0e1d04691400779709[SEP_DIAL]"""According to IMF staff economists, if the income share of the top twenty percent increases, it can lead to slower GDP growth in the long run."""[SEP_DIAL]0.43702096528697265
+572a0e0e1d0469140077970a[SEP_DIAL]"""An increase in the income share of the bottom twenty percent of a society typically leads to a reduction in income inequality and poverty."""[SEP_DIAL]0.35642253802928503
+572a0e0e1d0469140077970b[SEP_DIAL]"""The government and businesses are generally considered to be the most important entities for economic growth."""[SEP_DIAL]0.5629392599724274
+572a0ecb1d04691400779717[SEP_DIAL]"""I couldn't find any information on individuals named Davin Castañes Quintana and Vincente Royella."""[SEP_DIAL]0.3302853411667168
+572a0ecb1d04691400779718[SEP_DIAL]"""Increasing inequality can harm individuals, communities, and society as a whole by limiting access to education, healthcare, and economic opportunities, perpetuating poverty and social unrest, and undermining social cohesion and trust in institutions."""[SEP_DIAL]0.6784275419011236
+572a0ecb1d04691400779719[SEP_DIAL]"""Persistent unemployment has a negative effect on mental health, social relationships, and overall well-being."""[SEP_DIAL]0.36272426202059527
+572a0ecb1d0469140077971a[SEP_DIAL]"""Unemployment harms growth because it reduces consumer spending and investment, leading to decreased demand for goods and services, which in turn slows down economic activity."""[SEP_DIAL]0.5839873503379782
+572a0ecb1d0469140077971b[SEP_DIAL]"""Policies that try to control unemployment support economic growth by reducing the number of people who are not working and therefore have disposable income to spend."""[SEP_DIAL]0.3682615020713552
+572a1046af94a219006aa78d[SEP_DIAL]"""Joseph Stiglitz presented a report in 1998, not 1999, regarding global inequality, specifically the World Bank's World Development Report 1999, which he co-authored, highlighting the issue of rising global inequality."""[SEP_DIAL]0.31685351522255956
+572a1046af94a219006aa78e[SEP_DIAL]"""Inequality prevents growth by limiting access to education, healthcare, and economic opportunities, which in turn reduces the potential for innovation, entrepreneurship, and productivity."""[SEP_DIAL]0.6797118745833424
+572a1046af94a219006aa78f[SEP_DIAL]"""Both Branko Milanovic and Joseph Stiglitz are Nobel Prize-winning economists."""[SEP_DIAL]0.3668965608746382
+572a1046af94a219006aa790[SEP_DIAL]"""The main reason for the shift to the view that income inequality harms growth is the growing body of evidence from economic research that suggests that high levels of income inequality can lead to reduced social mobility, decreased economic efficiency, and lower economic growth."""[SEP_DIAL]0.5596449461255844
+572a1046af94a219006aa791[SEP_DIAL]"""The secret to economic growth is often attributed to a combination of factors including innovation, investment in human capital, technological advancements, trade, and a favorable business environment."""[SEP_DIAL]0.4570477431229937
+572a11663f37b31900478693[SEP_DIAL]"""The research by Winterton and Zia highlights the significant disparities in wealth and income distribution in the United States."""[SEP_DIAL]0.33153552254270413
+572a11663f37b31900478694[SEP_DIAL]"""Inequality in the presence of credit market imperfections can lead to a reduction in human capital formation, particularly for low-income individuals who may not have access to credit markets to finance investments in education and training."""[SEP_DIAL]0.3826492885081072
+572a11663f37b31900478695[SEP_DIAL]"""The 1969 study by Perotti examined the effects of a placebo on the immune system."""[SEP_DIAL]0.4141825161091123
+572a11663f37b31900478696[SEP_DIAL]"""Inequality is often associated with higher levels of poverty."""[SEP_DIAL]0.31674575596551147
+572a11663f37b31900478697[SEP_DIAL]"""Extremely unequal societies tend to be characterized by high levels of poverty, crime, poor health outcomes, and social unrest."""[SEP_DIAL]0.5263632582167608
+572a12381d0469140077972b[SEP_DIAL]"""Robert Barro is a professor at Harvard University."""[SEP_DIAL]0.8082739750784637
+572a12381d0469140077972c[SEP_DIAL]"""Berra found that there is little relation between income inequality and rates of economic growth."""[SEP_DIAL]0.6193488456713352
+572a12381d0469140077972d[SEP_DIAL]"""High levels of inequality in poor countries can hinder economic growth by reducing investment, increasing poverty and inequality, and limiting access to education and healthcare."""[SEP_DIAL]0.6481915020168816
+572a12381d0469140077972e[SEP_DIAL]"""High levels of inequality in richer countries can actually hinder economic growth by reducing consumer spending, decreasing social mobility, and limiting access to education and job opportunities."""[SEP_DIAL]0.6572823947719486
+572a12381d0469140077972f[SEP_DIAL]"""The study of Swedish countries, also known as the "Swedish Country Study", was conducted in 2019 by the Swedish Agency for Support to Innovation (Vinnova) and the Swedish Institute for Food and Biotechnology (SIK)."""[SEP_DIAL]0.5221168443659157
+572a13841d0469140077973b[SEP_DIAL]"""Studies on income inequality have sometimes found evidence confirming that income inequality can have negative effects on economic growth, social mobility, and overall well-being."""[SEP_DIAL]0.3625455436203383
+572a13841d0469140077973c[SEP_DIAL]"""The Kuznets curve suggests that inequality will decrease after a certain level of economic development has been reached."""[SEP_DIAL]0.5112616510932034
+572a13841d0469140077973d[SEP_DIAL]"""The notion of Kuznets curve hypothesis has been challenged by economists such as Angus Maddison and Jeffrey Williamson."""[SEP_DIAL]0.3276018067925388
+572a13841d0469140077973e[SEP_DIAL]"""Thomas Pickwick is a fictional character and the main protagonist in Charles Dickens' novel "The Pickwick Papers," and his job is a country gentleman and a magistrate."""[SEP_DIAL]0.17379177718738548
+572a13841d0469140077973f[SEP_DIAL]"""The biggest factors in reducing inequality between 1914 and 1945 were World War I and the Great Depression, which led to increased government intervention and social welfare programs."""[SEP_DIAL]0.5578712176275721
+572a18a4af94a219006aa7df[SEP_DIAL]"""Theories suggesting that inequality may have a positive effect on economic development were developed in the 1970s and 1980s by economists such as Robert Lucas and Thomas Sowell."""[SEP_DIAL]0.8185482550432398
+572a18a4af94a219006aa7e0[SEP_DIAL]"""According to a 1955 review, savings by the wealthy were thought to offset the costs of social welfare programs."""[SEP_DIAL]0.3911403872001893
+572a18a4af94a219006aa7e1[SEP_DIAL]"""The 2020 report by the National Bureau of Statistics (NBS) suggests that Nigeria's economic growth has been slow, with a GDP growth rate of 2.2% in 2020, which is below the population growth rate of 2.6%."""[SEP_DIAL]0.4811390302417846
+572a18a4af94a219006aa7e2[SEP_DIAL]"""The effects of economic policies or changes can take anywhere from a few months to several years to manifest as changes to economic growth, depending on the specific policy and the complexity of the economy."""[SEP_DIAL]0.9067784736987514
+572a18a4af94a219006aa7e3[SEP_DIAL]"""Longer growth spells are often associated with the element of nature, particularly with the earth and plant life."""[SEP_DIAL]0.3543626247121292
+572a1a5c6aef051400155284[SEP_DIAL]"""Creating affordable access to education, job training, and social safety nets, as well as implementing policies that promote fair wages and equal opportunities, can help ensure that poorer members of society can participate in economic growth."""[SEP_DIAL]0.41605898131999797
+572a1a5c6aef051400155285[SEP_DIAL]"""The growth elasticity of poverty can depend on factors such as the rate of economic growth, the distribution of income, and the effectiveness of social safety nets."""[SEP_DIAL]0.544763170125141
+572a1a5c6aef051400155286[SEP_DIAL]"""A country with high inequality tends to take longer to achieve economic growth and development because it often has limited access to education, healthcare, and economic opportunities for its disadvantaged populations."""[SEP_DIAL]0.2880673695994085
+572a1a5c6aef051400155287[SEP_DIAL]"""Ban Ki-moon was the Secretary-General of the United Nations."""[SEP_DIAL]0.9027868463613742
+572a1a5c6aef051400155288[SEP_DIAL]"""Economic growth is not sufficient for progress on its own, as it can be accompanied by rising income inequality, environmental degradation, and social injustice."""[SEP_DIAL]0.2622442546215926
+572a1ba46aef05140015528e[SEP_DIAL]"""Land is often held outside the formal legal ownership registration system in many developing countries."""[SEP_DIAL]0.5324335603316248
+572a1ba46aef05140015528f[SEP_DIAL]"""Unregistered property is typically held in informal form through possession and use, with the owner's rights and interests being recognized through local customs and traditions rather than formal documentation."""[SEP_DIAL]0.6642570915183825
+572a1ba46aef051400155290[SEP_DIAL]"""Excessive bureaucratic red tape is one of the reasons for government ownership."""[SEP_DIAL]0.2793055864990318
+572a1ba46aef051400155291[SEP_DIAL]"""In some countries, it can take up to 10 years or more to build on government land due to the lengthy bureaucratic process."""[SEP_DIAL]0.346818758685557
+572a1ba46aef051400155292[SEP_DIAL]"""It can sometimes take up to fourteen years to get permission to build on a site due to complex planning and regulatory processes."""[SEP_DIAL]0.44238298380643903
+572a1c943f37b319004786e1[SEP_DIAL]"""A number of researchers think that a shortage of affordable housing is caused in part by income inequality."""[SEP_DIAL]0.8817454651301722
+572a1c943f37b319004786e2[SEP_DIAL]"""The number of people who believed in the existence of the Loch Ness Monster decreased between 1984 and 1989."""[SEP_DIAL]0.29950606063325425
+572a1c943f37b319004786e3[SEP_DIAL]"""The demand for rentals decreased due to a combination of factors, including an increase in home ownership rates, a rise in new construction, and a shift in consumer preferences towards buying homes."""[SEP_DIAL]0.5555260249858307
+572a1dbb3f37b319004786f5[SEP_DIAL]"""Certain costs that are difficult to avoid are shared by all members of a society, such as taxes, defense spending, and public health expenses."""[SEP_DIAL]0.7625538404366088
+572a1dbb3f37b319004786f6[SEP_DIAL]"""Those with lower incomes are often unable to manage due to financial constraints, limited access to resources, and a lack of financial literacy."""[SEP_DIAL]0.4407334485032507
+572a1dbb3f37b319004786f7[SEP_DIAL]"""The term for when middle-income earners aspire to obtain the same standards of living as people wealthier than themselves is "keeping up with the Joneses.""""[SEP_DIAL]0.43433686460882437
+572a1dbb3f37b319004786f8[SEP_DIAL]"""One method of achieving aspirational consumption is by using credit or loans to purchase goods or services that are beyond one's current financial means."""[SEP_DIAL]0.2589592723101931
+572a1dbb3f37b319004786f9[SEP_DIAL]"""Taking on debt can potentially lead to financial stress, anxiety, and even bankruptcy."""[SEP_DIAL]0.5121447213936816
+572a1f086aef0514001552c0[SEP_DIAL]"""Actually, when economic inequality is smaller, there is typically less waste and pollution."""[SEP_DIAL]0.3883275232352821
+572a1f086aef0514001552c1[SEP_DIAL]"""The population density would be lower."""[SEP_DIAL]0.2641971440811616
+572a1f086aef0514001552c2[SEP_DIAL]"""The current high level of population has a large impact on the availability of resources such as food, water, and energy."""[SEP_DIAL]0.37801645191081423
+572a1f086aef0514001552c3[SEP_DIAL]"""Addressing human inequality can be achieved through policies that promote economic redistribution, social welfare programs, and education, while also incorporating sustainable practices and green technologies to minimize environmental impact."""[SEP_DIAL]0.5141009029712775
+572a1fe16aef0514001552d0[SEP_DIAL]"""Socialists attribute vast disparities in wealth to the inherent flaws of capitalism, such as exploitation of the working class, unequal distribution of resources, and the concentration of wealth among a small elite."""[SEP_DIAL]0.4886235990648493
+572a1fe16aef0514001552d1[SEP_DIAL]"""Private ownership creates a situation of unequal distribution of resources and wealth."""[SEP_DIAL]0.4803820695884501
+572a1fe16aef0514001552d2[SEP_DIAL]"""The vast majority of the population is dependent on wages or salaries from employment."""[SEP_DIAL]0.5900750508603225
+572a1fe16aef0514001552d3[SEP_DIAL]"""Socialists generally believe that the means of production should be owned and controlled by the community or the state, rather than by private individuals or corporations."""[SEP_DIAL]0.277872104010247
+572a1fe16aef0514001552d4[SEP_DIAL]"""Income differentials would be based on individual contributions to the social product, with those who contribute more receiving a greater share of the total income."""[SEP_DIAL]0.7878796578267484
+572a20816aef0514001552e4[SEP_DIAL]"""Wu argues that the government redistributes wealth by using its power to take from some individuals and give to others."""[SEP_DIAL]0.3465464640227529
+572a20816aef0514001552e5[SEP_DIAL]"""The usual form of the government's wealth redistribution is through taxation and social welfare programs."""[SEP_DIAL]0.9066386433717694
+572a20816aef0514001552e6[SEP_DIAL]"""In an ideal moral society, all citizens would be free from fear, oppression, and want, allowing them to live with dignity and pursue their full potential."""[SEP_DIAL]0.37818817301080365
+572a20816aef0514001552e7[SEP_DIAL]"""Modern economic inequalities were created through a combination of historical events, policies, and systems, including colonialism, slavery, the Industrial Revolution, and the concentration of wealth through tax policies and corporate power."""[SEP_DIAL]0.5454093577270402
+572a20816aef0514001552e8[SEP_DIAL]"""According to John Rawls, inequalities in wealth are justified if they benefit the least advantaged members of society."""[SEP_DIAL]0.5322551537350362
+572a213e6aef0514001552ee[SEP_DIAL]"""The capabilities approach views poverty as a lack of freedom to achieve one's full potential and live a life that one values."""[SEP_DIAL]0.4219164071030397
+572a213e6aef0514001552ef[SEP_DIAL]"""In the capabilities approach, growth and income are considered a means to an end rather than an end in themselves."""[SEP_DIAL]0.6168587269108621
+572a213e6aef0514001552f0[SEP_DIAL]"""The goal of the capabilities approach is to identify and develop the essential skills, knowledge, and abilities that individuals need to perform their jobs effectively."""[SEP_DIAL]0.6322435720702805
+572a213e6aef0514001552f1[SEP_DIAL]"""The capabilities approach would achieve its goal by identifying and developing the essential skills, knowledge, and abilities that individuals need to thrive in a given context."""[SEP_DIAL]0.41596931306915286
+572a213e6aef0514001552f2[SEP_DIAL]"""Agency, in the context of capabilities, refers to the ability of an individual or organization to take deliberate action and make decisions that have a direct impact on their environment or circumstances."""[SEP_DIAL]0.6620787898562916
+572a2224af94a219006aa823[SEP_DIAL]"""When a person's capabilities are lowered as it relates to their income, it is often referred to as a decrease in earning potential or a reduction in income."""[SEP_DIAL]0.6846693388801885
+572a2224af94a219006aa824[SEP_DIAL]"""They can't do much of anything."""[SEP_DIAL]0.5536272409108526
+572a2224af94a219006aa825[SEP_DIAL]"""Women may be prevented from working outside the home or receiving education due to societal, cultural, and economic factors such as poverty, lack of access to education and job opportunities, patriarchal norms, and limited social mobility."""[SEP_DIAL]0.49447969788676993
+572a2224af94a219006aa826[SEP_DIAL]"""Rampant violence would prevent people from going to work because it creates a hostile and unsafe environment that makes it difficult or impossible for individuals to feel secure and protected while commuting to or working at their job."""[SEP_DIAL]0.5806506119690165
+572a2224af94a219006aa827[SEP_DIAL]"""People can work towards self-actualization, personal growth, and realizing their full potential when they are not denied their functioning, capabilities, and agency."""[SEP_DIAL]0.46840768327253945
+5728659f4b864d190016498c[SEP_DIAL]"""I don't have enough information to determine which club won 118 tournaments and 15 national championships."""[SEP_DIAL]0.29709443602483343
+5728659f4b864d190016498d[SEP_DIAL]"""The University of Bristol's student film society, the Bristol University Film Society, is the country's longest continuously running student film society."""[SEP_DIAL]0.33275039223016345
+5728659f4b864d190016498e[SEP_DIAL]"""The name of the student improvisational theatre troupe is Second City."""[SEP_DIAL]0.31132663992106135
+57286d7d4b864d19001649e2[SEP_DIAL]"""Alex Seropian is best known for creating the video game series "Braid" and "World of Goo"."""[SEP_DIAL]0.3592041070261647
+57286d7d4b864d19001649e3[SEP_DIAL]"""Tom Hanks is a well-known American actor who graduated from Chabot College in Hayward, California."""[SEP_DIAL]0.2418078612114961
+57286d7d4b864d19001649e4[SEP_DIAL]"""John Cleese, a British comedian and actor, graduated from Cambridge University."""[SEP_DIAL]0.22397886880378615
+572885023acd2414000dfa87[SEP_DIAL]"""The increase in the value of the yuan helped Chinese exporters by making their goods cheaper and more competitive in the global market."""[SEP_DIAL]0.5678966059511469
+5728855d3acd2414000dfa8d[SEP_DIAL]"""The Mongols gave control of Korea to the Goryeo dynasty."""[SEP_DIAL]0.48456730955885396
+5728855d3acd2414000dfa8e[SEP_DIAL]"""The Wugur king of Quichua was ranked below the king of the Quichua."""[SEP_DIAL]0.27531718918493364
+5728855d3acd2414000dfa8f[SEP_DIAL]"""The Karluks were a Turkic people who were vassals of the Kara-Khanid Khanate, and their ruler was ranked below the Khan of the Kara-Khanid Khanate."""[SEP_DIAL]0.3535211598380632
+5728855d3acd2414000dfa90[SEP_DIAL]"""The Mongols ranked the Wies (a group of Mongol warriors) higher than other groups because of their exceptional bravery, martial skills, and loyalty to Genghis Khan."""[SEP_DIAL]0.37519577996976494
+572885c44b864d1900164a78[SEP_DIAL]"""Hebei is part of the North China region."""[SEP_DIAL]0.6565185924643466
+572885c44b864d1900164a79[SEP_DIAL]"""The central region in the Yuan dynasty was governed by the Mongol khan, Kublai Khan, who established the Yuan dynasty in 1271."""[SEP_DIAL]0.6844539303251957
+572885c44b864d1900164a7a[SEP_DIAL]"""The Central Secretariat was based in London."""[SEP_DIAL]0.34872243935202096
+572885c44b864d1900164a7b[SEP_DIAL]"""The ancient city of Konbalik became the modern city of Kalyan in India."""[SEP_DIAL]0.3102491512993617
+572885c44b864d1900164a7c[SEP_DIAL]"""The Central Secretariat was also known as the Zhongmian in Chinese."""[SEP_DIAL]0.3712860703305132
+5728f9882ca10214002dab5d[SEP_DIAL]"""The innate immune system responds in a generic way, meaning it is non-specific and does not recognize specific pathogens."""[SEP_DIAL]0.8663476337086562
+5728fb002ca10214002dab6e[SEP_DIAL]"""The flushing action of water helps to remove pathogens and contaminants from the surface of ice."""[SEP_DIAL]0.3872902311446724
+5729f799af94a219006aa707[SEP_DIAL]"""Some of their offspring cells become plasma cells, which produce antibodies."""[SEP_DIAL]0.7725298839530019
+5729f799af94a219006aa708[SEP_DIAL]"""The function of long-lived memory cells is an example of a specific immune response known as adaptive immunity."""[SEP_DIAL]0.9064040667641755
+5729f799af94a219006aa709[SEP_DIAL]"""Immunological memory can take two forms: humoral immunity and cell-mediated immunity."""[SEP_DIAL]0.4859821202664846
+5729f799af94a219006aa70a[SEP_DIAL]"""Long-lived memory cells can remember previous encounters with antigens."""[SEP_DIAL]0.4350802906733524
+5729f8516aef05140015516c[SEP_DIAL]"""Newborns are vulnerable to infection because they have no previous exposure to beneficial microorganisms, such as gut flora, that help to establish a healthy immune system."""[SEP_DIAL]0.4537544949049853
+5729f8516aef05140015516d[SEP_DIAL]"""IgG antibodies are transported from the mother to the baby across the placenta."""[SEP_DIAL]0.9310191519018709
+5729f8516aef05140015516e[SEP_DIAL]"""Antibodies are transferred to the infant through the mother's milk."""[SEP_DIAL]0.7254337229962186
+5729f8516aef05140015516f[SEP_DIAL]"""This is an example of passive immunity."""[SEP_DIAL]0.8160125446890243
+5729f9953f37b3190047861f[SEP_DIAL]"""Hormones can be referred to as immunomodulators."""[SEP_DIAL]0.9234053206930594
+5729f9953f37b31900478620[SEP_DIAL]"""Estrogen and progesterone, the primary female sex hormones, have been shown to stimulate the immune system and enhance immune responses."""[SEP_DIAL]0.7934769995322952
+5729f9953f37b31900478621[SEP_DIAL]"""Rheumatoid arthritis is an autoimmune disease that affects women more frequently than men."""[SEP_DIAL]0.37376843932620074
+5729f9953f37b31900478622[SEP_DIAL]"""Testosterone has a complex effect on the male immune system, with some studies suggesting it can enhance immune function and others indicating it may suppress certain immune responses, particularly in older men."""[SEP_DIAL]0.4067237591709245
+5729fa40af94a219006aa70f[SEP_DIAL]"""The protein PER2 (Period 2) is closely interwoven with circadian rhythms, playing a crucial role in regulating the body's internal clock."""[SEP_DIAL]0.4002634840127868
+5729fa40af94a219006aa710[SEP_DIAL]"""Disruptions in sleep can lead to an increased risk of chronic conditions such as diabetes, high blood pressure, cardiovascular disease, and obesity."""[SEP_DIAL]0.7438328746198257
+5729fa40af94a219006aa711[SEP_DIAL]"""Chronic stress can result in diminished immune response and lower antibody production."""[SEP_DIAL]0.40817258676918033
+5729fb003f37b31900478627[SEP_DIAL]"""Aging is partially responsible for weakened immune response in older individuals."""[SEP_DIAL]0.597746747666791
+5729fb003f37b31900478628[SEP_DIAL]"""As a person gets older, their skin produces less collagen."""[SEP_DIAL]0.26845452064468434
+5729fb003f37b31900478629[SEP_DIAL]"""The production of cytokines, which are signaling molecules that help coordinate the immune response, is regulated by the immune system."""[SEP_DIAL]0.5200283557928584
+5729fb003f37b3190047862a[SEP_DIAL]"""Older people get less vitamin D, which is produced in the skin via UVB radiation from the sun."""[SEP_DIAL]0.37022120148755366
+5729fc3d1d0469140077969d[SEP_DIAL]"""T cells, a type of lymphocyte, play a crucial role in helping to destroy abnormal cells in tumors."""[SEP_DIAL]0.7938449392220797
+5729fc3d1d0469140077969e[SEP_DIAL]"""Tumor cells often have fewer or altered MHC (Major Histocompatibility Complex) molecules on their surface."""[SEP_DIAL]0.6976515016371048
+5729fc3d1d0469140077969f[SEP_DIAL]"""Tumor antigens are complexed with MHC class I molecules in the same way as viral antigens."""[SEP_DIAL]0.8815176933891936
+5729fc3d1d046914007796a0[SEP_DIAL]"""The RIG-I pathway, which recognizes viral RNA and activates an immune response, is present in all eukaryotes."""[SEP_DIAL]0.460098027703568
+5729fd111d046914007796a5[SEP_DIAL]"""Plants lack lymphocytes, a type of immune cell found in animals."""[SEP_DIAL]0.49279216123309055
+5729fd111d046914007796a6[SEP_DIAL]"""Plant cells respond to the molecules associated with pathogens as elicitors."""[SEP_DIAL]0.4674115554072642
+5729fd111d046914007796a7[SEP_DIAL]"""Cells of the site of an infection in a plant undergo a process called programmed cell death, or apoptosis, to prevent the spread of the disease."""[SEP_DIAL]0.8940347392173233
+5729fd111d046914007796a8[SEP_DIAL]"""A type of defense response that makes the entire plant resistant to a particular agent is systemic acquired resistance."""[SEP_DIAL]0.90290769469839
+5729fd111d046914007796a9[SEP_DIAL]"""RNA interference (RNAi) is a mechanism that can help plants block virus replication by silencing the expression of viral genes."""[SEP_DIAL]0.8011116962283087
+5729fe5c3f37b3190047862f[SEP_DIAL]"""Autoimmune disorders, such as rheumatoid arthritis, lupus, and multiple sclerosis, are the result of an overactive immune response."""[SEP_DIAL]0.8982767158172099
+5729fe5c3f37b31900478630[SEP_DIAL]"""In autoimmune disorders, the immune system mistakenly attacks and destroys healthy cells that are normally recognized as "self"."""[SEP_DIAL]0.832021054231931
+5729fe5c3f37b31900478631[SEP_DIAL]"""The specialized cells that eliminate cells that recognize self-antigens are located in the thymus."""[SEP_DIAL]0.5899403337385715
+5729fe5c3f37b31900478632[SEP_DIAL]"""T cells and antibodies produce peptides that are fragments of proteins."""[SEP_DIAL]0.735778958363225
+5729fefbaf94a219006aa739[SEP_DIAL]"""When part of the immune system is not active, it can lead to disorders such as immunodeficiency diseases, where the body is unable to fight off infections."""[SEP_DIAL]0.6393856311513186
+5729fefbaf94a219006aa73a[SEP_DIAL]"""The strength of the immune system is reduced in infants under one year old and in older adults over 65 years old."""[SEP_DIAL]0.6066510143049969
+5729fefbaf94a219006aa73b[SEP_DIAL]"""Immune responses typically begin to decline in the early to mid-40s, with some studies suggesting a significant decline in immune function around age 50."""[SEP_DIAL]0.926967371277621
+5729fefbaf94a219006aa73c[SEP_DIAL]"""Causes of reduced immune function in developed countries include aging, lack of vitamin D, poor sleep quality, chronic stress, smoking, excessive alcohol consumption, and certain medications such as corticosteroids and immunosuppressants."""[SEP_DIAL]0.49145114501262943
+5729fefbaf94a219006aa73d[SEP_DIAL]"""Malnutrition, particularly protein-energy malnutrition, is the most common cause of immunodeficiency in developing nations."""[SEP_DIAL]0.930986068094005
+5729ffda1d046914007796af[SEP_DIAL]"""Active immunity can be generated in an artificial manner through vaccination, where a weakened or inactivated pathogen or a piece of it is introduced into the body to stimulate an immune response."""[SEP_DIAL]0.8820789812494099
+5729ffda1d046914007796b0[SEP_DIAL]"""The process of vaccination is also known as immunization."""[SEP_DIAL]0.8501777199743187
+5729ffda1d046914007796b1[SEP_DIAL]"""A weakened or inactivated form of a pathogen, such as a virus or bacteria, is introduced in order to develop a specific immunity."""[SEP_DIAL]0.4956965211827399
+5729ffda1d046914007796b2[SEP_DIAL]"""Vaccination exploits the human immune system's ability to recognize and remember specific antigens, allowing the body to mount a rapid and effective response to future infections."""[SEP_DIAL]0.6127604934451072
+572a019f3f37b31900478643[SEP_DIAL]"""Bacteria secrete enzymes called proteases to break down and ingest a physical barrier."""[SEP_DIAL]0.8757626982634318
+572a019f3f37b31900478644[SEP_DIAL]"""A system of infection that involves inserting a hollow tube into a host cell is called a viral infection, specifically a type of viral infection known as a bacteriophage infection."""[SEP_DIAL]0.6423073373033845
+572a019f3f37b31900478645[SEP_DIAL]"""In a Type III secretion system, proteins are transported to the host cell to manipulate its behavior and facilitate bacterial survival and replication."""[SEP_DIAL]0.5666226786215098
+572a019f3f37b31900478646[SEP_DIAL]"""The success of pathogens is predicted on their ability to adapt and evolve to evade the host's immune system."""[SEP_DIAL]0.7862270722793705
+572a02483f37b3190047864b[SEP_DIAL]"""Felix d'Herelle and Elie Metchnikoff are often credited with the development of the clonal selection theory of immunity, but it was primarily Frank Macfarlane Burnet who formulated the modern concept of clonal selection theory in the 1950s."""[SEP_DIAL]0.835994799189837
+572a02483f37b3190047864c[SEP_DIAL]"""According to Frank Bernett's theory, two examples of non-self entities are a chair and a mountain."""[SEP_DIAL]0.25468147057922674
+572a02483f37b3190047864d[SEP_DIAL]"""The complex two-signal activation of T cells is referred to as the "two-signal model" or "dual signal model"."""[SEP_DIAL]0.33467036396059957
+572a02483f37b3190047864e[SEP_DIAL]"""Franklin D. Roosevelt's New Deal policies were influenced by the ideas of economists such as John Maynard Keynes and the work of the British economist, John Maynard Keynes, was a significant influence on the development of the New Deal."""[SEP_DIAL]0.3266372688602831
+572a03086aef0514001551a2[SEP_DIAL]"""Biologics, such as monoclonal antibodies and interleukin-1 receptor antagonists, are considered the most powerful class of anti-inflammatory drugs."""[SEP_DIAL]0.4639816122492926
+572a03086aef0514001551a3[SEP_DIAL]"""Low doses of anti-inflammatory medications are sometimes used with antibiotics to treat certain types of bacterial infections."""[SEP_DIAL]0.36473463246610693
+572a03086aef0514001551a4[SEP_DIAL]"""Examples of cytotoxic or immunosuppressive drugs include cyclophosphamide and methotrexate."""[SEP_DIAL]0.6259061122157125
+572a03086aef0514001551a5[SEP_DIAL]"""Sirolimus (also known as rapamycin) is an example of an immunosuppressive drug that prevents T-cell activity by altering signal transduction pathways."""[SEP_DIAL]0.4247954624120147
+572a04d51d046914007796cd[SEP_DIAL]"""Examples of differentiated effector cells that peak during wake periods include natural killer cells, cytotoxic T cells, and neutrophils."""[SEP_DIAL]0.8934754263979657
+572a04d51d046914007796ce[SEP_DIAL]"""Cortisol and adrenaline are two anti-inflammatory molecules that peak during wake hours."""[SEP_DIAL]0.7763591312292346
+572a04d51d046914007796cf[SEP_DIAL]"""Inflammation is not typically associated with sleep times, and it is not caused by the presence of a "wet molecule.""""[SEP_DIAL]0.32431883372393777
+572a04d51d046914007796d0[SEP_DIAL]"""Melatonin during sleep can actively counteract the production of cortisol."""[SEP_DIAL]0.6069736527210883
+572a058aaf94a219006aa751[SEP_DIAL]"""A T cell extends its T-cell receptor (TCR) when it encounters a foreign pathogen."""[SEP_DIAL]0.7072336341490033
+572a058aaf94a219006aa752[SEP_DIAL]"""The active form of vitamin D is calcitriol."""[SEP_DIAL]0.8528233579802033
+572a058aaf94a219006aa753[SEP_DIAL]"""Vitamin D plays a crucial role in the regulation and function of T cells, with vitamin D receptors found on T cells and vitamin D influencing their development, activation, and proliferation."""[SEP_DIAL]0.3735705011079007
+572a058aaf94a219006aa754[SEP_DIAL]"""The gene responsible for converting calciol (25-hydroxyvitamin D3) into calcitriol (1,25-dihydroxyvitamin D3) is CYP27B1."""[SEP_DIAL]0.885542747229643
+572a058aaf94a219006aa755[SEP_DIAL]"""B cells and natural killer cells also express CD21 (also known as CR2), which is the same as CD21."""[SEP_DIAL]0.788209168990039
+572a06af3f37b31900478667[SEP_DIAL]"""Organisms use proteins called pattern recognition receptors (PRRs), such as Toll-like receptors (TLRs) and NOD-like receptors (NLRs), to identify and respond to pathogens."""[SEP_DIAL]0.8969361669137608
+572a06af3f37b31900478668[SEP_DIAL]"""The main form of invertebrate systemic immunity are antimicrobial peptides, specifically defensins, cecropins, and lysozymes."""[SEP_DIAL]0.8858997649750252
+572a06af3f37b31900478669[SEP_DIAL]"""Wet cells, also known as hemocytes, play a crucial role in the immune response of invertebrates, such as insects, crustaceans, and mollusks."""[SEP_DIAL]0.763498222135892
+572a07fc6aef0514001551dc[SEP_DIAL]"""The molecules of the adaptive immune system that only exist in jawed vertebrates are immunoglobulins, also known as antibodies."""[SEP_DIAL]0.8860883250272816
+572a07fc6aef0514001551dd[SEP_DIAL]"""Lampreys and hagfish are two examples of primitive jawless vertebrates."""[SEP_DIAL]0.7560940948276569
+572a07fc6aef0514001551de[SEP_DIAL]"""These receptors are called ampullae of Lorenzini."""[SEP_DIAL]0.5164985091634846
+572a07fc6aef0514001551df[SEP_DIAL]"""The evolution of the adaptive immune system, which includes B cells and T cells, occurred in the evolutionary ancestor of jawed vertebrates."""[SEP_DIAL]0.9038709465796001
+572a096e6aef0514001551e4[SEP_DIAL]"""Invertebrates do not generate B cells, which are a type of cell that is part of the vertebrate adaptive immune system."""[SEP_DIAL]0.45549847203940685
+572a096e6aef0514001551e5[SEP_DIAL]"""The main defense mechanism of bacteria is known as the "periplasmic space" or more specifically, the "periplasmic barrier"."""[SEP_DIAL]0.30309782651970196
+572a096e6aef0514001551e6[SEP_DIAL]"""The restriction modification system is actually used by bacteria to defend against invading foreign DNA, such as from viruses, rather than from wet pathogens."""[SEP_DIAL]0.4990548543349753
+572a096e6aef0514001551e7[SEP_DIAL]"""The system by which prokaryotes retain phase gene fragments that they had previously come into contact with is called lysogenic conversion."""[SEP_DIAL]0.4865009903344427
+572a0a686aef0514001551ec[SEP_DIAL]"""The two main theories of immunity at the end of the nineteenth century were the "cellular theory" of Elie Metchnikoff and the "humoral theory" of Louis Pasteur."""[SEP_DIAL]0.8781820547567466
+572a0a686aef0514001551ed[SEP_DIAL]"""Robert Koch is often credited as the main proponent of the cellular theory of immunity."""[SEP_DIAL]0.2782801548948658
+572a0a686aef0514001551ee[SEP_DIAL]"""According to Elie Metchnikoff's cell theory, phagocytes were responsible for the immune response."""[SEP_DIAL]0.9197780585345781
+572a0a686aef0514001551ef[SEP_DIAL]"""Galen and Hippocrates were two prominent scientists who supported the humoral theory of immunity."""[SEP_DIAL]0.38676043320240305
+572a0a686aef0514001551f0[SEP_DIAL]"""According to the humoral theory of immunity, the body's immune agents were the four bodily fluids or humors: blood, phlegm, yellow bile, and black bile."""[SEP_DIAL]0.3817287122806873
+572a0b0b6aef0514001551f6[SEP_DIAL]"""Tumors that are able to evade the body's immune response can become malignant."""[SEP_DIAL]0.5678433258434488
+572a0b0b6aef0514001551f7[SEP_DIAL]"""Tumor cells often have reduced concentrations of adhesion receptors, such as E-cadherin and integrins."""[SEP_DIAL]0.4178787164779829
+572a0b0b6aef0514001551f8[SEP_DIAL]"""Tumors secrete a chemical called Tumor-Associated Macrophage Inhibitory Factor (TAMIF) and also a protein called Tumor Necrosis Factor-alpha (TNF-alpha) and also a protein called Transforming Growth Factor-beta (TGF-beta) and also a protein called Vascular Endoth"""[SEP_DIAL]0.4013447259022275
+572a0b0b6aef0514001551f9[SEP_DIAL]"""TGF-beta (transforming growth factor-beta) is the cytokine that suppresses the activity of wet cell types, not TGF-beta."""[SEP_DIAL]0.3209340966511012
+572a0bf96aef051400155204[SEP_DIAL]"""The name for a response of the immune system that damages the body's native tissues is an autoimmune response."""[SEP_DIAL]0.42316350710978445
+572a0bf96aef051400155205[SEP_DIAL]"""There are four main classes of immune hypersensitivity: Type I, Type II, Type III, and Type IV."""[SEP_DIAL]0.8329034798561648
+572a0bf96aef051400155206[SEP_DIAL]"""IgE-mediated hypersensitivity is the type of hypersensitivity associated with allergies."""[SEP_DIAL]0.7442670271583876
+572a0bf96aef051400155207[SEP_DIAL]"""IgE (Immunoglobulin E) is the chemical that mediates Type I hypersensitivity."""[SEP_DIAL]0.8434982977553438
+572a0bf96aef051400155208[SEP_DIAL]"""Antibody-dependent hypersensitivity belongs to the class of Type II hypersensitivity."""[SEP_DIAL]0.8801364591197289
+572a0ce11d046914007796fd[SEP_DIAL]"""The process by which pathogens evade the immune system by hiding inside host cells is called intracellular parasitism."""[SEP_DIAL]0.78482915263887
+572a0ce11d046914007796fe[SEP_DIAL]"""Listeria monocytogenes is an example of a foodborne pathogen that exhibits intracellular pathogenesis."""[SEP_DIAL]0.3380322425579857
+572a0ce11d046914007796ff[SEP_DIAL]"""The eukaryotic parasite responsible for malaria is Plasmodium."""[SEP_DIAL]0.7226378410390502
+572a0ce11d04691400779700[SEP_DIAL]"""The bacterium that lives inside a protective capsule is a Streptococcus."""[SEP_DIAL]0.417384664472628
+572a0ce11d04691400779701[SEP_DIAL]"""Staphylococcus aureus produces a protein called staphylococcal protein A (SpA) to make antibodies ineffective."""[SEP_DIAL]0.8951819422203083
+572a0e4b6aef051400155214[SEP_DIAL]"""The process by which the adaptive immune system is evaded by the changing of non-essential epitopes is called antigenic variation."""[SEP_DIAL]0.9336509680852825
+572a0e4b6aef051400155215[SEP_DIAL]"""The influenza virus is a classic example of a virus that uses antegenic variation, where it constantly mutates its surface proteins to evade the host's immune system."""[SEP_DIAL]0.36808483512581536
+572a0e4b6aef051400155216[SEP_DIAL]"""The malaria parasite Plasmodium falciparum is an example of a parasite that uses the antigenic variation strategy to evade destruction by the host's immune system."""[SEP_DIAL]0.39058628062201095
+572a0e4b6aef051400155217[SEP_DIAL]"""Viral proteins such as glycoproteins and glycolipids can be modified with host cell molecules like sialic acid, mannose, and galactose to evade detection by the host's immune system."""[SEP_DIAL]0.4740324500498374
+572a0f073f37b3190047867f[SEP_DIAL]"""The process by which the immune system identifies tumors is called immunosurveillance."""[SEP_DIAL]0.7627461953567586
+572a0f073f37b31900478680[SEP_DIAL]"""The virus in humans that causes cervical cancer is the Human Papillomavirus (HPV)."""[SEP_DIAL]0.8544620996496497
+572a0f073f37b31900478681[SEP_DIAL]"""The enzyme you are referring to is likely Wnt, which is a family of proteins that play a crucial role in cell signaling and can contribute to the development of tumors when overexpressed."""[SEP_DIAL]0.5486476983610686
+572a0f073f37b31900478682[SEP_DIAL]"""Cancerous tumors of the skin are known as carcinomas."""[SEP_DIAL]0.265823522546212
+572a0f073f37b31900478683[SEP_DIAL]"""Epithelial cells are the skin cells that can be transformed into tumors."""[SEP_DIAL]0.3813448739611206
+572a10cd6aef051400155222[SEP_DIAL]"""At very small sizes, drugs can elicit a neutralizing amine response, but at larger sizes, they can also elicit an immune response."""[SEP_DIAL]0.46149265731612577
+572a10cd6aef051400155223[SEP_DIAL]"""Amino acids such as alanine, glycine, and valine are often overrepresented in epitope regions."""[SEP_DIAL]0.7588216105447376
+572a10cd6aef051400155224[SEP_DIAL]"""The study of proteins involved in an immune response is known as immunology."""[SEP_DIAL]0.3490988142430598
+572a10cd6aef051400155225[SEP_DIAL]"""The Immune Epitope Database (in silico) is a comprehensive public database of epitopes for pathogens that are recognized by the immune system."""[SEP_DIAL]0.4392855098507935
+572a10cd6aef051400155226[SEP_DIAL]"""The field of studying immunogenicity through bioinformatics is known as immunoinformatics."""[SEP_DIAL]0.8828609736826751
+572a12386aef051400155234[SEP_DIAL]"""A decrease in cortisol and epinephrine levels can lead to an increase in the production of aldosterone, a hormone that regulates electrolyte balance."""[SEP_DIAL]0.6083232813724342
+572a12386aef051400155235[SEP_DIAL]"""Hormones released during sleep, such as melatonin, support the interaction of T cells in humans."""[SEP_DIAL]0.4027533660538567
+572a12386aef051400155236[SEP_DIAL]"""Sleep hormones shift the cytokine balance to anti-inflammatory cytokines."""[SEP_DIAL]0.3132001484787933
+572a12386aef051400155237[SEP_DIAL]"""Sleep hormone melatonin initiates the adaptive immune response."""[SEP_DIAL]0.6439288488448573
+572a135daf94a219006aa79f[SEP_DIAL]"""The immune system of bacteria has enzymes that protect against infection by phagocytes."""[SEP_DIAL]0.42920460453112363
+572a135daf94a219006aa7a0[SEP_DIAL]"""The term "eukaryote" refers to a type of cell that has a true nucleus and other membrane-bound organelles."""[SEP_DIAL]0.3301966435137619
+572a135daf94a219006aa7a1[SEP_DIAL]"""The idea of acquired immunity in jawed vertebrates is the basis of vaccination."""[SEP_DIAL]0.868010555236388
+572a135daf94a219006aa7a2[SEP_DIAL]"""The ability to recognize and adapt to new specific pathogens is called immunological memory."""[SEP_DIAL]0.4052851871799982
+572a142e3f37b319004786b9[SEP_DIAL]"""Complement proteins bind to antibodies or other complement proteins on the surface of microbes to form a membrane attack complex that ultimately leads to cell lysis."""[SEP_DIAL]0.4497845394801451
+572a142e3f37b319004786ba[SEP_DIAL]"""The speed of the killing response of the human immune system is a product of the innate immune response."""[SEP_DIAL]0.4021639483093312
+572a142e3f37b319004786bb[SEP_DIAL]"""The type of cascade that results when complement proteins bind to microbes and activate their protein activity is the complement cascade."""[SEP_DIAL]0.7285378852840091
+572a142e3f37b319004786bc[SEP_DIAL]"""The deposition of complement can kill invader cells directly by forming the membrane attack complex (MAC), which creates pores in the cell membrane, leading to cell lysis and death."""[SEP_DIAL]0.5948016750816703
+57293c246aef051400154bb9[SEP_DIAL]"""I couldn't find any information on a "two thousand" IPCCC meeting, but the 2003 International Conference on Computational Science (ICCS) had around 1,000 attendees."""[SEP_DIAL]0.35906456050047186
+57293c246aef051400154bba[SEP_DIAL]"""The International Plant Protection Convention (IPPC) meetings are attended by experts from various fields, including plant health, quarantine, and phytosanitary measures, from government agencies, international organizations, and the private sector."""[SEP_DIAL]0.8363589224828047
+57293c246aef051400154bbb[SEP_DIAL]"""About 40% of the International Peace Conference Committee (IPCC) attendees are government representatives."""[SEP_DIAL]0.7896272954915833
+57293ca73f37b3190047815c[SEP_DIAL]"""The IPCS Trust Fund was started by the International Potato Center (CIP)."""[SEP_DIAL]0.4786951967253831
+57293ca73f37b3190047815d[SEP_DIAL]"""The International Press Institute (IPI) is funded by a combination of government grants, private foundations, and corporate donations."""[SEP_DIAL]0.5008653411527298
+57293ca73f37b3190047815e[SEP_DIAL]"""The International Press Centre for the Council of Europe's Deputy Secretary General is funded by the Council of Europe."""[SEP_DIAL]0.39995751398618273
+57293ca73f37b3190047815f[SEP_DIAL]"""The Independent Police Complaints Commission (IPCC) in the UK is governed by the Police Reform and Social Responsibility Act 2011 and the IPCC's own rules and procedures, which are set out in the IPCC's handbook."""[SEP_DIAL]0.6442408090809342
+57293d6d1d046914007791b9[SEP_DIAL]"""An IPCPC report chapter typically has 2-3 contributing authors."""[SEP_DIAL]0.6149169919017794
+57293d6d1d046914007791ba[SEP_DIAL]"""The editor typically assembles the author's contributions."""[SEP_DIAL]0.5082295298082034
+57293d6d1d046914007791bb[SEP_DIAL]"""Coordinating lead authors typically report to the editor-in-chief or the editorial board of the publication."""[SEP_DIAL]0.30751259934409647
+57293e221d046914007791d6[SEP_DIAL]"""The main causes of increased greenhouse gases are burning fossil fuels such as coal, oil, and natural gas, as well as deforestation and land-use changes."""[SEP_DIAL]0.5983592177570431
+57293e221d046914007791d7[SEP_DIAL]"""Carbon dioxide is responsible for approximately 65% of the greenhouse effect."""[SEP_DIAL]0.4632703194946116
+57293e221d046914007791d8[SEP_DIAL]"""The scenario in which we don't change our greenhouse gas creation practices is called a "business-as-usual" scenario."""[SEP_DIAL]0.5548593333844776
+57293e221d046914007791d9[SEP_DIAL]"""The global mean surface air temperature has risen by approximately 1.1°C (2.0°F) over the last century."""[SEP_DIAL]0.5439249928617865
+57293e983f37b3190047818d[SEP_DIAL]"""The joint statement was published in the journal Nature."""[SEP_DIAL]0.23470822224109555
+57293e983f37b3190047818e[SEP_DIAL]"""Scientists were about 95% certain that the Earth's temperature would continue to rise in the 21st century."""[SEP_DIAL]0.5143757705782213
+57293e983f37b3190047818f[SEP_DIAL]"""The Intergovernmental Panel on Climate Change (IPCC) predicted that the global surface temperature would increase by 1.5 to 4.5 degrees Celsius by 2100."""[SEP_DIAL]0.4261353357397226
+57293f353f37b3190047819c[SEP_DIAL]"""Lindzen criticized the summary for policymakers for being overly simplistic and failing to accurately convey the complexity of the report's findings."""[SEP_DIAL]0.39699212971881137
+57293f353f37b3190047819d[SEP_DIAL]"""The Emperor Ming of Han responded to Linzhen's criticisms."""[SEP_DIAL]0.2761094845715034
+57293f353f37b3190047819e[SEP_DIAL]"""I'm not aware of any information about a person named Hutton, could you provide more context?"""[SEP_DIAL]0.24093960494737798
+57293f353f37b3190047819f[SEP_DIAL]"""Hilton stated that any changes to the Spam Act would require a thorough review and consultation with stakeholders to ensure that they are effective and do not create unintended consequences."""[SEP_DIAL]0.44358685657536934
+572940246aef051400154bed[SEP_DIAL]"""Emissions are typically estimated using a combination of models, such as the Intergovernmental Panel on Climate Change (IPCC) models and the National Emissions Inventory (NEI)."""[SEP_DIAL]0.44066003669226483
+572940246aef051400154bee[SEP_DIAL]"""Emission factors are typically determined by levels of pollutants such as particulate matter, carbon monoxide, nitrogen oxides, sulfur dioxide, and volatile organic compounds."""[SEP_DIAL]0.5715042105387356
+572940246aef051400154bef[SEP_DIAL]"""The International Police Commission (IPCC) was established by the United Nations to investigate and report on allegations of war crimes, crimes against humanity, and genocide, and was assigned tasks by the UN Security Council."""[SEP_DIAL]0.7666299894073789
+572941273f37b319004781ae[SEP_DIAL]"""I'm not aware of any information about Watson saying the mistake went in a specific direction."""[SEP_DIAL]0.3072352177198914
+572941273f37b319004781af[SEP_DIAL]"""Martin Perry was the Chairman of the International Press Institute (IPI)."""[SEP_DIAL]0.4529147021984178
+572941273f37b319004781b0[SEP_DIAL]"""I'm not aware of any information about a specific "arrow" you are referring to, could you please provide more context?"""[SEP_DIAL]0.1829804998182355
+572941273f37b319004781b1[SEP_DIAL]"""The verdict on other alleged errors in the trial was that they were largely minor and did not significantly impact the overall outcome."""[SEP_DIAL]0.4760491415532351
+57294209af94a219006aa203[SEP_DIAL]"""The nickname for the Millennium Northern Hemisphere Temperature Reconstruction is the "Hockey Stick Graph"."""[SEP_DIAL]0.9044113797108969
+57294209af94a219006aa204[SEP_DIAL]"""The 1999 paper's information was supported by the Warrington reconstruction."""[SEP_DIAL]0.36531583413839996
+57294279af94a219006aa20c[SEP_DIAL]"""The singer in question was likely Elvis Presley, who disputed the authenticity of the "graph" or "graphite" marks on the guitar at a 1977 Senate hearing."""[SEP_DIAL]0.3377540559391855
+57294279af94a219006aa20d[SEP_DIAL]"""I'm not aware of any information about a specific committee that singer spoke to in July 2002."""[SEP_DIAL]0.42100014900920113
+572943ab1d0469140077921c[SEP_DIAL]"""The chairman of the House Science Committee varied over time, but some notable chairmen include Sherwood Boehlert, Bart Gordon, and Lamar Smith."""[SEP_DIAL]0.8377846168505421
+572943ab1d0469140077921d[SEP_DIAL]"""The statement was made by a representative of the Russian government."""[SEP_DIAL]0.44621224909219204
+572944e03f37b319004781e3[SEP_DIAL]"""There were several medieval warm period reconstructions used, including the Sutton Hoo helmet, the Sutton Hoo shield, and the Viking Age ship reconstruction at Roskilde."""[SEP_DIAL]0.3393414261095782
+572944e03f37b319004781e4[SEP_DIAL]"""There were several medieval warm period reconstructions that spanned over a thousand years, including the Viking Age, the Carolingian Renaissance, and the High Middle Ages."""[SEP_DIAL]0.38085569157100563
+572944e03f37b319004781e5[SEP_DIAL]"""Some tree ring data had a problem with the assumption that tree growth is directly proportional to the amount of rainfall, which was later found to be incorrect."""[SEP_DIAL]0.7345264749888494
+572945b11d04691400779230[SEP_DIAL]"""The 2001 IPCC report's predictions for the 2000-2010 period were generally accurate, with some minor discrepancies, such as underestimating the rate of warming in the Arctic."""[SEP_DIAL]0.30130617560505046
+572945b11d04691400779231[SEP_DIAL]"""The 2001 IPCC report predicted a global temperature increase of 1.4 to 5.8 degrees Celsius by 2100, which was later found to be a conservative estimate, as actual temperatures have risen by around 1.1 to 1.2 degrees Celsius since 2001."""[SEP_DIAL]0.743594451607832
+572945b11d04691400779232[SEP_DIAL]"""The 2001 Intergovernmental Panel on Climate Change (IPCC) report underestimated the rate of sea level rise, predicting a 0.09 to 0.88 meter increase by 2100, whereas actual sea levels have risen by about 0.2 meters since 2001."""[SEP_DIAL]0.6658971637163487
+572949306aef051400154c69[SEP_DIAL]"""The IPCC Third Assessment Report estimated that global sea levels would rise by 0.1 to 0.2 meters (0.3 to 0.6 feet) from 1990 to 2000."""[SEP_DIAL]0.4400472724304284
+572949306aef051400154c6a[SEP_DIAL]"""Researchers now estimate that sea levels will rise by approximately 26-82 centimeters (10-32 inches) from 1990 to 2100, with a median estimate of around 48 centimeters (19 inches)."""[SEP_DIAL]0.373654338401339
+572949306aef051400154c6b[SEP_DIAL]"""I don't have enough information to provide a specific answer about when the third assessment report was published."""[SEP_DIAL]0.3475788927130048
+57294baaaf94a219006aa26c[SEP_DIAL]"""The report was published by the Worldwatch Institute."""[SEP_DIAL]0.2572027617677557
+57294baaaf94a219006aa26d[SEP_DIAL]"""J. Robert Oppenheimer advocated for the development of the atomic bomb as a means to end World War II quickly."""[SEP_DIAL]0.41504165363796386
+572951f16aef051400154cd0[SEP_DIAL]"""One proposal to let the International Panel on Climate Change (IPCC) respond to new evidence faster was to adopt a "rapid response" mechanism."""[SEP_DIAL]0.4579617405265247
+572951f16aef051400154cd1[SEP_DIAL]"""The Independent Commission Against Corruption (ICAC) was suggested to be established as an independent body to investigate and prosecute corruption, thereby avoiding the potential for political interference or influence."""[SEP_DIAL]0.40683839053136617
+5729a26d6aef05140015505a[SEP_DIAL]"""When a number is multiplied by π (pi), the result is the number scaled by a factor of π."""[SEP_DIAL]0.5130417747353382
+5729a26d6aef05140015505b[SEP_DIAL]"""General global fields can be transferred to or from other fields, such as vector fields, scalar fields, and tensor fields."""[SEP_DIAL]0.695569825464428
+5729a26d6aef05140015505c[SEP_DIAL]"""Completing the square with respect to the variable in a quadratic equation will produce the field of real numbers."""[SEP_DIAL]0.29612915432932574
+5729a26d6aef05140015505d[SEP_DIAL]"""The Fundamental Theorem of Arithmetic highlights the significance of primes in number theory."""[SEP_DIAL]0.28949996178019954
+5729a3716aef05140015506a[SEP_DIAL]"""Olivier Messiaen is the French composer known for writing ametric music using prime numbers."""[SEP_DIAL]0.8063902056032111
+5729a3716aef05140015506b[SEP_DIAL]"""One of the most famous works by Olivier Messiaen is his "Vingt Regards sur l'Enfant-Jésus" (Twenty Looks at the Child Jesus), a set of 20 piano pieces composed in 1944."""[SEP_DIAL]0.32375411594389814
+5729a3716aef05140015506c[SEP_DIAL]"""Olivier Messiaen's "Oiseaux Exotiques" is another notable piece of music."""[SEP_DIAL]0.3507261756348148
+5729a3716aef05140015506d[SEP_DIAL]"""The primes forty-one, forty-three, forty-five, forty-seven, and forty-nine appear in the 41st, 43rd, 45th, 47th, and 49th degrees of the harmonic series."""[SEP_DIAL]0.3330991391089335
+5729a3716aef05140015506e[SEP_DIAL]"""Messian's composition "Preludes" was inspired by the works of Claude Debussy."""[SEP_DIAL]0.489580502943329
+572fe53104bcaa1900d76e6c[SEP_DIAL]"""The Aare River was diverted and now flows parallel to the Rhine."""[SEP_DIAL]0.23594786779758292
+572fe53104bcaa1900d76e6d[SEP_DIAL]"""The lake near the Rhine will silt up due to the natural process of sedimentation, where suspended particles in the water, such as sand and silt, settle to the bottom over time."""[SEP_DIAL]0.5366831920086821
+572fe9b3947a6a140053cde3[SEP_DIAL]"""The highest point of the Rhine River basin is the Säntis mountain in the Swiss Alps, which reaches an elevation of 2,502 meters."""[SEP_DIAL]0.44356875694362663
+572fe9b3947a6a140053cde4[SEP_DIAL]"""The border between Switzerland and France is formed by the Rhine River."""[SEP_DIAL]0.5130942745623799
+572fec30947a6a140053cdf5[SEP_DIAL]"""The Rhine River ends at the North Sea."""[SEP_DIAL]0.2517158441948244
+572fec30947a6a140053cdf6[SEP_DIAL]"""The legal boundary behind the High Rhine and Upper Rhine is the Rhine River itself, which forms the border between Germany and Switzerland."""[SEP_DIAL]0.23424667093805263
+572ff430a23a5019007fcba9[SEP_DIAL]"""The Rhine River flows through the German state of North Rhine-Westphalia."""[SEP_DIAL]0.4635680504199423
+572ff430a23a5019007fcbaa[SEP_DIAL]"""The region called the largest conurbation of the Rhine is the Rhine-Ruhr conurbation."""[SEP_DIAL]0.8451356712440633
+572ff430a23a5019007fcbab[SEP_DIAL]"""The largest port in Europe is the Port of Rotterdam in the Netherlands."""[SEP_DIAL]0.28314397020059023
+572ff430a23a5019007fcbac[SEP_DIAL]"""The longest bridge in Germany is the Rhine Bridge in Cologne, also known as the Hohenzollern Bridge."""[SEP_DIAL]0.6282205720876533
+572ff430a23a5019007fcbad[SEP_DIAL]"""The width of the Rhine River in Germany varies, but it is generally around 100-200 meters (330-660 feet) wide."""[SEP_DIAL]0.3344565980156776
+572ffce5a23a5019007fcc19[SEP_DIAL]"""During glacial times, the mouth of the Rhine River was located near the city of Rotterdam in the Netherlands."""[SEP_DIAL]0.5000643032639515
+57300911947a6a140053cfb6[SEP_DIAL]"""The Germanic tribes crossed the Rhine River in the 3rd century AD, specifically around 260-271 AD, during the Crisis of the Third Century."""[SEP_DIAL]0.632472735145786
+57300911947a6a140053cfb7[SEP_DIAL]"""The Germanic tribes established the Holy Roman Empire with the help of the Rhine River, which served as a natural border and a source of transportation and trade."""[SEP_DIAL]0.3712271365052543
+57300911947a6a140053cfb8[SEP_DIAL]"""The translation of "Zeben Gebirge" is "Seven Mountains"."""[SEP_DIAL]0.27456457121413247
+57300911947a6a140053cfb9[SEP_DIAL]"""I'm not aware of any specific hero who killed a dragon on the Drachenfels."""[SEP_DIAL]0.32930795592805917
+57300911947a6a140053cfba[SEP_DIAL]"""According to legend, the Nibelungs threw gold into the Rhine."""[SEP_DIAL]0.23362049987079914
+573009a004bcaa1900d7704f[SEP_DIAL]"""The Rhine River became a border between the Roman Empire and Germania Magna, and later between the Holy Roman Empire and France, in the 5th century AD."""[SEP_DIAL]0.5664790548198768
+573009a004bcaa1900d77050[SEP_DIAL]"""The Rhine River was fully within the Holy Roman Empire from the 10th century until the empire's dissolution in 1806."""[SEP_DIAL]0.8384538112252357
+573009a004bcaa1900d77051[SEP_DIAL]"""The Rhine flowed through the region of Alemannia in the tenth century."""[SEP_DIAL]0.3076506221186339
+573009a004bcaa1900d77052[SEP_DIAL]"""The Upper Rhine was sold to Burgundy by the Holy Roman Emperor Frederick II in 1214."""[SEP_DIAL]0.25162221085578274
+573009a004bcaa1900d77053[SEP_DIAL]"""The Upper Rhine was sold to Burgundy in 1032."""[SEP_DIAL]0.251065074461839
+57300a25a23a5019007fcc97[SEP_DIAL]"""The time period you are referring to is the period from 1648 to 1871, when the Upper Rhine formed a border between France and the Holy Roman Empire (later the German Confederation)."""[SEP_DIAL]0.34176234239817105
+57300a25a23a5019007fcc98[SEP_DIAL]"""The long-term goal of French foreign policy along the Rhine was to secure a strategic buffer zone to protect France from potential German aggression."""[SEP_DIAL]0.4424627942763599
+57300a25a23a5019007fcc99[SEP_DIAL]"""The Confederation of the Rhine was established by Napoleon Bonaparte in 1806."""[SEP_DIAL]0.8044143259485077
+57300a25a23a5019007fcc9a[SEP_DIAL]"""The Confederation of the Rhine was a loose alliance of German states that existed from 1806 to 1813."""[SEP_DIAL]0.8480846296361575
+57300a25a23a5019007fcc9b[SEP_DIAL]"""The Rhine Crisis, also known as the Rhine Crisis of 1840, was a diplomatic crisis that occurred in 1840 between Prussia and the other German states, particularly Austria, over the issue of navigation rights on the Rhine River."""[SEP_DIAL]0.8393832451562451
+57300a9a04bcaa1900d77063[SEP_DIAL]"""The Treaty of Versailles was imposed on Germany in 1919, and it included the demilitarization and occupation of the Rhineland, which was a region in western Germany that included the area of the former Prussian province of Rhineland, from 1920 to 1930."""[SEP_DIAL]0.4885777575088359
+57300a9a04bcaa1900d77064[SEP_DIAL]"""The occupation of the Rhineland by Allied forces ended on June 30, 1930."""[SEP_DIAL]0.8968686071092477
+57300a9a04bcaa1900d77065[SEP_DIAL]"""Jews would be forbidden to enter the Rhineland."""[SEP_DIAL]0.25991880241694065
+57300a9a04bcaa1900d77066[SEP_DIAL]"""The Treaty of Versailles is believed by some to have contributed to the rise of Nazi Germany and the outbreak of World War II."""[SEP_DIAL]0.6612094021972778
+57300a9a04bcaa1900d77067[SEP_DIAL]"""The German army reoccupied the Rhineland on March 7, 1936."""[SEP_DIAL]0.8800903658263366
+57300bf504bcaa1900d77087[SEP_DIAL]"""The Rhine Bridge is located in Koblenz, Germany, spanning the Rhine River."""[SEP_DIAL]0.18596815883811846
+57300bf504bcaa1900d77088[SEP_DIAL]"""The Rhine River was considered a significant natural barrier and a major obstacle for invading forces in World War II, particularly for the German army during the Allied invasion of Germany."""[SEP_DIAL]0.879563193340018
+57300bf504bcaa1900d77089[SEP_DIAL]"""Operation Market Garden was a major Allied military operation that took place from September 17 to 25, 1944, during World War II."""[SEP_DIAL]0.912388420370023
+57300bf504bcaa1900d7708a[SEP_DIAL]"""The Germans failed to demolish the Ludendorff Bridge in Remagen, Germany."""[SEP_DIAL]0.8643671077553182
+57300bf504bcaa1900d7708b[SEP_DIAL]"""The Warsaw Pact's war plan, known as the "Operation Danube," was a military strategy to invade and occupy Western Europe in the event of a NATO attack, involving a coordinated attack by Warsaw Pact forces from multiple directions."""[SEP_DIAL]0.8067301222660577
+57300c67947a6a140053cff0[SEP_DIAL]"""The accepted length of the Rhine River prior to 1933 was approximately 1,232 kilometers (766 miles)."""[SEP_DIAL]0.41539539451505014
+57300c67947a6a140053cff1[SEP_DIAL]"""The length of the rhyme was changed by the poet and scholar, Ezra Pound."""[SEP_DIAL]0.2468294574875851
+57300c67947a6a140053cff2[SEP_DIAL]"""The Rhine measurement was changed to the metric system in 1933."""[SEP_DIAL]0.2733303879812461
+57300c67947a6a140053cff3[SEP_DIAL]"""The Rhenish wine measurement was changed from 1 Rhenish wine measure to 1/2 liter in 1991 to align with the metric system."""[SEP_DIAL]0.28826776044988967
+57300c68947a6a140053cff4[SEP_DIAL]"""The Rhine measurement was corrected back to its original length in 1876."""[SEP_DIAL]0.1859582494345171
+572fae4b04bcaa1900d76be2[SEP_DIAL]"""The Magna Carta, a medieval charter signed in 1215, provided much of the basis for the structure of the Parliament in 1999."""[SEP_DIAL]0.29083446219431097
+572faec7b2c2fd1400568337[SEP_DIAL]"""The new Parliament building in London was opened by King George V on October 9, 1928."""[SEP_DIAL]0.13198813950895183
+572fb059947a6a140053cb84[SEP_DIAL]"""The House of Lords Chamber was used as Parliament's principal committee room."""[SEP_DIAL]0.2804298159451001
+572fb42904bcaa1900d76c19[SEP_DIAL]"""The responsibility for operating the electronic voting equipment and chamber clocks typically falls to the Parliament's Sergeant-at-Arms or the Clerk of the House."""[SEP_DIAL]0.6933409436881321
+572fbea404bcaa1900d76c5e[SEP_DIAL]"""There are 7 members of the Scottish Government who are also members of the Scottish Parliament."""[SEP_DIAL]0.37034013333456606
+572fbea404bcaa1900d76c5f[SEP_DIAL]"""Non-elected members of the Scottish Government, such as the First Minister and Cabinet Secretaries, cannot vote in the Scottish Parliament."""[SEP_DIAL]0.8641516644304597
+572fbf21a23a5019007fc93a[SEP_DIAL]"""The Queen presented the Scottish Parliament with the ceremonial mace when it was initially opened in 1999."""[SEP_DIAL]0.8624655916388465
+572fbf21a23a5019007fc93b[SEP_DIAL]"""The mace is typically displayed in a scabbard or a decorated case."""[SEP_DIAL]0.5665357125494446
+572fc41f947a6a140053cc82[SEP_DIAL]"""A presiding officer tries to achieve a balance between speakers by giving each speaker a fair opportunity to express their views and opinions, while also maintaining order and preventing any one speaker from dominating the discussion."""[SEP_DIAL]0.7787830245013134
+572fc41f947a6a140053cc83[SEP_DIAL]"""Debates are typically opened by a moderator, who introduces the topic, explains the rules, and invites the first speaker to present their argument."""[SEP_DIAL]0.37855425935199494
+572fc41f947a6a140053cc84[SEP_DIAL]"""Gaelic has been an official language of the Scottish Parliament, with meetings occasionally being held in Gaelic."""[SEP_DIAL]0.8643582866815499
+572fc659b2c2fd1400568449[SEP_DIAL]"""The debate is a formal discussion where an MP presents a proposed motion, and other MPs can then speak in favor or against it."""[SEP_DIAL]0.3897982998204559
+572fc659b2c2fd140056844a[SEP_DIAL]"""The seconder contributes to members' business in addition to the proposer."""[SEP_DIAL]0.6153886880866456
+572fc659b2c2fd140056844b[SEP_DIAL]"""A minister who is a catalyst of the member's business speaks after everyone else to allow others to share their thoughts and ideas before summarizing or providing guidance."""[SEP_DIAL]0.48204117577016103
+572fc80b04bcaa1900d76d13[SEP_DIAL]"""Economy, energy, and tourism is one of the pillars of a country's development."""[SEP_DIAL]0.3349925145511242
+572fc80b04bcaa1900d76d14[SEP_DIAL]"""The Scottish Parliament is currently in the Scottish Parliament Building in Holyrood, Edinburgh."""[SEP_DIAL]0.29559306971503485
+572fd1c4947a6a140053cd06[SEP_DIAL]"""Members proceed to vote on whether they agree to the principles of the final bill after the committee has agreed on the final text of the bill."""[SEP_DIAL]0.7773554648058536
+572fd264b2c2fd14005684ab[SEP_DIAL]"""In the United States, a bill typically needs to be passed by both the House of Representatives and the Senate, and then signed by the President, before it can become a law, which can take anywhere from a few days to several months or even years."""[SEP_DIAL]0.486546779576295
+572fd264b2c2fd14005684ac[SEP_DIAL]"""A bill is referred to the Speaker of the House of Commons for a ruling on whether it is within the powers of the Parliament."""[SEP_DIAL]0.4718390923481327
+572fd264b2c2fd14005684ad[SEP_DIAL]"""The template for bills passed by the Scottish Parliament includes a formal title, a preamble, a statement of the purpose and effect of the bill, a statement of the legislative competence of the Scottish Parliament, a statement of the Scottish Ministers' powers to make subordinate legislation, and a statement of the financial implications of the bill."""[SEP_DIAL]0.6556971036625028
+572fd47fa23a5019007fca57[SEP_DIAL]"""In the United Kingdom, any member of the House of Commons is eligible to be nominated as First Minister."""[SEP_DIAL]0.7758156702078355
+572fd47fa23a5019007fca58[SEP_DIAL]"""Most ministers in the UK government are drawn from the House of Commons."""[SEP_DIAL]0.34171604803503886
+572fd47fa23a5019007fca59[SEP_DIAL]"""In most organizations, the formal appointment or dismissal decisions are made by the hiring manager or the person's supervisor."""[SEP_DIAL]0.27470223674360916
+572fd6aa04bcaa1900d76da1[SEP_DIAL]"""The President of the Senate may change the date by up to a month on the proposal of the Prime Minister."""[SEP_DIAL]0.2775757966589304
+572fd6aa04bcaa1900d76da2[SEP_DIAL]"""The Parliament has 28 days to nominate a First Minister after a general election."""[SEP_DIAL]0.8884020311554052
+572fd6aa04bcaa1900d76da3[SEP_DIAL]"""It cancels the scheduled election."""[SEP_DIAL]0.7466472361605931
+572fd73e947a6a140053cd33[SEP_DIAL]"""Members of the opposition parties in the Northern Ireland Assembly can question statements made by the First Minister or members of the Cabinet."""[SEP_DIAL]0.5471567562220132
+572fd73e947a6a140053cd34[SEP_DIAL]"""The First Minister delivers the Queen's Speech, also known as the Queen's Address, at the beginning of each parliamentary year."""[SEP_DIAL]0.461214631411608
+572fd73e947a6a140053cd35[SEP_DIAL]"""The leaders of the opposition parties and other Members of the Scottish Parliament (MSPs) question the First Minister about various issues, including policy decisions, government performance, and personal conduct."""[SEP_DIAL]0.8743031756653323
+572fd7b8947a6a140053cd3b[SEP_DIAL]"""A general question time typically takes place on a specific day of the week, usually Wednesday."""[SEP_DIAL]0.31553805617186625
+572fd7b8947a6a140053cd3c[SEP_DIAL]"""Members of the public, the media, and other members of the House of Commons may direct questions towards the government during general question time."""[SEP_DIAL]0.5781811137214607
+572fd7b8947a6a140053cd3d[SEP_DIAL]"""Members of Parliament may question the First Minister about any matter related to the administration of the government during First Minister's Question Time."""[SEP_DIAL]0.7961608822996932
+572fd7b8947a6a140053cd3e[SEP_DIAL]"""In the UK Parliament, opposition leaders are allowed to ask up to 20 general questions to the government each session."""[SEP_DIAL]0.39693965912627505
+572fd8efb2c2fd14005684fb[SEP_DIAL]"""The number of Scottish MPs was reduced from 72 to 59 in 2010, following the Scotland Act 2012."""[SEP_DIAL]0.276132596004542
+572fd8efb2c2fd14005684fc[SEP_DIAL]"""Each Scottish Parliament constituency has 6 electors."""[SEP_DIAL]0.2942695216049255
+572fd8efb2c2fd14005684fd[SEP_DIAL]"""The island archipelagos compromise a smaller number of electors because they have fewer people living on them."""[SEP_DIAL]0.3300337848468058
+572fda6fb2c2fd140056850c[SEP_DIAL]"""The method used for tallying votes in the second vote of the ballot is usually a manual count or a hand count, where the votes are recounted by hand."""[SEP_DIAL]0.6434467285560136
+572fda6fb2c2fd140056850d[SEP_DIAL]"""The party awarded a seat is the one with the highest number of votes."""[SEP_DIAL]0.3175277841307552
+572fda6fb2c2fd140056850e[SEP_DIAL]"""A seat is added to a set after being allocated."""[SEP_DIAL]0.4500416566691787
+572fda6fb2c2fd140056850f[SEP_DIAL]"""The process of allocating seats is repeated by selecting the next available seat with the highest priority, which is the seat with the highest priority that has not yet been assigned."""[SEP_DIAL]0.3498382941037004
+572fdb17b2c2fd140056851e[SEP_DIAL]"""The British Nationality Act was passed in 1981."""[SEP_DIAL]0.8725850097140233
+572fdb17b2c2fd140056851f[SEP_DIAL]"""In the United Kingdom, the minimum age to apply to be a Member of Parliament (MP) is 18 years old."""[SEP_DIAL]0.8602161290011441
+572fdb17b2c2fd1400568520[SEP_DIAL]"""Members of the Swiss Federal Council, the Swiss Federal Assembly, and members of the Swiss Federal Supreme Court are disqualified from sitting in the Swiss Parliament as elected Members of Parliament."""[SEP_DIAL]0.5696839048384332
+572fdb17b2c2fd1400568521[SEP_DIAL]"""The Mental Health Act 1983 sets the term for judging the boundaries of sanity to which individuals wishing to sit on the Mental Health Review Tribunal (MHRt) must adhere."""[SEP_DIAL]0.6642507022588965
+572fdbb004bcaa1900d76dda[SEP_DIAL]"""The Social Democratic Party (S.D.P.) obtained 16 seats from the Irish Nationalist Party."""[SEP_DIAL]0.3721636845257481
+572fdbb004bcaa1900d76ddb[SEP_DIAL]"""Labour's Ian Murray retained East Lothian with a majority of 1,014 votes."""[SEP_DIAL]0.6712475717339981
+572fdbb004bcaa1900d76ddc[SEP_DIAL]"""The Social Democratic Party (S&D) took 10 seats from the Liberal Democrats in the 2019 European Parliament election."""[SEP_DIAL]0.43992801424302364
+572fdbb004bcaa1900d76ddd[SEP_DIAL]"""The result of the SNP majority allowed a referendum to be held on Scottish independence."""[SEP_DIAL]0.8723197504048861
+572fdc34a23a5019007fca94[SEP_DIAL]"""The seat of former party leader David McLetchie was Edinburgh Pentlands."""[SEP_DIAL]0.8999571234863524
+572fdc34a23a5019007fca95[SEP_DIAL]"""The Conservative Party suffered a net loss of 48 seats in the 2019 UK general election."""[SEP_DIAL]0.7209021568924625
+572fdc34a23a5019007fca96[SEP_DIAL]"""Theresa May announced she would step down as leader of the Conservatives on June 7, 2019."""[SEP_DIAL]0.3116784544522849
+572fdc34a23a5019007fca97[SEP_DIAL]"""It is unclear who you are referring to, but it is possible that you are talking about a politician who publicly congratulated the SNP while also stating their intention to campaign against their referendum."""[SEP_DIAL]0.3701359467910862
+572fdd03a23a5019007fca9d[SEP_DIAL]"""The consequence of establishing the Scottish Parliament is that Scottish MPs sitting in the UK House of Commons are no longer required to be members of the Scottish Parliament."""[SEP_DIAL]0.6524079838190768
+572fdd03a23a5019007fca9e[SEP_DIAL]"""Members of Parliament (MPs) are unable to vote on their own pay and expenses."""[SEP_DIAL]0.6526257841333993
+572fdd03a23a5019007fca9f[SEP_DIAL]"""The phenomenon of social media addiction has led to criticism for its potential negative effects on mental and physical health, relationships, and productivity."""[SEP_DIAL]0.3217367727498197
+572fdd03a23a5019007fcaa0[SEP_DIAL]"""The Conservative Party had a victory in the 2015 UK general election."""[SEP_DIAL]0.8926543784472831
+572fdd03a23a5019007fcaa1[SEP_DIAL]"""Members of Parliament (MPs) representing English constituencies can only veto laws affecting England."""[SEP_DIAL]0.8386305577390697
+5730208fa23a5019007fcded[SEP_DIAL]"""Until 1988, the Muslim Brotherhood in Palestine advocated for armed resistance against Israel."""[SEP_DIAL]0.3954802739102462
+5730208fa23a5019007fcdee[SEP_DIAL]"""The organization devoted to jihad against Israel is Hamas."""[SEP_DIAL]0.9440956643499848
+5730208fa23a5019007fcdef[SEP_DIAL]"""The Hamas charter unconditionally and uncompromisingly encouraged the destruction of the State of Israel and the establishment of an Islamic state in its place."""[SEP_DIAL]0.8494683090377224
+5730208fa23a5019007fcdf0[SEP_DIAL]"""Hamas, a Palestinian Islamist organization, wants to establish an Islamic state in the Gaza Strip and the West Bank, which they refer to as Palestine."""[SEP_DIAL]0.8952814195824434
+5730208fa23a5019007fcdf1[SEP_DIAL]"""The Brotherhood of the Knights Templar is against consuming coffee."""[SEP_DIAL]0.34605730619865005
+573020f7b2c2fd14005688f7[SEP_DIAL]"""The Hamas organization has continued to be a major disruptive force in Palestine."""[SEP_DIAL]0.9064673668313393
+573020f7b2c2fd14005688f8[SEP_DIAL]"""According to various sources, including the Israeli Ministry of Foreign Affairs and the Meir Amit Intelligence and Terrorism Information Center, between 2000 and 2007, Hamas killed approximately 1,400 people, mostly Israeli civilians and security personnel."""[SEP_DIAL]0.5223882550590035
+573020f7b2c2fd14005688f9[SEP_DIAL]"""In the January 2006 Palestinian legislative election, Hamas won a majority of seats in the Palestinian Legislative Council."""[SEP_DIAL]0.9052467771707425
+573020f7b2c2fd14005688fa[SEP_DIAL]"""Hamas did not drive the PLO out of Gaza, but rather, the PLO withdrew from Gaza in 1994 as part of the Oslo Accords, and Hamas later took control of the territory in 2007."""[SEP_DIAL]0.8521521482906499
+573020f7b2c2fd14005688fb[SEP_DIAL]"""Muslims have praised Hamas for its resistance against Israeli occupation and its efforts to protect Palestinian civilians and provide humanitarian aid to those in need."""[SEP_DIAL]0.35744826558604037
+57302700a23a5019007fce89[SEP_DIAL]"""Sudan was ruled by a military dictatorship for many years, with Omar al-Bashir serving as the country's president from 1989 to 2019."""[SEP_DIAL]0.40934875621423683
+57302700a23a5019007fce8a[SEP_DIAL]"""The leader of the Islamist regime in Sudan was Omar al-Bashir."""[SEP_DIAL]0.2974351060600938
+57302700a23a5019007fce8b[SEP_DIAL]"""The Ba'ath Party."""[SEP_DIAL]0.5598553066077975
+57302700a23a5019007fce8c[SEP_DIAL]"""Tarabulus, a city in Libya, built a strong economic base through its strategic location on the Mediterranean coast, which facilitated trade and commerce with neighboring countries."""[SEP_DIAL]0.50112697806999
+57302700a23a5019007fce8d[SEP_DIAL]"""Tarabai was placed in a prison in Satara, India."""[SEP_DIAL]0.34303492456281326
+573027d6a23a5019007fce9d[SEP_DIAL]"""I couldn't find any information on a historical figure named Almumari being overthrown."""[SEP_DIAL]0.2386144793141145
+573027d6a23a5019007fce9e[SEP_DIAL]"""I don't have information on a specific event where a party overthrew an elected government in 1989."""[SEP_DIAL]0.41958371445842213
+573027d6a23a5019007fce9f[SEP_DIAL]"""He was a politician who made promises of democratic reform but did not follow through with them once in power."""[SEP_DIAL]0.3207968498068161
+573027d6a23a5019007fcea0[SEP_DIAL]"""The 9/11 Commission Report stated that the 9/11 hijackers had connections to and received support from individuals in Germany, the United Arab Emirates, and other countries, but it did not identify any specific individuals or groups in the United States that provided direct support to the hijackers prior to the attacks."""[SEP_DIAL]0.29667636757065197
+573027d6a23a5019007fcea1[SEP_DIAL]"""The Islamic Salvation Front (ISF) tried to unify Islamist opposition against the Algerian government."""[SEP_DIAL]0.4688524482722718
+5730285a04bcaa1900d7726d[SEP_DIAL]"""FIS stands for Fédération Internationale de Ski, which is the International Ski Federation."""[SEP_DIAL]0.679333148792014
+5730285a04bcaa1900d7726e[SEP_DIAL]"""The FIS form, also known as the Form I-9, is a document used by the United States Citizenship and Immigration Services (USCIS) to verify the identity and employment authorization of individuals in the United States."""[SEP_DIAL]0.42497840513518303
+5730285a04bcaa1900d7726f[SEP_DIAL]"""The Fédération Internationale de Ski (FIS) was founded in 1924."""[SEP_DIAL]0.32845821020053034
+5730285a04bcaa1900d77270[SEP_DIAL]"""One of FIS's agenda items was to force women to start wearing the veil."""[SEP_DIAL]0.45062297889246294
+5730285a04bcaa1900d77271[SEP_DIAL]"""The national elections in 1991 were cancelled by the military government in Myanmar (Burma)."""[SEP_DIAL]0.6246313883665484
+573028fa04bcaa1900d77287[SEP_DIAL]"""The establishment of a stable and democratic government in Afghanistan."""[SEP_DIAL]0.5235541697194555
+573028fa04bcaa1900d77288[SEP_DIAL]"""The type of civil war fought between political and tribal warlords is a tribal war."""[SEP_DIAL]0.8946756568171279
+573028fa04bcaa1900d77289[SEP_DIAL]"""The Soviet-Afghan War (1979-1989) and subsequent civil war (1989-1992) left Afghanistan's economy in a state of devastation, with widespread destruction of infrastructure, a collapse of industry, and a significant decline in agricultural production."""[SEP_DIAL]0.3547480460786242
+573028fa04bcaa1900d7728a[SEP_DIAL]"""The Democratic Republic of Afghanistan collapsed in 1992, when the government was overthrown by the Mujahideen, a coalition of anti-communist groups."""[SEP_DIAL]0.9114076476824369
+573028fa04bcaa1900d7728b[SEP_DIAL]"""The Taliban took control of most of Afghanistan, including the capital city of Kabul, in August 2021, after a rapid military campaign that led to the collapse of the Afghan government."""[SEP_DIAL]0.44292992649221596
+57302a3aa23a5019007fcecf[SEP_DIAL]"""The thousands of madrasas in the Indian subcontinent spawned the Mughal Empire."""[SEP_DIAL]0.37343103154660506
+57302a3aa23a5019007fced0[SEP_DIAL]"""Support from governmental and religious groups came from the Soviet Union and the Eastern Bloc, where the Soviet government and the Russian Orthodox Church provided significant backing to the movement."""[SEP_DIAL]0.5111263098532521
+57302a3aa23a5019007fced1[SEP_DIAL]"""The Taliban was more accurately described as a fundamentalist Islamist movement."""[SEP_DIAL]0.5370093878360862
+57302a3aa23a5019007fced2[SEP_DIAL]"""The Taliban wanted to subject the entire country of Afghanistan to a strict interpretation of Islamic law, known as Sharia law."""[SEP_DIAL]0.8770059976048424
+57302a3aa23a5019007fced3[SEP_DIAL]"""The Taliban's ideology was influenced by Islamist and Islamist extremist thinkers such as Sayyid Qutb, Maulana Mawdudi, and Abdullah Azzam, as well as the Deobandi and Wahhabi schools of thought."""[SEP_DIAL]0.35430628561227384
+57302ad804bcaa1900d772af[SEP_DIAL]"""General Zia-ul-Haq overthrew the government of Pakistan on July 5, 1977."""[SEP_DIAL]0.8618042437914577
+57302ad804bcaa1900d772b0[SEP_DIAL]"""Boutros Boutros-Ghali, the Secretary-General of the United Nations, had planned to ban the use of landmines within six months before he was ousted."""[SEP_DIAL]0.39401708982322314
+57302ad804bcaa1900d772b1[SEP_DIAL]"""Ziaur Rahman's official state ideology was Islamism, which emphasized the importance of Islam in the country's politics and society."""[SEP_DIAL]0.8539658727985084
+57302ad804bcaa1900d772b2[SEP_DIAL]"""Zia-ul-Haq was accused of using Islamization to legitimize his authoritarian rule and suppress opposition in Pakistan."""[SEP_DIAL]0.6797994502672483
+57302ad804bcaa1900d772b3[SEP_DIAL]"""I couldn't find any information on a person named Zia Al-Hak being killed."""[SEP_DIAL]0.26732250384763
+57302bd0b2c2fd14005689db[SEP_DIAL]"""The Islamic State is a terrorist organization and a self-proclaimed caliphate."""[SEP_DIAL]0.2965543599775978
+57302bd0b2c2fd14005689dc[SEP_DIAL]"""The Islamic State (ISIS) is a terrorist organization and does not have a single leader, but Abu al-Hassan al-Hashimi al-Qurayshi was the group's leader until his death in 2022, and Abu Hasan al-Hashimi al-Qurayshi is the current leader."""[SEP_DIAL]0.30642312958387463
+57302bd0b2c2fd14005689de[SEP_DIAL]"""As of March 2015, the Islamic State controlled approximately 34,000 square miles of territory in Iraq and Syria."""[SEP_DIAL]0.3198060321112395
+57302bd0b2c2fd14005689df[SEP_DIAL]"""The Islamic State lacks international recognition and legitimacy, as well as diplomatic relations with most countries, due to its designation as a terrorist organization by the United Nations and many other governments."""[SEP_DIAL]0.9517772167408611
+57302cd004bcaa1900d772d7[SEP_DIAL]"""I couldn't find any information that suggests the Islamic State (ISIS) has ever pledged allegiance to Al-Qaeda."""[SEP_DIAL]0.3001269306284564
+57302cd004bcaa1900d772d8[SEP_DIAL]"""Western forces, led by the United States, invaded Iraq on March 20, 2003, as part of Operation Iraqi Freedom."""[SEP_DIAL]0.8989816107510461
+57302cd004bcaa1900d772d9[SEP_DIAL]"""The Syrian Civil War began in March 2011, with the first protests and demonstrations against the government of President Bashar al-Assad."""[SEP_DIAL]0.858462150921429
+57302cd004bcaa1900d772da[SEP_DIAL]"""I'm not aware of any information about Al-Qaeda telling someone named Isol to take a hike."""[SEP_DIAL]0.29557552116033836
+57302cd004bcaa1900d772db[SEP_DIAL]"""The United Nations has designated the island of Isla de Pascua, also known as Easter Island, as a UNESCO World Heritage site."""[SEP_DIAL]0.46179243054505026
+57302e45947a6a140053d22e[SEP_DIAL]"""The party's stance on Muslim history is not explicitly stated, as the party's views and policies can vary widely depending on the specific party and context."""[SEP_DIAL]0.3772197164267673
+57302e45947a6a140053d22f[SEP_DIAL]"""The Four Rightly Guided Caliphs, also known as the Rashidun Caliphs, were Abu Bakr, Umar, Uthman, and Ali, who died in the years 634, 644, 656, and 661, respectively."""[SEP_DIAL]0.3101862646847209
+57302e45947a6a140053d230[SEP_DIAL]"""The Ottoman Caliphate was officially abolished on March 3, 1924."""[SEP_DIAL]0.83479149403466
+57302e45947a6a140053d231[SEP_DIAL]"""The abolition of the Ottoman Caliphate is believed to have ended the Islamic Caliphate system."""[SEP_DIAL]0.7172059826300372
+57302e45947a6a140053d232[SEP_DIAL]"""The colonial powers are often blamed for exploiting and oppressing indigenous populations, disrupting local cultures and economies, and imposing their own languages, customs, and systems of governance."""[SEP_DIAL]0.46975796691095995
+57308f6b8ab72b1400f9c584[SEP_DIAL]"""The West saw themselves as more advanced, civilized, and enlightened compared to the East."""[SEP_DIAL]0.5310686297007783
+5730ab63396df91900096264[SEP_DIAL]"""Germany referred to the Holy Roman Empire, a loose confederation of states and cities in Central Europe."""[SEP_DIAL]0.8160050628622648
+5730aef38ab72b1400f9c686[SEP_DIAL]"""Bismarck was influenced by the ideas of the German philosopher and historian Leopold von Ranke, as well as the British Prime Minister Benjamin Disraeli."""[SEP_DIAL]0.4776996887026881
+5730b4282461fd1900a9cfc5[SEP_DIAL]"""Trotsky believed that a true Russian revolution required a socialist revolution that would overthrow the capitalist class and establish a socialist state, but he also thought that a democratic revolution was necessary to achieve this goal."""[SEP_DIAL]0.5883916765982863
+5730b4282461fd1900a9cfc6[SEP_DIAL]"""Vladimir Lenin wrote that imperialism is the highest stage of capitalism."""[SEP_DIAL]0.7724644201092207
+5730b4282461fd1900a9cfc7[SEP_DIAL]"""Stalin implemented the policy of forced industrialization and rapid collectivization of agriculture, known as the Five-Year Plans, shortly after Lenin's death in 1924."""[SEP_DIAL]0.483475271983167
+5730b4282461fd1900a9cfc8[SEP_DIAL]"""Nikita Khrushchev was the leader of the Soviet Union, and therefore Russia, in the 1960s."""[SEP_DIAL]0.8722929970188777
+5730b4282461fd1900a9cfc9[SEP_DIAL]"""The Russian revolutionary Leon Trotsky argued that the Soviet Union had itself become an imperialist power."""[SEP_DIAL]0.3838377519685714
+5730b541396df919000962c2[SEP_DIAL]"""The first British Empire was based on the British Isles, specifically England, Scotland, and Wales, which were unified under a single monarch in the 10th century."""[SEP_DIAL]0.35789800056645826
+5730b541396df919000962c3[SEP_DIAL]"""Great Britain lost its colonies in North America with the signing of the Treaty of Paris on September 3, 1783, which ended the American Revolutionary War."""[SEP_DIAL]0.2512519283406701
+5730b541396df919000962c4[SEP_DIAL]"""The Spanish colonies in Central and South America gained independence from Spain between 1810 and 1826, while the Portuguese colonies in Brazil gained independence in 1822."""[SEP_DIAL]0.3325080635023522
+5730b541396df919000962c5[SEP_DIAL]"""The policy that gave Britain dominance in world trade was the Navigation Acts, which required colonies to trade only with Britain and use British ships."""[SEP_DIAL]0.7477634313201169
+5730b541396df919000962c6[SEP_DIAL]"""The defeat of the Napoleonic France occurred on June 18, 1815, at the Battle of Waterloo, where Napoleon's army was defeated by a coalition of British and Prussian forces led by the Duke of Wellington and Field Marshal Gebhard von Blücher."""[SEP_DIAL]0.8870965616785202
+5730b6592461fd1900a9cfcf[SEP_DIAL]"""The British Empire was the largest empire in the world by the late 19th century."""[SEP_DIAL]0.8620250766362048
+5730b6592461fd1900a9cfd0[SEP_DIAL]"""Social Darwinism and theories of race were rooted in the sciences of biology, anthropology, and sociology."""[SEP_DIAL]0.3238260386816245
+5730b6592461fd1900a9cfd1[SEP_DIAL]"""Africa was a continent where the British Empire made major games, particularly in South Africa during the late 19th century."""[SEP_DIAL]0.8935063457901882
+5730b6592461fd1900a9cfd2[SEP_DIAL]"""Rudyard Kipling was an influential spokesman for the British Empire."""[SEP_DIAL]0.4193853939051171
+5730b7ce069b5314008322c3[SEP_DIAL]"""The United States planned to subdue imperialist tendencies by adopting the Monroe Doctrine, which stated that the US would not tolerate further European colonization in the Americas and would instead promote the spread of democracy and self-governance."""[SEP_DIAL]0.8625726742457565
+5730b7ce069b5314008322c4[SEP_DIAL]"""Theodore Roosevelt's policy of imperialism was known as the "Big Stick" policy."""[SEP_DIAL]0.23235666593473558
+5730b7ce069b5314008322c5[SEP_DIAL]"""The United States attempted to annex the Dominican Republic in 1898."""[SEP_DIAL]0.35271464655751283
+5730b7ce069b5314008322c6[SEP_DIAL]"""The U.S. public's condemnation of the occupation of the Philippines was largely due to the brutal suppression of the Philippine-American War, particularly the atrocities committed by American forces under General Jacob Smith, such as the infamous "I will make Manila a howling wilderness" order."""[SEP_DIAL]0.9089411119590369
+5730b7ce069b5314008322c7[SEP_DIAL]"""Smedley Butler called U.S. foreign policy "a racket" in his 1935 book "War is a Racket"."""[SEP_DIAL]0.8658767363924882
+5730b8ca8ab72b1400f9c704[SEP_DIAL]"""The director of the American Geographical Society in 1914 was Isaiah Bowman."""[SEP_DIAL]0.5545087977930886
+5730b8ca8ab72b1400f9c705[SEP_DIAL]"""Isaiah Bowman was appointed to President Wilson's Inquiry in 1918."""[SEP_DIAL]0.25301788079279874
+5730b8ca8ab72b1400f9c706[SEP_DIAL]"""The idea for the Inquiry was largely driven by President Woodrow Wilson's Secretary of State, Robert Lansing."""[SEP_DIAL]0.18179573778307911
+5730b8ca8ab72b1400f9c707[SEP_DIAL]"""Woodrow Wilson's Inquiry was a fact-finding mission to Europe in 1918 to investigate the causes of World War I and to determine the terms of a possible peace settlement."""[SEP_DIAL]0.6164730471697433
+5730b8ca8ab72b1400f9c708[SEP_DIAL]"""Isaiah Bowman was known to the public as the "Father of American Geography"."""[SEP_DIAL]0.3880958635060823
+5730bb522461fd1900a9d011[SEP_DIAL]"""These terms are often used to describe situations where one group or nation exercises power or control over another group or nation, often through economic, cultural, or military means."""[SEP_DIAL]0.16539092653362875
+5730bb522461fd1900a9d012[SEP_DIAL]"""The U.S. expansion westward can be viewed as a form of internal colonialism, where the government and settlers imposed their own culture, economy, and institutions on the indigenous peoples and territories they encountered."""[SEP_DIAL]0.9012337522503386
+5730bb522461fd1900a9d013[SEP_DIAL]"""It's estimated that between 9 and 12 million Africans were forcibly brought to the United States as slaves between the 16th and 19th centuries."""[SEP_DIAL]0.8022575309339414
+5730bb522461fd1900a9d015[SEP_DIAL]"""Edward Said argues that the United States is an imperial power that attacks and exploits various countries and cultures, particularly in the Middle East."""[SEP_DIAL]0.33534958784808655
+5730bc308ab72b1400f9c73c[SEP_DIAL]"""The Ottoman Empire officially fell on October 29, 1923, when the Turkish Grand National Assembly in Ankara declared the establishment of the Republic of Turkey, marking the end of the Ottoman Empire."""[SEP_DIAL]0.8771141982535028
+5730bc308ab72b1400f9c73d[SEP_DIAL]"""Suleiman the Magnificent, also known as Suleiman I, reigned over the Ottoman Empire from 1520 to 1566 and is often considered the greatest and most powerful Sultan in Ottoman history."""[SEP_DIAL]0.8863002380056049
+5730bc308ab72b1400f9c73e[SEP_DIAL]"""The Ottoman Empire contained 32 provinces in the seventeenth century."""[SEP_DIAL]0.8336048995140242
+5730bc308ab72b1400f9c73f[SEP_DIAL]"""Europe."""[SEP_DIAL]0.9080018903394483
+5730bc308ab72b1400f9c740[SEP_DIAL]"""The Ottoman Empire was at its peak in the 16th century, specifically during the reign of Suleiman the Magnificent from 1520 to 1566."""[SEP_DIAL]0.5948895409579966
+5730bd00069b5314008322d7[SEP_DIAL]"""The capital of the Ottoman Empire was Constantinople, which is now known as Istanbul."""[SEP_DIAL]0.8491596620752472
+5730bd00069b5314008322d9[SEP_DIAL]"""The Ottoman Empire allied with the Central Powers, which included Germany, Austria-Hungary, and Bulgaria, in World War I."""[SEP_DIAL]0.8373643983317642
+5730bd00069b5314008322da[SEP_DIAL]"""Turkey is the country that is a remnant of the Ottoman Empire."""[SEP_DIAL]0.8303601082290271
+5730bd00069b5314008322db[SEP_DIAL]"""The Ottoman Empire's decline and eventual collapse was largely due to a combination of internal weaknesses, external pressures, and the rise of nationalist movements in the Balkans and Middle East."""[SEP_DIAL]0.5300304705399793
+5732b6b5328d981900602024[SEP_DIAL]"""The Greater Metropolitan Area of a city is not a well-defined term, but I can provide information on the population of some of the largest metropolitan areas in the world, such as New York City, which has a population of over 20 million residents."""[SEP_DIAL]0.6365319887273966
+5732b6b5328d981900602025[SEP_DIAL]"""Warsaw is the 8th most populous city in the European Union."""[SEP_DIAL]0.37712508399217937
+5733140a4776f419006606e4[SEP_DIAL]"""Warsaw gained the title of the Phoenix City due to its remarkable resilience and ability to rise from the ashes after being severely damaged during World War II, particularly after the 1944 Warsaw Uprising."""[SEP_DIAL]0.53172018407046
+573314e3d058e614000b56f4[SEP_DIAL]"""The city of Warsaw is filled with people, buildings, and history."""[SEP_DIAL]0.4580581404104831
+57332442d058e614000b5722[SEP_DIAL]"""I'm not sure what you're referring to, could you please provide more context or information about who you are asking about?"""[SEP_DIAL]0.23481109492156038
+57332442d058e614000b5723[SEP_DIAL]"""I'm not sure what you are referring to, could you please provide more context or information about what you are asking about?"""[SEP_DIAL]0.2985995304075625
+57332442d058e614000b5724[SEP_DIAL]"""The full official city name of Warsaw is Warszawa."""[SEP_DIAL]0.5715482709039785
+57332562d058e614000b5734[SEP_DIAL]"""The Duchy of Masovia was re-incorporated into the Polish Crown in 1526."""[SEP_DIAL]0.8489147802623931
+5733266d4776f41900660716[SEP_DIAL]"""King Sigismund III Vasa moved his court to Warsaw in 1596."""[SEP_DIAL]0.8717535977822756
+57332a734776f41900660727[SEP_DIAL]"""In 1795, the Kingdom of Prussia annexed Warsaw."""[SEP_DIAL]0.8203412927869698
+57332a734776f41900660728[SEP_DIAL]"""The Russian army, led by General Mikhail Skobelev, liberated Warsaw in January 1864, not 1866."""[SEP_DIAL]0.2513500283341775
+57332a734776f41900660729[SEP_DIAL]"""Warsaw became the capital of the Polish-Lithuanian Commonwealth, and later the center of the Congress Poland, in 1795."""[SEP_DIAL]0.3698981106512036
+57332a734776f4190066072a[SEP_DIAL]"""The Royal University of Warsaw was established in 1816."""[SEP_DIAL]0.8003612699270373
+57332b66d058e614000b575c[SEP_DIAL]"""The city of Warsaw successfully defended itself against the German army during the 1939 invasion of Poland, known as the Siege of Warsaw."""[SEP_DIAL]0.7050617176095898
+57332c1e4776f4190066073e[SEP_DIAL]"""The fighters of the Warsaw Ghetto Uprising were able to hold out for approximately 28 days, from April 19 to May 16, 1943."""[SEP_DIAL]0.391204644492283
+57332e48d058e614000b5766[SEP_DIAL]"""It is estimated that between 2.7 and 3 million Polish civilians died during World War II."""[SEP_DIAL]0.7097882194283416
+57332f81d058e614000b5777[SEP_DIAL]"""The type of housing erected in Warsaw as part of the "Bricks for Warsaw" process was prefabricated, panelized housing units."""[SEP_DIAL]0.85914438842398
+57332f81d058e614000b5778[SEP_DIAL]"""The structures built by the Soviets were typically characterized by a mix of brutalist and socialist realism architectural styles, often featuring imposing, monumental designs with a focus on functionality and grandeur."""[SEP_DIAL]0.3918335136143464
+57332f81d058e614000b5779[SEP_DIAL]"""The United Nations Headquarters building in New York City was a gift from the Soviet Union."""[SEP_DIAL]0.4009698884473868
+57332f81d058e614000b577a[SEP_DIAL]"""The list of Warsaw's Old Town was inscribed onto the UNESCO World Heritage List in 1980."""[SEP_DIAL]0.7364754950653518
+573330444776f4190066075a[SEP_DIAL]"""John Paul II had been the Pope since October 16, 1978."""[SEP_DIAL]0.19178191750122442
+573330444776f4190066075b[SEP_DIAL]"""John Paul II celebrated Mass in Victory Square in Warsaw."""[SEP_DIAL]0.7536145694437425
+573330444776f4190066075c[SEP_DIAL]"""The Polish citizens understood John Paul II's words to be a call for resistance against the communist regime and a message of hope and solidarity in the face of oppression."""[SEP_DIAL]0.4595958886732334
+5733314e4776f4190066076c[SEP_DIAL]"""The Vistula River."""[SEP_DIAL]0.897181571664366
+5733314e4776f4190066076d[SEP_DIAL]"""The highest point in Warsaw, Poland is the top of the Palace of Culture and Science, which stands at 237 meters (778 feet) above sea level."""[SEP_DIAL]0.277882537905349
+5733314e4776f4190066076e[SEP_DIAL]"""The lowest point of Warsaw, Poland is located at the Vistula River, which is approximately 78 meters (256 feet) above sea level."""[SEP_DIAL]0.7320533394388362
+57335c20d058e614000b58fa[SEP_DIAL]"""A delta has an asymmetrical pattern of different terraces."""[SEP_DIAL]0.290729171154104
+57335c20d058e614000b58fb[SEP_DIAL]"""The Vistula River is the main axis that divides Warsaw, Poland into two parts."""[SEP_DIAL]0.8509891350209002
+57335c20d058e614000b58fc[SEP_DIAL]"""The left part of Warsaw is on the Vistula River's right bank, not left."""[SEP_DIAL]0.22732967073381338
+57335c20d058e614000b58fd[SEP_DIAL]"""The edge of the moraine is called the terminal moraine."""[SEP_DIAL]0.35755729015479487
+57335ddbd058e614000b5932[SEP_DIAL]"""Aeolian sand with a number of dunes can be found in the Sahara Desert in North Africa."""[SEP_DIAL]0.33914169132502914
+57335ddbd058e614000b5933[SEP_DIAL]"""Temperate rainforests can be found on the highest terraces."""[SEP_DIAL]0.32065447198083474
+57335fcad058e614000b5972[SEP_DIAL]"""After World War II, Warsaw began to rebuild in 1945, with the Polish government-in-exile and the Soviet Union providing support for the reconstruction efforts."""[SEP_DIAL]0.6960092834093339
+57335fcad058e614000b5973[SEP_DIAL]"""The Crystal Palace in London was destroyed by a fire in 1936, but it was originally built in the 19th century and rebuilt in the 1850s."""[SEP_DIAL]0.46186465289816325
+57335fcad058e614000b5974[SEP_DIAL]"""The mass constructed residential blocks were designed in the Brutalist style."""[SEP_DIAL]0.2740490612759725
+573361404776f4190066093d[SEP_DIAL]"""The construction of Saint John's Cathedral in York, England began in 1220."""[SEP_DIAL]0.25159310282400693
+573361404776f4190066093e[SEP_DIAL]"""Saint John's Cathedral is an example of Gothic Revival architecture."""[SEP_DIAL]0.8511247653898804
+573361404776f4190066093f[SEP_DIAL]"""The House of the Baritsky merchant family is a notable example of Art Nouveau architecture."""[SEP_DIAL]0.35984279985274115
+573361404776f41900660940[SEP_DIAL]"""The Neuschwanstein Castle in Germany is often considered the most interesting example of a royal castle due to its unique blend of Romanesque and Gothic architectural styles."""[SEP_DIAL]0.3293392434189233
+573362b94776f41900660975[SEP_DIAL]"""Construction on Saint Casimir's Church in Vilnius, Lithuania began in 1604."""[SEP_DIAL]0.351815153570492
+573362b94776f41900660976[SEP_DIAL]"""The Palace of Four Windows is an impressive example of Mughal architecture."""[SEP_DIAL]0.3355727801867724
+573362b94776f41900660977[SEP_DIAL]"""This is likely referring to Neoclassicism, an artistic and architectural movement that combines simplicity of geometric forms with inspiration from ancient Roman and Greek styles."""[SEP_DIAL]0.338725713942686
+573362b94776f41900660978[SEP_DIAL]"""I'm not aware of any information about a specific "palace on the water" that was rebuilt."""[SEP_DIAL]0.26059003123644686
+5733638fd058e614000b59ec[SEP_DIAL]"""The Saxony Palace and the Brühl Palace were two large and impressive buildings in pre-war Warsaw, Poland, that served as the residences of the German Governor-General of Warsaw during the period of German occupation from 1939 to 1945."""[SEP_DIAL]0.5885685730155901
+5733647e4776f419006609b1[SEP_DIAL]"""The Statue of the Little Insurgent commemorates the children who fought in the Cuban War of Independence."""[SEP_DIAL]0.837653243144639
+5733647e4776f419006609b2[SEP_DIAL]"""The monument in memory of the largest insurrection of World War II is the Warsaw Uprising Monument in Poland."""[SEP_DIAL]0.8446253202844927
+57336755d058e614000b5a3f[SEP_DIAL]"""The Royal Route (Trasa Królewska) in Warsaw is a popular strolling destination for Varsovians, featuring beautiful architecture and historic landmarks."""[SEP_DIAL]0.28236120640559514
+57336755d058e614000b5a40[SEP_DIAL]"""The park that covers an area of 76 hectares is likely to be a small to medium-sized park, but without more information, it's difficult to determine which specific park you are referring to."""[SEP_DIAL]0.5615101070029007
+573368044776f41900660a2c[SEP_DIAL]"""The park closest to John Lennon Street is John Lennon Park."""[SEP_DIAL]0.43834003890366857
+573368044776f41900660a2d[SEP_DIAL]"""The Prague Zoo was established in 1881 in the Prague Park."""[SEP_DIAL]0.25288041443229425
+573368e54776f41900660a54[SEP_DIAL]"""Belleane Forest is located in County Westmeath, Ireland."""[SEP_DIAL]0.32229802641442984
+573368e54776f41900660a55[SEP_DIAL]"""The Białowieża Forest is the last remaining part of the primeval forest that once covered much of Europe."""[SEP_DIAL]0.6788469816941427
+573368e54776f41900660a56[SEP_DIAL]"""The Białowieża Forest is located by Warsaw's southern border."""[SEP_DIAL]0.5903185323683486
+573368e54776f41900660a57[SEP_DIAL]"""Warsaw has several botanical gardens, including the Royal Łazienki Park, the Warsaw University Botanical Garden, and the Warsaw Botanical Garden."""[SEP_DIAL]0.3385477991846926
+57337ddc4776f41900660bbd[SEP_DIAL]"""There are 18 lakes in Warsaw, Poland."""[SEP_DIAL]0.18171192720576967
+57337ddc4776f41900660bbe[SEP_DIAL]"""The small lakes in parks are often emptied before winter to prevent damage from freezing water and to allow for maintenance and repairs to the lake's infrastructure."""[SEP_DIAL]0.49993834484385713
+57337f6ad058e614000b5bcf[SEP_DIAL]"""Since 1999, there are no longer any restrictions on the use of the internet for personal, educational, or commercial purposes."""[SEP_DIAL]0.23741861806232945
+57338007d058e614000b5bdd[SEP_DIAL]"""In 1911, approximately 1.5% of Warsaw's population was Protestant."""[SEP_DIAL]0.35699734620332235
+57338007d058e614000b5bde[SEP_DIAL]"""Most of the places of religious worship in Warsaw were destroyed during World War II, specifically during the Warsaw Uprising in 1944 and the subsequent destruction by the Nazis."""[SEP_DIAL]0.8782543752047519
+573380e0d058e614000b5beb[SEP_DIAL]"""In the UK, registration numbers for cars are all of the same type in the same area, known as a "number plate area" or "DVLA area", which is usually a county or region."""[SEP_DIAL]0.30526252726053615
+57338160d058e614000b5bfd[SEP_DIAL]"""The council has a certain number of days to override the mayor's veto, but the exact number varies by jurisdiction."""[SEP_DIAL]0.6848412943231685
+57338255d058e614000b5c10[SEP_DIAL]"""The President of Warsaw, the capital city of Poland, is not directly elected, as Warsaw is a city and not a country, and Poland has a president who is elected by the Polish people."""[SEP_DIAL]0.5823542718455379
+57338255d058e614000b5c11[SEP_DIAL]"""I'm not aware of any information about a district in Warsaw choosing a president between 1994 and 1999."""[SEP_DIAL]0.19910490822469662
+573382d24776f41900660c39[SEP_DIAL]"""Warsaw was ranked the seventh greatest city in the world by the British newspaper The Guardian in 2013."""[SEP_DIAL]0.36340297939478927
+573382d24776f41900660c3a[SEP_DIAL]"""Warsaw, the capital city of Poland, is the country's largest economic hub and produces around 20% of Poland's national income."""[SEP_DIAL]0.400800863413878
+573382d24776f41900660c3b[SEP_DIAL]"""I couldn't find any information on the total nominal GDP of Warsaw in 2010."""[SEP_DIAL]0.2888101701939021
+5733834ed058e614000b5c28[SEP_DIAL]"""The stock exchange in the city of Lyon, France was revived in 1856."""[SEP_DIAL]0.32140700029134295
+5733834ed058e614000b5c29[SEP_DIAL]"""I'm not aware of any information about the number of companies listed on the WSE (Warsaw Stock Exchange) on August 2, 2009."""[SEP_DIAL]0.33603306365016006
+5733834ed058e614000b5c2a[SEP_DIAL]"""The World Savings Bank's former headquarters was located in Chicago, Illinois."""[SEP_DIAL]0.3807119950327681
+573383d0d058e614000b5c36[SEP_DIAL]"""The car licensed by the FSO Car Factory and built in Egypt is the FSO 125p, also known as the Fiat 125p."""[SEP_DIAL]0.8777787133642276
+573383d0d058e614000b5c37[SEP_DIAL]"""Hyundai purchased the factory in 1999."""[SEP_DIAL]0.2519911032526102
+573383d0d058e614000b5c38[SEP_DIAL]"""I don't have enough information to answer that question."""[SEP_DIAL]0.19082340184405566
+573383d0d058e614000b5c39[SEP_DIAL]"""The license to build the Chevrolet Volt expired in 2011."""[SEP_DIAL]0.41898031130648705
+57339555d058e614000b5df7[SEP_DIAL]"""The Royal Academy of Music in London is one of the largest and most prestigious music schools in Europe."""[SEP_DIAL]0.45987529716657705
+573399b54776f41900660e65[SEP_DIAL]"""The Marshall Plan, a U.S. economic aid program, was a major success in rebuilding Warsaw and the rest of Europe after World War II."""[SEP_DIAL]0.6708599861700708
+573399b54776f41900660e66[SEP_DIAL]"""Warsaw has seen many improvements over the past decade due to significant investments in infrastructure, transportation, and urban development, as well as a growing economy and increased tourism."""[SEP_DIAL]0.4039264138589578
+573399b54776f41900660e67[SEP_DIAL]"""Wet infrastructure includes sidewalks, sanitation facilities, and other urban features that are designed to handle and manage water."""[SEP_DIAL]0.3666425375221751
+57339a554776f41900660e77[SEP_DIAL]"""I couldn't find any information on the number of beds at the Maria Skłodowska-Curie Institute of Oncology."""[SEP_DIAL]0.37404379958266165
+57339a554776f41900660e78[SEP_DIAL]"""The infrastructure has undergone significant development and expansion over the past years, including the construction of new roads, bridges, airports, and public transportation systems."""[SEP_DIAL]0.36410223569793965
+57339ad74776f41900660e87[SEP_DIAL]"""Warsaw hosts many museums, theaters, and cultural events, including the Warsaw Uprising Museum, the National Museum, and the Warsaw Philharmonic."""[SEP_DIAL]0.8120095063232713
+57339ad74776f41900660e88[SEP_DIAL]"""The Congress Hall is located in Philadelphia, Pennsylvania, and is part of Independence National Historical Park."""[SEP_DIAL]0.706560747869412
+57339ad74776f41900660e89[SEP_DIAL]"""The Jazz Jamboree is hosted at the Jazz Showcase in Chicago, Illinois."""[SEP_DIAL]0.3182592352007191
+57339ad74776f41900660e8a[SEP_DIAL]"""The Warsaw Summer Jazz Days is a popular annual music festival held in Warsaw, Poland, featuring live jazz performances by both local and international artists."""[SEP_DIAL]0.4550798752826902
+57339c16d058e614000b5ec7[SEP_DIAL]"""I'm not aware of any information about a specific "summer theatre" to provide a length of operation for."""[SEP_DIAL]0.539731768936064
+57339c16d058e614000b5ec8[SEP_DIAL]"""The first literary cabaret in Warsaw was the "Czarny Kot" (Black Cat), which was established in 1905."""[SEP_DIAL]0.3024226613956803
+57339c16d058e614000b5ec9[SEP_DIAL]"""The Teatr Wielki in Warsaw is considered one of the best examples of Polish monumental theatre."""[SEP_DIAL]0.5633230806549517
+57339dd94776f41900660ece[SEP_DIAL]"""The Wianki Festival is held annually in June in Poland, typically on the summer solstice."""[SEP_DIAL]0.34387926914006217
+57339dd94776f41900660ecf[SEP_DIAL]"""According to ancient Roman tradition, the direction in which the reeds float on the River Tiber (not the Vistula) would indicate the future, with the direction of the floating reeds predicting the outcome of the upcoming war."""[SEP_DIAL]0.5390245867328973
+57339dd94776f41900660ed0[SEP_DIAL]"""The type of flower sought on Midsummer's Eve is the wildflower, particularly the St. John's Wort or the wildflowers of the meadow."""[SEP_DIAL]0.3462377080177822
+5733a1854776f41900660f0c[SEP_DIAL]"""The Warsaw Photoplasticon was a magic lantern theater."""[SEP_DIAL]0.29620954001016764
+5733a1854776f41900660f0d[SEP_DIAL]"""The majority of patriotic and political objects connected with Poland's struggles for independence can be found in the Royal Castle in Warsaw and the Warsaw Uprising Museum."""[SEP_DIAL]0.8860674695655626
+5733a1854776f41900660f0e[SEP_DIAL]"""The Warsaw Historical Museum has 14 rooms."""[SEP_DIAL]0.3196146751657196
+5733a2a9d058e614000b5f2a[SEP_DIAL]"""The oldest exhibition site in Warsaw is the Royal Castle, which has been hosting various exhibitions since the 14th century."""[SEP_DIAL]0.3651567919330334
+5733a2a9d058e614000b5f2b[SEP_DIAL]"""The Zaitsev National Gallery of Art in Ukraine organizes exhibitions of Ukrainian and European art."""[SEP_DIAL]0.6340580939554747
+5733a2a9d058e614000b5f2c[SEP_DIAL]"""The Warsaw Gallery Weekend is typically held in late September or early October every year."""[SEP_DIAL]0.6059465372677366
+5733a32bd058e614000b5f33[SEP_DIAL]"""I'm not aware of any information about a team called "Polonia Warsaw" winning a championship prior to 2022."""[SEP_DIAL]0.22787303920278834
+5733a32bd058e614000b5f34[SEP_DIAL]"""I'm not aware of any information about a team or entity called "Pelonnia" winning a cup."""[SEP_DIAL]0.17529258580623241
+5733a32bd058e614000b5f35[SEP_DIAL]"""I couldn't find any information on a team or organization called "Polonia" that has a well-known home venue."""[SEP_DIAL]0.3077515579095058
+5733a32bd058e614000b5f36[SEP_DIAL]"""I couldn't find any information on a team called Polonia being relegated from a top flight in 2013."""[SEP_DIAL]0.2899892653160312
+5733a45d4776f41900660f25[SEP_DIAL]"""The image of the mermaid has been used by Warsaw, Poland since 1920, when it was first featured on the city's coat of arms."""[SEP_DIAL]0.47626110185284565
+5733a45d4776f41900660f26[SEP_DIAL]"""The oldest known armed seal of Warsaw dates back to 1320."""[SEP_DIAL]0.25883722210347604
+5733a45d4776f41900660f27[SEP_DIAL]"""I'm not aware of any specific sea monster with a female upper body that is commonly described in mythology or literature."""[SEP_DIAL]0.26217177904581423
+5733a560d058e614000b5f78[SEP_DIAL]"""They set out on a journey through the land of the Amazons."""[SEP_DIAL]0.4766422929064875
+5733a560d058e614000b5f79[SEP_DIAL]"""One of Triton's daughters, Amphitrite, decided she wanted to hang out and stay on the island of Sicily."""[SEP_DIAL]0.5471583752337763
+5733a560d058e614000b5f7a[SEP_DIAL]"""The mermaid stopped to rest on the sandy beach by the village of Coveville."""[SEP_DIAL]0.7567589966641304
+5733a560d058e614000b5f7b[SEP_DIAL]"""The greedy merchant cut off the mermaid's beautiful singing voice by cutting out her tongue."""[SEP_DIAL]0.38276253718751674
+5733a5f54776f41900660f47[SEP_DIAL]"""Frédéric Chopin moved to Warsaw with his family when he was 7 years old."""[SEP_DIAL]0.7063502264094009
+5733a5f54776f41900660f48[SEP_DIAL]"""I couldn't find any information on a person named Casimir Puloski, so I'm unable to determine the birth year of someone with that name."""[SEP_DIAL]0.3036868405005618
+5733a6ac4776f41900660f5a[SEP_DIAL]"""Limpicka was a Polish artist who represented the avant-garde and Dada movements better than anyone else."""[SEP_DIAL]0.4953439909817108
+5733a6ac4776f41900660f5b[SEP_DIAL]"""Nathan Alterman was a poet."""[SEP_DIAL]0.8732635037454146
+5733a6ac4776f41900660f5c[SEP_DIAL]"""Joseph Conrad, a Polish-born British novelist, often featured Warsaw in his works."""[SEP_DIAL]0.2480342358359554
+5733d7cbd058e614000b63ad[SEP_DIAL]"""The Confederation of Eric the Red, also known as the Confederation of Eric the Red, controlled the area that is now Greenland."""[SEP_DIAL]0.30300792765077944
+5733d7cbd058e614000b63ae[SEP_DIAL]"""Some Native Americans lived under the rule of the Native American tribes' traditional systems of governance, which varied by tribe but often included councils of elders and leaders."""[SEP_DIAL]0.5727672317713244
+5733dd4f4776f419006613ac[SEP_DIAL]"""William the Conqueror, also known as William I of England, likely felt a mix of emotions, including concern, frustration, and determination, as he responded to the French advance into England during the Norman Conquest."""[SEP_DIAL]0.4389226369632444
+5733e5a14776f4190066145e[SEP_DIAL]"""The Treaty of Fort Stanwix, also known as the Treaty of 1768, was an agreement made between the British and Native American tribes in the region, including the Iroquois and other tribes, to establish boundaries and regulate trade."""[SEP_DIAL]0.7818736655471004
+5733e5a14776f4190066145f[SEP_DIAL]"""The strong house was to be built at the site of the present-day city of New York."""[SEP_DIAL]0.5520313653953834
+5733ea04d058e614000b6597[SEP_DIAL]"""I don't have enough information to determine what orders you are referring to."""[SEP_DIAL]0.5010462487342813
+5733ea04d058e614000b6598[SEP_DIAL]"""The incident you are referring to is likely the visit of Pontiac, a Native American leader, to Fort Detroit (also known as French Fort) in 1763, where he threatened the French commander, François-Marie Pictet de Barenne, and later the British commander, Major Robert Rogers, and demanded"""[SEP_DIAL]0.35139512612080537
+5733fe73d058e614000b673f[SEP_DIAL]"""The Duke of Luxembourg ordered the attack on Louisburg."""[SEP_DIAL]0.2699034873750491
+5733fe73d058e614000b6740[SEP_DIAL]"""Ludovick Joseph de Montcalm, the French commander, retreated from the siege of Louisbourg in 1745."""[SEP_DIAL]0.3956433887222096
+5734025d4776f419006616c5[SEP_DIAL]"""Pitt's plan called for a series of coordinated attacks on British ships and ports in the Chesapeake Bay."""[SEP_DIAL]0.39771517266622625
+5734025d4776f419006616c6[SEP_DIAL]"""The British Museum's Pitt Rivers Museum's expeditions were successful in collecting over 100,000 objects from around the world."""[SEP_DIAL]0.5705615679358225
+57373a9fc3c5551400e51e7e[SEP_DIAL]"""The weakest main interaction in the Standard Model of particle physics is the weak nuclear force, which is responsible for certain types of radioactive decay."""[SEP_DIAL]0.4286022777675169
+57373a9fc3c5551400e51e7f[SEP_DIAL]"""Weak and electromagnetism are expressions of the fundamental forces of nature, specifically the weak nuclear force and electromagnetism, respectively."""[SEP_DIAL]0.5700143353228166
+57373d0cc3c5551400e51e89[SEP_DIAL]"""Aristotle referred to forced motion as "violent motion"."""[SEP_DIAL]0.688837836630122
+57377aac1c4567190057447d[SEP_DIAL]"""The notion of energy keeps its meaning through both Newtonian and Schrödinger physics equations."""[SEP_DIAL]0.6490561995564763
+57378e311c456719005744af[SEP_DIAL]"""Michael Faraday is credited with fully explaining the origins of magnetic and electric fields in the 19th century."""[SEP_DIAL]0.273619086081916
+57378e311c456719005744b0[SEP_DIAL]"""The origins of magnetic and electric fields are attributed to the movement of charged particles, such as electrons, which was first described by Michael Faraday in the 19th century."""[SEP_DIAL]0.39433027908095397
+57378e311c456719005744b1[SEP_DIAL]"""James Maxwell formulated four scalar equations."""[SEP_DIAL]0.31901597590981734
+57378e311c456719005744b2[SEP_DIAL]"""Heaviside and Gibbs reformulated Maxwell's twenty scalar equations into four vector equations."""[SEP_DIAL]0.349356384918343
+57378e311c456719005744b3[SEP_DIAL]"""Michael Faraday is credited with discovering that magnetic and electric fields can self-generate."""[SEP_DIAL]0.3230607260663646
+573792ee1c456719005744b9[SEP_DIAL]"""The photoelectric effect and the missing ultraviolet catastrophe were difficult to reconcile because the photoelectric effect suggested that light was composed of particles (photons), while the ultraviolet catastrophe implied that light was a wave."""[SEP_DIAL]0.43227370327645087
+573792ee1c456719005744ba[SEP_DIAL]"""Maxwell's equations were used to create a new electromagnetic theory to reconcile the troubles with the electromagnetic theory as it used to stand."""[SEP_DIAL]0.3532174000809766
+573792ee1c456719005744bb[SEP_DIAL]"""Electromagnetic theory led to the development of radio communication and the invention of the radio, television, and other wireless technologies."""[SEP_DIAL]0.4024754558277909
+573792ee1c456719005744bc[SEP_DIAL]"""Photons are the wave-particles that mediate all electromagnetic phenomena."""[SEP_DIAL]0.8811717888172695
+573792ee1c456719005744bd[SEP_DIAL]"""Q.E.D. is short for "Quod Erat Demonstrandum," which is Latin for "What was to be demonstrated.""""[SEP_DIAL]0.5364487492600496
+5737958b1c456719005744c3[SEP_DIAL]"""The rigidity of wood is actually due to the arrangement of its cellulose fibers, not the wood itself."""[SEP_DIAL]0.4374754066661104
+5737958b1c456719005744c4[SEP_DIAL]"""Rigidity in matter is caused by the strong electrostatic repulsion between the positively charged nuclei of atoms, which holds the atoms together in a rigid structure."""[SEP_DIAL]0.373457100898015
+5737958b1c456719005744c5[SEP_DIAL]"""A strong attractive force, such as the electromagnetic force, is needed to pack electrons densely together."""[SEP_DIAL]0.4431009138229698
+5737958b1c456719005744c6[SEP_DIAL]"""The Pauli exclusion principle is manifested in the macro world through the behavior of electrons in atoms, where no two electrons in an atom can have the same set of quantum numbers, resulting in the formation of distinct energy levels and electron configurations."""[SEP_DIAL]0.45386726862930515
+573796edc3c5551400e51f33[SEP_DIAL]"""The strong force acts on protons and neutrons within the nucleus of an atom."""[SEP_DIAL]0.4035531969388798
+573796edc3c5551400e51f34[SEP_DIAL]"""The strong nuclear force, one of the four fundamental forces of nature, holds quarks together inside protons and neutrons, and also holds these particles together inside atomic nuclei."""[SEP_DIAL]0.6921146239039059
+573796edc3c5551400e51f35[SEP_DIAL]"""The force between nucleons is the strong nuclear force, a fundamental force of nature that holds quarks together inside protons and neutrons, and holds these particles together inside atomic nuclei."""[SEP_DIAL]0.8656710921327637
+573796edc3c5551400e51f36[SEP_DIAL]"""Nuclear forces are transmitted through the exchange of particles called gluons and the strong nuclear force, which holds quarks together inside protons and neutrons, and holds these particles together inside atomic nuclei."""[SEP_DIAL]0.7005838478039959
+573796edc3c5551400e51f37[SEP_DIAL]"""The term for the lack of observable free quarks is "confinement.""""[SEP_DIAL]0.6062455901639814
+57379829c3c5551400e51f3d[SEP_DIAL]"""A W and Z boson exchange creates a pair of W and Z bosons."""[SEP_DIAL]0.41787314860491387
+57379829c3c5551400e51f3e[SEP_DIAL]"""The observable effects of W and Z boson exchange include the weak nuclear force interactions that cause beta decay and the neutral current interactions that cause neutrino scattering."""[SEP_DIAL]0.8823673880382523
+57379829c3c5551400e51f3f[SEP_DIAL]"""Beta decay is a process in which a neutron in an atom's nucleus is converted into a proton, an electron, and a neutrino, resulting in the emission of an electron from the nucleus."""[SEP_DIAL]0.41087018728986047
+57379829c3c5551400e51f40[SEP_DIAL]"""The strength of the weak nuclear force is approximately 10^-6 times less than the strength of the strong nuclear force."""[SEP_DIAL]0.36285108978573966
+57379829c3c5551400e51f41[SEP_DIAL]"""At temperatures near absolute zero, the weak nuclear force and the electromagnetic force appear to be the same."""[SEP_DIAL]0.45054355863468987
+57379a4b1c456719005744cd[SEP_DIAL]"""The repulsive force of close-range atom interaction is known as the Pauli exclusion principle."""[SEP_DIAL]0.7565510610930417
+57379a4b1c456719005744ce[SEP_DIAL]"""Chemical bonds occur when electron clouds overlap from different atoms."""[SEP_DIAL]0.5160371915393712
+57379a4b1c456719005744cf[SEP_DIAL]"""The phenomenon of repulsion, including the specific case of "powder repulsion," is typically caused by the electrostatic forces between charged particles or surfaces."""[SEP_DIAL]0.5508633457857035
+57379a4b1c456719005744d0[SEP_DIAL]"""Tension is a force that causes rigid strength and stability in structures."""[SEP_DIAL]0.6483279096230538
+57379ed81c456719005744d5[SEP_DIAL]"""Tension forces can be modeled using springs."""[SEP_DIAL]0.38911006136692416
+57379ed81c456719005744d6[SEP_DIAL]"""You use a hyphen (-) to let idea strings switch direction."""[SEP_DIAL]0.2661952457219101
+57379ed81c456719005744d7[SEP_DIAL]"""Ideally, tension forces are transmitted through an idea string by the transfer of stress from one molecule to the next, allowing the force to propagate through the material."""[SEP_DIAL]0.3999704031327834
+57379ed81c456719005744d8[SEP_DIAL]"""The final effect of adding more and more idea strings to a load is that the load becomes increasingly unwieldy and difficult to manage."""[SEP_DIAL]0.49517963399320464
+57379ed81c456719005744d9[SEP_DIAL]"""Increasing the distance between the load and the fulcrum, or increasing the force applied to the lever, can increase the tension force on a load."""[SEP_DIAL]0.3872250999803295
+5737a0acc3c5551400e51f47[SEP_DIAL]"""Newton's mechanics had a profound impact on the development of modern physics, mathematics, and engineering, influencing fields such as astronomy, engineering, and technology."""[SEP_DIAL]0.3420123957880955
+5737a0acc3c5551400e51f48[SEP_DIAL]"""Newton's mechanics did not directly affect the development of quantum mechanics, which is a separate branch of physics that deals with the behavior of matter and energy at the atomic and subatomic level."""[SEP_DIAL]0.366417534810193
+5737a0acc3c5551400e51f49[SEP_DIAL]"""Pressure differences are caused by direction of forces over gradients in fluids."""[SEP_DIAL]0.40678504446080077
+5737a0acc3c5551400e51f4a[SEP_DIAL]"""A force on one part of an object can cause a reaction force on another part of the object."""[SEP_DIAL]0.6569275434428701
+5737a0acc3c5551400e51f4b[SEP_DIAL]"""Quantum mechanics addresses the behavior of matter at the atomic and subatomic level, where classical Newtonian mechanics is no longer applicable due to the principles of wave-particle duality and uncertainty."""[SEP_DIAL]0.5386146922196047
+5737a25ac3c5551400e51f51[SEP_DIAL]"""Strain in structures is typically caused by external forces such as tension, compression, shear, or torsion that exceed the material's strength, leading to deformation or damage."""[SEP_DIAL]0.34082348649984395
+5737a25ac3c5551400e51f52[SEP_DIAL]"""The formula for calculating cross-sectional area is A = πr^2, where A is the area and r is the radius of the object."""[SEP_DIAL]0.634809572163206
+5737a25ac3c5551400e51f53[SEP_DIAL]"""Water is associated with buoyancy, which is a type of normal force that acts on objects submerged in water."""[SEP_DIAL]0.6292393873584419
+5737a25ac3c5551400e51f54[SEP_DIAL]"""Pressure is included when calculating area and volume in terms of hydrostatic pressure, which is the pressure exerted by a fluid at equilibrium due to the force of gravity."""[SEP_DIAL]0.7513739426238348
+5737a4511c456719005744df[SEP_DIAL]"""The force equivalent of torque is a force that causes a change in angular momentum."""[SEP_DIAL]0.5810540203708496
+5737a4511c456719005744e0[SEP_DIAL]"""The rotational inertia of a body under Newton's first law of motion would change if the mass distribution of the body changes."""[SEP_DIAL]0.30399205615239555
+5737a4511c456719005744e1[SEP_DIAL]"""You would use the equation α = Δω / Δt, where α is the angular acceleration, Δω is the change in angular velocity, and Δt is the change in time."""[SEP_DIAL]0.38041697355697235
+5737a5931c456719005744e7[SEP_DIAL]"""Centripetal force is directed towards the center of a rotating or revolving object, and it acts to keep the object moving in a circular path."""[SEP_DIAL]0.7754412784626257
+5737a5931c456719005744e8[SEP_DIAL]"""Centripetal forces act in the direction of the radius, perpendicular to the velocity vector, and are necessary to keep an object moving in a circular path."""[SEP_DIAL]0.8735863832766225
+5737a5931c456719005744e9[SEP_DIAL]"""A force is required to change an object's direction of travel."""[SEP_DIAL]0.5075066490862283
+5737a5931c456719005744ea[SEP_DIAL]"""Another word for centripetal force is centripetal acceleration."""[SEP_DIAL]0.6761063390501666
+5737a5931c456719005744eb[SEP_DIAL]"""The force of friction is responsible for speeding up or slowing down an object."""[SEP_DIAL]0.6334670683361893
+5737a7351c456719005744f1[SEP_DIAL]"""Kinetic energy."""[SEP_DIAL]0.8921671310626198
+5737a7351c456719005744f2[SEP_DIAL]"""Thermal energy is the only form that kinetic energy can change into."""[SEP_DIAL]0.4107555975453403
+5737a7351c456719005744f3[SEP_DIAL]"""The total mechanical energy is preserved in a closed system of forces when acted upon."""[SEP_DIAL]0.8369900421963923
+5737a7351c456719005744f4[SEP_DIAL]"""The force between two locations is related to gravity."""[SEP_DIAL]0.6873760616678443
+5737a7351c456719005744f5[SEP_DIAL]"""The force between two locations due to a potential field is called a conservative force."""[SEP_DIAL]0.6629524156259734
+5737a84dc3c5551400e51f59[SEP_DIAL]"""Some complex systems, such as chaotic or quantum systems, are impossible to model accurately due to their inherent unpredictability and sensitivity to initial conditions."""[SEP_DIAL]0.6867707920139566
+5737a84dc3c5551400e51f5a[SEP_DIAL]"""Some forces, such as those involved in quantum mechanics and certain aspects of general relativity, are impossible to model because they operate at a scale where the laws of classical physics no longer apply."""[SEP_DIAL]0.6383965212320022
+5737a84dc3c5551400e51f5b[SEP_DIAL]"""Electrostatic gradient potentials create electric fields."""[SEP_DIAL]0.37755887942546074
+5737a84dc3c5551400e51f5c[SEP_DIAL]"""Tension, compression, and drag are types of contact forces."""[SEP_DIAL]0.7043040142767719
+5737a9afc3c5551400e51f61[SEP_DIAL]"""Nonconservative and conservative forces are described in the treatment of rotational motion."""[SEP_DIAL]0.4850834276249233
+5737a9afc3c5551400e51f62[SEP_DIAL]"""The energy of a macroscopic closed system can change due to external work or heat transfer."""[SEP_DIAL]0.6486309254008429
+5737a9afc3c5551400e51f63[SEP_DIAL]"""The exchange of heat is associated with conduction."""[SEP_DIAL]0.3931303327868456
+5737a9afc3c5551400e51f64[SEP_DIAL]"""The Law of Thermodynamics associated with closed system heat exchange is the Zeroth Law of Thermodynamics, which states that if two systems are in thermal equilibrium with a third system, they are also in thermal equilibrium with each other."""[SEP_DIAL]0.8184788076333844
+5737a9afc3c5551400e51f65[SEP_DIAL]"""Energy changes in a closed system occur due to the transfer of energy from one form to another, such as from kinetic energy to potential energy, or from thermal energy to electrical energy."""[SEP_DIAL]0.48805378977745784
+5737aafd1c456719005744fb[SEP_DIAL]"""The term "dyne" is a metric unit of force that is less commonly used than the Newton."""[SEP_DIAL]0.26921844595902267
+5737aafd1c456719005744fc[SEP_DIAL]"""A kilogram-force is sometimes referred to as a kilopond."""[SEP_DIAL]0.8864573787343949
+5737aafd1c456719005744fd[SEP_DIAL]"""The gram is a very seldom used unit of mass in the metric system."""[SEP_DIAL]0.6551255330526942
+5737aafd1c456719005744fe[SEP_DIAL]"""A kilonewton is a unit of force that equals one thousand pounds of force."""[SEP_DIAL]0.23630738731477796
+5737aafd1c456719005744ff[SEP_DIAL]"""A kilonewton is a unit of force equal to one thousand newtons."""[SEP_DIAL]0.27632587504487793
