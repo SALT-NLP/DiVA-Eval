@@ -4,6 +4,7 @@ import os
 import librosa
 import numpy as np
 import soundfile as sf
+from transformers import pipeline as hf_pipeline
 import torch
 from datasets import Audio, load_dataset
 from sacrebleu.metrics import BLEU
@@ -43,6 +44,34 @@ dials = [
     "zaf",
 ]
 
+
+@torch.no_grad
+def get_response_end_to_end_ultravox(model, audio, dial):
+    value = audio[dial]
+    sf.write("tmp_ultravox.wav", value["array"], value["sampling_rate"], format="wav")
+    
+    # Load audio using librosa with 16kHz sampling rate
+    audio_array, sr = librosa.load("tmp_ultravox.wav", sr=16000)
+    
+    # Set up turns for translation tasks
+    turns = [
+        {
+            "role": "system",
+            "content": f"You are a helpful assistant. Translate the inputs from {input_lang} to {output_lang}."
+        },
+    ]
+    
+    # Process with Ultravox
+    result = model({
+        'audio': audio_array, 
+        'turns': turns, 
+        'sampling_rate': sr
+    }, max_new_tokens=64)  # Allow enough tokens for a complete translation
+    
+    # Extract response
+    response = result
+    print(response)
+    return response
 
 @torch.no_grad
 def get_response_pipeline(asr_model, model, audio, dial):
@@ -275,6 +304,15 @@ if m_type == "e2e":
             top_k=50,
             top_p=1.0,
         )
+    elif "ultravox" in model_name:
+        model = hf_pipeline(
+            model="fixie-ai/ultravox-v0_2",
+            trust_remote_code=True,
+            device="cuda:0"
+        )
+        tokenizer = AutoTokenizer.from_pretrained(
+            "meta-llama/Llama-3.1-8B", trust_remote_code=True
+        )
     elif "blsp" in model_name:
         tokenizer = LlamaTokenizer.from_pretrained(model_name)
         extractor = WhisperFeatureExtractor.from_pretrained(model_name)
@@ -413,6 +451,8 @@ for dial in dials:
                     pred = get_response_end_to_end_s(model, ex, x_label)
                 elif m_type == "e2e" and "blsp" in name_short:
                     pred = get_response_blsp(model, ex, x_label)
+                elif m_type == "e2e" and "ultravox" in name_short:
+                    pred = get_response_end_to_end_ultravox(model, ex, x_label)
                 elif m_type == "e2e" and "via" in name_short:
                     pred = get_response_end_to_end_v(model, ex, x_label)
                 elif m_type != "e2e" and (
